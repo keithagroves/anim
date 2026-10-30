@@ -1,0 +1,11 @@
+{
+  "palette": {
+    "plugin": "#4f8cff",
+    "undo": "#ffb547",
+    "dep": "#a07bff",
+    "ctxFill": "#121a30",
+    "ctxEdge": "#2d3a63",
+    "chip": "#1c2544"
+  },
+  "backdrop": "dots"
+}

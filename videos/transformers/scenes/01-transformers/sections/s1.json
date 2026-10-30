@@ -1,0 +1,41 @@
+{
+ "id": "s1",
+ "objects": {
+  "s1.sentence": { "type": "text", "text": "The cat sat because it was tired", "style": "h2", "at": { "in": "tok4Box" } },
+  "s1.title": { "type": "text", "text": "tokens", "style": "h3", "fill": "muted", "at": { "above": "tok4Box", "gap": "lg" } },
+  "s1.title2": { "type": "text", "text": "embeddings", "style": "h3", "fill": "embed", "at": { "above": "tok4Box", "gap": "lg" } },
+  "s1.emb1": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok1Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='96' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='40' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='72' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='28' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb2": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok2Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='50' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='110' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='30' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='84' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb3": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok3Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='70' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='26' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='100' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='58' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb4": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok4Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='34' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='88' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='60' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='112' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb5": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok5Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='104' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='54' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='22' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='78' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb6": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok6Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='44' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='76' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='108' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='36' height='8' rx='4' fill='#4f8cff'/>" },
+  "s1.emb7": { "type": "svg", "w": 140, "h": 66, "viewBox": "0 0 120 56", "at": { "below": "tok7Box", "gap": "md" },
+   "svg": "<rect x='0' y='0' width='82' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='16' width='32' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='32' width='66' height='8' rx='4' fill='#4f8cff'/><rect x='0' y='48' width='98' height='8' rx='4' fill='#4f8cff'/>" }
+ },
+ "timeline": [
+  { "id": "sent", "target": "s1.sentence", "preset": "type-on", "at": 0.3, "dur": 2.2 },
+  { "target": "s1.sentence", "preset": "pulse", "at": 3.2, "dur": 0.8, "amount": 0.04 },
+  { "target": "s1.sentence", "preset": "fade-out", "at": "cue:tokens", "dur": "fast" },
+  { "target": "tok1", "preset": "rise-in", "at": "cue:tokens", "offset": 0.05, "ease": "out" },
+  { "target": "tok2", "preset": "rise-in", "at": "cue:tokens", "offset": 0.13, "ease": "out" },
+  { "target": "tok3", "preset": "rise-in", "at": "cue:tokens", "offset": 0.21, "ease": "out" },
+  { "target": "tok4", "preset": "rise-in", "at": "cue:tokens", "offset": 0.29, "ease": "out" },
+  { "target": "tok5", "preset": "rise-in", "at": "cue:tokens", "offset": 0.37, "ease": "out" },
+  { "target": "tok6", "preset": "rise-in", "at": "cue:tokens", "offset": 0.45, "ease": "out" },
+  { "target": "tok7", "preset": "rise-in", "at": "cue:tokens", "offset": 0.53, "ease": "out" },
+  { "target": "s1.title", "preset": "rise-in", "at": "cue:tokens", "offset": 0.9 },
+  { "target": "s1.title", "preset": "fade-out", "at": "cue:vector", "dur": "fast" },
+  { "target": "s1.emb*", "preset": "wipe-in", "at": "cue:vector", "offset": 0.1, "stagger": 0.08 },
+  { "target": "s1.title2", "preset": "rise-in", "at": "cue:embedding" },
+  { "target": "s1.emb*", "preset": "pulse", "at": "cue:embedding", "offset": 0.1, "stagger": 0.05, "amount": 0.06 },
+  { "target": "s1.emb*", "preset": "fade-out", "at": 10.9, "stagger": 0.03, "dur": "fast" },
+  { "target": "s1.title2", "preset": "fade-out", "at": 10.9, "dur": "fast" }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "01-evals",
+  "objects": {
+    "goldBack2": { "type": "rect", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "gold", "strokeWidth": "thin", "opacity": 0.45, "at": { "in": "goldBox", "dx": 20, "dy": -20 } },
+    "goldBack1": { "type": "rect", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "gold", "strokeWidth": "thin", "opacity": 0.7, "at": { "in": "goldBox", "dx": 10, "dy": -10 } },
+    "goldBox": { "type": "rect", "text": "gold set", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "gold", "shadow": true, "at": { "region": "middle", "align": "left", "dx": 80 } },
+    "gold": { "type": "group", "children": ["goldBack2", "goldBack1", "goldBox"] },
+
+    "agents": { "type": "rect", "text": "section agents", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "agent", "shadow": true, "at": { "rightOf": "goldBox", "gap": 150 } },
+    "gate": { "type": "rect", "text": "gate", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "gate", "shadow": true, "at": { "rightOf": "agents", "gap": 150 } },
+    "judge": { "type": "rect", "text": "local judge", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "judge", "shadow": true, "at": { "rightOf": "gate", "gap": 150 } },
+
+    "a1": { "type": "arrow", "from": "goldBox.right", "to": "agents.left" },
+    "a2": { "type": "arrow", "from": "agents.right", "to": "gate.left" },
+    "a3": { "type": "arrow", "from": "gate.right", "to": "judge.left" }
+  },
+  "through": [{ "target": "camera", "preset": "drift", "at": 0, "dur": "all", "amount": 0.03 }],
+  "keys": {
+    "0":  { "gold": { "opacity": 0 }, "agents": { "opacity": 0 }, "gate": { "opacity": 0 }, "judge": { "opacity": 0 }, "a1": { "opacity": 0 }, "a2": { "opacity": 0 }, "a3": { "opacity": 0 } },
+    "s1": { "gold": { "opacity": 1 } },
+    "s2": { "agents": { "opacity": 1 }, "gate": { "opacity": 1 }, "a1": { "opacity": 1 }, "a2": { "opacity": 1 } },
+    "s3": { "gold": { "opacity": 0.3 }, "agents": { "opacity": 0 }, "gate": { "opacity": 0 }, "judge": { "opacity": 0 }, "a1": { "opacity": 0 }, "a2": { "opacity": 0 }, "a3": { "opacity": 0 } },
+    "s4": {}
+  },
+  "sections": [
+    {
+      "id": "s1", "target": [0, 11.2],
+      "brief": "Hook, then the gold set. While the opening question plays (0 to about 7.5s: 'Every scene is written by an AI agent. How do we know a change makes it better, and not just different?'), show it with local objects in the centre: e.g. a scene card with a small violet 'agent' badge drawing on it, then two variants 'v1' and 'v2' side by side with a short caption like 'better, or just different?'. Clear those, and at cue:gold bring in the shared `gold` stack at the left (rise-in or pop the group) with a small title 'gold set' above the stage. At cue:frozen add a local badge on or beside it reading 'inputs frozen' (maybe with a small lock drawn from simple shapes), and fade it out before the section ends. End on exactly key s1: `gold` visible and unchanged; nothing else on screen."
+    },
+    {
+      "id": "s2", "target": [11.2, 21.0],
+      "brief": "The harness. At cue:harness, a small title 'harness' at the top; `a1` draws on from gold to `agents`, and `agents` rises in. At cue:trials show several trials, e.g. two faint local copies of the agents card stacked behind it, or a '×3 trials' badge. At cue:gate, `a2` draws on and `gate` rises in. Then, as the narration lists 'it compiles, lint is clean, the seams line up' (about 17.5 to 20.5s), pop three short check rows under the gate box, staggered and each with a green tick: 'compiles', 'lint clean', 'seams line up'. Clear every local object before the section ends. End on exactly key s2: gold, agents, gate, a1 and a2 visible and unchanged."
+    },
+    {
+      "id": "s3", "target": [21.0, 35.4],
+      "brief": "The judge, and why we trust it. At cue:judge, `a3` draws on from gate to `judge`, and `judge` rises in, with a small 'free · local' caption under it. At cue:swap show the order swap below the judge: two small option cards, 'A pass' and 'B fail', trade places (move), with a short caption 'asked both ways'. Clear that. At cue:trust, a title 'trust'. At cue:label, a pink `human` card 'blind labels' rises in below the judge, with a curved arrow (bend) from it up to the judge. At cue:kappa, show agreement as a small meter beside them: a bar filling to a marked threshold line labelled 'κ ≥ 0.6 → trusted' (that's the real threshold; don't invent a measured value). Then, from about 33.9s, clear all local objects, fade out agents, gate, judge, a1, a2 and a3, and dim gold to opacity 0.3, all finished by the section end (34.79s). End on exactly key s3."
+    },
+    {
+      "id": "s4", "target": [35.4, 50.5],
+      "brief": "A real experiment (experiment 001). The stage is empty except for the dimmed gold stack at the left: leave it alone. Title 'experiment 001' at the top. On 'drawing every arrow by hand' (about 37 to 39.5s), show the pain briefly, e.g. a cluster of many small hand-placed straight line pieces. At cue:lists, replace it with two feature chips 'list targets' and 'curved arrows', and draw a real curved arrow (bend) between them. At cue:rule, a small card 'decision rule: written first' with a pin or lock. At cue:turns, a two-bar comparison 'turns / section': 24 (before) and 19 (after), counting up (count-up). At cue:cost, '−16% est. cost' counts in. At cue:accept, a green 'ACCEPTED' stamp (pop) with a small caption 'quality held · gate 7/7'. Use the right two-thirds of the stage so nothing covers the gold stack. Clear every local object before the section ends. End on exactly key s4 (gold still at 0.3; nothing else)."
+    },
+    {
+      "id": "s5", "target": [50.5, 67.475],
+      "brief": "The production loop (last section; the final picture holds). Bring `gold` back to full opacity with a `to` (opacity 1) at the start, plus a title 'after release'. Build a clockwise loop of local cards in the right two-thirds of the stage, each landing on its cue: 'traces' (cue:trace), 'monitor → owner' (cue:alert), 'analyze' (cue:analyze), 'propose fix' (cue:propose), 'evals pass?' gate (cue:evals, blue, with a green tick). Use curved arrows (bend) between neighbours so it reads as a cycle. At cue:newgold, draw a dashed amber curved arrow from the loop back into the gold stack, labelled 'new gold', then pulse the gold stack (a local amber card can pop onto the stack). End with a short caption like 'the test set grows with the app'. Keep it calm and readable."
+    }
+  ]
+}

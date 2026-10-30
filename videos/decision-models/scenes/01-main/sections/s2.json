@@ -1,0 +1,31 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.pill": { "type": "rect", "w": 300, "h": 60, "radius": 30, "fill": "surface2", "stroke": "decide", "strokeWidth": "thin", "text": "decision model", "style": "label", "labelColor": "decide", "at": { "region": "top", "align": "center", "dy": -40 } },
+    "s2.scan": { "type": "rect", "w": 6, "h": 560, "radius": 3, "fill": "decide", "layer": 20, "at": { "leftOf": "ticketCard", "gap": "sm" } }
+  },
+  "timeline": [
+    { "id": "pill", "target": "s2.pill", "preset": "fade-in", "at": 0.1, "dur": 0.6, "ease": "out" },
+    { "target": "s2.pill", "preset": "breathe", "after": "pill", "amount": 0.015 },
+
+    { "id": "ticket", "target": "ticket", "preset": "rise-in", "at": "cue:state", "dur": 0.6, "ease": "out" },
+
+    { "id": "form", "target": "form", "preset": "rise-in", "at": "cue:questions", "dur": 0.6, "ease": "out" },
+    { "id": "rows", "target": ["opt1", "opt2", "opt3"], "preset": "fade-in", "with": "form", "offset": 0.3, "stagger": 0.1, "dur": 0.4, "ease": "out" },
+    { "id": "boxes", "target": ["box1", "box2", "box3"], "preset": "draw-on", "with": "rows", "offset": 0.05, "stagger": 0.1, "dur": 0.5, "ease": "out" },
+    { "target": ["pct1", "pct2", "pct3"], "preset": "fade-in", "with": "boxes", "offset": 0.25, "stagger": 0.1, "dur": 0.4, "ease": "out" },
+    { "target": ["ticket", "form"], "preset": "breathe", "at": "cue:questions+1.4", "amount": 0.01 },
+
+    { "id": "scanIn", "target": "s2.scan", "preset": "fade-in", "at": "cue:pass", "dur": 0.15, "ease": "out" },
+    { "id": "sweep", "target": "s2.scan", "preset": "move", "with": "scanIn", "dur": 1.1, "ease": "inOut", "to": { "rightOf": "formCard", "gap": "sm" } },
+    { "target": "s2.scan", "preset": "fade-out", "after": "sweep", "dur": 0.3, "ease": "in" },
+
+    { "id": "fill", "target": ["bar1", "bar2", "bar3"], "preset": "to", "at": "cue:probs", "stagger": 0, "dur": 0.8, "ease": "out", "to": { "clip": 1 } },
+    { "target": "pct1", "preset": "count-up", "with": "fill", "dur": 0.8, "ease": "out", "to": { "value": 1 } },
+    { "target": "pct2", "preset": "count-up", "with": "fill", "dur": 0.8, "ease": "out", "to": { "value": 98 } },
+    { "target": "pct3", "preset": "count-up", "with": "fill", "dur": 0.8, "ease": "out", "to": { "value": 1 } },
+    { "target": "bar2", "preset": "highlight", "after": "fill", "gap": 0.05, "color": "text", "dur": 0.7 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

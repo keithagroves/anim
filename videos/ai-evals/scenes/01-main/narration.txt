@@ -1,0 +1,5 @@
+Why do AI products stall after the demo? Usually, nobody can {cue:measure}measure whether a change made things {cue:better}better. And fixing one prompt {cue:breaks}breaks another.
+Hamel Husain's answer is {cue:three}three levels of evals. Level one: {cue:unit}unit tests. Cheap checks that run on {cue:every}every change, like making sure no raw {cue:ids}IDs leak into a reply.
+Level two: {cue:traces}log your traces, and have people {cue:review}review them, marking each one simply {cue:good}good or bad. Then build an AI {cue:judge}judge, and check that it {cue:agrees}agrees with them.
+To make that easy, build a {cue:viewer}simple viewer for your own data. Show the {cue:scenario}scenario, the {cue:output}output, and one {cue:click}click to label it.
+Level three is {cue:ab}A/B testing, once the product is mature. But the real lesson is simpler. {cue:look}Look at your data, again and again. {cue:end}That is how you move fast.

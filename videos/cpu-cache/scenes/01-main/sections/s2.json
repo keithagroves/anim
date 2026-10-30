@@ -1,0 +1,25 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.fetchArrow": { "type": "arrow", "from": "chip.bottom", "to": "cacheBox.top:0.45",
+                       "stroke": "item", "strokeWidth": "thin", "dash": "10 8" },
+    "s2.looking": { "type": "text", "text": "checks the cache first", "style": "body", "fill": "muted",
+                    "at": { "region": "center", "align": "right", "dx": -160 } },
+    "s2.hitTag": { "type": "rect", "w": 180, "h": 72, "radius": "md", "fill": "hit",
+                   "text": "HIT", "style": "label",
+                   "at": { "in": "cacheBox", "align": "right", "pad": "sm", "dy": -110 } }
+  },
+  "timeline": [
+    { "id": "arrow", "target": "s2.fetchArrow", "preset": "draw-on", "at": "cue:asks", "dur": 0.5 },
+    { "id": "fly", "target": "byte", "preset": "fly-from", "at": "cue:asks", "offset": 0.25, "from": "chipBox", "dur": 1.3 },
+    { "id": "look", "target": "s2.looking", "preset": "fade-in", "after": "fly", "gap": 0.15, "dur": "fast" },
+    { "id": "pulseB", "target": "byte", "preset": "pulse", "with": "look", "offset": 0.7, "amount": 0.1, "dur": 0.5 },
+    { "id": "look-out", "target": "s2.looking", "preset": "fade-out", "after": "look", "gap": 1.1, "dur": "fast" },
+    { "id": "hit", "target": "byte", "preset": "pulse", "at": "cue:hit", "amount": 0.16, "dur": 0.55 },
+    { "id": "hl", "target": "byte", "preset": "highlight", "with": "hit", "offset": 0.1, "color": "hit", "dur": 0.9 },
+    { "id": "tag", "target": "s2.hitTag", "preset": "pop", "with": "hit", "offset": 0.4 },
+    { "id": "restoreB", "target": "byte", "preset": "to", "after": "hit", "gap": 0.55, "dur": 0.3, "to": { "stroke": "none" } },
+    { "id": "tag-out", "target": "s2.hitTag", "preset": "pop-out", "after": "tag", "gap": 0.45, "dur": "fast" },
+    { "id": "arrow-out", "target": "s2.fetchArrow", "preset": "fade-out", "after": "tag-out", "dur": "fast" }
+  ]
+}

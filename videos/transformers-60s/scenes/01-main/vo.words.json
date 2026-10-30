@@ -1,0 +1,983 @@
+{
+ "duration": 59.225,
+ "lead": 0.5,
+ "tail": 3.0,
+ "voice": "af_heart",
+ "speed": 0.88,
+ "text": "Chatbots like ChatGPT, Claude and Gemini all run on one idea: the transformer. Its job sounds simple. Guess the next word. First, your text is cut into small pieces, and each piece becomes a list of numbers that stands for its meaning. Words that mean similar things get similar numbers. Then comes the clever part: attention. Every word looks at every other word, to work out what it means here. In the sentence, the cat sat because it was tired, the word it looks hardest at cat. Older models read one word at a time, and forgot the start. A transformer reads all the words at once, so it can learn from huge amounts of text, fast. This step is repeated in many layers. Early layers notice grammar. Later layers pick up meaning and facts. At the end, it scores every possible next word, picks a likely one, adds it, and starts again. Word by word, that's how it writes.",
+ "words": [
+  {
+   "text": "Chatbots",
+   "start": 0.825,
+   "end": 1.312
+  },
+  {
+   "text": "like",
+   "start": 1.312,
+   "end": 1.538
+  },
+  {
+   "text": "ChatGPT",
+   "start": 1.538,
+   "end": 2.525
+  },
+  {
+   "text": ",",
+   "start": 2.525,
+   "end": 2.612
+  },
+  {
+   "text": "Claude",
+   "start": 2.612,
+   "end": 2.913
+  },
+  {
+   "text": "and",
+   "start": 2.913,
+   "end": 3.025
+  },
+  {
+   "text": "Gemini",
+   "start": 3.025,
+   "end": 3.538
+  },
+  {
+   "text": "all",
+   "start": 3.538,
+   "end": 3.8
+  },
+  {
+   "text": "run",
+   "start": 3.8,
+   "end": 3.987
+  },
+  {
+   "text": "on",
+   "start": 3.987,
+   "end": 4.1
+  },
+  {
+   "text": "one",
+   "start": 4.1,
+   "end": 4.287
+  },
+  {
+   "text": "idea",
+   "start": 4.287,
+   "end": 4.875
+  },
+  {
+   "text": ":",
+   "start": 4.875,
+   "end": 4.95
+  },
+  {
+   "text": "the",
+   "start": 4.95,
+   "end": 5.05
+  },
+  {
+   "text": "transformer",
+   "start": 5.05,
+   "end": 5.95
+  },
+  {
+   "text": ".",
+   "start": 5.95,
+   "end": 6.05
+  },
+  {
+   "text": "Its",
+   "start": 6.05,
+   "end": 6.3
+  },
+  {
+   "text": "job",
+   "start": 6.3,
+   "end": 6.625
+  },
+  {
+   "text": "sounds",
+   "start": 6.625,
+   "end": 6.963
+  },
+  {
+   "text": "simple",
+   "start": 6.963,
+   "end": 7.575
+  },
+  {
+   "text": ".",
+   "start": 7.575,
+   "end": 7.688
+  },
+  {
+   "text": "Guess",
+   "start": 7.688,
+   "end": 7.95
+  },
+  {
+   "text": "the",
+   "start": 7.95,
+   "end": 8.05
+  },
+  {
+   "text": "next",
+   "start": 8.05,
+   "end": 8.35
+  },
+  {
+   "text": "word",
+   "start": 8.35,
+   "end": 9.0
+  },
+  {
+   "text": ".",
+   "start": 9.0,
+   "end": 9.15
+  },
+  {
+   "text": "First",
+   "start": 9.15,
+   "end": 9.475
+  },
+  {
+   "text": ",",
+   "start": 9.475,
+   "end": 9.525
+  },
+  {
+   "text": "your",
+   "start": 9.525,
+   "end": 9.688
+  },
+  {
+   "text": "text",
+   "start": 9.688,
+   "end": 10.037
+  },
+  {
+   "text": "is",
+   "start": 10.037,
+   "end": 10.188
+  },
+  {
+   "text": "cut",
+   "start": 10.188,
+   "end": 10.412
+  },
+  {
+   "text": "into",
+   "start": 10.412,
+   "end": 10.625
+  },
+  {
+   "text": "small",
+   "start": 10.625,
+   "end": 10.925
+  },
+  {
+   "text": "pieces",
+   "start": 10.925,
+   "end": 11.475
+  },
+  {
+   "text": ",",
+   "start": 11.475,
+   "end": 11.55
+  },
+  {
+   "text": "and",
+   "start": 11.55,
+   "end": 11.688
+  },
+  {
+   "text": "each",
+   "start": 11.688,
+   "end": 11.925
+  },
+  {
+   "text": "piece",
+   "start": 11.925,
+   "end": 12.225
+  },
+  {
+   "text": "becomes",
+   "start": 12.225,
+   "end": 12.6
+  },
+  {
+   "text": "a",
+   "start": 12.6,
+   "end": 12.675
+  },
+  {
+   "text": "list",
+   "start": 12.675,
+   "end": 12.887
+  },
+  {
+   "text": "of",
+   "start": 12.887,
+   "end": 12.975
+  },
+  {
+   "text": "numbers",
+   "start": 12.975,
+   "end": 13.425
+  },
+  {
+   "text": "that",
+   "start": 13.425,
+   "end": 13.6
+  },
+  {
+   "text": "stands",
+   "start": 13.6,
+   "end": 13.975
+  },
+  {
+   "text": "for",
+   "start": 13.975,
+   "end": 14.088
+  },
+  {
+   "text": "its",
+   "start": 14.088,
+   "end": 14.25
+  },
+  {
+   "text": "meaning",
+   "start": 14.25,
+   "end": 15.025
+  },
+  {
+   "text": ".",
+   "start": 15.025,
+   "end": 15.2
+  },
+  {
+   "text": "Words",
+   "start": 15.2,
+   "end": 15.6
+  },
+  {
+   "text": "that",
+   "start": 15.6,
+   "end": 15.838
+  },
+  {
+   "text": "mean",
+   "start": 15.838,
+   "end": 16.175
+  },
+  {
+   "text": "similar",
+   "start": 16.175,
+   "end": 16.637
+  },
+  {
+   "text": "things",
+   "start": 16.637,
+   "end": 17.0
+  },
+  {
+   "text": "get",
+   "start": 17.0,
+   "end": 17.212
+  },
+  {
+   "text": "similar",
+   "start": 17.212,
+   "end": 17.575
+  },
+  {
+   "text": "numbers",
+   "start": 17.575,
+   "end": 18.4
+  },
+  {
+   "text": ".",
+   "start": 18.4,
+   "end": 18.512
+  },
+  {
+   "text": "Then",
+   "start": 18.512,
+   "end": 18.762
+  },
+  {
+   "text": "comes",
+   "start": 18.762,
+   "end": 19.087
+  },
+  {
+   "text": "the",
+   "start": 19.087,
+   "end": 19.175
+  },
+  {
+   "text": "clever",
+   "start": 19.175,
+   "end": 19.525
+  },
+  {
+   "text": "part",
+   "start": 19.525,
+   "end": 19.95
+  },
+  {
+   "text": ":",
+   "start": 19.95,
+   "end": 20.038
+  },
+  {
+   "text": "attention",
+   "start": 20.038,
+   "end": 21.075
+  },
+  {
+   "text": ".",
+   "start": 21.075,
+   "end": 21.238
+  },
+  {
+   "text": "Every",
+   "start": 21.238,
+   "end": 21.575
+  },
+  {
+   "text": "word",
+   "start": 21.575,
+   "end": 21.9
+  },
+  {
+   "text": "looks",
+   "start": 21.9,
+   "end": 22.113
+  },
+  {
+   "text": "at",
+   "start": 22.113,
+   "end": 22.2
+  },
+  {
+   "text": "every",
+   "start": 22.2,
+   "end": 22.5
+  },
+  {
+   "text": "other",
+   "start": 22.5,
+   "end": 22.775
+  },
+  {
+   "text": "word",
+   "start": 22.775,
+   "end": 23.1
+  },
+  {
+   "text": ",",
+   "start": 23.1,
+   "end": 23.15
+  },
+  {
+   "text": "to",
+   "start": 23.15,
+   "end": 23.275
+  },
+  {
+   "text": "work",
+   "start": 23.275,
+   "end": 23.488
+  },
+  {
+   "text": "out",
+   "start": 23.488,
+   "end": 23.663
+  },
+  {
+   "text": "what",
+   "start": 23.663,
+   "end": 23.788
+  },
+  {
+   "text": "it",
+   "start": 23.788,
+   "end": 23.875
+  },
+  {
+   "text": "means",
+   "start": 23.875,
+   "end": 24.225
+  },
+  {
+   "text": "here",
+   "start": 24.225,
+   "end": 24.9
+  },
+  {
+   "text": ".",
+   "start": 24.9,
+   "end": 25.087
+  },
+  {
+   "text": "In",
+   "start": 25.087,
+   "end": 25.212
+  },
+  {
+   "text": "the",
+   "start": 25.212,
+   "end": 25.312
+  },
+  {
+   "text": "sentence",
+   "start": 25.312,
+   "end": 25.925
+  },
+  {
+   "text": ",",
+   "start": 25.925,
+   "end": 25.975
+  },
+  {
+   "text": "the",
+   "start": 25.975,
+   "end": 26.087
+  },
+  {
+   "text": "cat",
+   "start": 26.087,
+   "end": 26.438
+  },
+  {
+   "text": "sat",
+   "start": 26.438,
+   "end": 26.75
+  },
+  {
+   "text": "because",
+   "start": 26.75,
+   "end": 27.012
+  },
+  {
+   "text": "it",
+   "start": 27.012,
+   "end": 27.087
+  },
+  {
+   "text": "was",
+   "start": 27.087,
+   "end": 27.25
+  },
+  {
+   "text": "tired",
+   "start": 27.25,
+   "end": 27.9
+  },
+  {
+   "text": ",",
+   "start": 27.9,
+   "end": 28.0
+  },
+  {
+   "text": "the",
+   "start": 28.0,
+   "end": 28.137
+  },
+  {
+   "text": "word",
+   "start": 28.137,
+   "end": 28.387
+  },
+  {
+   "text": "it",
+   "start": 28.387,
+   "end": 28.475
+  },
+  {
+   "text": "looks",
+   "start": 28.475,
+   "end": 28.725
+  },
+  {
+   "text": "hardest",
+   "start": 28.725,
+   "end": 29.175
+  },
+  {
+   "text": "at",
+   "start": 29.175,
+   "end": 29.288
+  },
+  {
+   "text": "cat",
+   "start": 29.288,
+   "end": 29.975
+  },
+  {
+   "text": ".",
+   "start": 29.975,
+   "end": 30.163
+  },
+  {
+   "text": "Older",
+   "start": 30.6,
+   "end": 30.925
+  },
+  {
+   "text": "models",
+   "start": 30.925,
+   "end": 31.375
+  },
+  {
+   "text": "read",
+   "start": 31.375,
+   "end": 31.6
+  },
+  {
+   "text": "one",
+   "start": 31.6,
+   "end": 31.825
+  },
+  {
+   "text": "word",
+   "start": 31.825,
+   "end": 32.038
+  },
+  {
+   "text": "at",
+   "start": 32.038,
+   "end": 32.112
+  },
+  {
+   "text": "a",
+   "start": 32.112,
+   "end": 32.175
+  },
+  {
+   "text": "time",
+   "start": 32.175,
+   "end": 32.575
+  },
+  {
+   "text": ",",
+   "start": 32.575,
+   "end": 32.65
+  },
+  {
+   "text": "and",
+   "start": 32.65,
+   "end": 32.775
+  },
+  {
+   "text": "forgot",
+   "start": 32.775,
+   "end": 33.125
+  },
+  {
+   "text": "the",
+   "start": 33.125,
+   "end": 33.225
+  },
+  {
+   "text": "start",
+   "start": 33.225,
+   "end": 34.05
+  },
+  {
+   "text": ".",
+   "start": 34.05,
+   "end": 34.188
+  },
+  {
+   "text": "A",
+   "start": 34.188,
+   "end": 34.3
+  },
+  {
+   "text": "transformer",
+   "start": 34.3,
+   "end": 35.038
+  },
+  {
+   "text": "reads",
+   "start": 35.038,
+   "end": 35.438
+  },
+  {
+   "text": "all",
+   "start": 35.438,
+   "end": 35.688
+  },
+  {
+   "text": "the",
+   "start": 35.688,
+   "end": 35.775
+  },
+  {
+   "text": "words",
+   "start": 35.775,
+   "end": 36.062
+  },
+  {
+   "text": "at",
+   "start": 36.062,
+   "end": 36.15
+  },
+  {
+   "text": "once",
+   "start": 36.15,
+   "end": 36.65
+  },
+  {
+   "text": ",",
+   "start": 36.65,
+   "end": 36.725
+  },
+  {
+   "text": "so",
+   "start": 36.725,
+   "end": 36.862
+  },
+  {
+   "text": "it",
+   "start": 36.862,
+   "end": 36.95
+  },
+  {
+   "text": "can",
+   "start": 36.95,
+   "end": 37.125
+  },
+  {
+   "text": "learn",
+   "start": 37.125,
+   "end": 37.425
+  },
+  {
+   "text": "from",
+   "start": 37.425,
+   "end": 37.65
+  },
+  {
+   "text": "huge",
+   "start": 37.65,
+   "end": 38.025
+  },
+  {
+   "text": "amounts",
+   "start": 38.025,
+   "end": 38.362
+  },
+  {
+   "text": "of",
+   "start": 38.362,
+   "end": 38.487
+  },
+  {
+   "text": "text",
+   "start": 38.487,
+   "end": 38.925
+  },
+  {
+   "text": ",",
+   "start": 38.925,
+   "end": 38.975
+  },
+  {
+   "text": "fast",
+   "start": 38.975,
+   "end": 39.825
+  },
+  {
+   "text": ".",
+   "start": 39.825,
+   "end": 39.987
+  },
+  {
+   "text": "This",
+   "start": 39.987,
+   "end": 40.175
+  },
+  {
+   "text": "step",
+   "start": 40.175,
+   "end": 40.475
+  },
+  {
+   "text": "is",
+   "start": 40.475,
+   "end": 40.625
+  },
+  {
+   "text": "repeated",
+   "start": 40.625,
+   "end": 41.15
+  },
+  {
+   "text": "in",
+   "start": 41.15,
+   "end": 41.3
+  },
+  {
+   "text": "many",
+   "start": 41.3,
+   "end": 41.525
+  },
+  {
+   "text": "layers",
+   "start": 41.525,
+   "end": 42.375
+  },
+  {
+   "text": ".",
+   "start": 42.375,
+   "end": 42.513
+  },
+  {
+   "text": "Early",
+   "start": 42.513,
+   "end": 42.875
+  },
+  {
+   "text": "layers",
+   "start": 42.875,
+   "end": 43.337
+  },
+  {
+   "text": "notice",
+   "start": 43.337,
+   "end": 43.675
+  },
+  {
+   "text": "grammar",
+   "start": 43.675,
+   "end": 44.4
+  },
+  {
+   "text": ".",
+   "start": 44.4,
+   "end": 44.575
+  },
+  {
+   "text": "Later",
+   "start": 44.575,
+   "end": 44.975
+  },
+  {
+   "text": "layers",
+   "start": 44.975,
+   "end": 45.425
+  },
+  {
+   "text": "pick",
+   "start": 45.425,
+   "end": 45.612
+  },
+  {
+   "text": "up",
+   "start": 45.612,
+   "end": 45.775
+  },
+  {
+   "text": "meaning",
+   "start": 45.775,
+   "end": 46.125
+  },
+  {
+   "text": "and",
+   "start": 46.125,
+   "end": 46.263
+  },
+  {
+   "text": "facts",
+   "start": 46.263,
+   "end": 47.125
+  },
+  {
+   "text": ".",
+   "start": 47.125,
+   "end": 47.25
+  },
+  {
+   "text": "At",
+   "start": 47.25,
+   "end": 47.413
+  },
+  {
+   "text": "the",
+   "start": 47.413,
+   "end": 47.55
+  },
+  {
+   "text": "end",
+   "start": 47.55,
+   "end": 47.9
+  },
+  {
+   "text": ",",
+   "start": 47.9,
+   "end": 47.975
+  },
+  {
+   "text": "it",
+   "start": 47.975,
+   "end": 48.1
+  },
+  {
+   "text": "scores",
+   "start": 48.1,
+   "end": 48.513
+  },
+  {
+   "text": "every",
+   "start": 48.513,
+   "end": 48.862
+  },
+  {
+   "text": "possible",
+   "start": 48.862,
+   "end": 49.425
+  },
+  {
+   "text": "next",
+   "start": 49.425,
+   "end": 49.725
+  },
+  {
+   "text": "word",
+   "start": 49.725,
+   "end": 50.225
+  },
+  {
+   "text": ",",
+   "start": 50.225,
+   "end": 50.325
+  },
+  {
+   "text": "picks",
+   "start": 50.325,
+   "end": 50.55
+  },
+  {
+   "text": "a",
+   "start": 50.55,
+   "end": 50.65
+  },
+  {
+   "text": "likely",
+   "start": 50.65,
+   "end": 51.025
+  },
+  {
+   "text": "one",
+   "start": 51.025,
+   "end": 51.475
+  },
+  {
+   "text": ",",
+   "start": 51.475,
+   "end": 51.612
+  },
+  {
+   "text": "adds",
+   "start": 51.612,
+   "end": 51.95
+  },
+  {
+   "text": "it",
+   "start": 51.95,
+   "end": 52.1
+  },
+  {
+   "text": ",",
+   "start": 52.1,
+   "end": 52.175
+  },
+  {
+   "text": "and",
+   "start": 52.175,
+   "end": 52.3
+  },
+  {
+   "text": "starts",
+   "start": 52.3,
+   "end": 52.638
+  },
+  {
+   "text": "again",
+   "start": 52.638,
+   "end": 53.45
+  },
+  {
+   "text": ".",
+   "start": 53.45,
+   "end": 53.65
+  },
+  {
+   "text": "Word",
+   "start": 53.65,
+   "end": 54.0
+  },
+  {
+   "text": "by",
+   "start": 54.0,
+   "end": 54.2
+  },
+  {
+   "text": "word",
+   "start": 54.2,
+   "end": 54.6
+  },
+  {
+   "text": ",",
+   "start": 54.6,
+   "end": 54.675
+  },
+  {
+   "text": "that's",
+   "start": 54.675,
+   "end": 54.95
+  },
+  {
+   "text": "how",
+   "start": 54.95,
+   "end": 55.125
+  },
+  {
+   "text": "it",
+   "start": 55.125,
+   "end": 55.225
+  },
+  {
+   "text": "writes",
+   "start": 55.225,
+   "end": 55.95
+  },
+  {
+   "text": ".",
+   "start": 55.95,
+   "end": 56.125
+  }
+ ],
+ "cues": {
+  "tf": 5.05,
+  "guess": 7.688,
+  "tokens": 10.625,
+  "numbers": 12.675,
+  "similar": 17.212,
+  "attention": 20.038,
+  "it": 27.012,
+  "cat": 29.288,
+  "old": 31.6,
+  "all": 35.438,
+  "stack": 40.625,
+  "grammar": 43.675,
+  "meaning": 45.775,
+  "next": 49.425,
+  "append": 51.612,
+  "end": 53.65
+ }
+}

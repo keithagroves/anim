@@ -1,0 +1,542 @@
+{
+ "id": "s5",
+ "objects": {
+  "s5.k1Box": {
+   "type": "rect",
+   "w": 300,
+   "h": 84,
+   "radius": "md",
+   "fill": "dep",
+   "shadow": true,
+   "at": {
+    "below": "plugBox",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s5.k1Text": {
+   "type": "text",
+   "text": "database",
+   "style": "label",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s5.k1Box"
+   }
+  },
+  "s5.k1": {
+   "type": "group",
+   "children": [
+    "s5.k1Box",
+    "s5.k1Text"
+   ]
+  },
+  "s5.k2Box": {
+   "type": "rect",
+   "w": 300,
+   "h": 84,
+   "radius": "md",
+   "fill": "plugin",
+   "shadow": true,
+   "at": {
+    "below": "s5.k1Box",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s5.k2Text": {
+   "type": "text",
+   "text": "chat adapter",
+   "style": "label",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s5.k2Box"
+   }
+  },
+  "s5.k2": {
+   "type": "group",
+   "children": [
+    "s5.k2Box",
+    "s5.k2Text"
+   ]
+  },
+  "s5.k3Box": {
+   "type": "rect",
+   "w": 300,
+   "h": 84,
+   "radius": "md",
+   "fill": "plugin",
+   "shadow": true,
+   "at": {
+    "below": "s5.k2Box",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s5.k3Text": {
+   "type": "text",
+   "text": "web console",
+   "style": "label",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s5.k3Box"
+   }
+  },
+  "s5.k3": {
+   "type": "group",
+   "children": [
+    "s5.k3Box",
+    "s5.k3Text"
+   ]
+  },
+  "s5.k4Box": {
+   "type": "rect",
+   "w": 300,
+   "h": 84,
+   "radius": "md",
+   "fill": "plugin",
+   "shadow": true,
+   "at": {
+    "below": "s5.k1Box",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s5.k4Text": {
+   "type": "text",
+   "text": "logger",
+   "style": "label",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s5.k4Box"
+   }
+  },
+  "s5.k4": {
+   "type": "group",
+   "children": [
+    "s5.k4Box",
+    "s5.k4Text"
+   ]
+  },
+  "s5.l1": {
+   "type": "line",
+   "from": "s5.k1Box.right",
+   "to": "ctxBox.left:0.453",
+   "stroke": "dep",
+   "strokeWidth": "md"
+  },
+  "s5.l2": {
+   "type": "line",
+   "from": "s5.k2Box.right",
+   "to": "ctxBox.left:0.629",
+   "stroke": "plugin",
+   "strokeWidth": "md"
+  },
+  "s5.l3": {
+   "type": "line",
+   "from": "s5.k3Box.right",
+   "to": "ctxBox.left:0.805",
+   "stroke": "plugin",
+   "strokeWidth": "md"
+  },
+  "s5.l4": {
+   "type": "line",
+   "from": "s5.k4Box.right",
+   "to": "ctxBox.left:0.629",
+   "stroke": "plugin",
+   "strokeWidth": "md"
+  },
+  "s5.c0Box": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "xl",
+    "dy": -160,
+    "dx": 80
+   }
+  },
+  "s5.c0Text": {
+   "type": "text",
+   "text": "cmd /greet",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c0Box"
+   }
+  },
+  "s5.c0": {
+   "type": "group",
+   "children": [
+    "s5.c0Box",
+    "s5.c0Text"
+   ],
+   "layer": 5
+  },
+  "s5.c1Box": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "dep",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "xl",
+    "dy": -31,
+    "dx": 80
+   }
+  },
+  "s5.c1Text": {
+   "type": "text",
+   "text": "provides: db",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c1Box"
+   }
+  },
+  "s5.c1": {
+   "type": "group",
+   "children": [
+    "s5.c1Box",
+    "s5.c1Text"
+   ],
+   "layer": 5
+  },
+  "s5.c2Box": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "xl",
+    "dy": 85,
+    "dx": 80
+   }
+  },
+  "s5.c2Text": {
+   "type": "text",
+   "text": "on message",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c2Box"
+   }
+  },
+  "s5.c2": {
+   "type": "group",
+   "children": [
+    "s5.c2Box",
+    "s5.c2Text"
+   ],
+   "layer": 5
+  },
+  "s5.c3Box": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "xl",
+    "dy": 201,
+    "dx": 80
+   }
+  },
+  "s5.c3Text": {
+   "type": "text",
+   "text": "route /admin",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c3Box"
+   }
+  },
+  "s5.c3": {
+   "type": "group",
+   "children": [
+    "s5.c3Box",
+    "s5.c3Text"
+   ],
+   "layer": 5
+  },
+  "s5.c3bBox": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "dep",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "rightOf": "s5.c3Box",
+    "gap": "md"
+   }
+  },
+  "s5.c3bText": {
+   "type": "text",
+   "text": "needs: db",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c3bBox"
+   }
+  },
+  "s5.c3b": {
+   "type": "group",
+   "children": [
+    "s5.c3bBox",
+    "s5.c3bText"
+   ],
+   "layer": 5
+  },
+  "s5.c4Box": {
+   "type": "rect",
+   "w": 230,
+   "h": 52,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "layer": 5,
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "xl",
+    "dy": 85,
+    "dx": 80
+   }
+  },
+  "s5.c4Text": {
+   "type": "text",
+   "text": "log events",
+   "style": "small",
+   "fill": "text",
+   "layer": 6,
+   "at": {
+    "in": "s5.c4Box"
+   }
+  },
+  "s5.c4": {
+   "type": "group",
+   "children": [
+    "s5.c4Box",
+    "s5.c4Text"
+   ],
+   "layer": 5
+  }
+ },
+ "timeline": [
+  {
+   "target": "plugBox",
+   "preset": "to",
+   "to": {
+    "fill": "plugin"
+   },
+   "at": 0.181,
+   "dur": "base"
+  },
+  {
+   "target": "plugLink",
+   "preset": "draw-on",
+   "at": 0.279,
+   "dur": 0.8
+  },
+  {
+   "id": "lbl",
+   "target": "ctxLabel",
+   "preset": "fade-out",
+   "at": "cue:context",
+   "dur": 0.5
+  },
+  {
+   "target": "ctxLabel2",
+   "preset": "fade-in",
+   "with": "lbl",
+   "dur": 0.6
+  },
+  {
+   "target": "ctxBox",
+   "preset": "highlight",
+   "with": "lbl",
+   "color": "accent",
+   "dur": "slow"
+  },
+  {
+   "id": "cards",
+   "target": [
+    "s5.k1",
+    "s5.k2",
+    "s5.k3"
+   ],
+   "preset": "rise-in",
+   "at": "cue:context",
+   "offset": 0.45,
+   "stagger": 0.15,
+   "dur": "base"
+  },
+  {
+   "id": "lines",
+   "target": [
+    "s5.l1",
+    "s5.l2",
+    "s5.l3"
+   ],
+   "preset": "draw-on",
+   "after": "cards",
+   "gap": -0.2,
+   "stagger": 0.12,
+   "dur": 0.5
+  },
+  {
+   "target": "s5.c0",
+   "preset": "fly-from",
+   "at": 2.713,
+   "dur": 0.8,
+   "from": "plugBox"
+  },
+  {
+   "target": "s5.c1",
+   "preset": "fly-from",
+   "at": 3.396,
+   "dur": 0.8,
+   "from": "s5.k1Box"
+  },
+  {
+   "target": "s5.c2",
+   "preset": "fly-from",
+   "at": 3.627,
+   "dur": 0.8,
+   "from": "s5.k2Box"
+  },
+  {
+   "target": "s5.c3",
+   "preset": "fly-from",
+   "at": 4.087,
+   "dur": 0.8,
+   "from": "s5.k3Box"
+  },
+  {
+   "target": "s5.c3b",
+   "preset": "fly-from",
+   "at": 4.263,
+   "dur": 0.8,
+   "from": "s5.k3Box"
+  },
+  {
+   "id": "leave",
+   "target": "s5.c2",
+   "preset": "pop-out",
+   "at": "cue:independent",
+   "dur": "fast"
+  },
+  {
+   "target": "s5.l2",
+   "preset": "draw-off",
+   "with": "leave",
+   "offset": 0.15,
+   "dur": 0.35
+  },
+  {
+   "target": "s5.k2",
+   "preset": "pop-out",
+   "with": "leave",
+   "offset": 0.3,
+   "dur": "fast"
+  },
+  {
+   "target": [
+    "plugLink",
+    "s5.l1",
+    "s5.l3",
+    "s5.k1Box",
+    "s5.k3Box",
+    "s5.c0Box",
+    "s5.c1Box",
+    "s5.c3Box",
+    "s5.c3bBox"
+   ],
+   "preset": "highlight",
+   "with": "leave",
+   "offset": 0.45,
+   "color": "good",
+   "dur": 1.1,
+   "stagger": 0
+  },
+  {
+   "id": "arrive",
+   "target": "s5.k4",
+   "preset": "pop",
+   "with": "leave",
+   "offset": 0.6,
+   "dur": 0.5
+  },
+  {
+   "target": "s5.l4",
+   "preset": "draw-on",
+   "with": "arrive",
+   "offset": 0.3,
+   "dur": 0.4
+  },
+  {
+   "target": "s5.c4",
+   "preset": "fly-from",
+   "with": "arrive",
+   "offset": 0.4,
+   "dur": 0.6,
+   "from": "s5.k4Box"
+  },
+  {
+   "id": "exit",
+   "target": [
+    "s5.k1",
+    "s5.k3",
+    "s5.k4",
+    "s5.l1",
+    "s5.l3",
+    "s5.l4",
+    "s5.c0",
+    "s5.c1",
+    "s5.c3",
+    "s5.c3b",
+    "s5.c4"
+   ],
+   "preset": "fade-out",
+   "at": 7.768,
+   "dur": 0.5
+  },
+  {
+   "target": "plugLink",
+   "preset": "fade-out",
+   "with": "exit",
+   "dur": 0.5
+  }
+ ]
+}

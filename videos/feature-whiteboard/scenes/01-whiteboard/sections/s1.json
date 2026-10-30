@@ -1,0 +1,94 @@
+{
+ "id": "s1",
+ "timeline": [
+  {
+   "target": "title",
+   "preset": "type-on",
+   "at": 0.4
+  },
+  {
+   "target": "subtitle",
+   "preset": "fade-in",
+   "at": 2.0,
+   "dur": "slow"
+  },
+  {
+   "target": "scene",
+   "preset": "draw-on",
+   "at": "cue:scene"
+  },
+  {
+   "target": "solver",
+   "preset": "draw-on",
+   "at": "cue:solver"
+  },
+  {
+   "target": "a_scene",
+   "preset": "draw-on",
+   "with": "solver",
+   "dur": "base"
+  },
+  {
+   "target": "tts",
+   "preset": "draw-on",
+   "at": "cue:voice",
+   "offset": -0.6
+  },
+  {
+   "target": "a_tts",
+   "preset": "draw-on",
+   "after": "tts"
+  },
+  {
+   "target": "video",
+   "preset": "draw-on",
+   "at": "cue:video",
+   "dur": "base"
+  },
+  {
+   "target": "a_video",
+   "preset": "draw-on",
+   "with": "video",
+   "dur": "base"
+  },
+  {
+   "target": "solver",
+   "preset": "pulse",
+   "at": 14.6
+  },
+  {
+   "target": "canvas",
+   "preset": "draw-on",
+   "at": "cue:canvas",
+   "dur": "base"
+  },
+  {
+   "target": "a_canvas",
+   "preset": "draw-on",
+   "with": "canvas",
+   "dur": "base"
+  },
+  {
+   "target": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "preset": "pop",
+   "at": "cue:sync",
+   "stagger": 0.32
+  },
+  {
+   "target": "a_edit",
+   "preset": "draw-on",
+   "at": "cue:edit"
+  },
+  {
+   "target": "canvas",
+   "preset": "pulse",
+   "after": "a_edit"
+  }
+ ]
+}

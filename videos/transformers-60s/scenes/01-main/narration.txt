@@ -1,0 +1,6 @@
+Chatbots like ChatGPT, Claude and Gemini all run on one idea: the {cue:tf}transformer. Its job sounds simple. {cue:guess}Guess the next word.
+First, your text is cut into {cue:tokens}small pieces, and each piece becomes a {cue:numbers}list of numbers that stands for its meaning. Words that mean similar things get {cue:similar}similar numbers.
+Then comes the clever part: {cue:attention}attention. Every word looks at every other word, to work out what it means here. In the sentence, the cat sat because {cue:it}it was tired, the word it looks hardest at {cue:cat}cat.
+Older models read {cue:old}one word at a time, and forgot the start. A transformer reads {cue:all}all the words at once, so it can learn from huge amounts of text, fast.
+This step is {cue:stack}repeated in many layers. Early layers notice {cue:grammar}grammar. Later layers pick up {cue:meaning}meaning and facts.
+At the end, it scores every possible {cue:next}next word, picks a likely one, {cue:append}adds it, and starts again. {cue:end}Word by word, that's how it writes.

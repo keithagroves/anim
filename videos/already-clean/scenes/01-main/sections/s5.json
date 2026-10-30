@@ -1,0 +1,63 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.grows": { "type": "text", "text": "grows like a branch", "style": "caption", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "top-left", "dx": 40, "dy": 20 } },
+    "s5.title": { "type": "text", "text": "recursive generalization", "style": "h2", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "top-left", "dx": 40, "dy": 10 } },
+
+    "s5.n1": { "type": "circle", "r": 28, "fill": "cell", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "cell", "gap": 400, "dy": -170 } },
+    "s5.n1b": { "type": "circle", "r": 18, "fill": "cellDim", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "s5.n1", "gap": 170, "dy": -90 } },
+    "s5.n2": { "type": "circle", "r": 28, "fill": "cell", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "s5.n1", "gap": 170, "dy": 150 } },
+    "s5.n3": { "type": "circle", "r": 34, "fill": "fix", "stroke": "fix", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "s5.n2", "gap": 170, "dy": 150 } },
+
+    "s5.b1": { "type": "arrow", "from": "cell.right", "to": "s5.n1.left", "bend": -60, "stroke": "cell", "strokeWidth": "md", "layer": 1 },
+    "s5.b1b": { "type": "arrow", "from": "s5.n1.right", "to": "s5.n1b.left", "bend": 20, "stroke": "cellDim", "strokeWidth": "thin", "layer": 1 },
+    "s5.b2": { "type": "arrow", "from": "s5.n1.right", "to": "s5.n2.left", "bend": 40, "stroke": "cell", "strokeWidth": "md", "layer": 1 },
+    "s5.b3": { "type": "arrow", "from": "s5.n2.right", "to": "s5.n3.left", "bend": 40, "stroke": "fix", "strokeWidth": "md", "layer": 1 },
+
+    "s5.c1": { "type": "chip", "text": "iy", "to": "s5.n1.top", "at": { "above": "s5.n1", "gap": "md" }, "style": "label" },
+    "s5.c1b": { "type": "chip", "text": "Miyazaki", "to": "s5.n1b.right", "at": { "rightOf": "s5.n1b", "gap": "md" }, "style": "label" },
+    "s5.c2": { "type": "chip", "text": "diy", "to": "s5.n2.top", "at": { "above": "s5.n2", "gap": "md" }, "style": "label" },
+    "s5.c3": { "type": "chip", "text": "do it yourself", "to": "s5.n3.bottom", "at": { "below": "s5.n3", "gap": "md" }, "style": "label" },
+    "s5.tag": { "type": "text", "text": "no “iy”", "style": "label", "fill": "muted", "anchor": "start", "at": { "rightOf": "s5.c3", "gap": "sm" } },
+
+    "s5.sim": { "type": "text", "text": "similar things", "style": "body", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "bottom-left", "dx": 40, "dy": -70 } },
+    "s5.unrel": { "type": "text", "text": "not unrelated ones", "style": "body", "fill": "text", "anchor": "start", "at": { "rightOf": "s5.sim", "gap": "lg" } },
+    "s5.sup": { "type": "text", "text": "superposition", "style": "label", "fill": "old", "anchor": "start", "at": { "below": "s5.unrel", "gap": "xs", "align": "left" } },
+    "s5.strike": { "type": "line", "from": "s5.sup.left", "to": "s5.sup.right", "stroke": "old", "strokeWidth": "md", "layer": 3 }
+  },
+  "timeline": [
+    { "id": "grows", "target": "s5.grows", "preset": "words-in", "at": "cue:branch" },
+    { "id": "b1", "target": "s5.b1", "preset": "draw-on", "at": "cue:branch", "offset": 0.5, "dur": 1.0, "ease": "out" },
+
+    { "id": "n1", "target": "s5.n1", "preset": "pop", "at": "cue:iy", "overshoot": 1.5, "dur": 0.45 },
+    { "id": "c1", "target": "s5.c1", "preset": "rise-in", "with": "n1", "offset": 0.2, "distance": 12, "dur": 0.35 },
+    { "target": "s5.c1", "preset": "draw-on", "with": "c1", "dur": 0.35 },
+    { "id": "twig", "target": "s5.b1b", "preset": "draw-on", "with": "n1", "offset": 0.45, "dur": 0.4 },
+    { "id": "n1b", "target": "s5.n1b", "preset": "pop", "after": "twig", "overshoot": 1.5, "dur": 0.4 },
+    { "id": "c1b", "target": "s5.c1b", "preset": "rise-in", "with": "n1b", "offset": 0.15, "distance": 12, "dur": 0.35 },
+    { "target": "s5.c1b", "preset": "draw-on", "with": "c1b", "dur": 0.35 },
+
+    { "id": "b2", "target": "s5.b2", "preset": "draw-on", "at": "cue:diy", "dur": 0.5, "ease": "out" },
+    { "id": "n2", "target": "s5.n2", "preset": "pop", "after": "b2", "gap": -0.1, "overshoot": 1.5, "dur": 0.45 },
+    { "id": "c2", "target": "s5.c2", "preset": "rise-in", "with": "n2", "offset": 0.2, "distance": 12, "dur": 0.35 },
+    { "target": "s5.c2", "preset": "draw-on", "with": "c2", "dur": 0.35 },
+
+    { "id": "b3", "target": "s5.b3", "preset": "draw-on", "at": "cue:diyfull", "dur": 0.5, "ease": "out" },
+    { "id": "n3", "target": "s5.n3", "preset": "pop", "after": "b3", "gap": -0.1, "overshoot": 1.5, "spin": -20, "dur": 0.5 },
+    { "id": "c3", "target": "s5.c3", "preset": "rise-in", "with": "n3", "offset": 0.25, "distance": 12, "dur": 0.35 },
+    { "target": "s5.c3", "preset": "draw-on", "with": "c3", "dur": 0.35 },
+    { "id": "tag", "target": "s5.tag", "preset": "words-in", "at": 7.15 },
+    { "target": "s5.n3", "preset": "wobble", "with": "tag", "amount": 6, "dur": 0.8 },
+    { "target": "s5.n3", "preset": "breathe", "at": 8.0, "amount": 0.02, "period": 2.6 },
+
+    { "target": "s5.grows", "preset": "sink-out", "at": "cue:recursive", "offset": -0.4, "distance": 16, "dur": 0.3, "ease": "in" },
+    { "id": "title", "target": "s5.title", "preset": "words-in", "at": "cue:recursive" },
+
+    { "id": "sim", "target": "s5.sim", "preset": "words-in", "at": 10.0 },
+    { "id": "unrel", "target": "s5.unrel", "preset": "words-in", "at": 10.8 },
+    { "id": "sup", "target": "s5.sup", "preset": "fade-in", "after": "unrel", "gap": 0.05, "dur": 0.35 },
+    { "target": "s5.strike", "preset": "draw-on", "at": 11.8, "dur": 0.35 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

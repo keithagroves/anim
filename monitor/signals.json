@@ -1,0 +1,25 @@
+{
+  "window": { "days": 14, "minTraces": 5 },
+  "signals": [
+    { "id": "first_draft_gate_fail", "owner": "keith", "severity": "high", "kind": "rate", "num": "gate_fail", "den": "all", "threshold": 0.2,
+      "why": "Capability regression: a model, prompt or engine change broke generation." },
+    { "id": "seam_fail", "owner": "keith", "severity": "high", "kind": "rate", "num": "seam_fail", "den": "all", "threshold": 0.1,
+      "why": "Contract drift between parallel agents: sections no longer join up." },
+    { "id": "human_edit_at_export", "owner": "keith", "severity": "high", "kind": "rate", "num": "edited_at_export", "den": "exported", "threshold": 0.3,
+      "why": "Lint-clean but not what people wanted: the strongest real-world quality signal." },
+    { "id": "regenerate", "owner": "keith", "severity": "medium", "kind": "rate", "num": "regenerated", "den": "all", "threshold": 0.25,
+      "why": "Outright rejection of a generated section." },
+    { "id": "judge_fail", "owner": "keith", "severity": "medium", "kind": "judge", "criterion": "*", "threshold": 0.3,
+      "why": "Quality drift on live inputs, per rubric criterion (only meaningful for criteria the judge is trusted on)." },
+    { "id": "cost_p95", "owner": "keith", "severity": "medium", "kind": "quantile", "metric": "cost", "q": 0.95, "threshold": 3.0,
+      "why": "Runaway agents burning budget." },
+    { "id": "latency_p95_s", "owner": "keith", "severity": "low", "kind": "quantile", "metric": "latency_s", "q": 0.95, "threshold": 600,
+      "why": "Generation too slow to keep parallel sections in step." },
+    { "id": "turns_p95", "owner": "keith", "severity": "low", "kind": "quantile", "metric": "turns", "q": 0.95, "threshold": 60,
+      "why": "Agent struggling to converge (proxy for hitting the critique-round cap)." },
+    { "id": "drift_cues_per_section", "owner": "keith", "severity": "low", "kind": "drift", "feature": "cues", "z": 2,
+      "why": "Live sections have a different cue density than the gold set covers." },
+    { "id": "drift_section_length", "owner": "keith", "severity": "low", "kind": "drift", "feature": "spanSeconds", "z": 2,
+      "why": "Live sections are much longer or shorter than the gold set covers." }
+  ]
+}

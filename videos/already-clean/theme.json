@@ -1,0 +1,44 @@
+{
+  "palette": {
+    "bg": "#0b0f14",
+    "surface": "#141b23",
+    "surface2": "#1d2630",
+    "line": "#33404d",
+    "text": "#eef2f6",
+    "muted": "#8d99a6",
+    "cell": "#3ec7e0",
+    "cellDim": "#1b5866",
+    "fix": "#ffb547",
+    "old": "#e0677a",
+    "accent": "#ffb547",
+    "accent2": "#3ec7e0",
+    "card": "#121920"
+  },
+  "backdrop": {
+    "preset": "spotlight",
+    "pattern": "none",
+    "gradient": {
+      "to": "#10202a",
+      "type": "radial"
+    },
+    "glows": [
+      {
+        "color": "cell",
+        "x": 0.3,
+        "y": 0.5,
+        "r": 0.3,
+        "opacity": 0.12,
+        "drift": 14,
+        "period": 30
+      }
+    ],
+    "vignette": 0.7
+  },
+  "roles": [
+    "bg",
+    "cell",
+    "fix",
+    "text",
+    "surface2"
+  ]
+}

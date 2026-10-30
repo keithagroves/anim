@@ -1,0 +1,67 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.slotL": { "type": "rect", "w": 515, "h": 290, "fill": "none", "opacity": 0, "at": { "region": "left-third", "align": "center", "dy": 16 } },
+    "s3.choicePill": { "type": "rect", "w": 170, "h": 52, "radius": "lg", "fill": "surface2", "stroke": "decide", "strokeWidth": "thin", "text": "choice", "style": "label", "labelColor": "text", "at": { "above": "s3.slotL", "gap": "md" } },
+
+    "s3.noulCard": { "type": "rect", "w": 515, "h": 290, "radius": "lg", "fill": "paper", "stroke": "line", "strokeWidth": "thin", "shadow": true, "at": { "region": "center-third", "align": "center", "dy": 16 } },
+    "s3.noulQ": { "type": "text", "text": "Has repro steps?", "style": "body", "anchor": "start", "at": { "in": "s3.noulCard", "align": "top-left", "pad": 21 } },
+    "s3.noulLbl": { "type": "text", "text": "p(true)", "style": "label", "anchor": "start", "at": { "in": "s3.noulCard", "align": "left", "pad": 21, "dy": 46 } },
+    "s3.noulBox": { "type": "rect", "w": 250, "h": 30, "radius": "sm", "fill": "none", "stroke": "line", "strokeWidth": "thin", "at": { "in": "s3.noulCard", "align": "right", "pad": 21, "dx": -70, "dy": 46 } },
+    "s3.noulBar": { "type": "rect", "w": 62, "h": 30, "radius": "sm", "fill": "ink", "at": { "in": "s3.noulBox", "align": "left", "pad": 0 } },
+    "s3.noulVal": { "type": "text", "text": "{value}", "value": 0, "decimals": 2, "style": "label", "anchor": "start", "at": { "rightOf": "s3.noulBox", "gap": "sm" } },
+    "s3.noul": { "type": "group", "children": ["s3.noulCard", "s3.noulQ", "s3.noulLbl", "s3.noulBox", "s3.noulBar", "s3.noulVal"] },
+    "s3.noulPill": { "type": "rect", "w": 150, "h": 52, "radius": "lg", "fill": "surface2", "stroke": "decide", "strokeWidth": "thin", "text": "noul", "style": "label", "labelColor": "text", "at": { "above": "s3.noulCard", "gap": "md" } },
+
+    "s3.scoreCard": { "type": "rect", "w": 515, "h": 290, "radius": "lg", "fill": "paper", "stroke": "line", "strokeWidth": "thin", "shadow": true, "at": { "region": "right-third", "align": "center", "dy": 16 } },
+    "s3.scoreQ": { "type": "text", "text": "How urgent?", "style": "body", "anchor": "start", "at": { "in": "s3.scoreCard", "align": "top-left", "pad": 21 } },
+    "s3.scoreLine": { "type": "rect", "w": 320, "h": 4, "radius": 2, "fill": "line", "at": { "in": "s3.scoreCard", "align": "center", "dy": 30 } },
+    "s3.tick1": { "type": "rect", "w": 4, "h": 22, "radius": 2, "fill": "line", "at": { "in": "s3.scoreLine", "align": "left", "pad": 0 } },
+    "s3.tick2": { "type": "rect", "w": 4, "h": 22, "radius": 2, "fill": "line", "at": { "in": "s3.scoreLine", "align": "center", "pad": 0 } },
+    "s3.tick3": { "type": "rect", "w": 4, "h": 22, "radius": 2, "fill": "line", "at": { "in": "s3.scoreLine", "align": "right", "pad": 0 } },
+    "s3.lvl1": { "type": "text", "text": "routine", "style": "label", "fill": "muted", "at": { "below": "s3.tick1", "gap": "sm" } },
+    "s3.lvl2": { "type": "text", "text": "soon", "style": "label", "fill": "muted", "at": { "below": "s3.tick2", "gap": "sm" } },
+    "s3.lvl3": { "type": "text", "text": "immediate", "style": "label", "fill": "muted", "at": { "below": "s3.tick3", "gap": "sm" } },
+    "s3.scoreInk": { "type": "rect", "w": 230, "h": 6, "radius": 3, "fill": "ink", "at": { "in": "s3.scoreLine", "align": "left", "pad": 0 } },
+    "s3.marker": { "type": "circle", "r": 14, "fill": "decide", "stroke": "paper", "strokeWidth": "md", "at": { "in": "s3.scoreLine", "align": "left", "pad": 0 } },
+    "s3.score": { "type": "group", "children": ["s3.scoreCard", "s3.scoreQ", "s3.scoreLine", "s3.tick1", "s3.tick2", "s3.tick3", "s3.lvl1", "s3.lvl2", "s3.lvl3", "s3.scoreInk", "s3.marker"] },
+    "s3.scorePill": { "type": "rect", "w": 160, "h": 52, "radius": "lg", "fill": "surface2", "stroke": "decide", "strokeWidth": "thin", "text": "score", "style": "label", "labelColor": "text", "at": { "above": "s3.scoreCard", "gap": "md" } },
+
+    "s3.outline": { "type": "rect", "w": 1710, "h": 172, "radius": "md", "fill": "none", "stroke": "decide", "strokeWidth": "md", "dash": "14 10", "at": { "region": "center", "align": "center", "dy": 62 } },
+    "s3.ghost": { "type": "rect", "w": 320, "h": 56, "radius": "lg", "fill": "bg", "stroke": "write", "strokeWidth": "thin", "dash": "8 6", "text": "something else…", "style": "label", "labelColor": "write", "at": { "below": "s3.slotL", "gap": "lg" } }
+  },
+  "timeline": [
+    { "id": "tOut", "target": "ticket", "preset": "fade-out", "at": 0.0, "dur": 0.4 },
+    { "id": "fMove", "target": "form", "preset": "to", "at": 0.3, "dur": 1.0, "ease": "inOut", "anticipate": 0.05, "to": { "at": { "region": "left-third", "align": "center" }, "scale": 0.66 } },
+    { "target": ["formTag", "pct1", "pct2", "pct3"], "preset": "to", "with": "fMove", "offset": 0.35, "stagger": 0.11, "dur": 0.6, "to": { "scale": 1.22 } },
+    { "target": "form", "preset": "breathe", "after": "fMove", "dur": 9.6, "amount": 0.01 },
+
+    { "id": "choice", "target": "s3.choicePill", "preset": "pop", "at": "cue:choice", "overshoot": 1.5, "spin": -10 },
+    { "id": "win", "target": "box2", "preset": "highlight", "at": "cue:choice+0.25", "color": "decide", "dur": 0.9 },
+    { "target": ["row1", "row3"], "preset": "to", "with": "win", "offset": 0.1, "dur": 0.4, "to": { "opacity": 0.35 } },
+
+    { "id": "noul", "target": "s3.noul", "preset": "rise-in", "at": "cue:noul", "dur": 0.5 },
+    { "target": "s3.noulPill", "preset": "pop", "with": "noul", "offset": 0.3, "overshoot": 1.5, "spin": -10 },
+    { "id": "nFill", "target": "s3.noulBar", "preset": "wipe-in", "with": "noul", "offset": 0.9, "dur": 0.8, "ease": "out" },
+    { "target": "s3.noulVal", "preset": "count-up", "with": "nFill", "dur": 0.8, "ease": "out", "to": { "value": 0.24 } },
+    { "target": "s3.noul", "preset": "breathe", "after": "noul", "dur": "rest", "amount": 0.01 },
+
+    { "id": "score", "target": "s3.score", "preset": "rise-in", "at": "cue:score", "dur": 0.5 },
+    { "target": "s3.scorePill", "preset": "pop", "with": "score", "offset": 0.3, "overshoot": 1.5, "spin": -10 },
+    { "id": "mk", "target": "s3.marker", "preset": "pop", "with": "score", "offset": 0.6, "dur": 0.4, "overshoot": 1.6 },
+    { "id": "slide", "target": "s3.marker", "preset": "to", "after": "mk", "gap": 0.1, "dur": 1.0, "ease": "spring", "to": { "dx": 216 } },
+    { "target": "s3.scoreInk", "preset": "wipe-in", "with": "slide", "dur": 0.8, "ease": "out" },
+    { "target": "s3.score", "preset": "breathe", "after": "score", "dur": "rest", "amount": 0.01 },
+
+    { "id": "outl", "target": "s3.outline", "preset": "draw-on", "at": "cue:closed", "dur": 0.5 },
+    { "target": ["row1", "row3"], "preset": "to", "with": "outl", "dur": 0.5, "to": { "opacity": 1 } },
+    { "id": "gIn", "target": "s3.ghost", "preset": "rise-in", "at": "cue:closed+0.4", "dur": 0.35, "distance": 60 },
+    { "id": "gNo", "target": "s3.ghost", "preset": "shake", "after": "gIn", "dur": 0.4, "amount": 14, "cycles": 3 },
+    { "target": "s3.ghost", "preset": "fade-out", "after": "gNo", "dur": 0.25 },
+
+    { "preset": "clear", "at": "end-0.6" },
+    { "id": "fOut", "target": "form", "preset": "fade-out", "at": "end-0.6", "dur": 0.3 },
+    { "target": "form", "preset": "to", "after": "fOut", "gap": 0.05, "dur": 0.15, "to": { "dx": 0, "dy": 0, "scale": 1 } },
+    { "target": ["pct1", "pct2", "pct3", "formTag"], "preset": "to", "after": "fOut", "gap": 0.05, "dur": 0.15, "to": { "scale": 1 } }
+  ]
+}

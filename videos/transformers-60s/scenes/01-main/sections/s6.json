@@ -1,0 +1,418 @@
+{
+  "id": "s6",
+  "objects": {
+    "s6.title": {
+      "type": "text",
+      "text": "Then it guesses the next word",
+      "style": "h2",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "s6.sent": {
+      "type": "text",
+      "text": "the cat sat because it was tired, so it",
+      "style": "h3",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 200,
+        "dy": 300
+      }
+    },
+    "s6.w0": {
+      "type": "text",
+      "text": "slept",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 454
+      }
+    },
+    "s6.bar0": {
+      "type": "rect",
+      "w": 615,
+      "h": 40,
+      "radius": 6,
+      "fill": "pred",
+      "fillOpacity": 1.0,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 760,
+        "dy": 450
+      }
+    },
+    "s6.pc0": {
+      "type": "text",
+      "text": "41%",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "rightOf": "s6.bar0",
+        "gap": "sm"
+      }
+    },
+    "s6.w1": {
+      "type": "text",
+      "text": "rested",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 524
+      }
+    },
+    "s6.bar1": {
+      "type": "rect",
+      "w": 330,
+      "h": 40,
+      "radius": 6,
+      "fill": "pred",
+      "fillOpacity": 0.698780487804878,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 760,
+        "dy": 520
+      }
+    },
+    "s6.pc1": {
+      "type": "text",
+      "text": "22%",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "rightOf": "s6.bar1",
+        "gap": "sm"
+      }
+    },
+    "s6.w2": {
+      "type": "text",
+      "text": "napped",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 594
+      }
+    },
+    "s6.bar2": {
+      "type": "rect",
+      "w": 180,
+      "h": 40,
+      "radius": 6,
+      "fill": "pred",
+      "fillOpacity": 0.5402439024390244,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 760,
+        "dy": 590
+      }
+    },
+    "s6.pc2": {
+      "type": "text",
+      "text": "12%",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "rightOf": "s6.bar2",
+        "gap": "sm"
+      }
+    },
+    "s6.w3": {
+      "type": "text",
+      "text": "left",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 664
+      }
+    },
+    "s6.bar3": {
+      "type": "rect",
+      "w": 75,
+      "h": 40,
+      "radius": 6,
+      "fill": "pred",
+      "fillOpacity": 0.4292682926829268,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 760,
+        "dy": 660
+      }
+    },
+    "s6.pc3": {
+      "type": "text",
+      "text": "5%",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "rightOf": "s6.bar3",
+        "gap": "sm"
+      }
+    },
+    "s6.w4": {
+      "type": "text",
+      "text": "…",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 734
+      }
+    },
+    "s6.pick": {
+      "type": "rect",
+      "w": 1040,
+      "h": 56,
+      "radius": "md",
+      "fill": "none",
+      "stroke": "pred",
+      "strokeWidth": "bold",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 544,
+        "dy": 442
+      }
+    },
+    "s6.illus": {
+      "type": "text",
+      "text": "scores are illustrative",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "s6.slept": {
+      "type": "text",
+      "text": "slept",
+      "style": "h3",
+      "fill": "pred",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 988,
+        "dy": 300
+      }
+    },
+    "s6.more0": {
+      "type": "text",
+      "text": "on",
+      "style": "h3",
+      "fill": "pred",
+      "at": {
+        "rightOf": "s6.slept",
+        "gap": "sm"
+      }
+    },
+    "s6.more1": {
+      "type": "text",
+      "text": "the",
+      "style": "h3",
+      "fill": "pred",
+      "at": {
+        "rightOf": "s6.more0",
+        "gap": "sm"
+      }
+    },
+    "s6.more2": {
+      "type": "text",
+      "text": "mat.",
+      "style": "h3",
+      "fill": "pred",
+      "at": {
+        "rightOf": "s6.more1",
+        "gap": "sm"
+      }
+    },
+    "s6.loop": {
+      "type": "text",
+      "text": "guess → add → repeat",
+      "style": "h2",
+      "fill": "text",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 630,
+        "dy": 640
+      }
+    }
+  },
+  "timeline": [
+    {
+      "target": "s6.title",
+      "preset": "words-in",
+      "at": "start+0.15"
+    },
+    {
+      "target": "s6.sent",
+      "preset": "words-in",
+      "at": "start+0.4"
+    },
+    {
+      "target": "s6.bar0",
+      "preset": "wipe-in",
+      "at": "cue:next+0.10",
+      "dur": 0.5
+    },
+    {
+      "target": "s6.pc0",
+      "preset": "fade-in",
+      "at": "cue:next+0.50",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.w0",
+      "preset": "fade-in",
+      "at": "cue:next+0.05",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.bar1",
+      "preset": "wipe-in",
+      "at": "cue:next+0.20",
+      "dur": 0.5
+    },
+    {
+      "target": "s6.pc1",
+      "preset": "fade-in",
+      "at": "cue:next+0.60",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.w1",
+      "preset": "fade-in",
+      "at": "cue:next+0.15",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.bar2",
+      "preset": "wipe-in",
+      "at": "cue:next+0.30",
+      "dur": 0.5
+    },
+    {
+      "target": "s6.pc2",
+      "preset": "fade-in",
+      "at": "cue:next+0.70",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.w2",
+      "preset": "fade-in",
+      "at": "cue:next+0.25",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.bar3",
+      "preset": "wipe-in",
+      "at": "cue:next+0.40",
+      "dur": 0.5
+    },
+    {
+      "target": "s6.pc3",
+      "preset": "fade-in",
+      "at": "cue:next+0.80",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.w3",
+      "preset": "fade-in",
+      "at": "cue:next+0.35",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.w4",
+      "preset": "fade-in",
+      "at": "cue:next+0.45",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.pick",
+      "preset": "draw-on",
+      "at": "cue:next+1.2",
+      "dur": 0.5
+    },
+    {
+      "target": "s6.illus",
+      "preset": "fade-in",
+      "at": "cue:next+0.5",
+      "dur": 0.3
+    },
+    {
+      "target": "s6.slept",
+      "preset": "fly-from",
+      "from": "s6.w0",
+      "at": "cue:append-0.1",
+      "dur": 0.6,
+      "ease": "inOut"
+    },
+    {
+      "target": [
+        "s6.bar*",
+        "s6.pc*",
+        "s6.w*",
+        "s6.pick"
+      ],
+      "preset": "fade-out",
+      "at": "cue:append+0.7",
+      "dur": 0.4,
+      "stagger": 0
+    },
+    {
+      "target": "s6.more0",
+      "preset": "pop",
+      "at": "cue:end+0.35",
+      "dur": 0.35
+    },
+    {
+      "target": "s6.more1",
+      "preset": "pop",
+      "at": "cue:end+0.90",
+      "dur": 0.35
+    },
+    {
+      "target": "s6.more2",
+      "preset": "pop",
+      "at": "cue:end+1.45",
+      "dur": 0.35
+    },
+    {
+      "target": "s6.loop",
+      "preset": "words-in",
+      "at": "cue:append+1.3"
+    }
+  ]
+}

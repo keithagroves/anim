@@ -1,0 +1,311 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.head": {
+      "type": "text",
+      "text": "Level 3 \u00b7 A/B tests",
+      "style": "h2",
+      "at": {
+        "region": "top",
+        "align": "top"
+      }
+    },
+    "s5.abCard": {
+      "type": "rect",
+      "w": 760,
+      "h": 240,
+      "radius": "lg",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "layer": 5,
+      "at": {
+        "below": "s5.head",
+        "gap": "md"
+      }
+    },
+    "s5.barA": {
+      "type": "rect",
+      "w": 460,
+      "h": 52,
+      "radius": "sm",
+      "fill": "muted",
+      "layer": 6,
+      "at": {
+        "in": "s5.abCard",
+        "align": "top-left",
+        "pad": "lg",
+        "dx": 72
+      }
+    },
+    "s5.barB": {
+      "type": "rect",
+      "w": 560,
+      "h": 52,
+      "radius": "sm",
+      "fill": "muted",
+      "layer": 6,
+      "at": {
+        "below": "s5.barA",
+        "gap": "md",
+        "align": "left"
+      }
+    },
+    "s5.labA": {
+      "type": "text",
+      "text": "A",
+      "style": "h3",
+      "layer": 6,
+      "at": {
+        "leftOf": "s5.barA",
+        "gap": "md"
+      }
+    },
+    "s5.labB": {
+      "type": "text",
+      "text": "B",
+      "style": "h3",
+      "layer": 6,
+      "at": {
+        "leftOf": "s5.barB",
+        "gap": "md"
+      }
+    },
+    "s5.endCard": {
+      "type": "rect",
+      "w": 888,
+      "h": 680,
+      "radius": "lg",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "at": {
+        "region": "center",
+        "dy": -40
+      }
+    },
+    "s5.big": {
+      "type": "text",
+      "text": "Look at your\ndata.",
+      "style": "stat",
+      "anchor": "start",
+      "at": {
+        "in": "s5.endCard",
+        "align": "top-left",
+        "pad": "lg",
+        "dy": 60
+      }
+    },
+    "s5.tick": {
+      "type": "path",
+      "d": "M10 70 C 30 88, 42 104, 56 124 C 82 76, 118 34, 170 8",
+      "w": 180,
+      "h": 132,
+      "viewBox": "0 0 180 132",
+      "fill": "none",
+      "stroke": "pass",
+      "strokeWidth": 16,
+      "at": {
+        "in": "s5.endCard",
+        "align": "right",
+        "pad": "lg",
+        "dy": -20
+      }
+    },
+    "s5.rule": {
+      "type": "rect",
+      "w": 760,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "below": "s5.big",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "s5.move": {
+      "type": "text",
+      "text": "That is how you move fast.",
+      "style": "h3",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "below": "s5.rule",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "s5.end": {
+      "type": "group",
+      "children": [
+        "s5.endCard",
+        "s5.big",
+        "s5.tick",
+        "s5.rule",
+        "s5.move"
+      ]
+    },
+    "s5.credit": {
+      "type": "text",
+      "text": "From \u201cYour AI Product Needs Evals\u201d\nHamel Husain, 2024",
+      "style": "label",
+      "fill": "muted",
+      "at": {
+        "region": "bottom",
+        "align": "bottom",
+        "dy": -170
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "head",
+      "target": "s5.head",
+      "preset": "words-in",
+      "at": "cue:ab"
+    },
+    {
+      "id": "card",
+      "target": "s5.abCard",
+      "preset": "rise-in",
+      "at": "cue:ab+0.4",
+      "dur": 0.5,
+      "distance": 30
+    },
+    {
+      "target": [
+        "s5.labA",
+        "s5.labB"
+      ],
+      "preset": "fade-in",
+      "after": "card",
+      "gap": -0.1,
+      "stagger": 0.3,
+      "dur": 0.35
+    },
+    {
+      "id": "barA",
+      "target": "s5.barA",
+      "preset": "wipe-in",
+      "after": "card",
+      "dur": 0.6,
+      "ease": "out"
+    },
+    {
+      "id": "barB",
+      "target": "s5.barB",
+      "preset": "wipe-in",
+      "with": "barA",
+      "offset": 0.3,
+      "dur": 0.75,
+      "ease": "out"
+    },
+    {
+      "id": "win",
+      "target": "s5.barB",
+      "preset": "to",
+      "at": 3.05,
+      "dur": 0.4,
+      "to": {
+        "fill": "pass"
+      }
+    },
+    {
+      "target": "s5.barB",
+      "preset": "pulse",
+      "with": "win",
+      "amount": 0.06,
+      "dur": 0.5
+    },
+    {
+      "target": "s5.abCard",
+      "preset": "breathe",
+      "after": "win",
+      "amount": 0.01,
+      "dur": 2.6
+    },
+    {
+      "id": "out",
+      "target": [
+        "s5.head",
+        "s5.abCard",
+        "s5.barA",
+        "s5.barB",
+        "s5.labA",
+        "s5.labB",
+        "page"
+      ],
+      "preset": "clear",
+      "at": "cue:look-0.2",
+      "distance": 40,
+      "stagger": 0.03,
+      "dur": 0.35
+    },
+    {
+      "id": "endIn",
+      "target": "s5.endCard",
+      "preset": "rise-in",
+      "at": "cue:look+0.4",
+      "dur": 0.55,
+      "distance": 40
+    },
+    {
+      "id": "big",
+      "target": "s5.big",
+      "preset": "lines-in",
+      "after": "endIn",
+      "gap": -0.25,
+      "side": "right",
+      "distance": 30
+    },
+    {
+      "id": "tick",
+      "target": "s5.tick",
+      "preset": "draw-on",
+      "after": "big",
+      "gap": 0.05,
+      "dur": 0.45,
+      "ease": "out"
+    },
+    {
+      "target": "s5.tick",
+      "preset": "wobble",
+      "after": "tick",
+      "amount": 6,
+      "dur": 0.7
+    },
+    {
+      "id": "rule",
+      "target": "s5.rule",
+      "preset": "wipe-in",
+      "at": "cue:end-1.25",
+      "dur": 0.4,
+      "ease": "out"
+    },
+    {
+      "id": "move",
+      "target": "s5.move",
+      "preset": "words-in",
+      "at": "cue:end-0.9",
+      "pace": 0.07,
+      "distance": 28
+    },
+    {
+      "target": "s5.credit",
+      "preset": "fade-in",
+      "at": "cue:end-0.6",
+      "dur": 0.4
+    },
+    {
+      "target": "s5.end",
+      "preset": "breathe",
+      "after": "move",
+      "amount": 0.012,
+      "period": 3,
+      "dur": "rest"
+    }
+  ]
+}

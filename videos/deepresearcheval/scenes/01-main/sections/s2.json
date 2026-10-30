@@ -1,0 +1,865 @@
+{
+ "id": "s2",
+ "objects": {
+  "s2.title": {
+   "type": "text",
+   "text": "1 · tasks",
+   "style": "h2",
+   "fill": "text",
+   "at": {
+    "region": "right-two-thirds",
+    "align": "top"
+   }
+  },
+  "s2.d01": {
+   "type": "rect",
+   "text": "Transportation",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d02": {
+   "type": "rect",
+   "text": "Politics",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d03": {
+   "type": "rect",
+   "text": "Finance",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d04": {
+   "type": "rect",
+   "text": "History",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d05": {
+   "type": "rect",
+   "text": "Software",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d06": {
+   "type": "rect",
+   "text": "Industrial",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d07": {
+   "type": "rect",
+   "text": "Sports",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d08": {
+   "type": "rect",
+   "text": "Health",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d09": {
+   "type": "rect",
+   "text": "Science",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.d10": {
+   "type": "rect",
+   "text": "Education",
+   "style": "small",
+   "labelColor": "text",
+   "w": 190,
+   "h": 52,
+   "radius": "sm",
+   "fill": "card",
+   "stroke": "muted",
+   "strokeWidth": "thin"
+  },
+  "s2.rowA": {
+   "type": "group",
+   "children": [
+    "s2.d01",
+    "s2.d02",
+    "s2.d03",
+    "s2.d04",
+    "s2.d05"
+   ],
+   "layout": {
+    "dir": "row",
+    "gap": "sm",
+    "align": "center"
+   },
+   "at": {
+    "region": "right-two-thirds",
+    "align": "center",
+    "dy": -34
+   }
+  },
+  "s2.rowB": {
+   "type": "group",
+   "children": [
+    "s2.d06",
+    "s2.d07",
+    "s2.d08",
+    "s2.d09",
+    "s2.d10"
+   ],
+   "layout": {
+    "dir": "row",
+    "gap": "sm",
+    "align": "center"
+   },
+   "at": {
+    "region": "right-two-thirds",
+    "align": "center",
+    "dy": 34
+   }
+  },
+  "s2.p1Box": {
+   "type": "rect",
+   "w": 420,
+   "h": 124,
+   "radius": "md",
+   "fill": "card",
+   "stroke": "task",
+   "shadow": true,
+   "at": {
+    "region": "right-two-thirds",
+    "align": "top-left",
+    "dx": 24,
+    "dy": 244
+   }
+  },
+  "s2.p1Head": {
+   "type": "circle",
+   "r": 14,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "in": "s2.p1Box",
+    "align": "left",
+    "pad": "md",
+    "dx": 4,
+    "dy": -18
+   }
+  },
+  "s2.p1Body": {
+   "type": "rect",
+   "w": 44,
+   "h": 24,
+   "radius": 12,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "below": "s2.p1Head",
+    "gap": 5
+   }
+  },
+  "s2.p1Text": {
+   "type": "text",
+   "text": "transit planner",
+   "style": "label",
+   "fill": "text",
+   "anchor": "start",
+   "layer": 1,
+   "at": {
+    "in": "s2.p1Box",
+    "align": "left",
+    "pad": 100
+   }
+  },
+  "s2.p1": {
+   "type": "group",
+   "children": [
+    "s2.p1Box",
+    "s2.p1Head",
+    "s2.p1Body",
+    "s2.p1Text"
+   ]
+  },
+  "s2.q1": {
+   "type": "text",
+   "text": "?",
+   "style": "h3",
+   "fill": "task",
+   "layer": 2,
+   "at": {
+    "in": "s2.p1Box",
+    "align": "top-right",
+    "pad": "sm",
+    "dx": -4
+   }
+  },
+  "s2.k11": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p1Box",
+    "gap": 40
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k12": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p1Box",
+    "gap": 116
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k13": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p1Box",
+    "gap": 192
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k14": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p1Box",
+    "gap": 268
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.p2Box": {
+   "type": "rect",
+   "w": 420,
+   "h": 124,
+   "radius": "md",
+   "fill": "card",
+   "stroke": "task",
+   "shadow": true,
+   "at": {
+    "below": "s2.p1Box",
+    "gap": "md"
+   }
+  },
+  "s2.p2Head": {
+   "type": "circle",
+   "r": 14,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "in": "s2.p2Box",
+    "align": "left",
+    "pad": "md",
+    "dx": 4,
+    "dy": -18
+   }
+  },
+  "s2.p2Body": {
+   "type": "rect",
+   "w": 44,
+   "h": 24,
+   "radius": 12,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "below": "s2.p2Head",
+    "gap": 5
+   }
+  },
+  "s2.p2Text": {
+   "type": "text",
+   "text": "hospital manager",
+   "style": "label",
+   "fill": "text",
+   "anchor": "start",
+   "layer": 1,
+   "at": {
+    "in": "s2.p2Box",
+    "align": "left",
+    "pad": 100
+   }
+  },
+  "s2.p2": {
+   "type": "group",
+   "children": [
+    "s2.p2Box",
+    "s2.p2Head",
+    "s2.p2Body",
+    "s2.p2Text"
+   ]
+  },
+  "s2.q2": {
+   "type": "text",
+   "text": "?",
+   "style": "h3",
+   "fill": "task",
+   "layer": 2,
+   "at": {
+    "in": "s2.p2Box",
+    "align": "top-right",
+    "pad": "sm",
+    "dx": -4
+   }
+  },
+  "s2.k21": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p2Box",
+    "gap": 40
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k22": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p2Box",
+    "gap": 116
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k23": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p2Box",
+    "gap": 192
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k24": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p2Box",
+    "gap": 268
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.p3Box": {
+   "type": "rect",
+   "w": 420,
+   "h": 124,
+   "radius": "md",
+   "fill": "card",
+   "stroke": "task",
+   "shadow": true,
+   "at": {
+    "below": "s2.p2Box",
+    "gap": "md"
+   }
+  },
+  "s2.p3Head": {
+   "type": "circle",
+   "r": 14,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "in": "s2.p3Box",
+    "align": "left",
+    "pad": "md",
+    "dx": 4,
+    "dy": -18
+   }
+  },
+  "s2.p3Body": {
+   "type": "rect",
+   "w": 44,
+   "h": 24,
+   "radius": 12,
+   "fill": "task",
+   "layer": 1,
+   "at": {
+    "below": "s2.p3Head",
+    "gap": 5
+   }
+  },
+  "s2.p3Text": {
+   "type": "text",
+   "text": "fund analyst",
+   "style": "label",
+   "fill": "text",
+   "anchor": "start",
+   "layer": 1,
+   "at": {
+    "in": "s2.p3Box",
+    "align": "left",
+    "pad": 100
+   }
+  },
+  "s2.p3": {
+   "type": "group",
+   "children": [
+    "s2.p3Box",
+    "s2.p3Head",
+    "s2.p3Body",
+    "s2.p3Text"
+   ]
+  },
+  "s2.q3": {
+   "type": "text",
+   "text": "?",
+   "style": "h3",
+   "fill": "task",
+   "layer": 2,
+   "at": {
+    "in": "s2.p3Box",
+    "align": "top-right",
+    "pad": "sm",
+    "dx": -4
+   }
+  },
+  "s2.k31": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p3Box",
+    "gap": 40
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k32": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p3Box",
+    "gap": 116
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k33": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p3Box",
+    "gap": 192
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.k34": {
+   "type": "rect",
+   "w": 64,
+   "h": 40,
+   "radius": "sm",
+   "fill": "task",
+   "stroke": "task",
+   "strokeWidth": "md",
+   "layer": 1,
+   "at": {
+    "rightOf": "s2.p3Box",
+    "gap": 268
+   },
+   "fillOpacity": 0.22
+  },
+  "s2.stat": {
+   "type": "text",
+   "text": "{value}",
+   "value": 0,
+   "style": "stat",
+   "fill": "task",
+   "at": {
+    "region": "right-third",
+    "align": "center",
+    "dx": 90,
+    "dy": -50
+   }
+  },
+  "s2.lblP": {
+   "type": "text",
+   "text": "personas",
+   "style": "h3",
+   "fill": "task",
+   "at": {
+    "below": "s2.stat",
+    "gap": "xs"
+   }
+  },
+  "s2.lblT": {
+   "type": "text",
+   "text": "tasks",
+   "style": "h3",
+   "fill": "task",
+   "at": {
+    "below": "s2.stat",
+    "gap": "xs"
+   }
+  },
+  "s2.capP": {
+   "type": "text",
+   "text": "5 per domain",
+   "style": "small",
+   "at": {
+    "below": "s2.lblP",
+    "gap": "sm"
+   }
+  },
+  "s2.capT": {
+   "type": "text",
+   "text": "4 per persona",
+   "style": "small",
+   "at": {
+    "below": "s2.lblP",
+    "gap": "sm"
+   }
+  }
+ },
+ "timeline": [
+  {
+   "target": "s2.title",
+   "preset": "rise-in",
+   "at": "cue:tasks",
+   "dur": "base"
+  },
+  {
+   "target": "task",
+   "preset": "highlight",
+   "at": "cue:tasks",
+   "offset": 0.1,
+   "color": "task"
+  },
+  {
+   "id": "domIn",
+   "target": [
+    "s2.d01",
+    "s2.d02",
+    "s2.d03",
+    "s2.d04",
+    "s2.d05",
+    "s2.d06",
+    "s2.d07",
+    "s2.d08",
+    "s2.d09",
+    "s2.d10"
+   ],
+   "preset": "pop",
+   "at": "cue:domains",
+   "stagger": 0.06,
+   "dur": "fast"
+  },
+  {
+   "id": "shrink",
+   "target": "s2.rowA",
+   "preset": "to",
+   "at": "cue:personas",
+   "dur": 0.7,
+   "ease": "inOut",
+   "to": {
+    "opacity": 0.35,
+    "scale": 0.8,
+    "dy": -293
+   }
+  },
+  {
+   "target": "s2.rowB",
+   "preset": "to",
+   "with": "shrink",
+   "dur": 0.7,
+   "ease": "inOut",
+   "to": {
+    "opacity": 0.35,
+    "scale": 0.8,
+    "dy": -307
+   }
+  },
+  {
+   "id": "pIn",
+   "target": [
+    "s2.p1",
+    "s2.p2",
+    "s2.p3"
+   ],
+   "preset": "rise-in",
+   "at": "cue:personas",
+   "offset": 0.5,
+   "stagger": 0.15,
+   "dur": "base"
+  },
+  {
+   "id": "statIn",
+   "target": [
+    "s2.stat",
+    "s2.lblP"
+   ],
+   "preset": "fade-in",
+   "at": "cue:personas",
+   "offset": 0.25,
+   "stagger": 0.1,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.stat",
+   "preset": "count-up",
+   "at": "cue:personas",
+   "offset": 0.25,
+   "dur": 1.1,
+   "ease": "out",
+   "to": {
+    "value": 50
+   }
+  },
+  {
+   "target": "s2.capP",
+   "preset": "fade-in",
+   "at": "cue:personas",
+   "offset": 1.3,
+   "dur": "fast"
+  },
+  {
+   "target": [
+    "s2.p1",
+    "s2.p2",
+    "s2.p3"
+   ],
+   "preset": "pulse",
+   "at": 6.120000000000001,
+   "stagger": 0.1,
+   "amount": 0.05
+  },
+  {
+   "target": [
+    "s2.q1",
+    "s2.q2",
+    "s2.q3"
+   ],
+   "preset": "pop",
+   "at": 6.960000000000001,
+   "stagger": 0.1,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.capP",
+   "preset": "fade-out",
+   "at": "cue:candidates",
+   "offset": -0.3,
+   "dur": 0.25
+  },
+  {
+   "target": "s2.lblP",
+   "preset": "fade-out",
+   "at": "cue:candidates",
+   "dur": 0.25,
+   "offset": -0.3
+  },
+  {
+   "target": "s2.lblT",
+   "preset": "fade-in",
+   "at": "cue:candidates",
+   "offset": 0.15,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.capT",
+   "preset": "fade-in",
+   "at": "cue:candidates",
+   "offset": 0.3,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.stat",
+   "preset": "count-up",
+   "at": "cue:candidates",
+   "dur": 0.8,
+   "ease": "out",
+   "to": {
+    "value": 200
+   }
+  },
+  {
+   "target": [
+    "s2.k11",
+    "s2.k12",
+    "s2.k13",
+    "s2.k14"
+   ],
+   "preset": "fly-from",
+   "from": "s2.p1Box",
+   "at": "cue:candidates",
+   "offset": 0.0,
+   "stagger": 0.12,
+   "dur": 0.4,
+   "ease": "out"
+  },
+  {
+   "target": [
+    "s2.k21",
+    "s2.k22",
+    "s2.k23",
+    "s2.k24"
+   ],
+   "preset": "fly-from",
+   "from": "s2.p2Box",
+   "at": "cue:candidates",
+   "offset": 0.04,
+   "stagger": 0.12,
+   "dur": 0.4,
+   "ease": "out"
+  },
+  {
+   "target": [
+    "s2.k31",
+    "s2.k32",
+    "s2.k33",
+    "s2.k34"
+   ],
+   "preset": "fly-from",
+   "from": "s2.p3Box",
+   "at": "cue:candidates",
+   "offset": 0.08,
+   "stagger": 0.12,
+   "dur": 0.4,
+   "ease": "out"
+  },
+  {
+   "target": [
+    "s2.rowA",
+    "s2.rowB",
+    "s2.title",
+    "s2.p1",
+    "s2.p2",
+    "s2.p3",
+    "s2.q1",
+    "s2.q2",
+    "s2.q3",
+    "s2.k11",
+    "s2.k12",
+    "s2.k13",
+    "s2.k14",
+    "s2.k21",
+    "s2.k22",
+    "s2.k23",
+    "s2.k24",
+    "s2.k31",
+    "s2.k32",
+    "s2.k33",
+    "s2.k34",
+    "s2.stat",
+    "s2.lblT",
+    "s2.capT"
+   ],
+   "preset": "fade-out",
+   "at": 10.280000000000001,
+   "dur": 0.4
+  }
+ ]
+}

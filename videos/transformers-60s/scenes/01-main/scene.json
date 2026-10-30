@@ -1,0 +1,489 @@
+{
+  "id": "01-main",
+  "objects": {
+    "tok0": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 605
+      }
+    },
+    "tok0T": {
+      "type": "text",
+      "text": "the",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok0"
+      }
+    },
+    "tok1": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 495,
+        "dy": 605
+      }
+    },
+    "tok1T": {
+      "type": "text",
+      "text": "cat",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok1"
+      }
+    },
+    "tok2": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 685,
+        "dy": 605
+      }
+    },
+    "tok2T": {
+      "type": "text",
+      "text": "sat",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok2"
+      }
+    },
+    "tok3": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 875,
+        "dy": 605
+      }
+    },
+    "tok3T": {
+      "type": "text",
+      "text": "because",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok3"
+      }
+    },
+    "tok4": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1065,
+        "dy": 605
+      }
+    },
+    "tok4T": {
+      "type": "text",
+      "text": "it",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok4"
+      }
+    },
+    "tok5": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1255,
+        "dy": 605
+      }
+    },
+    "tok5T": {
+      "type": "text",
+      "text": "was",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok5"
+      }
+    },
+    "tok6": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1445,
+        "dy": 605
+      }
+    },
+    "tok6T": {
+      "type": "text",
+      "text": "tired",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "tok6"
+      }
+    }
+  },
+  "keys": {
+    "0": {
+      "tok0": {
+        "opacity": 0
+      },
+      "tok0T": {
+        "opacity": 0
+      },
+      "tok1": {
+        "opacity": 0
+      },
+      "tok1T": {
+        "opacity": 0
+      },
+      "tok2": {
+        "opacity": 0
+      },
+      "tok2T": {
+        "opacity": 0
+      },
+      "tok3": {
+        "opacity": 0
+      },
+      "tok3T": {
+        "opacity": 0
+      },
+      "tok4": {
+        "opacity": 0
+      },
+      "tok4T": {
+        "opacity": 0
+      },
+      "tok5": {
+        "opacity": 0
+      },
+      "tok5T": {
+        "opacity": 0
+      },
+      "tok6": {
+        "opacity": 0
+      },
+      "tok6T": {
+        "opacity": 0
+      }
+    },
+    "s1": {
+      "tok0": {
+        "opacity": 0
+      },
+      "tok0T": {
+        "opacity": 0
+      },
+      "tok1": {
+        "opacity": 0
+      },
+      "tok1T": {
+        "opacity": 0
+      },
+      "tok2": {
+        "opacity": 0
+      },
+      "tok2T": {
+        "opacity": 0
+      },
+      "tok3": {
+        "opacity": 0
+      },
+      "tok3T": {
+        "opacity": 0
+      },
+      "tok4": {
+        "opacity": 0
+      },
+      "tok4T": {
+        "opacity": 0
+      },
+      "tok5": {
+        "opacity": 0
+      },
+      "tok5T": {
+        "opacity": 0
+      },
+      "tok6": {
+        "opacity": 0
+      },
+      "tok6T": {
+        "opacity": 0
+      }
+    },
+    "s2": {
+      "tok0": {
+        "opacity": 1
+      },
+      "tok0T": {
+        "opacity": 1
+      },
+      "tok1": {
+        "opacity": 1
+      },
+      "tok1T": {
+        "opacity": 1
+      },
+      "tok2": {
+        "opacity": 1
+      },
+      "tok2T": {
+        "opacity": 1
+      },
+      "tok3": {
+        "opacity": 1
+      },
+      "tok3T": {
+        "opacity": 1
+      },
+      "tok4": {
+        "opacity": 1
+      },
+      "tok4T": {
+        "opacity": 1
+      },
+      "tok5": {
+        "opacity": 1
+      },
+      "tok5T": {
+        "opacity": 1
+      },
+      "tok6": {
+        "opacity": 1
+      },
+      "tok6T": {
+        "opacity": 1
+      }
+    },
+    "s3": {
+      "tok0": {
+        "opacity": 1
+      },
+      "tok0T": {
+        "opacity": 1
+      },
+      "tok1": {
+        "opacity": 1
+      },
+      "tok1T": {
+        "opacity": 1
+      },
+      "tok2": {
+        "opacity": 1
+      },
+      "tok2T": {
+        "opacity": 1
+      },
+      "tok3": {
+        "opacity": 1
+      },
+      "tok3T": {
+        "opacity": 1
+      },
+      "tok4": {
+        "opacity": 1
+      },
+      "tok4T": {
+        "opacity": 1
+      },
+      "tok5": {
+        "opacity": 1
+      },
+      "tok5T": {
+        "opacity": 1
+      },
+      "tok6": {
+        "opacity": 1
+      },
+      "tok6T": {
+        "opacity": 1
+      }
+    },
+    "s4": {
+      "tok0": {
+        "opacity": 1
+      },
+      "tok0T": {
+        "opacity": 1
+      },
+      "tok1": {
+        "opacity": 1
+      },
+      "tok1T": {
+        "opacity": 1
+      },
+      "tok2": {
+        "opacity": 1
+      },
+      "tok2T": {
+        "opacity": 1
+      },
+      "tok3": {
+        "opacity": 1
+      },
+      "tok3T": {
+        "opacity": 1
+      },
+      "tok4": {
+        "opacity": 1
+      },
+      "tok4T": {
+        "opacity": 1
+      },
+      "tok5": {
+        "opacity": 1
+      },
+      "tok5T": {
+        "opacity": 1
+      },
+      "tok6": {
+        "opacity": 1
+      },
+      "tok6T": {
+        "opacity": 1
+      }
+    },
+    "s5": {
+      "tok0": {
+        "opacity": 0
+      },
+      "tok0T": {
+        "opacity": 0
+      },
+      "tok1": {
+        "opacity": 0
+      },
+      "tok1T": {
+        "opacity": 0
+      },
+      "tok2": {
+        "opacity": 0
+      },
+      "tok2T": {
+        "opacity": 0
+      },
+      "tok3": {
+        "opacity": 0
+      },
+      "tok3T": {
+        "opacity": 0
+      },
+      "tok4": {
+        "opacity": 0
+      },
+      "tok4T": {
+        "opacity": 0
+      },
+      "tok5": {
+        "opacity": 0
+      },
+      "tok5T": {
+        "opacity": 0
+      },
+      "tok6": {
+        "opacity": 0
+      },
+      "tok6T": {
+        "opacity": 0
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        8.95
+      ],
+      "brief": "Hook: chatbots (ChatGPT, Claude, Gemini pills) all run on one box, the transformer; its job: guess the next word ('the cat sat on the ___' → mat)."
+    },
+    {
+      "id": "s2",
+      "target": [
+        8.95,
+        19.3
+      ],
+      "brief": "Words become numbers: the sentence splits into seven chips (cue:tokens), each gets a pink number strip (cue:numbers), and a small meaning map shows similar words close together (cue:similar)."
+    },
+    {
+      "id": "s3",
+      "target": [
+        19.3,
+        30.9
+      ],
+      "brief": "Attention: faint arcs between all words (cue:attention); 'it' sends arcs to every word, thickest to 'cat' (cue:it, cue:cat)."
+    },
+    {
+      "id": "s4",
+      "target": [
+        30.9,
+        39.8
+      ],
+      "brief": "Old vs new: a grey reader steps one word at a time while earlier words fade (cue:old); then every chip lights at once (cue:all)."
+    },
+    {
+      "id": "s5",
+      "target": [
+        39.8,
+        47.6
+      ],
+      "brief": "Layers: blue bands stack above the sentence (cue:stack); the low band notes grammar (cue:grammar), the high band meaning (cue:meaning). Chips leave at the end."
+    },
+    {
+      "id": "s6",
+      "target": [
+        47.6,
+        59.6
+      ],
+      "brief": "Prediction: the sentence with 'so it ___'; bars score next words (cue:next); 'slept' wins and joins the sentence (cue:append); more words follow (cue:end)."
+    }
+  ]
+}

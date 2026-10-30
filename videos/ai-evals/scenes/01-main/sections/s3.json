@@ -1,0 +1,53 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.head": { "type": "text", "text": "Level 2\npeople + a judge", "style": "h2", "at": { "region": "top" } },
+
+    "s3.you1": { "type": "circle", "r": 22, "fill": "none", "stroke": "line", "strokeWidth": "md", "at": { "in": "rowBox1", "align": "right", "pad": 104 } },
+    "s3.you2": { "type": "circle", "r": 22, "fill": "none", "stroke": "line", "strokeWidth": "md", "at": { "in": "rowBox2", "align": "right", "pad": 104 } },
+    "s3.you3": { "type": "circle", "r": 22, "fill": "none", "stroke": "line", "strokeWidth": "md", "at": { "in": "rowBox3", "align": "right", "pad": 104 } },
+    "s3.you4": { "type": "circle", "r": 22, "fill": "none", "stroke": "line", "strokeWidth": "md", "at": { "in": "rowBox4", "align": "right", "pad": 104 } },
+    "s3.you5": { "type": "circle", "r": 22, "fill": "none", "stroke": "line", "strokeWidth": "md", "at": { "in": "rowBox5", "align": "right", "pad": 104 } },
+    "s3.youLab": { "type": "text", "text": "you", "style": "label", "fill": "muted", "at": { "above": "s3.you1", "gap": "sm" } },
+    "s3.judgeLab": { "type": "text", "text": "judge", "style": "label", "fill": "muted", "at": { "above": "mark1", "gap": "sm" } },
+
+    "s3.h1": { "type": "circle", "r": 15, "fill": "pass", "at": { "in": "s3.you1", "align": "center" } },
+    "s3.h2": { "type": "circle", "r": 15, "fill": "pass", "at": { "in": "s3.you2", "align": "center" } },
+    "s3.h3": { "type": "circle", "r": 15, "fill": "fail", "at": { "in": "s3.you3", "align": "center" } },
+    "s3.h4": { "type": "circle", "r": 15, "fill": "pass", "at": { "in": "s3.you4", "align": "center" } },
+    "s3.h5": { "type": "circle", "r": 15, "fill": "fail", "at": { "in": "s3.you5", "align": "center" } },
+
+    "s3.j1": { "type": "circle", "r": 18, "fill": "pass", "at": { "in": "mark1", "align": "center" } },
+    "s3.j2": { "type": "circle", "r": 18, "fill": "pass", "at": { "in": "mark2", "align": "center" } },
+    "s3.j3": { "type": "circle", "r": 18, "fill": "fail", "at": { "in": "mark3", "align": "center" } },
+    "s3.j4": { "type": "circle", "r": 18, "fill": "fail", "at": { "in": "mark4", "align": "center" } },
+    "s3.j5": { "type": "circle", "r": 18, "fill": "fail", "at": { "in": "mark5", "align": "center" } },
+
+    "s3.hl1": { "type": "rect", "w": 824, "h": 136, "radius": "sm", "fill": "pass", "fillOpacity": 0.1, "at": { "in": "rowBox1", "align": "center" } },
+    "s3.hl2": { "type": "rect", "w": 824, "h": 136, "radius": "sm", "fill": "pass", "fillOpacity": 0.1, "at": { "in": "rowBox2", "align": "center" } },
+    "s3.hl3": { "type": "rect", "w": 824, "h": 136, "radius": "sm", "fill": "pass", "fillOpacity": 0.1, "at": { "in": "rowBox3", "align": "center" } },
+    "s3.hl5": { "type": "rect", "w": 824, "h": 136, "radius": "sm", "fill": "pass", "fillOpacity": 0.1, "at": { "in": "rowBox5", "align": "center" } },
+    "s3.out4": { "type": "rect", "w": 360, "h": 116, "radius": "md", "fill": "none", "stroke": "fail", "strokeWidth": "md", "at": { "in": "rowBox4", "align": "right", "pad": 0 } },
+    "s3.dis": { "type": "text", "text": "disagree", "style": "label", "fill": "fail", "anchor": "start", "at": { "in": "s3.out4", "align": "left", "pad": "sm" } }
+  },
+  "timeline": [
+    { "id": "head", "target": "s3.head", "preset": "words-in", "at": "start" },
+
+    { "id": "dim", "target": ["row1", "row2", "row3", "row4", "row5"], "preset": "to", "at": "cue:traces", "stagger": 0.08, "dur": 0.4, "ease": "inOut", "to": { "fill": "muted", "opacity": 0.5 } },
+    { "id": "undim", "target": ["row1", "row2", "row3", "row4", "row5"], "preset": "to", "after": "dim", "gap": 0.6, "stagger": 0.08, "dur": 0.4, "ease": "inOut", "to": { "fill": "text", "opacity": 1 } },
+
+    { "id": "youLab", "target": "s3.youLab", "preset": "rise-in", "at": "cue:review", "distance": 16, "dur": 0.4 },
+    { "id": "youCol", "target": ["s3.you1", "s3.you2", "s3.you3", "s3.you4", "s3.you5"], "preset": "draw-on", "with": "youLab", "offset": 0.2, "stagger": 0.1, "dur": 0.35 },
+
+    { "id": "hand", "target": ["s3.h1", "s3.h2", "s3.h3", "s3.h4", "s3.h5"], "preset": "pop", "at": "cue:good", "offset": -0.1, "stagger": 0.22, "dur": 0.35, "overshoot": 1.6 },
+
+    { "id": "judgeLab", "target": "s3.judgeLab", "preset": "rise-in", "at": "cue:judge", "distance": 16, "dur": 0.4 },
+    { "id": "judge", "target": ["s3.j1", "s3.j2", "s3.j3", "s3.j4", "s3.j5"], "preset": "pop", "with": "judgeLab", "offset": 0.2, "dur": 0.4, "overshoot": 1.6 },
+
+    { "id": "agree", "target": ["s3.hl1", "s3.hl2", "s3.hl3", "s3.hl5"], "preset": "fade-in", "at": "cue:agrees", "offset": -0.3, "stagger": 0.06, "dur": 0.35, "ease": "out" },
+    { "id": "out4", "target": "s3.out4", "preset": "draw-on", "with": "agree", "offset": 0.1, "dur": 0.4 },
+    { "id": "dis", "target": "s3.dis", "preset": "rise-in", "with": "out4", "offset": 0.15, "distance": 12, "dur": 0.35 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

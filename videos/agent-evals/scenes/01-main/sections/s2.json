@@ -1,0 +1,196 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.title": {
+      "type": "text",
+      "text": "Record the whole run",
+      "style": "h2",
+      "at": {
+        "region": "top",
+        "align": "top"
+      }
+    },
+    "s2.playhead": {
+      "type": "rect",
+      "w": 4,
+      "h": 196,
+      "radius": 2,
+      "fill": "tape",
+      "layer": 5,
+      "at": {
+        "in": "cell1",
+        "align": "left",
+        "pad": 0,
+        "dx": -10
+      }
+    },
+    "s2.loop": {
+      "type": "arrow",
+      "from": "light4.top",
+      "to": "light2.top",
+      "bend": -70,
+      "stroke": "muted",
+      "strokeWidth": "md",
+      "text": "loop",
+      "style": "small"
+    },
+    "s2.reasonLabel": {
+      "type": "text",
+      "text": "reasoning layer · LLM",
+      "style": "label",
+      "at": {
+        "below": "cell2",
+        "gap": "lg"
+      }
+    },
+    "s2.actionLabel": {
+      "type": "text",
+      "text": "action layer · tools",
+      "style": "label",
+      "at": {
+        "below": "cell4",
+        "gap": "lg"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "title",
+      "target": "s2.title",
+      "preset": "words-in",
+      "at": "start+0.1"
+    },
+    {
+      "id": "ph",
+      "target": "s2.playhead",
+      "preset": "scale-in",
+      "at": 0.96,
+      "dur": 0.45,
+      "ease": "out"
+    },
+    {
+      "id": "loop",
+      "target": "s2.loop",
+      "preset": "draw-on",
+      "at": "cue:loop",
+      "dur": 0.7,
+      "ease": "out"
+    },
+    {
+      "id": "toCell2",
+      "target": "s2.playhead",
+      "preset": "move",
+      "at": "cue:reason-0.15",
+      "dur": 0.45,
+      "to": {
+        "in": "cell2",
+        "align": "left",
+        "pad": 0,
+        "dx": -10
+      }
+    },
+    {
+      "id": "c2",
+      "target": "cell2",
+      "preset": "to",
+      "at": "cue:reason+0.1",
+      "dur": 0.35,
+      "ease": "out",
+      "to": {
+        "stroke": "tape"
+      }
+    },
+    {
+      "target": "s2.reasonLabel",
+      "preset": "words-in",
+      "after": "c2",
+      "gap": 0.05
+    },
+    {
+      "id": "toCell3",
+      "target": "s2.playhead",
+      "preset": "move",
+      "at": "cue:action-0.15",
+      "dur": 0.45,
+      "to": {
+        "in": "cell3",
+        "align": "left",
+        "pad": 0,
+        "dx": -10
+      }
+    },
+    {
+      "id": "c35",
+      "target": [
+        "cell3",
+        "cell5"
+      ],
+      "preset": "to",
+      "at": "cue:action+0.1",
+      "stagger": 0.25,
+      "dur": 0.35,
+      "ease": "out",
+      "to": {
+        "stroke": "tape"
+      }
+    },
+    {
+      "target": "s2.actionLabel",
+      "preset": "words-in",
+      "after": "c35",
+      "gap": 0.05
+    },
+    {
+      "id": "toCell4",
+      "target": "s2.playhead",
+      "preset": "move",
+      "at": "cue:observe-0.15",
+      "dur": 0.45,
+      "to": {
+        "in": "cell4",
+        "align": "left",
+        "pad": 0,
+        "dx": -10
+      }
+    },
+    {
+      "target": "s2.loop",
+      "preset": "pulse",
+      "at": "cue:observe+0.3",
+      "amount": 0.08,
+      "dur": 0.5
+    },
+    {
+      "id": "toCell6",
+      "target": "s2.playhead",
+      "preset": "move",
+      "at": "cue:done-0.8",
+      "dur": 0.6,
+      "anticipate": 0.05,
+      "to": {
+        "in": "cell6",
+        "align": "left",
+        "pad": 0,
+        "dx": -10
+      }
+    },
+    {
+      "target": [
+        "cell2",
+        "cell3",
+        "cell5"
+      ],
+      "preset": "to",
+      "at": "end-0.6",
+      "dur": 0.4,
+      "ease": "in",
+      "to": {
+        "stroke": "line"
+      }
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6"
+    }
+  ]
+}

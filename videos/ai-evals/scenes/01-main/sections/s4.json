@@ -1,0 +1,317 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.headline": {
+      "type": "text",
+      "text": "Build a viewer\nfor your data",
+      "style": "h2",
+      "layer": 960,
+      "at": {
+        "region": "top"
+      },
+      "hud": true
+    },
+    "s4.panel": {
+      "type": "rect",
+      "ui": true,
+      "w": 640,
+      "h": 760,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "at": {
+        "in": "pageCard",
+        "align": "bottom-left",
+        "pad": "md"
+      }
+    },
+    "s4.fieldScen": {
+      "type": "rect",
+      "ui": true,
+      "w": 576,
+      "h": 92,
+      "fill": "none",
+      "radius": 0,
+      "at": {
+        "in": "s4.panel",
+        "align": "top",
+        "pad": "lg"
+      }
+    },
+    "s4.scenLabel": {
+      "type": "text",
+      "ui": true,
+      "text": "scenario",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "s4.fieldScen",
+        "align": "top-left",
+        "pad": 0
+      }
+    },
+    "s4.scenVal": {
+      "type": "text",
+      "ui": true,
+      "text": "listing search \u00b7 synthetic",
+      "style": "body",
+      "anchor": "start",
+      "at": {
+        "in": "s4.fieldScen",
+        "align": "bottom-left",
+        "pad": 0
+      }
+    },
+    "s4.fieldOut": {
+      "type": "rect",
+      "ui": true,
+      "w": 576,
+      "h": 172,
+      "fill": "none",
+      "radius": 0,
+      "at": {
+        "below": "s4.fieldScen",
+        "gap": "lg"
+      }
+    },
+    "s4.outLabel": {
+      "type": "text",
+      "ui": true,
+      "text": "output",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "s4.fieldOut",
+        "align": "top-left",
+        "pad": 0
+      }
+    },
+    "s4.outText": {
+      "type": "text",
+      "ui": true,
+      "text": "Found 3-bed homes near\nLakeside Park. Want me\nto book a viewing?",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "s4.fieldOut",
+        "align": "bottom-left",
+        "pad": 0
+      }
+    },
+    "s4.btnGood": {
+      "type": "rect",
+      "ui": true,
+      "w": 176,
+      "h": 72,
+      "radius": "sm",
+      "fill": "pass",
+      "text": "Good",
+      "style": "label",
+      "labelColor": "surface"
+    },
+    "s4.btnBad": {
+      "type": "rect",
+      "ui": true,
+      "w": 176,
+      "h": 72,
+      "radius": "sm",
+      "fill": "fail",
+      "text": "Bad",
+      "style": "label",
+      "labelColor": "surface"
+    },
+    "s4.btnRow": {
+      "type": "group",
+      "ui": true,
+      "children": [
+        "s4.btnGood",
+        "s4.btnBad"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": "sm"
+      },
+      "at": {
+        "below": "s4.fieldOut",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "s4.mock": {
+      "type": "text",
+      "ui": true,
+      "text": "Concept mock",
+      "style": "small",
+      "anchor": "end",
+      "at": {
+        "in": "s4.panel",
+        "align": "bottom-right",
+        "pad": "sm"
+      }
+    },
+    "s4.spot": {
+      "type": "spotlight",
+      "on": "s4.panel",
+      "pad": 16,
+      "opacity": 0.7
+    },
+    "s4.chip": {
+      "type": "chip",
+      "text": "one click to label",
+      "to": "s4.btnGood.bottom",
+      "at": {
+        "below": "s4.btnGood",
+        "gap": "lg",
+        "align": "left"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "head",
+      "target": "s4.headline",
+      "preset": "words-in",
+      "at": "start+0.1"
+    },
+    {
+      "id": "panel",
+      "target": "s4.panel",
+      "preset": "rise-in",
+      "at": "cue:viewer",
+      "dur": 0.5,
+      "ease": "out",
+      "distance": 40
+    },
+    {
+      "target": [
+        "s4.scenLabel",
+        "s4.scenVal",
+        "s4.outLabel",
+        "s4.outText",
+        "s4.btnRow",
+        "s4.mock"
+      ],
+      "preset": "rise-in",
+      "with": "panel",
+      "offset": 0.2,
+      "dur": 0.4,
+      "ease": "out",
+      "distance": 24,
+      "stagger": 0.06
+    },
+    {
+      "id": "zoom",
+      "target": "camera",
+      "preset": "focus",
+      "on": "s4.panel",
+      "zoom": 1.35,
+      "at": "cue:viewer+0.75",
+      "dur": 0.9,
+      "ease": "arrive"
+    },
+    {
+      "target": "s4.spot",
+      "preset": "fade-in",
+      "with": "zoom",
+      "offset": 0.3,
+      "dur": 0.5
+    },
+    {
+      "target": "s4.spot",
+      "preset": "to",
+      "at": "cue:scenario",
+      "dur": 0.6,
+      "ease": "inOut",
+      "to": {
+        "at": {
+          "in": "s4.fieldScen"
+        },
+        "w": 608,
+        "h": 124
+      }
+    },
+    {
+      "target": "s4.spot",
+      "preset": "to",
+      "at": "cue:output",
+      "dur": 0.55,
+      "ease": "inOut",
+      "to": {
+        "at": {
+          "in": "s4.fieldOut"
+        },
+        "w": 608,
+        "h": 204
+      }
+    },
+    {
+      "target": "s4.spot",
+      "preset": "to",
+      "at": "cue:click-0.25",
+      "dur": 0.5,
+      "ease": "inOut",
+      "to": {
+        "at": {
+          "in": "s4.btnRow"
+        },
+        "w": 400,
+        "h": 104
+      }
+    },
+    {
+      "id": "chip",
+      "target": "s4.chip",
+      "preset": "rise-in",
+      "at": "cue:click",
+      "distance": 12,
+      "dur": 0.35,
+      "ease": "out"
+    },
+    {
+      "target": "s4.btnGood",
+      "preset": "pulse",
+      "after": "chip",
+      "gap": 0.05,
+      "amount": -0.07,
+      "dur": 0.4,
+      "ease": "inOut"
+    },
+    {
+      "target": "s4.spot",
+      "preset": "fade-out",
+      "at": "end-0.65",
+      "dur": 0.35,
+      "ease": "in"
+    },
+    {
+      "target": "camera",
+      "preset": "focus",
+      "on": "full",
+      "at": "end-0.62",
+      "dur": 0.58,
+      "ease": "glide"
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6",
+      "target": [
+        "s4.headline",
+        "s4.chip",
+        "s4.scenLabel",
+        "s4.scenVal",
+        "s4.outLabel",
+        "s4.outText",
+        "s4.btnGood",
+        "s4.btnBad",
+        "s4.mock",
+        "s4.fieldScen",
+        "s4.fieldOut",
+        "s4.panel"
+      ]
+    }
+  ]
+}

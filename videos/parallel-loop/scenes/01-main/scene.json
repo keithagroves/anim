@@ -1,0 +1,520 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "What makes it parallel",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "“Attention Is All You Need” · Vaswani et al., 2017 · masked self-attention in the decoder",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  every score at once: one QKᵀ",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  the mask: no looking ahead",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  training: all 6 predictions,\n    one pass",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  generating: one word at a time",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "formula": {
+      "type": "text",
+      "text": "softmax(QKᵀ / √dₖ + M) V\nM = −∞ above the diagonal",
+      "style": "mono",
+      "size": 24,
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "example sentence · weights are illustrative · training feeds in the true words (shifted right)",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "grid": {
+      "type": "rect",
+      "w": 428,
+      "h": 428,
+      "radius": 8,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1006,
+        "dy": 266
+      }
+    },
+    "colH": {
+      "type": "text",
+      "text": "looks at →",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1010,
+        "dy": 200
+      }
+    },
+    "rowH": {
+      "type": "text",
+      "text": "input",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 914,
+        "dy": 236
+      }
+    },
+    "predH": {
+      "type": "text",
+      "text": "predicts",
+      "style": "small",
+      "fill": "output",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1462,
+        "dy": 236
+      }
+    },
+    "r0": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 283
+      }
+    },
+    "r0T": {
+      "type": "text",
+      "text": "<s>",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r0"
+      }
+    },
+    "c0T": {
+      "type": "text",
+      "text": "<s>",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1026.4,
+        "dy": 236
+      }
+    },
+    "r1": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 353
+      }
+    },
+    "r1T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r1"
+      }
+    },
+    "c1T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1096.4,
+        "dy": 236
+      }
+    },
+    "r2": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 423
+      }
+    },
+    "r2T": {
+      "type": "text",
+      "text": "cat",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r2"
+      }
+    },
+    "c2T": {
+      "type": "text",
+      "text": "cat",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1166.4,
+        "dy": 236
+      }
+    },
+    "r3": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 493
+      }
+    },
+    "r3T": {
+      "type": "text",
+      "text": "sat",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r3"
+      }
+    },
+    "c3T": {
+      "type": "text",
+      "text": "sat",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1236.4,
+        "dy": 236
+      }
+    },
+    "r4": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 563
+      }
+    },
+    "r4T": {
+      "type": "text",
+      "text": "on",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r4"
+      }
+    },
+    "c4T": {
+      "type": "text",
+      "text": "on",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1312.6,
+        "dy": 236
+      }
+    },
+    "r5": {
+      "type": "rect",
+      "w": 80,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 900,
+        "dy": 633
+      }
+    },
+    "r5T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "size": 22,
+      "layer": 3,
+      "at": {
+        "in": "r5"
+      }
+    },
+    "c5T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "size": 20,
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1376.4,
+        "dy": 236
+      }
+    },
+    "q0": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1010,
+        "dy": 800
+      }
+    },
+    "q1": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1074,
+        "dy": 800
+      }
+    },
+    "qa1": {
+      "type": "arrow",
+      "from": "q0.right",
+      "to": "q1.left",
+      "stroke": "line",
+      "strokeWidth": 1.5
+    },
+    "q2": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1138,
+        "dy": 800
+      }
+    },
+    "qa2": {
+      "type": "arrow",
+      "from": "q1.right",
+      "to": "q2.left",
+      "stroke": "line",
+      "strokeWidth": 1.5
+    },
+    "q3": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1202,
+        "dy": 800
+      }
+    },
+    "qa3": {
+      "type": "arrow",
+      "from": "q2.right",
+      "to": "q3.left",
+      "stroke": "line",
+      "strokeWidth": 1.5
+    },
+    "q4": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1266,
+        "dy": 800
+      }
+    },
+    "qa4": {
+      "type": "arrow",
+      "from": "q3.right",
+      "to": "q4.left",
+      "stroke": "line",
+      "strokeWidth": 1.5
+    },
+    "q5": {
+      "type": "rect",
+      "w": 44,
+      "h": 30,
+      "radius": 5,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1330,
+        "dy": 800
+      }
+    },
+    "qa5": {
+      "type": "arrow",
+      "from": "q4.right",
+      "to": "q5.left",
+      "stroke": "line",
+      "strokeWidth": 1.5
+    },
+    "qL": {
+      "type": "text",
+      "text": "RNN, same 6 words",
+      "style": "small",
+      "fill": "state",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1010,
+        "dy": 766
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop of why the transformer is parallel: the attention matrix fills in one step while an RNN strip ticks six; the causal mask; all predictions in one training pass; generation one row at a time; resets so the last frame is the first."
+    }
+  ]
+}

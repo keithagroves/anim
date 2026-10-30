@@ -1,0 +1,11 @@
+{
+ "id": "kubernetes-01-what-is-k8s-s2",
+ "scene": "01-what-is-k8s",
+ "section": "s2",
+ "tags": [
+  "seed",
+  "type:explainer"
+ ],
+ "source": "video:videos/kubernetes",
+ "createdAt": "2026-10-10T13:16:26.051Z"
+}

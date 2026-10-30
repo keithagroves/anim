@@ -1,0 +1,24 @@
+# Dependencies and environments
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.claude/
+
+# Generated output (rebuilt by anim voice / score / render / sheet)
+build/
+out/
+videos/*/build/
+videos/*/out/
+videos/**/*.wav
+videos/**/*.mp4
+videos/**/*.webm
+walkthroughs/*/build/
+
+# Eval and production-loop output
+traces/
+evals/runs/
+monitor/analysis/

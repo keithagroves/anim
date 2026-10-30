@@ -1,0 +1,452 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Recurrent neural network",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "text": "Elman, 1990 · one cell, reused at every step; its state carries what came before",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cellF": {
+      "type": "rect",
+      "w": 200,
+      "h": 130,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "left-third",
+        "dx": -40,
+        "dy": 40
+      }
+    },
+    "cellFt": {
+      "type": "text",
+      "text": "hₜ",
+      "style": "h3",
+      "at": {
+        "in": "cellF"
+      }
+    },
+    "xF": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "cellF",
+        "gap": 110
+      }
+    },
+    "xFt": {
+      "type": "text",
+      "text": "xₜ",
+      "style": "mono",
+      "fill": "input",
+      "at": {
+        "in": "xF"
+      }
+    },
+    "yF": {
+      "type": "rect",
+      "w": 170,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "cellF",
+        "gap": 110
+      }
+    },
+    "yFt": {
+      "type": "text",
+      "text": "yₜ",
+      "style": "mono",
+      "fill": "output",
+      "at": {
+        "in": "yF"
+      }
+    },
+    "aXF": {
+      "type": "arrow",
+      "from": "xF.top",
+      "to": "cellF.bottom",
+      "stroke": "line"
+    },
+    "aYF": {
+      "type": "arrow",
+      "from": "cellF.top",
+      "to": "yF.bottom",
+      "stroke": "line"
+    },
+    "loopF": {
+      "type": "path",
+      "d": "M0 35C110 -10 110 140 0 95M14 86L0 95L14 104",
+      "w": 110,
+      "h": 130,
+      "viewBox": "0 0 110 130",
+      "fill": "none",
+      "at": {
+        "rightOf": "cellF",
+        "gap": 0
+      },
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "eq": {
+      "type": "text",
+      "text": "=",
+      "style": "h2",
+      "fill": "muted",
+      "at": {
+        "rightOf": "cellF",
+        "gap": 150
+      }
+    },
+    "cells": {
+      "type": "group",
+      "children": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": "xl"
+      },
+      "at": {
+        "region": "right-two-thirds",
+        "dx": 30,
+        "dy": 40
+      }
+    },
+    "c1": {
+      "type": "rect",
+      "w": 170,
+      "h": 130,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c1t": {
+      "type": "text",
+      "text": "h₁",
+      "style": "h3",
+      "at": {
+        "in": "c1"
+      }
+    },
+    "x1": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "c1",
+        "gap": 110
+      }
+    },
+    "x1t": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "fill": "input",
+      "at": {
+        "in": "x1"
+      }
+    },
+    "y1": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "c1",
+        "gap": 110
+      }
+    },
+    "aX1": {
+      "type": "arrow",
+      "from": "x1.top",
+      "to": "c1.bottom",
+      "stroke": "line"
+    },
+    "aY1": {
+      "type": "arrow",
+      "from": "c1.top",
+      "to": "y1.bottom",
+      "stroke": "line"
+    },
+    "aH1": {
+      "type": "arrow",
+      "from": "c1.right",
+      "to": "c2.left",
+      "stroke": "line"
+    },
+    "c2": {
+      "type": "rect",
+      "w": 170,
+      "h": 130,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c2t": {
+      "type": "text",
+      "text": "h₂",
+      "style": "h3",
+      "at": {
+        "in": "c2"
+      }
+    },
+    "x2": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "c2",
+        "gap": 110
+      }
+    },
+    "x2t": {
+      "type": "text",
+      "text": "cat",
+      "style": "mono",
+      "fill": "input",
+      "at": {
+        "in": "x2"
+      }
+    },
+    "y2": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "c2",
+        "gap": 110
+      }
+    },
+    "aX2": {
+      "type": "arrow",
+      "from": "x2.top",
+      "to": "c2.bottom",
+      "stroke": "line"
+    },
+    "aY2": {
+      "type": "arrow",
+      "from": "c2.top",
+      "to": "y2.bottom",
+      "stroke": "line"
+    },
+    "aH2": {
+      "type": "arrow",
+      "from": "c2.right",
+      "to": "c3.left",
+      "stroke": "line"
+    },
+    "c3": {
+      "type": "rect",
+      "w": 170,
+      "h": 130,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c3t": {
+      "type": "text",
+      "text": "h₃",
+      "style": "h3",
+      "at": {
+        "in": "c3"
+      }
+    },
+    "x3": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "c3",
+        "gap": 110
+      }
+    },
+    "x3t": {
+      "type": "text",
+      "text": "sat",
+      "style": "mono",
+      "fill": "input",
+      "at": {
+        "in": "x3"
+      }
+    },
+    "y3": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "c3",
+        "gap": 110
+      }
+    },
+    "aX3": {
+      "type": "arrow",
+      "from": "x3.top",
+      "to": "c3.bottom",
+      "stroke": "line"
+    },
+    "aY3": {
+      "type": "arrow",
+      "from": "c3.top",
+      "to": "y3.bottom",
+      "stroke": "line"
+    },
+    "aH3": {
+      "type": "arrow",
+      "from": "c3.right",
+      "to": "c4.left",
+      "stroke": "line"
+    },
+    "c4": {
+      "type": "rect",
+      "w": 170,
+      "h": 130,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c4t": {
+      "type": "text",
+      "text": "h₄",
+      "style": "h3",
+      "at": {
+        "in": "c4"
+      }
+    },
+    "x4": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "c4",
+        "gap": 110
+      }
+    },
+    "x4t": {
+      "type": "text",
+      "text": "on",
+      "style": "mono",
+      "fill": "input",
+      "at": {
+        "in": "x4"
+      }
+    },
+    "y4": {
+      "type": "rect",
+      "w": 150,
+      "h": 70,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "c4",
+        "gap": 110
+      }
+    },
+    "aX4": {
+      "type": "arrow",
+      "from": "x4.top",
+      "to": "c4.bottom",
+      "stroke": "line"
+    },
+    "aY4": {
+      "type": "arrow",
+      "from": "c4.top",
+      "to": "y4.bottom",
+      "stroke": "line"
+    },
+    "legend": {
+      "type": "text",
+      "text": "predicting the next word · example",
+      "style": "small",
+      "anchor": "end",
+      "at": {
+        "region": "bottom-right",
+        "align": "bottom-right"
+      }
+    },
+    "limit": {
+      "type": "text",
+      "text": "limit: one step at a time, and early words fade from memory",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "The 15 s loop: words flow in one step at a time; the hidden state carries forward; each step predicts the next word; everything resets so the last frame is the first."
+    }
+  ]
+}

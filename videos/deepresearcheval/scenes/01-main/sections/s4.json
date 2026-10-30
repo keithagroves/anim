@@ -1,0 +1,85 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.title": { "type": "text", "text": "2 · quality", "style": "h2", "at": { "region": "right-two-thirds", "align": "top" } },
+
+    "s4.judge": { "type": "rect", "text": "quality judge", "w": 260, "h": 90, "radius": "md", "fill": "card", "stroke": "judge", "shadow": true, "labelColor": "judge", "at": { "region": "right-two-thirds", "align": "left", "dx": 24, "dy": -20 } },
+    "s4.inArrow": { "type": "arrow", "from": "reportBox.right", "to": "s4.judge.left", "stroke": "judge", "bend": -30 },
+    "s4.taskArrow": { "type": "arrow", "from": "task.right", "to": "s4.judge.top", "stroke": "task", "dash": "12 10", "bend": 70 },
+
+    "s4.t1": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "judge", "strokeWidth": "thin", "at": { "region": "right-two-thirds", "align": "top-left", "dx": 360, "dy": 210 } },
+    "s4.t2": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "judge", "strokeWidth": "thin", "at": { "below": "s4.t1", "gap": 66, "align": "left" } },
+    "s4.t3": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "judge", "strokeWidth": "thin", "at": { "below": "s4.t2", "gap": 66, "align": "left" } },
+    "s4.t4": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "judge", "strokeWidth": "thin", "at": { "below": "s4.t3", "gap": 66, "align": "left" } },
+    "s4.t5": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "task", "strokeWidth": "thin", "at": { "below": "s4.t4", "gap": 120, "align": "left" } },
+    "s4.t6": { "type": "rect", "w": 380, "h": 20, "radius": 10, "fill": "card", "stroke": "task", "strokeWidth": "thin", "at": { "below": "s4.t5", "gap": 66, "align": "left" } },
+
+    "s4.l1": { "type": "text", "text": "Coverage", "style": "label", "fill": "text", "anchor": "start", "at": { "above": "s4.t1", "gap": "xs", "align": "left" } },
+    "s4.l2": { "type": "text", "text": "Insight", "style": "label", "fill": "text", "anchor": "start", "at": { "above": "s4.t2", "gap": "xs", "align": "left" } },
+    "s4.l3": { "type": "text", "text": "Instruction-following", "style": "label", "fill": "text", "anchor": "start", "at": { "above": "s4.t3", "gap": "xs", "align": "left" } },
+    "s4.l4": { "type": "text", "text": "Clarity", "style": "label", "fill": "text", "anchor": "start", "at": { "above": "s4.t4", "gap": "xs", "align": "left" } },
+    "s4.l5": { "type": "text", "text": "Metric utility", "style": "label", "fill": "task", "anchor": "start", "at": { "above": "s4.t5", "gap": "xs", "align": "left" } },
+    "s4.l6": { "type": "text", "text": "Comparative synthesis", "style": "label", "fill": "task", "anchor": "start", "at": { "above": "s4.t6", "gap": "xs", "align": "left" } },
+
+    "s4.genCap": { "type": "text", "text": "general · every task", "style": "small", "fill": "muted", "anchor": "start", "at": { "above": "s4.l1", "gap": "sm", "align": "left" } },
+    "s4.specCap": { "type": "text", "text": "from this task", "style": "small", "fill": "task", "anchor": "start", "at": { "above": "s4.l5", "gap": "sm", "align": "left" } },
+
+    "s4.b1": { "type": "rect", "w": 260, "h": 20, "radius": 10, "fill": "judge", "layer": 2, "at": { "in": "s4.t1", "align": "left", "pad": 0 } },
+    "s4.b2": { "type": "rect", "w": 190, "h": 20, "radius": 10, "fill": "judge", "layer": 2, "at": { "in": "s4.t2", "align": "left", "pad": 0 } },
+    "s4.b3": { "type": "rect", "w": 230, "h": 20, "radius": 10, "fill": "judge", "layer": 2, "at": { "in": "s4.t3", "align": "left", "pad": 0 } },
+    "s4.b4": { "type": "rect", "w": 140, "h": 20, "radius": 10, "fill": "judge", "layer": 2, "at": { "in": "s4.t4", "align": "left", "pad": 0 } },
+    "s4.b5": { "type": "rect", "w": 310, "h": 20, "radius": 10, "fill": "task", "layer": 2, "at": { "in": "s4.t5", "align": "left", "pad": 0 } },
+    "s4.b6": { "type": "rect", "w": 210, "h": 20, "radius": 10, "fill": "task", "layer": 2, "at": { "in": "s4.t6", "align": "left", "pad": 0 } },
+
+    "s4.c1": { "type": "rect", "text": "1–10", "w": 72, "h": 34, "radius": "sm", "fill": "card", "stroke": "task", "strokeWidth": "thin", "style": "small", "labelColor": "task", "at": { "rightOf": "s4.t5", "gap": "lg" } },
+    "s4.c2": { "type": "rect", "text": "1–10", "w": 72, "h": 34, "radius": "sm", "fill": "card", "stroke": "task", "strokeWidth": "thin", "style": "small", "labelColor": "task", "at": { "rightOf": "s4.c1", "gap": "xs" } },
+    "s4.c3": { "type": "rect", "text": "1–10", "w": 72, "h": 34, "radius": "sm", "fill": "card", "stroke": "task", "strokeWidth": "thin", "style": "small", "labelColor": "task", "at": { "rightOf": "s4.c2", "gap": "xs" } },
+    "s4.critCap": { "type": "text", "text": "criteria", "style": "small", "fill": "task", "anchor": "start", "at": { "above": "s4.c1", "gap": "xs", "align": "left" } },
+
+    "s4.formula": { "type": "text", "text": "S = Σ W · Σ w · s", "style": "mono", "fill": "text", "anchor": "start", "at": { "rightOf": "s4.hub", "gap": 22 } },
+    "s4.hub": { "type": "circle", "r": 6, "fill": "text", "at": { "rightOf": "s4.t3", "gap": 28, "dy": 43 } },
+    "s4.r1": { "type": "line", "from": "s4.t1.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.r2": { "type": "line", "from": "s4.t2.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.r3": { "type": "line", "from": "s4.t3.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.r4": { "type": "line", "from": "s4.t4.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.r5": { "type": "line", "from": "s4.t5.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.r6": { "type": "line", "from": "s4.t6.right", "to": "s4.hub", "stroke": "muted", "strokeWidth": "thin" }
+  },
+  "timeline": [
+    { "target": "s4.title", "preset": "rise-in", "at": "cue:quality", "dur": "base" },
+    { "id": "judgeIn", "target": "s4.judge", "preset": "rise-in", "at": "cue:quality", "offset": 0.2, "dur": "base" },
+    { "target": "s4.inArrow", "preset": "draw-on", "with": "judgeIn", "offset": 0.3, "dur": 0.7 },
+    { "target": "s4.judge", "preset": "pulse", "at": 2.33, "amount": 0.05, "dur": "fast" },
+
+    { "target": "s4.genCap", "preset": "fade-in", "at": "cue:general", "offset": -0.1, "dur": "fast" },
+    { "id": "genRows", "target": ["s4.t1", "s4.t2", "s4.t3", "s4.t4"], "preset": "rise-in", "at": "cue:general", "stagger": 0.1, "dur": "base", "distance": 20 },
+    { "target": ["s4.l1", "s4.l2", "s4.l3", "s4.l4"], "preset": "rise-in", "with": "genRows", "stagger": 0.1, "dur": "base", "distance": 20 },
+    { "target": "s4.l1", "preset": "pulse", "at": 4.66, "amount": 0.08, "dur": "fast" },
+    { "target": "s4.l2", "preset": "pulse", "at": 5.35, "amount": 0.08, "dur": "fast" },
+
+    { "id": "taskArr", "target": "s4.taskArrow", "preset": "draw-on", "at": 6.41, "dur": 0.8 },
+    { "target": "task", "preset": "highlight", "at": 7.53, "color": "task" },
+
+    { "target": "s4.specCap", "preset": "fade-in", "at": "cue:specific", "offset": -0.1, "dur": "fast" },
+    { "id": "specRows", "target": ["s4.t5", "s4.t6"], "preset": "rise-in", "at": "cue:specific", "stagger": 0.1, "dur": "base", "distance": 30 },
+    { "target": ["s4.l5", "s4.l6"], "preset": "rise-in", "with": "specRows", "stagger": 0.1, "dur": "base", "distance": 30 },
+    { "target": "s4.t5", "preset": "highlight", "at": 10.26, "color": "task" },
+    { "target": "s4.l5", "preset": "pulse", "at": 10.26, "amount": 0.08, "dur": "fast" },
+
+    { "target": "task", "preset": "highlight", "at": 11.42, "color": "task" },
+    { "target": ["s4.t1", "s4.t2", "s4.t3", "s4.t4", "s4.t5", "s4.t6"], "preset": "highlight", "at": 13.35, "stagger": 0.06, "color": "text" },
+
+    { "target": ["s4.b1", "s4.b2", "s4.b3", "s4.b4", "s4.b5", "s4.b6"], "preset": "wipe-in", "at": "cue:weight", "stagger": 0.08, "dur": 0.6, "ease": "out" },
+
+    { "id": "chips", "target": ["s4.c1", "s4.c2", "s4.c3"], "preset": "pop", "at": "cue:criteria", "stagger": 0.08, "dur": "fast" },
+    { "target": "s4.critCap", "preset": "fade-in", "with": "chips", "offset": 0.1, "dur": "fast" },
+    { "target": ["s4.c1", "s4.c2", "s4.c3"], "preset": "pulse", "at": 16.27, "stagger": 0.08, "amount": 0.1, "dur": "fast" },
+
+    { "target": ["s4.r1", "s4.r2", "s4.r3", "s4.r4", "s4.r5", "s4.r6"], "preset": "draw-on", "at": 17.13, "stagger": 0.04, "dur": 0.4 },
+    { "target": ["s4.hub", "s4.formula"], "preset": "pop", "at": 17.47, "stagger": 0.06, "dur": "fast" },
+    { "target": ["s4.b1", "s4.b2", "s4.b3", "s4.b4", "s4.b5", "s4.b6"], "preset": "pulse", "at": "cue:score", "amount": 0.08, "dur": "fast" },
+    { "target": "s4.formula", "preset": "pulse", "at": "cue:score", "amount": 0.12, "dur": "fast" },
+
+    { "target": "s4.*", "preset": "fade-out", "at": 18.77, "dur": 0.25 }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.caption": { "type": "text", "text": "a famous problem neuron", "style": "caption", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "top-left", "dx": 120, "dy": 150 } },
+    "s1.catChip": { "type": "rect", "w": 260, "h": 68, "radius": "sm", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "cat faces", "style": "label", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -110 } },
+    "s1.carChip": { "type": "rect", "w": 260, "h": 68, "radius": "sm", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "car fronts", "style": "label", "at": { "below": "s1.catChip", "gap": "lg", "align": "left" } },
+    "s1.catLine": { "type": "line", "from": "cell.right", "to": "s1.catChip.left", "stroke": "cell", "strokeWidth": "thin" },
+    "s1.carLine": { "type": "line", "from": "cell.right", "to": "s1.carChip.left", "stroke": "cell", "strokeWidth": "thin" },
+    "s1.super": { "type": "text", "text": "superposition", "style": "h3", "fill": "old", "anchor": "start", "at": { "below": "s1.carChip", "gap": "md", "align": "left" } },
+    "s1.knot": { "type": "path", "w": 300, "h": 300, "viewBox": "0 0 240 240", "fill": "none", "stroke": "old", "strokeWidth": "md", "layer": 4,
+      "d": "M28 132 C22 52 132 22 168 74 C204 126 118 200 78 158 C40 118 120 58 186 104 C236 140 192 222 128 214 C62 206 44 138 98 106 C150 76 214 84 210 40 C206 10 150 18 120 46",
+      "at": { "in": "lensFill" } },
+    "s1.sae": { "type": "rect", "w": 340, "h": 64, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "dash": "8 8", "text": "second model (SAE)", "style": "label", "at": { "below": "s1.super", "gap": "lg", "align": "left" } },
+    "s1.unfold": { "type": "arrow", "from": "s1.sae.left", "to": "s1.knot.bottom:0.75", "bend": -50, "stroke": "muted", "strokeWidth": "thin", "text": "unfold", "style": "label" },
+    "s1.title": { "type": "text", "text": "neural networks\nare already clean", "style": "h2", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -40 } },
+    "s1.credit": { "type": "text", "text": "Nick Cammarata · Goodfire", "style": "caption", "fill": "muted", "anchor": "start", "at": { "below": "s1.title", "gap": "md", "align": "left" } }
+  },
+  "timeline": [
+    { "id": "scopeIn", "target": "scope", "preset": "scale-in", "at": "start-0.5", "dur": 0.6, "ease": "out" },
+    { "id": "cellIn", "target": "neuron", "preset": "pop", "at": "start-0.5", "offset": 0.15, "overshoot": 1.5 },
+    { "id": "cap", "target": "s1.caption", "preset": "words-in", "at": 0.8 },
+
+    { "id": "catL", "target": "s1.catLine", "preset": "draw-on", "at": "cue:cats", "dur": 0.4 },
+    { "id": "cat", "target": "s1.catChip", "preset": "pop", "with": "catL", "offset": 0.25, "overshoot": 1.5 },
+    { "id": "carL", "target": "s1.carLine", "preset": "draw-on", "at": "cue:cars", "dur": 0.4 },
+    { "id": "car", "target": "s1.carChip", "preset": "pop", "with": "carL", "offset": 0.25, "overshoot": 1.5 },
+
+    { "id": "sup", "target": "s1.super", "preset": "words-in", "at": "cue:superposition" },
+    { "id": "fold", "target": ["s1.catLine", "s1.carLine"], "preset": "to", "at": 10.9, "dur": 0.5, "stagger": 0.15, "to": { "stroke": "old" } },
+
+    { "id": "knot", "target": "s1.knot", "preset": "draw-on", "at": "cue:knot", "dur": 0.9 },
+    { "id": "dim", "target": "cell", "preset": "to", "with": "knot", "offset": 0.2, "dur": 0.5, "to": { "opacity": 0.6 } },
+
+    { "id": "sae", "target": "s1.sae", "preset": "rise-in", "at": "cue:second", "dur": 0.5 },
+    { "id": "unf", "target": "s1.unfold", "preset": "draw-on", "after": "sae", "gap": 0.1, "dur": 0.5 },
+
+    { "id": "knotOff", "target": "s1.knot", "preset": "draw-off", "at": 18.5, "dur": 0.4 },
+    { "id": "undim", "target": "cell", "preset": "to", "with": "knotOff", "offset": 0.15, "dur": 0.4, "to": { "opacity": 1 } },
+    { "id": "oldOut", "target": ["s1.caption", "s1.catLine", "s1.catChip", "s1.carLine", "s1.carChip", "s1.super", "s1.unfold", "s1.sae"], "preset": "sink-out", "with": "knotOff", "offset": 0.1, "dur": 0.35, "stagger": 0.05 },
+
+    { "id": "title", "target": "s1.title", "preset": "words-in", "at": "cue:clean-0.4" },
+    { "id": "pulse", "target": "neuron", "preset": "pulse", "at": "cue:clean", "amount": 0.1, "dur": 0.6 },
+    { "id": "lit", "target": "cell", "preset": "to", "with": "pulse", "dur": 0.25, "to": { "fill": "cell" } },
+    { "target": "cell", "preset": "to", "after": "lit", "gap": 0.1, "dur": 0.4, "to": { "fill": "cellDim" } },
+    { "id": "cred", "target": "s1.credit", "preset": "words-in", "with": "title", "offset": 0.7 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

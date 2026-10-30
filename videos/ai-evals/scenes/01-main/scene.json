@@ -1,0 +1,416 @@
+{
+  "id": "01-main",
+  "objects": {
+    "pageCard": {
+      "type": "rect",
+      "w": 888,
+      "h": 1000,
+      "radius": "lg",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "at": {
+        "region": "center",
+        "dy": 80
+      }
+    },
+    "pageTag": {
+      "type": "text",
+      "text": "traces \u00b7 example",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "pageCard",
+        "align": "top-left",
+        "pad": "md"
+      }
+    },
+    "row1": {
+      "type": "text",
+      "text": "find 3-bed homes near a park",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "rowBox1",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "mark1": {
+      "type": "circle",
+      "r": 26,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "in": "rowBox1",
+        "align": "right",
+        "pad": "sm"
+      }
+    },
+    "rule1": {
+      "type": "rect",
+      "w": 824,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "in": "rowBox1",
+        "align": "bottom",
+        "pad": 0
+      }
+    },
+    "row2": {
+      "type": "text",
+      "text": "email the buyer about Friday",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "rowBox2",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "mark2": {
+      "type": "circle",
+      "r": 26,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "in": "rowBox2",
+        "align": "right",
+        "pad": "sm"
+      }
+    },
+    "rule2": {
+      "type": "rect",
+      "w": 824,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "in": "rowBox2",
+        "align": "bottom",
+        "pad": 0
+      }
+    },
+    "row3": {
+      "type": "text",
+      "text": "list homes under 400k",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "rowBox3",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "mark3": {
+      "type": "circle",
+      "r": 26,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "in": "rowBox3",
+        "align": "right",
+        "pad": "sm"
+      }
+    },
+    "rule3": {
+      "type": "rect",
+      "w": 824,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "in": "rowBox3",
+        "align": "bottom",
+        "pad": 0
+      }
+    },
+    "row4": {
+      "type": "text",
+      "text": "summarize this listing",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "rowBox4",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "mark4": {
+      "type": "circle",
+      "r": 26,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "in": "rowBox4",
+        "align": "right",
+        "pad": "sm"
+      }
+    },
+    "rule4": {
+      "type": "rect",
+      "w": 824,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "in": "rowBox4",
+        "align": "bottom",
+        "pad": 0
+      }
+    },
+    "row5": {
+      "type": "text",
+      "text": "book a viewing at 10am",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "rowBox5",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "mark5": {
+      "type": "circle",
+      "r": 26,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "in": "rowBox5",
+        "align": "right",
+        "pad": "sm"
+      }
+    },
+    "rule5": {
+      "type": "rect",
+      "w": 824,
+      "h": 2,
+      "radius": 0,
+      "fill": "line",
+      "at": {
+        "in": "rowBox5",
+        "align": "bottom",
+        "pad": 0
+      }
+    },
+    "page": {
+      "type": "group",
+      "children": [
+        "pageCard",
+        "pageTag",
+        "rows",
+        "row1",
+        "mark1",
+        "rule1",
+        "row2",
+        "mark2",
+        "rule2",
+        "row3",
+        "mark3",
+        "rule3",
+        "row4",
+        "mark4",
+        "rule4",
+        "row5",
+        "mark5",
+        "rule5"
+      ]
+    },
+    "rowBox1": {
+      "type": "rect",
+      "w": 824,
+      "h": 150,
+      "fill": "none",
+      "radius": 0
+    },
+    "rowBox2": {
+      "type": "rect",
+      "w": 824,
+      "h": 150,
+      "fill": "none",
+      "radius": 0
+    },
+    "rowBox3": {
+      "type": "rect",
+      "w": 824,
+      "h": 150,
+      "fill": "none",
+      "radius": 0
+    },
+    "rowBox4": {
+      "type": "rect",
+      "w": 824,
+      "h": 150,
+      "fill": "none",
+      "radius": 0
+    },
+    "rowBox5": {
+      "type": "rect",
+      "w": 824,
+      "h": 150,
+      "fill": "none",
+      "radius": 0
+    },
+    "rows": {
+      "type": "group",
+      "children": [
+        "rowBox1",
+        "rowBox2",
+        "rowBox3",
+        "rowBox4",
+        "rowBox5"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "xs"
+      },
+      "at": {
+        "in": "pageCard",
+        "align": "bottom",
+        "pad": "md"
+      }
+    }
+  },
+  "keys": {
+    "0": {
+      "page": {
+        "opacity": 0
+      }
+    },
+    "s1": {
+      "page": {
+        "opacity": 1
+      }
+    }
+  },
+  "through": [
+    {
+      "target": "pageCard",
+      "preset": "breathe",
+      "amount": 0.006,
+      "dur": "all",
+      "at": 0
+    }
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        9.1
+      ],
+      "brief": "Hook: vibe checks don't scale. Frame 0 is the thumbnail: the on-screen headline 'Vibe checks don't scale' (h2, top band, words-in pre-rolled so it reads at t=0) is up at 0. It carries the story muted, so it stays up. The page of example traces rises in at cue:measure (rows staggered, the mark circles draw on). cue:better: a green tick (local, `pass`) draws into row 2's mark. cue:breaks: as row 2 stays green, row 4's mark turns into a red cross (`fail`), then row 2's tick wobbles away: fixing one breaks another. End on key s1 (page visible, marks empty again) and clear the locals.",
+      "sketch": {
+        "paths": [
+          "$4 M8 12h38v4h-38z",
+          "$5 M5 28h44v58h-44z",
+          "$4l~0.4 M5 28h44v58h-44z",
+          "$4 M8 37h22v2h-22zM8 45h26v2h-26zM8 53h18v2h-18zM8 61h22v2h-22zM8 69h20v2h-20z",
+          "$4l~0.3 M7 41h40M7 49h40M7 57h40M7 65h40",
+          "$4l~0.5 M42 38a2 2 0 1 0 4 0a2 2 0 1 0 -4 0M42 54a2 2 0 1 0 4 0a2 2 0 1 0 -4 0M42 70a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$2 M42 46a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$3 M42 62a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "target": [
+        9.1,
+        19.9
+      ],
+      "brief": "Level 1, unit tests. Headline (local, h2, top band, words-in at the section start): 'Level 1 \u00b7 unit tests'. At cue:three, a small row of three numbered dots (1 \u00b7 2 \u00b7 3, local, under the headline) pops in, the first one green. cue:unit: an assertion card (local, dark ink fill, mono white text `assert no_raw_ids(reply)`) rises in between the headline and the page. cue:every: green ticks draw into every row's mark in turn, top to bottom (stagger ~0.12 s), except row 3. cue:ids: row 3 gets a red cross and a short red mono tag `a3f9-\u2026` beside its text (the leaked id), with a highlight. Hold, breathe the page. Clear the locals at the end (page stays: key s2 = as s1).",
+      "sketch": {
+        "paths": [
+          "$4 M8 10h38v4h-38z",
+          "$4 M7 19h40v6h-40z",
+          "$5 M9 21h24v2h-24z",
+          "$5 M5 28h44v58h-44z",
+          "$4l~0.4 M5 28h44v58h-44z",
+          "$4 M8 37h22v2h-22zM8 45h26v2h-26zM8 53h18v2h-18zM8 61h22v2h-22zM8 69h20v2h-20z",
+          "$4l~0.3 M7 41h40M7 49h40M7 57h40M7 65h40",
+          "$2~0.8 M42 38l1.5 1.5l3 -3M42 46l1.5 1.5l3 -3M42 62l1.5 1.5l3 -3M42 70l1.5 1.5l3 -3",
+          "$3~0.8 M42 52l4 4M46 52l-4 4",
+          "$3 M28 53h8v2h-8z"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "target": [
+        19.9,
+        29.8
+      ],
+      "brief": "Level 2, people and a judge. Headline (local, h2, two lines OK, top band): 'Level 2 \u00b7 people + a judge'. cue:traces: the rows' text dims to muted and back (they are logged traces). cue:review: a small column label 'you' (local, label) appears above a column of marks just left of the shared marks; cue:good: hand marks land in it row by row: good (green filled dot) for rows 1, 2, 4; bad (red) for rows 3, 5. cue:judge: a second column label 'judge' over the shared mark circles, and the judge's marks fill them all at once (one pass): green 1, 2; red 3, 4, 5. cue:agrees: rows where both agree get a soft green highlight; row 4, where they disagree, gets a red outline (draw-on) and a small 'disagree' label: that's what you check. Clear the locals by the end so the shared marks are empty and key s3 = as s1.",
+      "sketch": {
+        "paths": [
+          "$4 M8 10h38v4h-38z",
+          "$4 M8 17h26v4h-26z",
+          "$5 M5 28h44v58h-44z",
+          "$4l~0.4 M5 28h44v58h-44z",
+          "$4 M8 37h18v2h-18zM8 45h20v2h-20zM8 53h16v2h-16zM8 61h18v2h-18zM8 69h17v2h-17z",
+          "$4l M33 31h6v1.5h-6zM41 31h6v1.5h-6z",
+          "$2 M34.2 38a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M34.2 46a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M34.2 62a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0",
+          "$3 M34.2 54a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M34.2 70a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0",
+          "$2 M42.2 38a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M42.2 46a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0",
+          "$3 M42.2 54a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M42.2 62a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0M42.2 70a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0",
+          "$3~0.5 M31 58h18v8h-18z"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "target": [
+        29.8,
+        37.3
+      ],
+      "brief": "A viewer for your own data, as a short walkthrough (docs/motion.md \u00a77: focus, spotlight, chip). Headline (local, h2, top band, layer above the spotlight, e.g. 960): 'Build a viewer\\nfor your data'. cue:viewer: a viewer panel (local, ui: true, white card, line stroke) rises in over the lower part of the page with: a label 'scenario' and value 'listing search \u00b7 synthetic', a label 'output' and two or three mono lines of a reply, and two buttons 'Good' (pass green) and 'Bad' (fail red). A small grey 'Concept mock' label at the panel's bottom right. The camera `focus`es onto the panel (on the panel, ~1.6\u00d7, ease arrive), a `spotlight` on the panel dims the rest. cue:scenario then cue:output: the spotlight glides from the scenario field to the output lines (move + to w/h, ~0.6 s each; they are close). cue:click: a chip 'one click to label' (\u2264 6 words, beside the Good button, on a leader to it, never over it) appears and the Good button pulses once (an eased press, no bounce). Hold. Before the section ends: camera focus back to full (ease glide), spotlight off, clear the locals; page as key s3.",
+      "sketch": {
+        "paths": [
+          "$5 M2 22h50v70h-50z",
+          "#1c1f2455 M0 0h54v96h-54z",
+          "$4 M8 8h38v4h-38zM8 14h30v4h-30z",
+          "$5 M4 26h46v44h-46z",
+          "$4~0.4 M4 26h46v44h-46z",
+          "$4l M8 30h12v1.5h-12zM8 40h10v1.5h-10z",
+          "$4 M8 33h34v3h-34z",
+          "$4 M8 43h36v2h-36zM8 47h30v2h-30zM8 51h33v2h-33z",
+          "$2 M8 60h16v6h-16z",
+          "$3 M28 60h16v6h-16z",
+          "$4~0.4 M17 66l3 8",
+          "$4 M10 74h28v6h-28z",
+          "$4l M30 88h18v1.5h-18z"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "target": [
+        37.3,
+        49.1
+      ],
+      "brief": "Level 3, then the lesson (last section). Headline (local, h2, top band): 'Level 3 \u00b7 A/B tests' at cue:ab, with two small labelled bars 'A' and 'B' (local, no numbers) growing side by side under it, B a little longer, over the page. cue:look: everything clears (page and all) and the end card lands: big text 'Look at your data.' (h1 or stat-ish size, two lines OK, ink) with a big green hand tick drawn on beside it, then at cue:end a muted line 'That is how you move fast.' and a small grey credit at the bottom of the safe area (above the feed's bottom ~240 px): 'From \u201cYour AI Product Needs Evals\u201d \u00b7 Hamel Husain, 2024'. All beats finish by ~46.5 s; the end card holds to the end, breathing gently.",
+      "sketch": {
+        "paths": [
+          "$5 M4 26h46v40h-46z",
+          "$4l~0.4 M4 26h46v40h-46z",
+          "$4 M8 33h36v6h-36z",
+          "$4 M8 42h28v6h-28z",
+          "$2~1.5 M38 45l3 3l6 -7",
+          "$4l~0.3 M8 53h38",
+          "$4l M8 57h30v2.5h-30z",
+          "$4l M8 84h40v1.5h-40zM8 87h28v1.5h-28z"
+        ]
+      }
+    }
+  ]
+}

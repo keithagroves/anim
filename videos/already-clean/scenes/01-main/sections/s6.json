@@ -1,0 +1,45 @@
+{
+  "id": "s6",
+  "objects": {
+    "s6.header": { "type": "text", "text": "language model neurons", "style": "body", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "top-left", "dx": 80, "dy": 40 } },
+
+    "s6.l1": { "type": "text", "text": "2023 · automated study", "style": "body", "fill": "text", "anchor": "start", "at": { "below": "s6.header", "gap": "lg", "align": "left" } },
+    "s6.track": { "type": "rect", "w": 700, "h": 52, "radius": 4, "fill": "surface2", "stroke": "line", "strokeWidth": "thin", "at": { "below": "s6.l1", "gap": "sm", "align": "left" } },
+    "s6.oldFill": { "type": "rect", "w": 12, "h": 52, "radius": 4, "fill": "old", "layer": 1, "at": { "in": "s6.track", "align": "left" } },
+    "s6.v1": { "type": "text", "text": "~1.7% interpretable", "style": "label", "fill": "old", "anchor": "start", "layer": 1, "at": { "rightOf": "s6.oldFill", "gap": "sm" } },
+
+    "s6.l2": { "type": "text", "text": "now · Qwen3-32B (early audit)", "style": "body", "fill": "text", "anchor": "start", "at": { "below": "s6.track", "gap": "lg", "align": "left" } },
+    "s6.seg1": { "type": "rect", "w": 630, "h": 52, "radius": 4, "fill": "cell", "text": "one main job ~90%", "style": "label", "labelColor": "bg", "at": { "below": "s6.l2", "gap": "sm", "align": "left" } },
+    "s6.seg2": { "type": "rect", "w": 49, "h": 52, "radius": 0, "fill": "fix", "at": { "rightOf": "s6.seg1", "gap": 0 } },
+    "s6.seg3": { "type": "rect", "w": 21, "h": 52, "radius": 0, "fill": "muted", "at": { "rightOf": "s6.seg2", "gap": 0 } },
+    "s6.c7": { "type": "chip", "text": "two related jobs ~7%", "to": "s6.seg2.bottom", "at": { "below": "s6.seg1", "gap": "md", "align": "right", "dx": -40 } },
+    "s6.c3": { "type": "chip", "text": "not yet understood 2–4%", "to": "s6.seg3.bottom", "at": { "below": "s6.c7", "gap": "sm", "align": "right", "dx": 180 } },
+
+    "s6.scale": { "type": "rect", "w": 700, "h": 76, "radius": "md", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "holds up to trillions of parameters", "style": "body", "labelColor": "text", "at": { "region": "right-half", "align": "bottom-left", "dx": 80, "dy": -130 } }
+  },
+  "timeline": [
+    { "target": "s6.header", "preset": "words-in", "at": 0.2 },
+
+    { "id": "l1", "target": "s6.l1", "preset": "words-in", "at": "cue:onepoint", "offset": -0.4 },
+    { "id": "track", "target": "s6.track", "preset": "wipe-in", "at": "cue:onepoint", "offset": 0.1, "dur": 0.55, "ease": "out" },
+    { "id": "old", "target": "s6.oldFill", "preset": "wipe-in", "after": "track", "gap": 0.1, "dur": 0.35, "ease": "out" },
+    { "id": "v1", "target": "s6.v1", "preset": "pop", "after": "old", "gap": 0.05, "overshoot": 1.5, "dur": 0.45 },
+    { "target": "s6.oldFill", "preset": "pulse", "after": "v1", "gap": 0.6, "amount": 0.25, "dur": 0.55 },
+
+    { "id": "l2", "target": "s6.l2", "preset": "words-in", "at": 6.69 },
+    { "id": "s1", "target": "s6.seg1", "preset": "wipe-in", "at": "cue:ninety", "offset": -0.1, "dur": 0.9, "ease": "out" },
+    { "id": "s2", "target": "s6.seg2", "preset": "wipe-in", "at": "cue:seven", "dur": 0.35, "ease": "out" },
+    { "target": "s6.c7", "preset": "rise-in", "with": "s2", "offset": 0.15, "distance": 12, "dur": 0.35 },
+    { "target": "s6.c7", "preset": "draw-on", "with": "s2", "offset": 0.25, "dur": 0.35 },
+    { "id": "s3", "target": "s6.seg3", "preset": "wipe-in", "at": "cue:few", "dur": 0.3, "ease": "out" },
+    { "target": "s6.c3", "preset": "rise-in", "with": "s3", "offset": 0.15, "distance": 12, "dur": 0.35 },
+    { "target": "s6.c3", "preset": "draw-on", "with": "s3", "offset": 0.25, "dur": 0.35 },
+
+    { "id": "big", "target": "s6.scale", "preset": "pop", "at": 16.08, "overshoot": 1.5, "dur": 0.5 },
+    { "id": "glow", "target": "cell", "preset": "pulse", "at": "cue:trillions", "amount": 0.12, "dur": 0.55 },
+    { "id": "lit", "target": "cell", "preset": "to", "with": "glow", "dur": 0.3, "to": { "fill": "cell" } },
+    { "target": "cell", "preset": "to", "after": "lit", "gap": 0.35, "dur": 0.35, "ease": "inOut", "to": { "fill": "cellDim" } },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

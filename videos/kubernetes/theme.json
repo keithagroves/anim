@@ -1,0 +1,10 @@
+{
+  "palette": {
+    "container": "#4f8cff",
+    "pod": "#2fd18b",
+    "node": "#141b31",
+    "nodeEdge": "#2d3a63",
+    "control": "#8b6cff"
+  },
+  "backdrop": "dots"
+}

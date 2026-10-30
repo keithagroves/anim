@@ -1,0 +1,50 @@
+{
+  "id": "01-main",
+  "objects": {
+    "ctxBox": { "type": "rect", "w": 1040, "h": 660, "radius": "lg", "fill": "ctxFill", "stroke": "ctxEdge", "strokeWidth": "thin", "shadow": true,
+                "at": { "region": "right-two-thirds", "dy": 20 } },
+    "ctxLabel": { "type": "text", "text": "running program", "style": "label", "fill": "muted", "anchor": "start",
+                  "at": { "in": "ctxBox", "align": "top-left", "pad": "md" } },
+    "ctxLabel2": { "type": "text", "text": "one shared context", "style": "label", "fill": "text", "anchor": "start", "layer": 1,
+                   "at": { "in": "ctxBox", "align": "top-left", "pad": "md" } },
+    "ctx": { "type": "group", "children": ["ctxBox", "ctxLabel"] },
+
+    "plugBox": { "type": "rect", "w": 300, "h": 110, "radius": "md", "fill": "plugin", "shadow": true,
+                 "at": { "region": "left-third", "dy": -140 } },
+    "plugText": { "type": "text", "text": "plugin", "style": "h3", "fill": "#ffffff", "at": { "in": "plugBox" } },
+    "plug": { "type": "group", "children": ["plugBox", "plugText"] },
+
+    "plugLink": { "type": "line", "from": "plugBox.right", "to": "ctxBox.left:0.26", "stroke": "plugin", "strokeWidth": "md" }
+  },
+  "keys": {
+    "0": {
+      "ctx": { "opacity": 0 }, "ctxLabel2": { "opacity": 0 },
+      "plug": { "opacity": 0 }, "plugLink": { "opacity": 0 }
+    },
+    "s1": {
+      "ctx": { "opacity": 1 }
+    },
+    "s2": {
+      "plug": { "opacity": 1 }
+    },
+    "s3": {},
+    "s4": {
+      "plugBox": { "fill": "surface2" }
+    },
+    "s5": {
+      "plugBox": { "fill": "plugin" },
+      "ctxLabel": { "opacity": 0 }, "ctxLabel2": { "opacity": 1 }
+    }
+  },
+  "through": [
+    { "target": "camera", "preset": "drift", "at": 0, "dur": "all", "amount": 0.03 }
+  ],
+  "sections": [
+    { "id": "s1", "target": [0, 12.2], "brief": "HOOK: the restart problem. Shared objects: bring in `ctx` (the program box) early (by ~1s, e.g. rise-in), while 'How do you remove a plugin from a running program' is spoken. Inside ctxBox, add local content: a row/grid of 4–5 small plugin tiles (blue `plugin`, labelled e.g. 'ext') plus two state chips 'cache' and 'connection' (chip fill, good-green stroke, small text). Mark one tile as the one we want to remove (amber or white outline pulse) around 'remove a plugin'. At cue:top, in the left third show the stat '87 / 100' (stat style; you may count-up 0→87 with text '{value} / 100') with a caption below: 'top VS Code extensions run code'. At cue:restart, the WHOLE program can't drop just one tile: flash ctxBox red (`highlight` color bad) with a 'restart' label/badge in `bad`, and every tile dims/shakes together. At cue:lost, the 'cache' and 'connection' chips pop-out (lost). Then clear all local objects (tiles, stat, caption, badge) before the section ends. End on exactly key s1: ctx visible (box + 'running program' label), nothing else." },
+    { "id": "s2", "target": [12.2, 24.2], "brief": "TWO DIMENSIONS: time and space. At the start ('A new paper splits the problem in two'), show a small citation caption in the left third, top: 'Shi, Zhang, Cui · Peking U. & DeepSeek' (small/muted), fading out later. TIME beat at cue:time: the shared `plug` card rises in at its home (left third) and `plugLink` draws on; two blue effect chips fly from plugBox into ctxBox ('cmd /greet', 'conn db'). Then the plugin leaves: plugLink fades and the chips it left behind stay in the box, turning red `bad` stroke (leftovers) with a short label in the left third: 'Time: undo what it changed' (h3, `undo` amber for 'Time'). Clear the leftover chips. SPACE beat at cue:space: inside ctxBox show two local component cards 'A' and 'B' (small blue rects) with a purple `dep` arrow A → B labelled 'needs'. B disappears (pop-out); the arrow turns red and dashed (broken). Label: 'Space: dependencies come and go' (h3, `dep` purple for 'Space'). Clear all local objects and the time/space labels before the end, and make sure plugLink is hidden. End on exactly key s2: ctx visible; plug visible at its home position (base look: blue, scale 1); plugLink opacity 0." },
+    { "id": "s3", "target": [24.2, 39.8], "brief": "REVERTIBLE EFFECTS (time). Title in the top-left: 'Revertible effects' (h3, `undo` amber) at cue:revertible. plugLink draws on (plugin plugged in). At cue:cmd: a blue chip 'cmd /greet' flies from plugBox into ctxBox (upper area of the box) AND, at the same moment, an amber undo receipt 'undo: remove /greet' (chip with `undo` stroke, small/mono text) drops into an undo stack below the plug in the left third. At cue:conn: chip 'conn db' flies into ctxBox, and receipt 'undo: close conn' lands ON TOP of the first receipt (stack grows upward or downward, but the newest receipt is visibly the top). At cue:inverse: highlight the stack (amber) with a tiny label 'inverses' near it. At cue:unwind: plugLink fades/draws off, then the stack pops top-first (LIFO): the 'close conn' receipt pops and the 'conn db' chip disappears with it; then the 'remove /greet' receipt pops and 'cmd /greet' disappears. Make the pairing obvious (e.g. each receipt flies to its chip, both vanish). At cue:clean: ctxBox highlights green (`good`) and a short caption 'back exactly as it was' appears inside/under the box with a green check. Clear all local objects before the end. End on exactly key s3 (= key s2): ctx visible, plug visible at home in its base blue look, plugLink opacity 0." },
+    { "id": "s4", "target": [39.8, 55.8], "brief": "REACTIVE COEFFECTS (space). Title top-left: 'Reactive coeffects' (h3, `dep` purple) at cue:reactive. At cue:needs, a purple tag 'needs: database' (dep stroke chip) appears attached under or beside plugBox, plus a dashed purple socket outline inside ctxBox (where a database would go, e.g. lower-right). At cue:inactive, the plug greys out: animate plugBox fill to `surface2` (`to`) and show a small muted 'inactive' label. At cue:provides, a purple 'database' provider card (dep fill, white text) flies into the socket inside ctxBox. At cue:activates: plugBox fill animates back to `plugin` blue, plugLink draws on, the 'needs' tag turns solid/green-stroked, an 'active' green label replaces 'inactive', and one blue effect chip 'query' appears in ctxBox (its effect). At cue:leaves: the database card sinks/pops out, the plug fades back to `surface2`, plugLink fades out, and the 'query' chip vanishes (its effects are undone too). Label returns to 'inactive'. Clear all local objects before the end. End on exactly key s4: ctx visible, plug visible at home with plugBox fill `surface2` (greyed), plugLink opacity 0." },
+    { "id": "s5", "target": [55.8, 64.5], "brief": "THE CONTEXT PARADIGM. At cue:context, crossfade the box label: ctxLabel fades out while ctxLabel2 ('one shared context') fades in (both are shared; end with ctxLabel opacity 0 and ctxLabel2 opacity 1), and pulse/highlight ctxBox. Bring plugBox fill back to `plugin` blue and draw on plugLink. Add 3 more local component cards around/left of the box or inside it (e.g. 'database' in dep purple, 'chat adapter' and 'web console' in blue), each connected to ctxBox with a short line or arrow, so EVERY component touches only the box, never each other. Small chips flow from components into the box ('Every effect and every dependency passes through it'). At cue:independent: one local component leaves (pops out, its chips vanish) and a new one arrives (pops in), while the others stay perfectly still with a brief green `good` highlight — unaffected. Before the section ends, remove all local objects and fade plugLink out. End on exactly key s5: ctx visible with ctxLabel2 showing (ctxLabel hidden), plug visible at home in base blue, plugLink opacity 0." },
+    { "id": "s6", "target": [64.5, 76.5], "brief": "PAYOFF: Cordis and Koishi. LAST section; the final picture holds, nothing needs to exit. At cue:cordis, a big 'Cordis' title (h1) appears in the left third (e.g. replace the plug: fade the plug out first, or place the title above it) with a small caption 'the framework'. At cue:koishi, a caption 'Koishi · chatbot framework' (body). At cue:plugins, many small plugin tiles (a grid of ~30–40 small blue squares; use a glob target with a short stagger, not more than ~1.5s total) pop into ctxBox, and a stat '{value}+ plugins' counts up from 0 to 4000 (decimals 0). At cue:goal, three lines appear one by one, timed to the words: 'Add anything.' 'Remove anything.' 'No restart.' (h2; 'No restart.' in `good` green). While 'Add anything' / 'Remove anything' are spoken, one tile pops in and another pops out while the rest stay still. Hold the final frame." }
+  ]
+}

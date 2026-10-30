@@ -1,0 +1,25 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.hook": { "type": "text", "text": "What if a model never wrote a word?", "style": "h2", "at": { "region": "center" } },
+    "s1.card": { "type": "rect", "w": 840, "h": 210, "radius": "md", "fill": "surface", "stroke": "line", "strokeWidth": "thin", "shadow": true, "ui": true, "at": { "region": "middle" } },
+    "s1.who": { "type": "text", "text": "chat model", "style": "label", "fill": "muted", "anchor": "start", "ui": true, "at": { "above": "s1.card", "gap": "sm", "align": "left" } },
+    "s1.reply": { "type": "text", "text": "Sure! The label is probably \"bug\",\nthough it could also be…", "style": "h3", "fill": "write", "anchor": "start", "ui": true, "at": { "in": "s1.card", "align": "left", "pad": "md" } },
+    "s1.parse": { "type": "text", "text": "JSON.parse(reply)", "style": "mono", "anchor": "start", "at": { "below": "s1.card", "gap": "md", "align": "left" } },
+    "s1.under": { "type": "line", "from": "s1.parse.bottom:0", "to": "s1.parse.bottom:1", "stroke": "bad", "strokeWidth": "md" },
+    "s1.fail": { "type": "text", "text": "✕", "style": "h3", "fill": "bad", "at": { "rightOf": "s1.parse", "gap": "sm" } }
+  },
+  "timeline": [
+    { "id": "hookIn", "target": "s1.hook", "preset": "words-in", "at": "start-1.5" },
+    { "target": "s1.hook", "preset": "breathe", "at": 0, "amount": 0.012, "dur": "rest" },
+    { "id": "up", "target": "s1.hook", "preset": "move", "at": "cue:tokens", "to": { "region": "top" }, "dur": 0.6, "ease": "inOut" },
+    { "id": "card", "target": "s1.card", "preset": "rise-in", "with": "up", "offset": 0.15, "dur": 0.5 },
+    { "target": "s1.who", "preset": "fade-in", "with": "card", "offset": 0.2, "dur": "fast" },
+    { "id": "tok", "target": "s1.reply", "preset": "words-in", "after": "card", "gap": 0.05, "pace": 0.22, "distance": 10 },
+    { "id": "parse", "target": "s1.parse", "preset": "rise-in", "at": "cue:parse-0.1", "dur": "fast" },
+    { "id": "under", "target": "s1.under", "preset": "draw-on", "after": "parse", "dur": 0.3 },
+    { "target": "s1.fail", "preset": "pop", "with": "under", "offset": 0.2, "overshoot": 1.5 },
+    { "target": "s1.parse", "preset": "to", "with": "under", "offset": 0.4, "to": { "fill": "muted", "opacity": 0.7 }, "dur": 0.3 },
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

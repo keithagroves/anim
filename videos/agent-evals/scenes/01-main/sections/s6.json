@@ -1,0 +1,58 @@
+{
+  "id": "s6",
+  "objects": {
+    "s6.title": { "type": "text", "text": "Every failure becomes a test", "style": "h2", "at": { "region": "top", "align": "top" } },
+
+    "s6.g1": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "tape", "strokeWidth": "thin" },
+    "s6.g2": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "tape", "strokeWidth": "thin" },
+    "s6.g3": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "tape", "strokeWidth": "thin" },
+    "s6.g4": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "tape", "strokeWidth": "thin" },
+    "s6.g5": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "tape", "strokeWidth": "thin" },
+    "s6.g6": { "type": "rect", "w": 228, "h": 120, "radius": "md", "fill": "surface", "stroke": "fault", "strokeWidth": "md" },
+    "s6.row": { "type": "group", "children": ["s6.g1", "s6.g2", "s6.g3", "s6.g4", "s6.g5", "s6.g6"], "layout": { "dir": "row", "gap": "sm" }, "at": { "region": "middle", "align": "bottom" } },
+
+    "s6.t1": { "type": "text", "text": "NYC → LA", "style": "mono", "at": { "in": "s6.g1", "align": "center" } },
+    "s6.t2": { "type": "text", "text": "BOS → SEA", "style": "mono", "at": { "in": "s6.g2", "align": "center" } },
+    "s6.t3": { "type": "text", "text": "LAX → JFK", "style": "mono", "at": { "in": "s6.g3", "align": "center" } },
+    "s6.t4": { "type": "text", "text": "1-way, Fri", "style": "mono", "at": { "in": "s6.g4", "align": "center" } },
+    "s6.t5": { "type": "text", "text": "2 adults", "style": "mono", "at": { "in": "s6.g5", "align": "center" } },
+    "s6.t6": { "type": "text", "text": "book_flight", "style": "mono", "fill": "fault", "at": { "in": "s6.g6", "align": "center" } },
+
+    "s6.goldTag": { "type": "text", "text": "goldens · example", "style": "small", "fill": "muted", "at": { "above": "s6.row", "gap": "sm" } },
+    "s6.dev": { "type": "text", "text": "development", "style": "label", "fill": "muted", "anchor": "start", "at": { "below": "s6.row", "gap": "md", "align": "left" } },
+    "s6.prod": { "type": "text", "text": "production", "style": "label", "fill": "muted", "anchor": "end", "at": { "below": "s6.row", "gap": "md", "align": "right" } },
+
+    "s6.end": { "type": "text", "text": "Score the whole run.", "style": "h1", "at": { "region": "center", "dy": -70 } },
+    "s6.sub": { "type": "text", "text": "Find exactly where it broke.", "style": "body", "fill": "muted", "at": { "below": "s6.end", "gap": "md" } },
+    "s6.endRail": { "type": "rect", "w": 720, "h": 4, "radius": 2, "fill": "tape", "at": { "below": "s6.sub", "gap": "lg" } },
+    "s6.credit": { "type": "text", "text": "From “AI Agent Evaluation” · DeepEval guide, Confident AI", "style": "small", "fill": "muted", "at": { "region": "bottom", "align": "bottom" } }
+  },
+  "timeline": [
+    { "id": "title", "target": "s6.title", "preset": "words-in", "at": 0.05 },
+    { "target": ["s6.g1", "s6.t1", "s6.dev", "s6.g2", "s6.t2", "s6.g3", "s6.t3", "s6.g4", "s6.t4", "s6.g5", "s6.t5"], "preset": "to", "at": 0, "stagger": 0, "dur": 0.05, "to": { "dx": 122 } },
+
+    { "id": "shrink", "target": "tape", "preset": "to", "at": "cue:goldens", "offset": -0.3, "dur": 0.8, "ease": "inOut", "anticipate": 0.05, "to": { "scale": 0.6, "dy": -230 } },
+    { "id": "gold", "target": ["s6.g1", "s6.g2", "s6.g3", "s6.g4", "s6.g5"], "preset": "pop", "after": "shrink", "gap": 0.05, "stagger": 0.1, "dur": 0.45, "overshoot": 1.5 },
+    { "target": ["s6.t1", "s6.t2", "s6.t3", "s6.t4", "s6.t5"], "preset": "fade-in", "with": "gold", "offset": 0.2, "stagger": 0.1, "dur": 0.35 },
+    { "id": "gtag", "target": "s6.goldTag", "preset": "rise-in", "after": "gold", "gap": 0.1, "dur": 0.35, "distance": 16 },
+    { "target": "s6.dev", "preset": "words-in", "with": "gtag", "offset": 0.2 },
+    { "id": "sweep", "target": ["s6.g1", "s6.g2", "s6.g3", "s6.g4", "s6.g5"], "preset": "highlight", "at": "cue:goldens", "offset": 1.9, "stagger": 0.12, "color": "text", "dur": 0.6 },
+
+    { "id": "prod", "target": "s6.prod", "preset": "words-in", "at": "cue:catch", "offset": -0.2 },
+    { "id": "fail", "target": "cell5", "preset": "to", "at": "cue:catch", "offset": 0.2, "dur": 0.3, "to": { "stroke": "fault", "strokeWidth": "md" } },
+    { "id": "l5", "target": "light5", "preset": "to", "with": "fail", "offset": 0.1, "dur": 0.3, "to": { "fill": "fault", "stroke": "fault" } },
+    { "target": "light5", "preset": "pulse", "after": "l5", "amount": 0.3, "dur": 0.4 },
+
+    { "id": "room", "target": ["s6.g1", "s6.t1", "s6.dev", "s6.g2", "s6.t2", "s6.g3", "s6.t3", "s6.g4", "s6.t4", "s6.g5", "s6.t5"], "preset": "to", "at": "cue:feed", "offset": -0.3, "stagger": 0, "dur": 0.5, "ease": "inOut", "to": { "dx": 0 } },
+    { "id": "feed", "target": "s6.g6", "preset": "fly-from", "from": "cell5", "at": "cue:feed", "offset": 0.05, "dur": 0.8, "anticipate": 0.05 },
+    { "target": "s6.t6", "preset": "fly-from", "from": "cell5", "with": "feed", "dur": 0.8, "anticipate": 0.05 },
+
+    { "id": "out", "preset": "clear", "target": ["s6.title", "tape", "s6.goldTag", "s6.g1", "s6.t1", "s6.g2", "s6.t2", "s6.g3", "s6.t3", "s6.g4", "s6.t4", "s6.g5", "s6.t5", "s6.g6", "s6.t6", "s6.dev", "s6.prod"], "at": "cue:end", "offset": -0.85 },
+
+    { "id": "endT", "target": "s6.end", "preset": "words-in", "at": "cue:end", "offset": -0.45, "pace": 0.09 },
+    { "id": "sub", "target": "s6.sub", "preset": "rise-in", "at": "cue:end", "offset": -0.05, "dur": 0.4, "distance": 24 },
+    { "target": "s6.endRail", "preset": "wipe-in", "at": "cue:end", "offset": 0.05, "dur": 0.45 },
+    { "target": "s6.credit", "preset": "fade-in", "at": "cue:end", "offset": 0.1, "dur": 0.4 },
+    { "target": "s6.end", "preset": "breathe", "at": "cue:end", "offset": 0.6, "amount": 0.01, "dur": "all" }
+  ]
+}

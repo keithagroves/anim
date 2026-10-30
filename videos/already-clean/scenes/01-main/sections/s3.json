@@ -1,0 +1,56 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.carChip": { "type": "chip", "text": "car", "to": "cell.left", "at": { "leftOf": "cell", "gap": "lg" }, "style": "label" },
+
+    "s3.n1": { "type": "circle", "r": 34, "fill": "cellDim", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "cell", "gap": "lg", "dy": -180 } },
+    "s3.n2": { "type": "circle", "r": 34, "fill": "cellDim", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "cell", "gap": "xl", "dy": -60 } },
+    "s3.n3": { "type": "circle", "r": 34, "fill": "cellDim", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "cell", "gap": "xl", "dy": 60 } },
+    "s3.n4": { "type": "circle", "r": 34, "fill": "cellDim", "stroke": "cell", "strokeWidth": "thin", "layer": 2, "at": { "rightOf": "cell", "gap": "lg", "dy": 180 } },
+
+    "s3.a1": { "type": "arrow", "from": "cell.right", "to": "s3.n1.left", "stroke": "cell", "strokeWidth": "thin", "layer": 1 },
+    "s3.a2": { "type": "arrow", "from": "cell.right", "to": "s3.n2.left", "stroke": "cell", "strokeWidth": "thin", "layer": 1 },
+    "s3.a3": { "type": "arrow", "from": "cell.right", "to": "s3.n3.left", "stroke": "cell", "strokeWidth": "thin", "layer": 1 },
+    "s3.a4": { "type": "arrow", "from": "cell.right", "to": "s3.n4.left", "stroke": "cell", "strokeWidth": "thin", "layer": 1 },
+
+    "s3.l1": { "type": "line", "from": "s3.n1.right", "to": "s3.d1.left", "stroke": "line", "strokeWidth": "thin", "dash": "4 10", "opacity": 0.7 },
+    "s3.l2": { "type": "line", "from": "s3.n2.right", "to": "s3.d2.left", "stroke": "line", "strokeWidth": "thin", "dash": "4 10", "opacity": 0.7 },
+    "s3.l3": { "type": "line", "from": "s3.n3.right", "to": "s3.d3.left", "stroke": "line", "strokeWidth": "thin", "dash": "4 10", "opacity": 0.7 },
+    "s3.l4": { "type": "line", "from": "s3.n4.right", "to": "s3.d4.left", "stroke": "line", "strokeWidth": "thin", "dash": "4 10", "opacity": 0.7 },
+
+    "s3.d1": { "type": "text", "text": "dog", "style": "h3", "fill": "old", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -180 } },
+    "s3.d2": { "type": "text", "text": "dog", "style": "h3", "fill": "old", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -60 } },
+    "s3.d3": { "type": "text", "text": "dog", "style": "h3", "fill": "old", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": 60 } },
+    "s3.d4": { "type": "text", "text": "dog", "style": "h3", "fill": "old", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": 180 } },
+
+    "s3.f1": { "type": "text", "text": "car", "style": "h3", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -180 } },
+    "s3.f2": { "type": "text", "text": "car", "style": "h3", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -60 } },
+    "s3.f3": { "type": "text", "text": "pose", "style": "h3", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": 60 } },
+    "s3.f4": { "type": "text", "text": "pose", "style": "h3", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": 180 } },
+
+    "s3.note": { "type": "text", "text": "feature visualization fell into dogs", "style": "body", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "top-left", "dx": 120, "dy": 40 } },
+    "s3.hidden": { "type": "text", "text": "hidden storage?", "style": "body", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "bottom-left", "dx": 120, "dy": -60 } },
+    "s3.shared": { "type": "text", "text": "shared car + dog pose", "style": "body", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "bottom-left", "dx": 120, "dy": -60 } }
+  },
+  "timeline": [
+    { "id": "chip", "target": "s3.carChip", "preset": "pop", "at": "cue:car", "overshoot": 1.5, "dur": 0.45 },
+    { "target": "s3.carChip", "preset": "draw-on", "with": "chip", "offset": 0.1, "dur": 0.35 },
+
+    { "id": "nodes", "target": ["s3.n1", "s3.n2", "s3.n3", "s3.n4"], "preset": "pop", "at": "cue:dogs", "offset": 0.2, "stagger": 0.1, "overshoot": 1.5, "dur": 0.5 },
+    { "id": "arrows", "target": ["s3.a1", "s3.a2", "s3.a3", "s3.a4"], "preset": "draw-on", "at": "cue:dogs", "stagger": 0.1, "dur": 0.45 },
+    { "target": ["s3.l1", "s3.l2", "s3.l3", "s3.l4"], "preset": "draw-on", "with": "nodes", "offset": 0.35, "stagger": 0.1, "dur": 0.4 },
+    { "id": "dogs", "target": ["s3.d1", "s3.d2", "s3.d3", "s3.d4"], "preset": "rise-in", "with": "nodes", "offset": 0.45, "stagger": 0.1, "distance": 16, "dur": 0.4 },
+    { "id": "hid", "target": "s3.hidden", "preset": "words-in", "after": "dogs", "gap": 0.3 },
+
+    { "id": "note", "target": "s3.note", "preset": "words-in", "at": 6.6 },
+
+    { "id": "out", "target": ["s3.d1", "s3.d2", "s3.d3", "s3.d4", "s3.hidden"], "preset": "sink-out", "at": "cue:through", "stagger": 0.06, "distance": 20, "dur": 0.3, "ease": "in" },
+    { "id": "fix", "target": ["s3.f1", "s3.f2", "s3.f3", "s3.f4"], "preset": "pop", "at": "cue:through", "offset": 0.35, "stagger": 0.15, "overshoot": 1.5, "dur": 0.45 },
+
+    { "id": "pose", "target": ["s3.n3", "s3.n4"], "preset": "pulse", "at": "cue:pose", "amount": 0.14, "dur": 0.55 },
+    { "target": ["s3.n3", "s3.n4"], "preset": "highlight", "with": "pose", "color": "fix", "dur": 0.9 },
+    { "target": "s3.shared", "preset": "words-in", "with": "pose", "offset": 0.25 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

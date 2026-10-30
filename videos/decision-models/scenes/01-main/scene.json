@@ -1,0 +1,474 @@
+{
+  "id": "01-main",
+  "objects": {
+    "ticketCard": {
+      "type": "rect",
+      "w": 640,
+      "h": 260,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "at": {
+        "region": "left-half",
+        "align": "center",
+        "dx": 40
+      }
+    },
+    "ticketTag": {
+      "type": "text",
+      "text": "state",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "above": "ticketCard",
+        "gap": "sm",
+        "align": "left"
+      }
+    },
+    "ticketHead": {
+      "type": "text",
+      "text": "ticket #4821",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "ticketCard",
+        "align": "top-left",
+        "pad": "md"
+      }
+    },
+    "ticketBody": {
+      "type": "text",
+      "text": "Our checkout has returned\n500 errors since 9am.",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "ticketCard",
+        "align": "left",
+        "pad": "md",
+        "dy": 12
+      }
+    },
+    "ticket": {
+      "type": "group",
+      "children": [
+        "ticketCard",
+        "ticketTag",
+        "ticketHead",
+        "ticketBody"
+      ]
+    },
+    "formCard": {
+      "type": "rect",
+      "w": 780,
+      "h": 440,
+      "radius": "lg",
+      "fill": "paper",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "shadow": true,
+      "at": {
+        "region": "right-half",
+        "align": "center",
+        "dx": -40
+      }
+    },
+    "formTag": {
+      "type": "text",
+      "text": "question",
+      "style": "label",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "above": "formCard",
+        "gap": "sm",
+        "align": "left"
+      }
+    },
+    "formQ": {
+      "type": "text",
+      "text": "Which label fits?",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "in": "formCard",
+        "align": "top-left",
+        "pad": "md"
+      }
+    },
+    "opt1": {
+      "type": "text",
+      "text": "billing",
+      "style": "body",
+      "anchor": "start",
+      "at": {
+        "in": "formCard",
+        "align": "left",
+        "pad": "md",
+        "dy": -30
+      }
+    },
+    "box1": {
+      "type": "rect",
+      "w": 380,
+      "h": 44,
+      "radius": "sm",
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "in": "formCard",
+        "align": "right",
+        "pad": "md",
+        "dx": -130,
+        "dy": -30
+      }
+    },
+    "bar1": {
+      "type": "rect",
+      "w": 8,
+      "h": 44,
+      "radius": "sm",
+      "fill": "ink",
+      "at": {
+        "in": "box1",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "pct1": {
+      "type": "text",
+      "text": "{value}%",
+      "value": 1,
+      "decimals": 0,
+      "style": "mono",
+      "anchor": "start",
+      "fill": "text",
+      "at": {
+        "rightOf": "box1",
+        "gap": "sm"
+      }
+    },
+    "row1": {
+      "type": "group",
+      "children": [
+        "opt1",
+        "box1",
+        "bar1",
+        "pct1"
+      ]
+    },
+    "opt2": {
+      "type": "text",
+      "text": "bug",
+      "style": "body",
+      "anchor": "start",
+      "at": {
+        "in": "formCard",
+        "align": "left",
+        "pad": "md",
+        "dy": 70
+      }
+    },
+    "box2": {
+      "type": "rect",
+      "w": 380,
+      "h": 44,
+      "radius": "sm",
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "in": "formCard",
+        "align": "right",
+        "pad": "md",
+        "dx": -130,
+        "dy": 70
+      }
+    },
+    "bar2": {
+      "type": "rect",
+      "w": 372,
+      "h": 44,
+      "radius": "sm",
+      "fill": "ink",
+      "at": {
+        "in": "box2",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "pct2": {
+      "type": "text",
+      "text": "{value}%",
+      "value": 98,
+      "decimals": 0,
+      "style": "mono",
+      "anchor": "start",
+      "fill": "text",
+      "at": {
+        "rightOf": "box2",
+        "gap": "sm"
+      }
+    },
+    "row2": {
+      "type": "group",
+      "children": [
+        "opt2",
+        "box2",
+        "bar2",
+        "pct2"
+      ]
+    },
+    "opt3": {
+      "type": "text",
+      "text": "account",
+      "style": "body",
+      "anchor": "start",
+      "at": {
+        "in": "formCard",
+        "align": "left",
+        "pad": "md",
+        "dy": 170
+      }
+    },
+    "box3": {
+      "type": "rect",
+      "w": 380,
+      "h": 44,
+      "radius": "sm",
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "in": "formCard",
+        "align": "right",
+        "pad": "md",
+        "dx": -130,
+        "dy": 170
+      }
+    },
+    "bar3": {
+      "type": "rect",
+      "w": 8,
+      "h": 44,
+      "radius": "sm",
+      "fill": "ink",
+      "at": {
+        "in": "box3",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "pct3": {
+      "type": "text",
+      "text": "{value}%",
+      "value": 1,
+      "decimals": 0,
+      "style": "mono",
+      "anchor": "start",
+      "fill": "text",
+      "at": {
+        "rightOf": "box3",
+        "gap": "sm"
+      }
+    },
+    "row3": {
+      "type": "group",
+      "children": [
+        "opt3",
+        "box3",
+        "bar3",
+        "pct3"
+      ]
+    },
+    "form": {
+      "type": "group",
+      "children": [
+        "formCard",
+        "formTag",
+        "formQ",
+        "row1",
+        "row2",
+        "row3"
+      ]
+    }
+  },
+  "keys": {
+    "0": {
+      "ticket": {
+        "opacity": 0
+      },
+      "form": {
+        "opacity": 0
+      },
+      "bar1": {
+        "clip": 0
+      },
+      "pct1": {
+        "value": 0
+      },
+      "bar2": {
+        "clip": 0
+      },
+      "pct2": {
+        "value": 0
+      },
+      "bar3": {
+        "clip": 0
+      },
+      "pct3": {
+        "value": 0
+      }
+    },
+    "s1": {},
+    "s2": {
+      "ticket": {
+        "opacity": 1
+      },
+      "form": {
+        "opacity": 1
+      },
+      "bar1": {
+        "clip": 1
+      },
+      "pct1": {
+        "value": 1
+      },
+      "bar2": {
+        "clip": 1
+      },
+      "pct2": {
+        "value": 98
+      },
+      "bar3": {
+        "clip": 1
+      },
+      "pct3": {
+        "value": 1
+      }
+    },
+    "s3": {
+      "ticket": {
+        "opacity": 0
+      },
+      "form": {
+        "opacity": 0
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        8.0
+      ],
+      "brief": "Hook: writing is slow and loose. Frame 0 is the thumbnail: the hook line 'What if a model never wrote a word?' (h2, centered) is already fully readable at 0 (pre-roll its words-in). At cue:tokens it moves up and a chat-reply card (surface fill) appears below; amber (`write`) words arrive into it one at a time like generated tokens (e.g. 'Sure! The label is probably \"bug\", though it could also be\u2026'; type-on or word chips, visibly one by one). At cue:parse a mono line `JSON.parse(reply)` appears under the card and fails: a small `bad` red mark/underline and the text dims. The shared ticket and form stay hidden (key s1 changes nothing). End with clear.",
+      "sketch": {
+        "paths": [
+          "$4 M22 9h52v4h-52z",
+          "$5 M24 19h48v20h-48z",
+          "$3 M28 24h14v2.5h-14z",
+          "$3 M44 24h10v2.5h-10z",
+          "$3 M56 24h12v2.5h-12z",
+          "$3 M28 29h20v2.5h-20z",
+          "$3 M50 29h8v2.5h-8z",
+          "$4 M24 44h22v2h-22z",
+          "#ff5d6c~1.2 M49 43.5l3 3M52 43.5l-3 3"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "target": [
+        8.0,
+        18.5
+      ],
+      "brief": "The decision model. The narration opens 'A decision model works differently' (~8.3 s, a calm beat: e.g. a small violet 'decision model' pill fades in at top center, local). The ticket (state) rises in on the left at cue:state; the form rises in on the right at cue:questions, its rows staggered ~0.1 s with the empty boxes drawn on (draw-on) \u2014 bars stay empty (clip 0) and percentages at 0. At cue:pass a single violet vertical scan line (local) sweeps once left\u2192right across both cards (~1 s): it reads everything once. At cue:probs ALL three bars fill together (to clip 1, same start, no stagger, ~0.8 s, ease out: one pass, not one-by-one) while the percentages count-up with them to their key values (1 / 98 / 1). Ink fills, it never pops. Then hold: breathe on the two cards; highlight the 'bug' row's bar once. End exactly on key s2 (ticket and form visible, bars full, values set) and clear the locals.",
+      "sketch": {
+        "paths": [
+          "$5 M8 16h34v18h-34z",
+          "$4 M11 20h12v2h-12z",
+          "$4 M11 25h26v2h-26z",
+          "$4 M11 29h20v2h-20z",
+          "$5 M48 12h42v28h-42z",
+          "$4 M51 15h20v3h-20z",
+          "$4l~0.6 M60 22h22v3h-22zM60 28h22v3h-22zM60 34h22v3h-22z",
+          "$2 M60 22h1v3h-1z",
+          "$2 M60 28h21v3h-21z",
+          "$2 M60 34h1v3h-1z",
+          "$4 M51 22.5h6v2h-6zM51 28.5h6v2h-6zM51 34.5h6v2h-6z",
+          "$2~0.8 M45 8v38"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "target": [
+        18.5,
+        30.4
+      ],
+      "brief": "Three kinds of question, built from the form. Start: ticket and form visible as in key s2. At ~18.8 ('There are three kinds of question') the ticket fades out and the form moves to the left third and shrinks (~0.62) to make room for two more cards. cue:choice: a 'choice' tag pill above the form, and the 'bug' row highlights (one label wins). cue:noul: a local 'noul' card in the center third: the question 'Has repro steps?' with one yes/no bar filling to about a quarter and the label 'p(true)' \u2014 a probability, not a yes. cue:score: a local 'score' card in the right third: a 3-level scale 'routine \u00b7 soon \u00b7 immediate' with a violet marker that slides and lands between 'soon' and 'immediate' (a weighted level, not a pick). cue:closed: a dashed `decide` outline draws around all three cards' answer areas, then a ghost amber option 'something else\u2026' tries to slide into the form and is rejected (shake, then fade) \u2014 it can't answer outside your options. End: clear the locals and fade the form out before ~29.8 so key s3 holds (ticket and form opacity 0); after the form is invisible, return its scale/position to base with a quick `to` so no other prop jumps at the seam.",
+      "sketch": {
+        "paths": [
+          "$5 M5 16h26v22h-26z",
+          "$5 M35 16h26v22h-26z",
+          "$5 M65 16h26v22h-26z",
+          "$4 M8 11h10v3h-10zM38 11h8v3h-8zM68 11h9v3h-9z",
+          "$2 M8 22h1v2h-1zM8 27h18v2h-18zM8 32h1v2h-1z",
+          "$4 M38 20h16v2h-16z",
+          "$4l~0.6 M38 28h20v3h-20z",
+          "$2 M38 28h6v3h-6z",
+          "$4~0.8 M68 30h20",
+          "$2 M80 30a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$2~0.6 M3 25h90v12h-90z",
+          "$3 M14 42h16v3h-16z"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "target": [
+        30.4,
+        39.4
+      ],
+      "brief": "Who makes them: hosted \u2192 open \u2192 local. Three plain name cards in a row (company names as text only, no logos), each landing on its cue: cue:jev 'Jev' (sub: 'TypeSafe \u00b7 hosted API \u00b7 Sept 2026'); cue:clef 'Clef \u00b7 Clef Flash' (sub: 'Cloudflare \u00b7 open weights \u00b7 Apache-2.0'); cue:ollama 'Ollama' (sub: 'your machine \u00b7 /v1/systemone'). Arrows draw on between them (left\u2192right). Under all three, one shared mono line fades in: 'state + questions \u2192 probabilities' to say they all speak the same request. Cards may pop (they're the models), labels ease. Keep it alive with breathe. End with clear.",
+      "sketch": {
+        "paths": [
+          "$5 M6 20h24v13h-24z",
+          "$5 M36 20h24v13h-24z",
+          "$5 M66 20h24v13h-24z",
+          "$2~0.8 M6 20h24v13h-24zM36 20h24v13h-24zM66 20h24v13h-24z",
+          "$4 M9 23h8v2.5h-8zM39 23h16v2.5h-16zM69 23h11v2.5h-11z",
+          "$4l M9 28h16v1.5h-16zM39 28h18v1.5h-18zM69 28h14v1.5h-14z",
+          "$4~0.7 M31 26.5h4M61 26.5h4",
+          "$4 M30 39h36v1.5h-36z"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "target": [
+        39.4,
+        55.2
+      ],
+      "brief": "Our use, the limits, the takeaway (last section). cue:judge: on the left a 16:9 'video frame' card (simple shapes inside suggesting a diagram frame \u2014 not a real screenshot); on the right a rubric form like the hero form, titled 'rubric', with four yes/no rows 'motion', 'readability', 'composition', 'narration sync' \u2014 their bars fill TOGETHER in one pass on 'single call' (~43 s); bars only, no numbers. Caption 'one call \u00b7 every criterion'. cue:limit: two muted caveat lines appear, words-in, one after the other: 'no explanation' and 'hard reasoning \u2192 big model'. cue:end: everything clears and the end card lands: two lines, 'decide \u2192 decision model' in `decide` violet and 'write \u2192 language model' in `write` amber (words-in, ~0.4 s apart). All beats finish by ~52 s; the end card holds to the end (\u2265 3 s end hold) with a gentle breathe.",
+      "sketch": {
+        "paths": [
+          "#9b7bff22 M18 27a30 14 0 1 0 60 0a30 14 0 1 0 -60 0",
+          "$4l~0.5 M14 15h68M14 40h68",
+          "$2 M20 20h14v5h-14z",
+          "$2~1 M37 22.5h6",
+          "$2 M46 20h30v5h-30z",
+          "$3 M20 30h12v5h-12z",
+          "$3~1 M37 32.5h6",
+          "$3 M46 30h30v5h-30z"
+        ]
+      }
+    }
+  ]
+}

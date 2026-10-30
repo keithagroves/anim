@@ -1,0 +1,484 @@
+{
+ "duration": 27.275,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 1.0,
+ "text": "Here's a new feature: narrated whiteboard mode. You write one scene file, with boxes, arrows and narration. The solver lays everything out and times it, and Kokoro turns the script into a voice, with a timestamp for every word. Then the same scene goes two ways: to a video, or to a live canvas, where each shape is drawn exactly as its word is spoken. And because it's real tldraw, you can grab any box, and keep editing.",
+ "words": [
+  {
+   "text": "Here's",
+   "start": 0.775,
+   "end": 0.988
+  },
+  {
+   "text": "a",
+   "start": 0.988,
+   "end": 1.05
+  },
+  {
+   "text": "new",
+   "start": 1.05,
+   "end": 1.238
+  },
+  {
+   "text": "feature",
+   "start": 1.238,
+   "end": 1.825
+  },
+  {
+   "text": ":",
+   "start": 1.825,
+   "end": 1.938
+  },
+  {
+   "text": "narrated",
+   "start": 1.938,
+   "end": 2.45
+  },
+  {
+   "text": "whiteboard",
+   "start": 2.45,
+   "end": 2.9
+  },
+  {
+   "text": "mode",
+   "start": 2.9,
+   "end": 3.575
+  },
+  {
+   "text": ".",
+   "start": 3.575,
+   "end": 3.688
+  },
+  {
+   "text": "You",
+   "start": 3.688,
+   "end": 3.825
+  },
+  {
+   "text": "write",
+   "start": 3.825,
+   "end": 4.025
+  },
+  {
+   "text": "one",
+   "start": 4.025,
+   "end": 4.263
+  },
+  {
+   "text": "scene",
+   "start": 4.263,
+   "end": 4.537
+  },
+  {
+   "text": "file",
+   "start": 4.537,
+   "end": 4.95
+  },
+  {
+   "text": ",",
+   "start": 4.95,
+   "end": 5.0
+  },
+  {
+   "text": "with",
+   "start": 5.0,
+   "end": 5.175
+  },
+  {
+   "text": "boxes",
+   "start": 5.175,
+   "end": 5.775
+  },
+  {
+   "text": ",",
+   "start": 5.775,
+   "end": 5.862
+  },
+  {
+   "text": "arrows",
+   "start": 5.862,
+   "end": 6.35
+  },
+  {
+   "text": "and",
+   "start": 6.35,
+   "end": 6.463
+  },
+  {
+   "text": "narration",
+   "start": 6.463,
+   "end": 7.5
+  },
+  {
+   "text": ".",
+   "start": 7.5,
+   "end": 7.625
+  },
+  {
+   "text": "The",
+   "start": 7.625,
+   "end": 7.763
+  },
+  {
+   "text": "solver",
+   "start": 7.763,
+   "end": 8.2
+  },
+  {
+   "text": "lays",
+   "start": 8.2,
+   "end": 8.488
+  },
+  {
+   "text": "everything",
+   "start": 8.488,
+   "end": 8.925
+  },
+  {
+   "text": "out",
+   "start": 8.925,
+   "end": 9.175
+  },
+  {
+   "text": "and",
+   "start": 9.175,
+   "end": 9.3
+  },
+  {
+   "text": "times",
+   "start": 9.3,
+   "end": 9.675
+  },
+  {
+   "text": "it",
+   "start": 9.675,
+   "end": 9.95
+  },
+  {
+   "text": ",",
+   "start": 9.95,
+   "end": 10.025
+  },
+  {
+   "text": "and",
+   "start": 10.025,
+   "end": 10.15
+  },
+  {
+   "text": "Kokoro",
+   "start": 10.15,
+   "end": 10.662
+  },
+  {
+   "text": "turns",
+   "start": 10.662,
+   "end": 10.988
+  },
+  {
+   "text": "the",
+   "start": 10.988,
+   "end": 11.075
+  },
+  {
+   "text": "script",
+   "start": 11.075,
+   "end": 11.412
+  },
+  {
+   "text": "into",
+   "start": 11.412,
+   "end": 11.65
+  },
+  {
+   "text": "a",
+   "start": 11.65,
+   "end": 11.725
+  },
+  {
+   "text": "voice",
+   "start": 11.725,
+   "end": 12.125
+  },
+  {
+   "text": ",",
+   "start": 12.125,
+   "end": 12.175
+  },
+  {
+   "text": "with",
+   "start": 12.175,
+   "end": 12.312
+  },
+  {
+   "text": "a",
+   "start": 12.312,
+   "end": 12.387
+  },
+  {
+   "text": "timestamp",
+   "start": 12.387,
+   "end": 13.075
+  },
+  {
+   "text": "for",
+   "start": 13.075,
+   "end": 13.225
+  },
+  {
+   "text": "every",
+   "start": 13.225,
+   "end": 13.55
+  },
+  {
+   "text": "word",
+   "start": 13.55,
+   "end": 14.3
+  },
+  {
+   "text": ".",
+   "start": 14.3,
+   "end": 14.463
+  },
+  {
+   "text": "Then",
+   "start": 14.463,
+   "end": 14.7
+  },
+  {
+   "text": "the",
+   "start": 14.7,
+   "end": 14.812
+  },
+  {
+   "text": "same",
+   "start": 14.812,
+   "end": 15.137
+  },
+  {
+   "text": "scene",
+   "start": 15.137,
+   "end": 15.425
+  },
+  {
+   "text": "goes",
+   "start": 15.425,
+   "end": 15.713
+  },
+  {
+   "text": "two",
+   "start": 15.713,
+   "end": 15.925
+  },
+  {
+   "text": "ways",
+   "start": 15.925,
+   "end": 16.575
+  },
+  {
+   "text": ":",
+   "start": 16.575,
+   "end": 16.675
+  },
+  {
+   "text": "to",
+   "start": 16.675,
+   "end": 16.762
+  },
+  {
+   "text": "a",
+   "start": 16.762,
+   "end": 16.825
+  },
+  {
+   "text": "video",
+   "start": 16.825,
+   "end": 17.3
+  },
+  {
+   "text": ",",
+   "start": 17.3,
+   "end": 17.375
+  },
+  {
+   "text": "or",
+   "start": 17.375,
+   "end": 17.525
+  },
+  {
+   "text": "to",
+   "start": 17.525,
+   "end": 17.625
+  },
+  {
+   "text": "a",
+   "start": 17.625,
+   "end": 17.725
+  },
+  {
+   "text": "live",
+   "start": 17.725,
+   "end": 17.975
+  },
+  {
+   "text": "canvas",
+   "start": 17.975,
+   "end": 18.575
+  },
+  {
+   "text": ",",
+   "start": 18.575,
+   "end": 18.65
+  },
+  {
+   "text": "where",
+   "start": 18.65,
+   "end": 18.85
+  },
+  {
+   "text": "each",
+   "start": 18.85,
+   "end": 19.087
+  },
+  {
+   "text": "shape",
+   "start": 19.087,
+   "end": 19.363
+  },
+  {
+   "text": "is",
+   "start": 19.363,
+   "end": 19.5
+  },
+  {
+   "text": "drawn",
+   "start": 19.5,
+   "end": 19.825
+  },
+  {
+   "text": "exactly",
+   "start": 19.825,
+   "end": 20.475
+  },
+  {
+   "text": "as",
+   "start": 20.475,
+   "end": 20.587
+  },
+  {
+   "text": "its",
+   "start": 20.587,
+   "end": 20.725
+  },
+  {
+   "text": "word",
+   "start": 20.725,
+   "end": 20.938
+  },
+  {
+   "text": "is",
+   "start": 20.938,
+   "end": 21.025
+  },
+  {
+   "text": "spoken",
+   "start": 21.025,
+   "end": 21.875
+  },
+  {
+   "text": ".",
+   "start": 21.875,
+   "end": 21.975
+  },
+  {
+   "text": "And",
+   "start": 21.975,
+   "end": 22.113
+  },
+  {
+   "text": "because",
+   "start": 22.113,
+   "end": 22.363
+  },
+  {
+   "text": "it's",
+   "start": 22.363,
+   "end": 22.562
+  },
+  {
+   "text": "real",
+   "start": 22.562,
+   "end": 22.863
+  },
+  {
+   "text": "tldraw",
+   "start": 22.863,
+   "end": 23.575
+  },
+  {
+   "text": ",",
+   "start": 23.575,
+   "end": 23.65
+  },
+  {
+   "text": "you",
+   "start": 23.65,
+   "end": 23.75
+  },
+  {
+   "text": "can",
+   "start": 23.75,
+   "end": 23.9
+  },
+  {
+   "text": "grab",
+   "start": 23.9,
+   "end": 24.225
+  },
+  {
+   "text": "any",
+   "start": 24.225,
+   "end": 24.425
+  },
+  {
+   "text": "box",
+   "start": 24.425,
+   "end": 24.9
+  },
+  {
+   "text": ",",
+   "start": 24.9,
+   "end": 24.95
+  },
+  {
+   "text": "and",
+   "start": 24.95,
+   "end": 25.075
+  },
+  {
+   "text": "keep",
+   "start": 25.075,
+   "end": 25.3
+  },
+  {
+   "text": "editing",
+   "start": 25.3,
+   "end": 26.025
+  },
+  {
+   "text": ".",
+   "start": 26.025,
+   "end": 26.175
+  }
+ ],
+ "cues": {
+  "scene": 4.263,
+  "solver": 7.763,
+  "voice": 11.725,
+  "video": 16.825,
+  "canvas": 17.725,
+  "sync": 19.825,
+  "edit": 23.9
+ }
+}

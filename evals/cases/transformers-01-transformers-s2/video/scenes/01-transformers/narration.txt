@@ -1,0 +1,4 @@
+How does a language model read your words? First, it chops the text into {cue:tokens}tokens: small pieces of words. Each token becomes a {cue:vector}list of numbers, called an {cue:embedding}embedding, a kind of address for its meaning.
+Then comes the key idea: {cue:attention}attention. Every token {cue:looks}looks at every other token, and decides which ones matter most. In the sentence, the cat sat because {cue:it}it was tired, the word it pays the most attention to {cue:cat}cat.
+A transformer {cue:stack}stacks this step dozens of times. Each {cue:layer}layer refines the meaning, from simple patterns, like grammar, to {cue:ideas}bigger ideas.
+Finally, it {cue:predict}predicts the next token, as a {cue:probs}probability for every possible word. It picks one, {cue:append}adds it to the text, and repeats. {cue:words}That's how it writes, one token at a time.

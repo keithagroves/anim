@@ -1,0 +1,284 @@
+{
+  "id": "01-main",
+  "objects": {
+    "lensFill": {
+      "type": "circle",
+      "r": 320,
+      "fill": "surface",
+      "fillOpacity": 0.6,
+      "stroke": "line",
+      "strokeWidth": "md",
+      "shadow": true,
+      "at": {
+        "region": "left-half",
+        "dx": 40
+      }
+    },
+    "lensTicks": {
+      "type": "svg",
+      "w": 700,
+      "h": 700,
+      "viewBox": "0 0 700 700",
+      "svg": "<line x1=\"676.0\" y1=\"350.0\" x2=\"700.0\" y2=\"350.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"685.1\" y1=\"394.1\" x2=\"697.0\" y2=\"395.7\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"676.5\" y1=\"437.5\" x2=\"688.1\" y2=\"440.6\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"662.3\" y1=\"479.3\" x2=\"673.4\" y2=\"483.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"632.3\" y1=\"513.0\" x2=\"653.1\" y2=\"525.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"618.2\" y1=\"555.8\" x2=\"627.7\" y2=\"563.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"589.0\" y1=\"589.0\" x2=\"597.5\" y2=\"597.5\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"555.8\" y1=\"618.2\" x2=\"563.1\" y2=\"627.7\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"513.0\" y1=\"632.3\" x2=\"525.0\" y2=\"653.1\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"479.3\" y1=\"662.3\" x2=\"483.9\" y2=\"673.4\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"437.5\" y1=\"676.5\" x2=\"440.6\" y2=\"688.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"394.1\" y1=\"685.1\" x2=\"395.7\" y2=\"697.0\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"350.0\" y1=\"676.0\" x2=\"350.0\" y2=\"700.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"305.9\" y1=\"685.1\" x2=\"304.3\" y2=\"697.0\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"262.5\" y1=\"676.5\" x2=\"259.4\" y2=\"688.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"220.7\" y1=\"662.3\" x2=\"216.1\" y2=\"673.4\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"187.0\" y1=\"632.3\" x2=\"175.0\" y2=\"653.1\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"144.2\" y1=\"618.2\" x2=\"136.9\" y2=\"627.7\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"111.0\" y1=\"589.0\" x2=\"102.5\" y2=\"597.5\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"81.8\" y1=\"555.8\" x2=\"72.3\" y2=\"563.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"67.7\" y1=\"513.0\" x2=\"46.9\" y2=\"525.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"37.7\" y1=\"479.3\" x2=\"26.6\" y2=\"483.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"23.5\" y1=\"437.5\" x2=\"11.9\" y2=\"440.6\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"14.9\" y1=\"394.1\" x2=\"3.0\" y2=\"395.7\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"24.0\" y1=\"350.0\" x2=\"0.0\" y2=\"350.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"14.9\" y1=\"305.9\" x2=\"3.0\" y2=\"304.3\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"23.5\" y1=\"262.5\" x2=\"11.9\" y2=\"259.4\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"37.7\" y1=\"220.7\" x2=\"26.6\" y2=\"216.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"67.7\" y1=\"187.0\" x2=\"46.9\" y2=\"175.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"81.8\" y1=\"144.2\" x2=\"72.3\" y2=\"136.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"111.0\" y1=\"111.0\" x2=\"102.5\" y2=\"102.5\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"144.2\" y1=\"81.8\" x2=\"136.9\" y2=\"72.3\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"187.0\" y1=\"67.7\" x2=\"175.0\" y2=\"46.9\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"220.7\" y1=\"37.7\" x2=\"216.1\" y2=\"26.6\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"262.5\" y1=\"23.5\" x2=\"259.4\" y2=\"11.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"305.9\" y1=\"14.9\" x2=\"304.3\" y2=\"3.0\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"350.0\" y1=\"24.0\" x2=\"350.0\" y2=\"0.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"394.1\" y1=\"14.9\" x2=\"395.7\" y2=\"3.0\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"437.5\" y1=\"23.5\" x2=\"440.6\" y2=\"11.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"479.3\" y1=\"37.7\" x2=\"483.9\" y2=\"26.6\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"513.0\" y1=\"67.7\" x2=\"525.0\" y2=\"46.9\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"555.8\" y1=\"81.8\" x2=\"563.1\" y2=\"72.3\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"589.0\" y1=\"111.0\" x2=\"597.5\" y2=\"102.5\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"618.2\" y1=\"144.2\" x2=\"627.7\" y2=\"136.9\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"632.3\" y1=\"187.0\" x2=\"653.1\" y2=\"175.0\" stroke=\"#4a5a69\" stroke-width=\"2\"/><line x1=\"662.3\" y1=\"220.7\" x2=\"673.4\" y2=\"216.1\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"676.5\" y1=\"262.5\" x2=\"688.1\" y2=\"259.4\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/><line x1=\"685.1\" y1=\"305.9\" x2=\"697.0\" y2=\"304.3\" stroke=\"#4a5a69\" stroke-width=\"1.2\"/>",
+      "at": {
+        "in": "lensFill"
+      }
+    },
+    "crossH": {
+      "type": "line",
+      "from": "lensFill.left",
+      "to": "lensFill.right",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "dash": "6 10",
+      "opacity": 0.45
+    },
+    "crossV": {
+      "type": "line",
+      "from": "lensFill.top",
+      "to": "lensFill.bottom",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "dash": "6 10",
+      "opacity": 0.45
+    },
+    "scope": {
+      "type": "group",
+      "children": [
+        "lensFill",
+        "lensTicks",
+        "crossH",
+        "crossV"
+      ]
+    },
+    "cell": {
+      "type": "circle",
+      "r": 70,
+      "fill": "cellDim",
+      "stroke": "cell",
+      "strokeWidth": "md",
+      "layer": 2,
+      "at": {
+        "in": "lensFill"
+      }
+    },
+    "nucleus": {
+      "type": "circle",
+      "r": 22,
+      "fill": "cell",
+      "layer": 3,
+      "at": {
+        "in": "cell"
+      }
+    },
+    "neuron": {
+      "type": "group",
+      "children": [
+        "cell",
+        "nucleus"
+      ]
+    }
+  },
+  "through": [
+    {
+      "target": "camera",
+      "preset": "drift",
+      "at": 0,
+      "dur": "all",
+      "amount": 0.015
+    },
+    {
+      "target": "neuron",
+      "preset": "breathe",
+      "at": 0,
+      "dur": "all",
+      "amount": 0.015,
+      "period": 3.2
+    }
+  ],
+  "keys": {
+    "0": {
+      "scope": {
+        "opacity": 0
+      },
+      "neuron": {
+        "opacity": 0
+      }
+    },
+    "s1": {
+      "scope": {
+        "opacity": 1
+      },
+      "neuron": {
+        "opacity": 1
+      }
+    },
+    "s2": {},
+    "s3": {},
+    "s4": {},
+    "s5": {},
+    "s6": {}
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        22.63
+      ],
+      "brief": "Hook: the famous problem neuron, superposition, and the thesis. FRAME 0 IS THE THUMBNAIL: bring in `scope` (fade-in/scale-in) and `neuron` (pop) with `at: start-0.5` so the lens and cell are already visible at t=0, plus a small muted caption 'a famous problem neuron' words-in near the top of the workspace (right-half region, x \u2265 1000). cue:cats \u2192 a slide-label chip 'cat faces' pops to the right of the lens, with a thin cyan line drawn from `cell.right` to it; cue:cars \u2192 a second chip 'car fronts' below it, same treatment. cue:superposition \u2192 an `old`-rose label 'superposition' words-in under the chips. cue:knot \u2192 a tangled knot (an svg/path scribble stroked `old`, ~240px) draws on over the cell inside the lens, and the cell dims slightly (to opacity ~0.6 via `to`, restored before the end). cue:second \u2192 a small dashed card 'second model (SAE)' rises in on the right with a short arrow 'unfold'. Around 'the knot was never there' (just before cue:clean) the knot draw-offs/fades and the old labels and chips clear (sink-out / clear). cue:clean \u2192 the title 'neural networks are already clean' (h2, two lines OK) words-in in the workspace (right-half region, x \u2265 1000), with a muted caption 'Nick Cammarata \u00b7 Goodfire' under it; the cell pulses once in `cell` cyan. Hold briefly, then `clear` at end-0.6. End on key s1: scope and neuron fully visible, unscaled, cell back at full opacity.",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$4 M54 16h22v3h-22z",
+          "$5 M54 22h16v4h-16z",
+          "$5 M54 28h16v4h-16z",
+          "$2~0.5 M31.5 27L54 24M31.5 27L54 30",
+          "#e0677aff~0.8 M22 22c6 -4 10 8 4 10c-6 2 -8 -10 2 -9c8 1 2 12 -4 7",
+          "#e0677aff M54 36h20v2.5h-20z"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "target": [
+        22.63,
+        34.16
+      ],
+      "brief": "The cat/car neuron is a V detector. Lens and cell stay. 'Look at that neuron again, and ask what one thing it sees' \u2192 small muted caption 'what one thing?' near top of the workspace (right-half region, x \u2265 1000). On 'cat ears, car grilles, fox snouts' pop three chips stacked in the workspace (right-half region, x \u2265 1000): 'cat ears', 'car grilles', 'fox snouts', each with a tiny drawn V-ish glyph (a chevron path) beside it in `cell`. cue:point \u2192 the three chevrons pulse together. cue:vee \u2192 a large amber (`fix`) V (stroke-only chevron, ~180px tall) draws on inside the lens to the upper-right of the cell, and an amber label 'V detector' words-in in the workspace; the chips dim. cue:oh \u2192 below the cell inside the lens, a muted ring 'O' (stroke-only circle ~110px) scale-ins with a small '\u2212' badge (negative side), and a muted caption 'round things push it down' words-in in the workspace, optionally with two tiny round glyphs (circles) 'golf ball', 'clock' as labels. `clear` at end-0.6. End on key s2 (scope + neuron unchanged).",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$3~1.6 M33 20l4 9l4 -9",
+          "$4l~0.8 M25 39a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
+          "$5 M54 14h14v4h-14z",
+          "$5 M54 20h14v4h-14z",
+          "$5 M54 26h14v4h-14z",
+          "$3 M54 34h18v3h-18z",
+          "$4l M54 40h12v2h-12z"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "target": [
+        34.16,
+        48.32
+      ],
+      "brief": "The textbook 'superposition circuit' was shared pose. Inside the lens, the cell is the car neuron: a small chip 'car' pops beside it at cue:car. cue:dogs \u2192 four small neuron circles (r\u224834, fill `cellDim`, stroke `cell` thin) pop in a column on the right side of the lens (stagger 0.1), with arrows drawing on from `cell` to each; each gets an `old`-rose label 'dog' in the workspace (right-half region, x \u2265 1000) (list aligned with the circles), and a muted caption 'hidden storage?' words-in. On 'the visualizations kept sliding into dogs' a small muted note 'feature visualization fell into dogs' appears (top of the workspace). cue:through \u2192 the four 'dog' labels cross out/fade (sink-out) and amber (`fix`) labels land in their place, in order: 'car', 'car', 'pose', 'pose' (stagger 0.15); cue:pose \u2192 the two 'pose' circles pulse and an amber caption 'shared car + dog pose' words-in. `clear` at end-0.6. End on key s3.",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$2l M35.5 19a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+          "$2l M37.5 25a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+          "$2l M37.5 31a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+          "$2l M35.5 37a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+          "$2~0.4 M31.5 27L35.5 19M31.5 27L37.5 25M31.5 27L37.5 31M31.5 27L35.5 37",
+          "$3 M54 18h10v2.5h-10zM54 24h10v2.5h-10zM54 30h10v2.5h-10zM54 36h10v2.5h-10z",
+          "#e0677a99 M66 24h10v2.5h-10z"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "target": [
+        48.32,
+        63.55
+      ],
+      "brief": "InceptionV1's messy last layer vs. a modern network the same size. Use the workspace (right-half region, x \u2265 1000) for two specimen trays stacked vertically (each a card with a 10\u00d72 grid of small square 'neurons', ~44px squares). Top tray, at cue:none: label 'InceptionV1 \u00b7 last layer' (muted); its squares pop in mostly `cellDim` with only one lit `cell` square (shows 'almost none'); the cell in the lens dims to `cellDim` fill (via `to`, restore before end). cue:same \u2192 bottom tray rises in: label 'modern network \u00b7 same size \u00b7 7.06M'; two small chips 'residual connections' and 'layer norm' pop beside its label. cue:nearly \u2192 the bottom grid's squares light to `cell` in a quick left-to-right stagger (0.03), and an amber stat '99\u2013100%' (count-up to 99 then the text '99\u2013100%' is fine, or just pop the text) lands next to the tray with caption 'easy to read'. On 'a learning problem, not superposition' an amber caption 'a learning problem' words-in and an `old` 'superposition' label strikes through (a line draws across it). `clear` at end-0.6. End on key s4 (cell back to its base fill).",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$5 M52 10h36v14h-36z",
+          "$2d M54 12h4v4h-4zM60 12h4v4h-4zM66 12h4v4h-4zM72 12h4v4h-4zM78 12h4v4h-4z",
+          "$2 M66 18h4v4h-4z",
+          "$5 M52 30h36v14h-36z",
+          "$2 M54 32h4v4h-4zM60 32h4v4h-4zM66 32h4v4h-4zM72 32h4v4h-4zM78 32h4v4h-4zM54 38h4v4h-4zM60 38h4v4h-4zM66 38h4v4h-4zM72 38h4v4h-4zM78 38h4v4h-4z",
+          "$3 M84 46h8v4h-8z"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "target": [
+        63.55,
+        76.84
+      ],
+      "brief": "Recursive generalization: neurons grow like branches. cue:branch \u2192 an amber title 'recursive generalization' is NOT shown yet; first a muted caption 'grows like a branch'. Draw a branching tree out of the cell: curved arrows (bend) from `cell.right` reaching into the workspace (right-half region, x \u2265 1000). cue:iy \u2192 first node: a small `cell` circle with chip 'iy' at the end of the first branch (upper). Optionally a side twig to a chip 'Miyazaki' (also contains 'iy'). cue:diy \u2192 a second branch grows from the 'iy' node to a node 'diy'. cue:diyfull \u2192 a third branch grows from 'diy' to an amber node 'do it yourself', with a tiny tag 'no \u201ciy\u201d'. cue:recursive \u2192 amber h2 'recursive generalization' words-in at the top of the workspace, and two short contrasting captions below the tree: 'similar things' in `fix` amber vs 'not unrelated ones' with an `old` 'superposition' struck through. `clear` at end-0.6. End on key s5.",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$3~0.6 M31.5 27C40 27 44 18 54 16M31.5 27C40 27 44 30 54 30M54 30C60 30 62 38 70 40",
+          "$2 M52 16a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$2 M52 30a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$3 M67.5 40a2.5 2.5 0 1 0 5.0 0a2.5 2.5 0 1 0 -5.0 0",
+          "$4 M57 15h10v2h-10z",
+          "$4 M57 29h8v2h-8z",
+          "$4 M74 39h14v2h-14z",
+          "$3 M54 8h26v3h-26z"
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "target": [
+        76.84,
+        95.25
+      ],
+      "brief": "Language models, then and now. In the workspace (right-half region, x \u2265 1000): a small header 'language model neurons' (muted). cue:onepoint \u2192 row 1: label '2023 \u00b7 automated study' and a horizontal track (~700px) with a tiny `old` fill wiping to 1.7% of the track, value '~1.7% interpretable' popping at its end. cue:ninety \u2192 row 2: label 'now \u00b7 Qwen3-32B (early audit)' and a stacked bar on the same 0\u2013100% scale: `cell` segment 90% wipes in with label 'one main job ~90%'; cue:seven \u2192 an amber `fix` segment ~7% appends with label 'two related jobs ~7%'; cue:few \u2192 a `muted` segment 2\u20134% (draw ~3%) with label 'not yet understood 2\u20134%'. Segment widths proportional. cue:trillions \u2192 a chip 'holds up to trillions of parameters' pops below. The lens cell glows: pulse + brief `to` fill `cell` and back. `clear` at end-0.6. End on key s6. Real numbers only.",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M24.5 27a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$4l M52 12h14v2h-14z",
+          "#e0677aff M52 16h1v4h-1z",
+          "$5 M52 16h36v4h-36z",
+          "$4l M52 26h18v2h-18z",
+          "$2 M52 30h32v5h-32z",
+          "$3 M84 30h2.5v5h-2.5z",
+          "$4l M86.5 30h1.5v5h-1.5z",
+          "$4 M60 44h22v3h-22z"
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "target": [
+        95.25,
+        115.01
+      ],
+      "brief": "Payoff and end card (last section; final picture holds \u22653 s). cue:crossword \u2192 inside the lens, a small crossword of square 'neurons' (~56px squares in a plus/cross pattern around and including the cell area, 8\u201310 squares) appears as `cellDim` outlines, then fills to `cell` one square at a time (stagger ~0.25 s) \u2014 each solved square constrains its neighbours; a muted caption 'understanding compounds' words-in in the workspace (right-half region, x \u2265 1000). cue:bitter \u2192 an amber caption 'a bitter lesson for interpretability?' words-in in the workspace with a small muted line 'scale ordinary investigation'. On 'It's a working hypothesis' a muted chip 'a working hypothesis' fades in. cue:study \u2192 clear the captions (words-out) and the crossword squares fade, leaving the clean lens and cell; then the end card: h2 'neural networks are already clean' words-in in the workspace (as in s1), with the muted credit 'Nick Cammarata \u00b7 Goodfire \u00b7 2026' and the cell pulsing once at cue:end. Land the final picture on the last spoken line and hold it.",
+      "sketch": {
+        "paths": [
+          "$5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$4l~0.5 M12 27a16 16 0 1 0 32 0a16 16 0 1 0 -32 0",
+          "$2 M20 23h4v4h-4zM24 23h4v4h-4zM28 23h4v4h-4zM32 23h4v4h-4zM28 15h4v4h-4zM28 19h4v4h-4zM28 27h4v4h-4zM28 31h4v4h-4z",
+          "$2d M20 31h4v4h-4zM36 19h4v4h-4z",
+          "$4 M54 20h32v5h-32z",
+          "$4l M54 28h22v2h-22z",
+          "$3 M54 34h16v2h-16z",
+          "$2 M26.5 29a3.5 3.5 0 1 0 7.0 0a3.5 3.5 0 1 0 -7.0 0",
+          "$4l~0.3 M12 27h32M28 11v32",
+          "$4l M54 40h14v1.5h-14z"
+        ]
+      }
+    }
+  ]
+}

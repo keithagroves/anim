@@ -1,0 +1,44 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.c1": { "type": "rect", "w": 480, "h": 220, "radius": "md", "fill": "surface", "stroke": "decide", "strokeWidth": "thin", "shadow": true, "at": { "region": "left-third", "align": "center", "dy": -50 } },
+    "s4.t1": { "type": "text", "text": "Jev", "style": "h3", "anchor": "start", "at": { "in": "s4.c1", "align": "top-left", "pad": "md" } },
+    "s4.u1": { "type": "text", "text": "TypeSafe\nhosted API · Sept 2026", "style": "label", "fill": "muted", "anchor": "start", "at": { "in": "s4.c1", "align": "bottom-left", "pad": "md" } },
+    "s4.g1": { "type": "group", "children": ["s4.c1", "s4.t1", "s4.u1"] },
+
+    "s4.c2": { "type": "rect", "w": 480, "h": 220, "radius": "md", "fill": "surface", "stroke": "decide", "strokeWidth": "thin", "shadow": true, "at": { "region": "center-third", "align": "center", "dy": -50 } },
+    "s4.t2": { "type": "text", "text": "Clef · Clef Flash", "style": "h3", "anchor": "start", "at": { "in": "s4.c2", "align": "top-left", "pad": "md" } },
+    "s4.u2": { "type": "text", "text": "Cloudflare\nopen weights · Apache-2.0", "style": "label", "fill": "muted", "anchor": "start", "at": { "in": "s4.c2", "align": "bottom-left", "pad": "md" } },
+    "s4.g2": { "type": "group", "children": ["s4.c2", "s4.t2", "s4.u2"] },
+
+    "s4.c3": { "type": "rect", "w": 480, "h": 220, "radius": "md", "fill": "surface", "stroke": "decide", "strokeWidth": "thin", "shadow": true, "at": { "region": "right-third", "align": "center", "dy": -50 } },
+    "s4.t3": { "type": "text", "text": "Ollama", "style": "h3", "anchor": "start", "at": { "in": "s4.c3", "align": "top-left", "pad": "md" } },
+    "s4.u3": { "type": "text", "text": "your machine\n/v1/systemone", "style": "label", "fill": "muted", "anchor": "start", "at": { "in": "s4.c3", "align": "bottom-left", "pad": "md" } },
+    "s4.g3": { "type": "group", "children": ["s4.c3", "s4.t3", "s4.u3"] },
+
+    "s4.a12": { "type": "arrow", "from": "s4.c1.right", "to": "s4.c2.left", "stroke": "muted", "strokeWidth": "thin" },
+    "s4.a23": { "type": "arrow", "from": "s4.c2.right", "to": "s4.c3.left", "stroke": "muted", "strokeWidth": "thin" },
+
+    "s4.req": { "type": "text", "text": "state + questions → probabilities", "style": "mono", "fill": "text", "at": { "below": "s4.c2", "gap": "lg" } }
+  },
+  "timeline": [
+    { "id": "pop1", "target": "s4.c1", "preset": "pop", "at": "cue:jev", "offset": -0.1, "overshoot": 1.6, "dur": 0.5 },
+    { "id": "lab1", "target": ["s4.t1", "s4.u1"], "preset": "rise-in", "with": "pop1", "offset": 0.2, "distance": 16, "stagger": 0.2, "dur": 0.4, "ease": "out" },
+    { "target": "s4.g1", "preset": "breathe", "after": "lab1", "amount": 0.012 },
+
+    { "id": "arr1", "target": "s4.a12", "preset": "draw-on", "at": "cue:clef", "offset": -0.45, "dur": 0.4, "ease": "out" },
+    { "id": "pop2", "target": "s4.c2", "preset": "pop", "at": "cue:clef", "offset": -0.1, "overshoot": 1.6, "dur": 0.5 },
+    { "id": "lab2", "target": ["s4.t2", "s4.u2"], "preset": "rise-in", "with": "pop2", "offset": 0.2, "distance": 16, "stagger": 0.2, "dur": 0.4, "ease": "out" },
+    { "target": "s4.g2", "preset": "breathe", "after": "lab2", "amount": 0.012 },
+
+    { "id": "arr2", "target": "s4.a23", "preset": "draw-on", "at": "cue:ollama", "offset": -0.45, "dur": 0.4, "ease": "out" },
+    { "id": "pop3", "target": "s4.c3", "preset": "pop", "at": "cue:ollama", "offset": -0.1, "overshoot": 1.6, "dur": 0.5 },
+    { "id": "lab3", "target": ["s4.t3", "s4.u3"], "preset": "rise-in", "with": "pop3", "offset": 0.2, "distance": 16, "stagger": 0.2, "dur": 0.4, "ease": "out" },
+    { "target": "s4.g3", "preset": "breathe", "after": "lab3", "amount": 0.012 },
+
+    { "id": "req", "target": "s4.req", "preset": "fade-in", "at": "cue:clef", "offset": 1.4, "dur": 0.5, "ease": "out" },
+    { "target": "s4.req", "preset": "pulse", "after": "lab3", "gap": 0.1, "amount": 0.05, "dur": 0.5 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

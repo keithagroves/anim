@@ -1,0 +1,329 @@
+{
+ "id": "s3",
+ "objects": {
+  "s3.title": {
+   "type": "text",
+   "text": "Revertible effects",
+   "style": "h3",
+   "fill": "undo",
+   "anchor": "start",
+   "at": {
+    "region": "top-left",
+    "align": "top-left"
+   }
+  },
+  "s3.tray": {
+   "type": "rect",
+   "w": 440,
+   "h": 176,
+   "radius": "md",
+   "fill": "none",
+   "stroke": "line",
+   "strokeWidth": "thin",
+   "dash": "10 8",
+   "at": {
+    "below": "plugBox",
+    "gap": "lg"
+   }
+  },
+  "s3.trayLabel": {
+   "type": "text",
+   "text": "inverses",
+   "style": "label",
+   "fill": "undo",
+   "at": {
+    "below": "s3.tray",
+    "gap": "sm"
+   }
+  },
+  "s3.r1Box": {
+   "type": "rect",
+   "w": 400,
+   "h": 64,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "undo",
+   "strokeWidth": "md",
+   "at": {
+    "in": "s3.tray",
+    "align": "bottom",
+    "pad": "sm"
+   }
+  },
+  "s3.r1Text": {
+   "type": "text",
+   "text": "undo: remove /greet",
+   "style": "mono",
+   "fill": "undo",
+   "at": {
+    "in": "s3.r1Box"
+   }
+  },
+  "s3.r1": {
+   "type": "group",
+   "children": [
+    "s3.r1Box",
+    "s3.r1Text"
+   ],
+   "layer": 6
+  },
+  "s3.r2Box": {
+   "type": "rect",
+   "w": 400,
+   "h": 64,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "undo",
+   "strokeWidth": "md",
+   "at": {
+    "above": "s3.r1Box",
+    "gap": "sm"
+   }
+  },
+  "s3.r2Text": {
+   "type": "text",
+   "text": "undo: close conn",
+   "style": "mono",
+   "fill": "undo",
+   "at": {
+    "in": "s3.r2Box"
+   }
+  },
+  "s3.r2": {
+   "type": "group",
+   "children": [
+    "s3.r2Box",
+    "s3.r2Text"
+   ],
+   "layer": 7
+  },
+  "s3.c1Box": {
+   "type": "rect",
+   "w": 280,
+   "h": 72,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "at": {
+    "in": "ctxBox",
+    "align": "top",
+    "dx": -190,
+    "dy": 120
+   }
+  },
+  "s3.c1Text": {
+   "type": "text",
+   "text": "cmd /greet",
+   "style": "mono",
+   "fill": "text",
+   "at": {
+    "in": "s3.c1Box"
+   }
+  },
+  "s3.c1": {
+   "type": "group",
+   "children": [
+    "s3.c1Box",
+    "s3.c1Text"
+   ],
+   "layer": 4
+  },
+  "s3.c2Box": {
+   "type": "rect",
+   "w": 280,
+   "h": 72,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "at": {
+    "in": "ctxBox",
+    "align": "top",
+    "dx": 190,
+    "dy": 120
+   }
+  },
+  "s3.c2Text": {
+   "type": "text",
+   "text": "conn db",
+   "style": "mono",
+   "fill": "text",
+   "at": {
+    "in": "s3.c2Box"
+   }
+  },
+  "s3.c2": {
+   "type": "group",
+   "children": [
+    "s3.c2Box",
+    "s3.c2Text"
+   ],
+   "layer": 4
+  },
+  "s3.clean": {
+   "type": "text",
+   "text": "\u2713  back exactly as it was",
+   "style": "h3",
+   "fill": "good",
+   "at": {
+    "in": "ctxBox",
+    "dy": 40
+   }
+  }
+ },
+ "timeline": [
+  {
+   "id": "title",
+   "target": "s3.title",
+   "preset": "rise-in",
+   "at": "cue:revertible"
+  },
+  {
+   "target": "plugLink",
+   "preset": "draw-on",
+   "with": "title",
+   "offset": 0.4
+  },
+  {
+   "target": "s3.tray",
+   "preset": "draw-on",
+   "with": "title",
+   "offset": 0.9
+  },
+  {
+   "id": "cmd",
+   "target": "s3.c1",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "at": "cue:cmd",
+   "dur": 0.9
+  },
+  {
+   "target": "s3.r1",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "with": "cmd",
+   "dur": 0.8
+  },
+  {
+   "id": "conn",
+   "target": "s3.c2",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "at": "cue:conn",
+   "dur": 0.9
+  },
+  {
+   "target": "s3.r2",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "with": "conn",
+   "dur": 0.8
+  },
+  {
+   "id": "inv",
+   "target": "s3.tray",
+   "preset": "highlight",
+   "color": "undo",
+   "at": "cue:inverse"
+  },
+  {
+   "target": [
+    "s3.r2Box",
+    "s3.r1Box"
+   ],
+   "preset": "pulse",
+   "with": "inv",
+   "stagger": 0.15,
+   "amount": 0.05
+  },
+  {
+   "target": "s3.trayLabel",
+   "preset": "rise-in",
+   "with": "inv",
+   "offset": 0.2,
+   "distance": 20
+  },
+  {
+   "target": "s3.r2",
+   "preset": "pulse",
+   "at": "cue:inverse",
+   "offset": 2.2,
+   "amount": 0.06
+  },
+  {
+   "id": "unplug",
+   "target": "plugLink",
+   "preset": "fade-out",
+   "at": "cue:unwind",
+   "dur": "fast"
+  },
+  {
+   "id": "u2",
+   "target": "s3.r2",
+   "preset": "to",
+   "to": {
+    "in": "s3.c2Box"
+   },
+   "after": "unplug",
+   "gap": 0.05,
+   "dur": 0.55
+  },
+  {
+   "target": [
+    "s3.r2",
+    "s3.c2"
+   ],
+   "preset": "pop-out",
+   "after": "u2",
+   "dur": "fast"
+  },
+  {
+   "id": "u1",
+   "target": "s3.r1",
+   "preset": "to",
+   "to": {
+    "in": "s3.c1Box"
+   },
+   "after": "u2",
+   "gap": 0.3,
+   "dur": 0.55
+  },
+  {
+   "target": [
+    "s3.r1",
+    "s3.c1"
+   ],
+   "preset": "pop-out",
+   "after": "u1",
+   "dur": "fast"
+  },
+  {
+   "id": "clean",
+   "target": "ctxBox",
+   "preset": "highlight",
+   "color": "good",
+   "at": "cue:clean"
+  },
+  {
+   "target": "s3.clean",
+   "preset": "rise-in",
+   "at": "cue:clean",
+   "offset": -0.25,
+   "distance": 20,
+   "dur": "fast"
+  },
+  {
+   "target": [
+    "s3.clean",
+    "s3.title",
+    "s3.tray",
+    "s3.trayLabel"
+   ],
+   "preset": "fade-out",
+   "at": 15.062,
+   "dur": 0.3
+  }
+ ]
+}

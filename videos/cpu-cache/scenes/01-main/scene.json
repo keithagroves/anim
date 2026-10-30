@@ -1,0 +1,42 @@
+{
+  "id": "01-main",
+  "objects": {
+    "chipBox": { "type": "rect", "w": 260, "h": 150, "radius": "lg", "fill": "cpu", "shadow": true,
+                 "at": { "region": "top-left", "align": "top-left", "dx": 40, "dy": 24 } },
+    "chipLabel": { "type": "text", "text": "CPU", "style": "h2", "fill": "#ffffff", "at": { "in": "chipBox" } },
+    "chip": { "type": "group", "children": ["chipBox", "chipLabel"] },
+
+    "cacheBox": { "type": "rect", "w": 560, "h": 140, "radius": "lg", "fill": "cacheFill", "stroke": "cache", "strokeWidth": "md", "shadow": true,
+                  "at": { "below": "chip", "gap": 36, "align": "left" } },
+    "cacheLabel": { "type": "text", "text": "Cache", "style": "label", "fill": "cache", "at": { "in": "cacheBox", "align": "top-left", "pad": "md" } },
+    "cache": { "type": "group", "children": ["cacheBox", "cacheLabel"] },
+
+    "ramBox": { "type": "rect", "w": 1000, "h": 300, "radius": "lg", "fill": "ram", "stroke": "ramEdge", "strokeWidth": "thin", "shadow": true,
+                "at": { "below": "cache", "gap": 28, "align": "left" } },
+    "ramLabel": { "type": "text", "text": "RAM", "style": "label", "fill": "muted", "at": { "in": "ramBox", "align": "top-left", "pad": "md" } },
+    "ram": { "type": "group", "children": ["ramBox", "ramLabel"] },
+
+    "cacheTime": { "type": "text", "text": "1 ns", "style": "mono", "fill": "cache", "at": { "rightOf": "cache", "gap": 28, "align": "center" } },
+    "ramTime": { "type": "text", "text": "100 ns", "style": "mono", "fill": "muted", "at": { "rightOf": "ram", "gap": 28, "align": "center" } },
+
+    "byte": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "item", "shadow": true,
+              "at": { "in": "cacheBox", "align": "left", "pad": "sm", "dx": 120 } }
+  },
+  "keys": {
+    "0": {
+      "chip": { "opacity": 0 }, "cache": { "opacity": 0 }, "cacheTime": { "opacity": 0 },
+      "ram": { "opacity": 0 }, "ramTime": { "opacity": 0 }, "byte": { "opacity": 0 }
+    },
+    "s1": { "chip": { "opacity": 1 }, "ram": { "opacity": 1 }, "ramTime": { "opacity": 1 },
+            "cache": { "opacity": 1 }, "cacheTime": { "opacity": 1 } },
+    "s2": { "byte": { "opacity": 1 } }
+  },
+  "through": [
+    { "target": "camera", "preset": "drift", "at": 0, "dur": "all", "amount": 0.02 }
+  ],
+  "sections": [
+    { "id": "s1", "target": [0, 13], "brief": "Hook. The CPU chip pops in. At cue:slow the big RAM bar rises in with its 100 ns tag, and a huge 100x stat lands at right with a one-word 'slower' caption, then both clear. At cue:closer the blue Cache bar pops in between chip and RAM with its 1 ns tag, and a brief caption 'keeps your frequently-used data close' appears and clears. End on key s1: chip, Cache and RAM all visible." },
+    { "id": "s2", "target": [13, 19.2], "brief": "The lookup. At cue:asks an amber byte leaves the CPU and flies down into the cache, with a dashed fetch arrow drawn ahead of it; a caption 'checks the cache first' appears and clears. At cue:hit the byte pulses, flashes green, and a green HIT badge pops above it, then pops out. End on key s2: the byte sitting in the cache." },
+    { "id": "s3", "target": [19.2, 31.8], "brief": "Miss and eviction. At cue:miss the cache flashes red and a second amber byte appears at the CPU, hops to the cache, bounces on to RAM (which pulses) with a red dashed miss arrow, and a red MISS badge pops, then everything for this beat clears. At cue:out an 'LRU' tag appears on the byte still in the cache, the byte turns gray, is thrown out of the cache to the right and fades. A closing caption 'throw out the least-recently-used' fades in and holds. Last section: nothing needs to clear." }
+  ]
+}

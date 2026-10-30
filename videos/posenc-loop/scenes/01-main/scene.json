@@ -1,0 +1,481 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Positional encoding",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "“Attention Is All You Need” · Vaswani et al., 2017 · section 3.5",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  attention alone ignores order",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  so add a position signal:\n    waves of different speeds",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  input = word + position",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  now order changes the result",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "formula": {
+      "type": "text",
+      "text": "PE(pos, 2i)   = sin(pos / 10000^(2i/d))\nPE(pos, 2i+1) = cos(pos / 10000^(2i/d))",
+      "style": "mono",
+      "size": 21,
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "example sentence · vectors and wave speeds are illustrative (the paper uses 512 dims)",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "t0": {
+      "type": "rect",
+      "w": 140,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 4,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 890.0,
+        "dy": 230.0
+      }
+    },
+    "t0T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "layer": 5,
+      "at": {
+        "in": "t0"
+      }
+    },
+    "w0": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.78\"/><rect x=\"25\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.53\"/><rect x=\"49\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.46\"/><rect x=\"73\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.83\"/>",
+      "w": 96,
+      "h": 18,
+      "viewBox": "0 0 96 18",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 912,
+        "dy": 296
+      },
+      "layer": 5
+    },
+    "pl0": {
+      "type": "line",
+      "from": [
+        960,
+        515
+      ],
+      "to": [
+        960,
+        775
+      ],
+      "stroke": "line",
+      "strokeWidth": 1.5,
+      "dash": "4 7"
+    },
+    "pl0T": {
+      "type": "text",
+      "text": "pos 0",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 934,
+        "dy": 790
+      }
+    },
+    "t1": {
+      "type": "rect",
+      "w": 140,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 7,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1075.0,
+        "dy": 230.0
+      }
+    },
+    "t1T": {
+      "type": "text",
+      "text": "dog",
+      "style": "mono",
+      "layer": 8,
+      "at": {
+        "in": "t1"
+      }
+    },
+    "w1": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.90\"/><rect x=\"25\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.20\"/><rect x=\"49\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.93\"/><rect x=\"73\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.32\"/>",
+      "w": 96,
+      "h": 18,
+      "viewBox": "0 0 96 18",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1097,
+        "dy": 296
+      },
+      "layer": 8
+    },
+    "pl1": {
+      "type": "line",
+      "from": [
+        1145,
+        515
+      ],
+      "to": [
+        1145,
+        775
+      ],
+      "stroke": "line",
+      "strokeWidth": 1.5,
+      "dash": "4 7"
+    },
+    "pl1T": {
+      "type": "text",
+      "text": "pos 1",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1119,
+        "dy": 790
+      }
+    },
+    "t2": {
+      "type": "rect",
+      "w": 140,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 4,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1260.0,
+        "dy": 230.0
+      }
+    },
+    "t2T": {
+      "type": "text",
+      "text": "bit",
+      "style": "mono",
+      "layer": 5,
+      "at": {
+        "in": "t2"
+      }
+    },
+    "w2": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.21\"/><rect x=\"25\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.94\"/><rect x=\"49\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.28\"/><rect x=\"73\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.75\"/>",
+      "w": 96,
+      "h": 18,
+      "viewBox": "0 0 96 18",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1282,
+        "dy": 296
+      },
+      "layer": 5
+    },
+    "pl2": {
+      "type": "line",
+      "from": [
+        1330,
+        515
+      ],
+      "to": [
+        1330,
+        775
+      ],
+      "stroke": "line",
+      "strokeWidth": 1.5,
+      "dash": "4 7"
+    },
+    "pl2T": {
+      "type": "text",
+      "text": "pos 2",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1304,
+        "dy": 790
+      }
+    },
+    "t3": {
+      "type": "rect",
+      "w": 140,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 4,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1445.0,
+        "dy": 230.0
+      }
+    },
+    "t3T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "layer": 5,
+      "at": {
+        "in": "t3"
+      }
+    },
+    "w3": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.78\"/><rect x=\"25\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.53\"/><rect x=\"49\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.46\"/><rect x=\"73\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.83\"/>",
+      "w": 96,
+      "h": 18,
+      "viewBox": "0 0 96 18",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1467,
+        "dy": 296
+      },
+      "layer": 5
+    },
+    "pl3": {
+      "type": "line",
+      "from": [
+        1515,
+        515
+      ],
+      "to": [
+        1515,
+        775
+      ],
+      "stroke": "line",
+      "strokeWidth": 1.5,
+      "dash": "4 7"
+    },
+    "pl3T": {
+      "type": "text",
+      "text": "pos 3",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1489,
+        "dy": 790
+      }
+    },
+    "t4": {
+      "type": "rect",
+      "w": 140,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 7,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1630.0,
+        "dy": 230.0
+      }
+    },
+    "t4T": {
+      "type": "text",
+      "text": "man",
+      "style": "mono",
+      "layer": 8,
+      "at": {
+        "in": "t4"
+      }
+    },
+    "w4": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.94\"/><rect x=\"25\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.29\"/><rect x=\"49\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.73\"/><rect x=\"73\" y=\"1\" width=\"22\" height=\"16\" rx=\"3\" fill=\"#ff8fb3\" fill-opacity=\"0.58\"/>",
+      "w": 96,
+      "h": 18,
+      "viewBox": "0 0 96 18",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1652,
+        "dy": 296
+      },
+      "layer": 8
+    },
+    "pl4": {
+      "type": "line",
+      "from": [
+        1700,
+        515
+      ],
+      "to": [
+        1700,
+        775
+      ],
+      "stroke": "line",
+      "strokeWidth": 1.5,
+      "dash": "4 7"
+    },
+    "pl4T": {
+      "type": "text",
+      "text": "pos 4",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1674,
+        "dy": 790
+      }
+    },
+    "rowword": {
+      "type": "text",
+      "text": "word",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 836,
+        "dy": 290
+      }
+    },
+    "rowposition": {
+      "type": "text",
+      "text": "position",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 792,
+        "dy": 316
+      }
+    },
+    "rowoutput": {
+      "type": "text",
+      "text": "output",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 814,
+        "dy": 394
+      }
+    },
+    "fast": {
+      "type": "text",
+      "text": "fast",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 836,
+        "dy": 531
+      }
+    },
+    "slow": {
+      "type": "text",
+      "text": "slow",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 836,
+        "dy": 726
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop of positional encoding: swapping two words only reorders attention's outputs; sine waves give each slot a pattern that is added to the word; swapping back now changes the outputs; resets so the last frame is the first."
+    }
+  ]
+}

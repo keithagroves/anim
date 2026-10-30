@@ -1,0 +1,427 @@
+{
+ "duration": 26.6,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 1.0,
+ "text": "Your app runs in containers. One container is easy to manage. But real systems run hundreds of them, spread across many servers. Kubernetes is the conductor. You declare what you want, like three copies of your web app, and Kubernetes places them on servers for you. Now, if a server fails, Kubernetes notices, and starts a replacement somewhere healthy. You describe the goal. Kubernetes keeps it true.",
+ "words": [
+  {
+   "text": "Your",
+   "start": 0.8,
+   "end": 0.988
+  },
+  {
+   "text": "app",
+   "start": 0.988,
+   "end": 1.312
+  },
+  {
+   "text": "runs",
+   "start": 1.312,
+   "end": 1.7
+  },
+  {
+   "text": "in",
+   "start": 1.7,
+   "end": 1.825
+  },
+  {
+   "text": "containers",
+   "start": 1.825,
+   "end": 2.8
+  },
+  {
+   "text": ".",
+   "start": 2.8,
+   "end": 2.913
+  },
+  {
+   "text": "One",
+   "start": 2.913,
+   "end": 3.15
+  },
+  {
+   "text": "container",
+   "start": 3.15,
+   "end": 3.675
+  },
+  {
+   "text": "is",
+   "start": 3.675,
+   "end": 3.837
+  },
+  {
+   "text": "easy",
+   "start": 3.837,
+   "end": 4.175
+  },
+  {
+   "text": "to",
+   "start": 4.175,
+   "end": 4.275
+  },
+  {
+   "text": "manage",
+   "start": 4.275,
+   "end": 5.05
+  },
+  {
+   "text": ".",
+   "start": 5.05,
+   "end": 5.15
+  },
+  {
+   "text": "But",
+   "start": 5.15,
+   "end": 5.312
+  },
+  {
+   "text": "real",
+   "start": 5.312,
+   "end": 5.612
+  },
+  {
+   "text": "systems",
+   "start": 5.612,
+   "end": 6.1
+  },
+  {
+   "text": "run",
+   "start": 6.1,
+   "end": 6.338
+  },
+  {
+   "text": "hundreds",
+   "start": 6.338,
+   "end": 6.763
+  },
+  {
+   "text": "of",
+   "start": 6.763,
+   "end": 6.875
+  },
+  {
+   "text": "them",
+   "start": 6.875,
+   "end": 7.15
+  },
+  {
+   "text": ",",
+   "start": 7.15,
+   "end": 7.237
+  },
+  {
+   "text": "spread",
+   "start": 7.237,
+   "end": 7.537
+  },
+  {
+   "text": "across",
+   "start": 7.537,
+   "end": 7.875
+  },
+  {
+   "text": "many",
+   "start": 7.875,
+   "end": 8.137
+  },
+  {
+   "text": "servers",
+   "start": 8.137,
+   "end": 9.05
+  },
+  {
+   "text": ".",
+   "start": 9.05,
+   "end": 9.188
+  },
+  {
+   "text": "Kubernetes",
+   "start": 9.188,
+   "end": 9.912
+  },
+  {
+   "text": "is",
+   "start": 9.912,
+   "end": 10.075
+  },
+  {
+   "text": "the",
+   "start": 10.075,
+   "end": 10.175
+  },
+  {
+   "text": "conductor",
+   "start": 10.175,
+   "end": 11.025
+  },
+  {
+   "text": ".",
+   "start": 11.025,
+   "end": 11.125
+  },
+  {
+   "text": "You",
+   "start": 11.125,
+   "end": 11.25
+  },
+  {
+   "text": "declare",
+   "start": 11.25,
+   "end": 11.637
+  },
+  {
+   "text": "what",
+   "start": 11.637,
+   "end": 11.775
+  },
+  {
+   "text": "you",
+   "start": 11.775,
+   "end": 11.912
+  },
+  {
+   "text": "want",
+   "start": 11.912,
+   "end": 12.35
+  },
+  {
+   "text": ",",
+   "start": 12.35,
+   "end": 12.425
+  },
+  {
+   "text": "like",
+   "start": 12.425,
+   "end": 12.662
+  },
+  {
+   "text": "three",
+   "start": 12.662,
+   "end": 12.9
+  },
+  {
+   "text": "copies",
+   "start": 12.9,
+   "end": 13.312
+  },
+  {
+   "text": "of",
+   "start": 13.312,
+   "end": 13.387
+  },
+  {
+   "text": "your",
+   "start": 13.387,
+   "end": 13.5
+  },
+  {
+   "text": "web",
+   "start": 13.5,
+   "end": 13.725
+  },
+  {
+   "text": "app",
+   "start": 13.725,
+   "end": 13.975
+  },
+  {
+   "text": ",",
+   "start": 13.975,
+   "end": 14.05
+  },
+  {
+   "text": "and",
+   "start": 14.05,
+   "end": 14.175
+  },
+  {
+   "text": "Kubernetes",
+   "start": 14.175,
+   "end": 14.8
+  },
+  {
+   "text": "places",
+   "start": 14.8,
+   "end": 15.213
+  },
+  {
+   "text": "them",
+   "start": 15.213,
+   "end": 15.338
+  },
+  {
+   "text": "on",
+   "start": 15.338,
+   "end": 15.537
+  },
+  {
+   "text": "servers",
+   "start": 15.537,
+   "end": 15.975
+  },
+  {
+   "text": "for",
+   "start": 15.975,
+   "end": 16.1
+  },
+  {
+   "text": "you",
+   "start": 16.1,
+   "end": 16.65
+  },
+  {
+   "text": ".",
+   "start": 16.65,
+   "end": 16.85
+  },
+  {
+   "text": "Now",
+   "start": 16.85,
+   "end": 17.2
+  },
+  {
+   "text": ",",
+   "start": 17.2,
+   "end": 17.275
+  },
+  {
+   "text": "if",
+   "start": 17.275,
+   "end": 17.387
+  },
+  {
+   "text": "a",
+   "start": 17.387,
+   "end": 17.488
+  },
+  {
+   "text": "server",
+   "start": 17.488,
+   "end": 17.887
+  },
+  {
+   "text": "fails",
+   "start": 17.887,
+   "end": 18.425
+  },
+  {
+   "text": ",",
+   "start": 18.425,
+   "end": 18.5
+  },
+  {
+   "text": "Kubernetes",
+   "start": 18.5,
+   "end": 19.1
+  },
+  {
+   "text": "notices",
+   "start": 19.1,
+   "end": 19.725
+  },
+  {
+   "text": ",",
+   "start": 19.725,
+   "end": 19.8
+  },
+  {
+   "text": "and",
+   "start": 19.8,
+   "end": 19.925
+  },
+  {
+   "text": "starts",
+   "start": 19.925,
+   "end": 20.238
+  },
+  {
+   "text": "a",
+   "start": 20.238,
+   "end": 20.288
+  },
+  {
+   "text": "replacement",
+   "start": 20.288,
+   "end": 20.988
+  },
+  {
+   "text": "somewhere",
+   "start": 20.988,
+   "end": 21.375
+  },
+  {
+   "text": "healthy",
+   "start": 21.375,
+   "end": 22.075
+  },
+  {
+   "text": ".",
+   "start": 22.075,
+   "end": 22.212
+  },
+  {
+   "text": "You",
+   "start": 22.212,
+   "end": 22.35
+  },
+  {
+   "text": "describe",
+   "start": 22.35,
+   "end": 22.812
+  },
+  {
+   "text": "the",
+   "start": 22.812,
+   "end": 22.9
+  },
+  {
+   "text": "goal",
+   "start": 22.9,
+   "end": 23.525
+  },
+  {
+   "text": ".",
+   "start": 23.525,
+   "end": 23.663
+  },
+  {
+   "text": "Kubernetes",
+   "start": 23.663,
+   "end": 24.325
+  },
+  {
+   "text": "keeps",
+   "start": 24.325,
+   "end": 24.6
+  },
+  {
+   "text": "it",
+   "start": 24.6,
+   "end": 24.738
+  },
+  {
+   "text": "true",
+   "start": 24.738,
+   "end": 25.325
+  },
+  {
+   "text": ".",
+   "start": 25.325,
+   "end": 25.5
+  }
+ ],
+ "cues": {
+  "one": 2.913,
+  "many": 6.338,
+  "servers": 7.237,
+  "conductor": 10.175,
+  "declare": 11.25,
+  "three": 12.662,
+  "place": 14.8,
+  "fail": 17.887,
+  "replace": 19.925,
+  "goal": 22.212
+ }
+}

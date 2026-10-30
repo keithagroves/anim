@@ -1,0 +1,191 @@
+{
+ "id": "01-whiteboard",
+ "objects": {
+  "title": {
+   "type": "text",
+   "text": "Narrated whiteboard mode",
+   "style": "h2",
+   "at": {
+    "region": "top",
+    "align": "top-left"
+   },
+   "anchor": "start"
+  },
+  "subtitle": {
+   "type": "text",
+   "text": "one scene \u2192 a video and a live, editable canvas",
+   "style": "caption",
+   "at": {
+    "below": "title",
+    "gap": "sm",
+    "align": "left"
+   },
+   "anchor": "start"
+  },
+  "scene": {
+   "type": "rect",
+   "text": "scene.json\nboxes \u00b7 arrows \u00b7 narration",
+   "w": 330,
+   "h": 120,
+   "size": 24,
+   "stroke": "flow",
+   "at": {
+    "region": "left-third",
+    "align": "left"
+   }
+  },
+  "solver": {
+   "type": "rect",
+   "text": "Layout + timing\nsolver",
+   "w": 300,
+   "h": 120,
+   "size": 26,
+   "stroke": "flow",
+   "at": {
+    "region": "center",
+    "dx": -40
+   }
+  },
+  "tts": {
+   "type": "rect",
+   "text": "Kokoro TTS\nword timestamps",
+   "w": 300,
+   "h": 100,
+   "size": 24,
+   "stroke": "local",
+   "at": {
+    "above": "solver",
+    "gap": 110
+   }
+  },
+  "video": {
+   "type": "rect",
+   "text": "Video renderer\n\u2192 MP4",
+   "w": 320,
+   "h": 110,
+   "size": 24,
+   "stroke": "out",
+   "at": {
+    "region": "right-third",
+    "align": "right",
+    "dy": -190
+   }
+  },
+  "canvas": {
+   "type": "rect",
+   "text": "Live canvas\ntldraw + narration",
+   "w": 320,
+   "h": 110,
+   "size": 24,
+   "stroke": "out",
+   "at": {
+    "region": "right-third",
+    "align": "right",
+    "dy": 150
+   }
+  },
+  "w1": {
+   "type": "rect",
+   "text": "each",
+   "w": 92,
+   "h": 48,
+   "size": 20,
+   "stroke": "muted"
+  },
+  "w2": {
+   "type": "rect",
+   "text": "shape",
+   "w": 92,
+   "h": 48,
+   "size": 20,
+   "stroke": "muted"
+  },
+  "w3": {
+   "type": "rect",
+   "text": "on",
+   "w": 92,
+   "h": 48,
+   "size": 20,
+   "stroke": "muted"
+  },
+  "w4": {
+   "type": "rect",
+   "text": "its",
+   "w": 92,
+   "h": 48,
+   "size": 20,
+   "stroke": "muted"
+  },
+  "w5": {
+   "type": "rect",
+   "text": "word",
+   "w": 92,
+   "h": 48,
+   "size": 20,
+   "stroke": "muted"
+  },
+  "words": {
+   "type": "group",
+   "children": [
+    "w1",
+    "w2",
+    "w3",
+    "w4",
+    "w5"
+   ],
+   "layout": {
+    "dir": "row",
+    "gap": "sm"
+   },
+   "at": {
+    "below": "canvas",
+    "gap": "lg",
+    "align": "right"
+   }
+  },
+  "a_scene": {
+   "type": "arrow",
+   "from": "scene.right",
+   "to": "solver.left"
+  },
+  "a_tts": {
+   "type": "arrow",
+   "from": "tts.bottom",
+   "to": "solver.top",
+   "text": "cues"
+  },
+  "a_video": {
+   "type": "arrow",
+   "from": "solver.right:0.3",
+   "to": "video.left",
+   "bend": 70,
+   "stroke": "out"
+  },
+  "a_canvas": {
+   "type": "arrow",
+   "from": "solver.right:0.7",
+   "to": "canvas.left:0.3",
+   "bend": -70,
+   "stroke": "out"
+  },
+  "a_edit": {
+   "type": "arrow",
+   "from": "canvas.left:0.72",
+   "to": "scene.bottom",
+   "bend": 150,
+   "dash": "10 10",
+   "stroke": "local",
+   "text": "edit"
+  }
+ },
+ "sections": [
+  {
+   "id": "s1",
+   "target": [
+    0,
+    27.3
+   ],
+   "brief": "Draw the feature diagram on the narration."
+  }
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "id": "01-transformers",
+ "objects": {
+  "tok1Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "leftOf": "tok2Box",
+    "gap": 20
+   }
+  },
+  "tok1Text": {
+   "type": "text",
+   "text": "The",
+   "style": "label",
+   "at": {
+    "in": "tok1Box"
+   }
+  },
+  "tok1": {
+   "type": "group",
+   "children": [
+    "tok1Box",
+    "tok1Text"
+   ]
+  },
+  "tok2Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "leftOf": "tok3Box",
+    "gap": 20
+   }
+  },
+  "tok2Text": {
+   "type": "text",
+   "text": "cat",
+   "style": "label",
+   "at": {
+    "in": "tok2Box"
+   }
+  },
+  "tok2": {
+   "type": "group",
+   "children": [
+    "tok2Box",
+    "tok2Text"
+   ]
+  },
+  "tok3Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "leftOf": "tok4Box",
+    "gap": 20
+   }
+  },
+  "tok3Text": {
+   "type": "text",
+   "text": "sat",
+   "style": "label",
+   "at": {
+    "in": "tok3Box"
+   }
+  },
+  "tok3": {
+   "type": "group",
+   "children": [
+    "tok3Box",
+    "tok3Text"
+   ]
+  },
+  "tok4Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "region": "middle",
+    "dy": 60
+   }
+  },
+  "tok4Text": {
+   "type": "text",
+   "text": "because",
+   "style": "label",
+   "at": {
+    "in": "tok4Box"
+   }
+  },
+  "tok4": {
+   "type": "group",
+   "children": [
+    "tok4Box",
+    "tok4Text"
+   ]
+  },
+  "tok5Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "rightOf": "tok4Box",
+    "gap": 20
+   }
+  },
+  "tok5Text": {
+   "type": "text",
+   "text": "it",
+   "style": "label",
+   "at": {
+    "in": "tok5Box"
+   }
+  },
+  "tok5": {
+   "type": "group",
+   "children": [
+    "tok5Box",
+    "tok5Text"
+   ]
+  },
+  "tok6Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "rightOf": "tok5Box",
+    "gap": 20
+   }
+  },
+  "tok6Text": {
+   "type": "text",
+   "text": "was",
+   "style": "label",
+   "at": {
+    "in": "tok6Box"
+   }
+  },
+  "tok6": {
+   "type": "group",
+   "children": [
+    "tok6Box",
+    "tok6Text"
+   ]
+  },
+  "tok7Box": {
+   "type": "rect",
+   "w": 150,
+   "h": 84,
+   "radius": "md",
+   "fill": "token",
+   "stroke": "tokenEdge",
+   "strokeWidth": "thin",
+   "shadow": true,
+   "at": {
+    "rightOf": "tok6Box",
+    "gap": 20
+   }
+  },
+  "tok7Text": {
+   "type": "text",
+   "text": "tired",
+   "style": "label",
+   "at": {
+    "in": "tok7Box"
+   }
+  },
+  "tok7": {
+   "type": "group",
+   "children": [
+    "tok7Box",
+    "tok7Text"
+   ]
+  }
+ },
+ "keys": {
+  "0": {
+   "tok1": {
+    "opacity": 0
+   },
+   "tok2": {
+    "opacity": 0
+   },
+   "tok3": {
+    "opacity": 0
+   },
+   "tok4": {
+    "opacity": 0
+   },
+   "tok5": {
+    "opacity": 0
+   },
+   "tok6": {
+    "opacity": 0
+   },
+   "tok7": {
+    "opacity": 0
+   }
+  },
+  "s1": {
+   "tok1": {
+    "opacity": 1
+   },
+   "tok2": {
+    "opacity": 1
+   },
+   "tok3": {
+    "opacity": 1
+   },
+   "tok4": {
+    "opacity": 1
+   },
+   "tok5": {
+    "opacity": 1
+   },
+   "tok6": {
+    "opacity": 1
+   },
+   "tok7": {
+    "opacity": 1
+   }
+  }
+ },
+ "through": [
+  {
+   "target": "camera",
+   "preset": "drift",
+   "at": 0,
+   "dur": "all",
+   "amount": 0.03
+  }
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "target": [
+    0,
+    12
+   ],
+   "brief": "Tokens and embeddings. Open with the sentence 'The cat sat because it was tired' as plain text (a local text object, e.g. style h2 at the token row's position) so the screen isn't empty while the narration asks its question. At cue:tokens it splits into the seven token chips (shared tok1..tok7: fade/rise them in, staggered, as the plain text fades out), with a small title 'tokens'. At cue:vector / cue:embedding each chip sprouts its embedding: a short column of thin blue bars or 3 tiny numbers below it, with a title 'embeddings'. Clear all local objects before the section ends. End on exactly key s1: the seven chips visible in their row, nothing else."
+  },
+  {
+   "id": "s2",
+   "target": [
+    12,
+    25
+   ],
+   "brief": "Attention. Title 'attention' at cue:attention. At cue:looks, every token looks at every other: draw faint amber lines/arcs between the chips (above the row), staggered, then fade them. At cue:it, focus on 'it' (tok5): highlight it, then at cue:cat draw a strong, thick amber arrow from 'it' to 'cat' (tok2) with weaker thin lines to the other tokens, and highlight 'cat'. Return the chips to normal and clear all local objects before the section ends (key s2 = chips unchanged)."
+  },
+  {
+   "id": "s3",
+   "target": [
+    25,
+    34
+   ],
+   "brief": "Layers. At cue:stack, a stack of translucent purple layer bands appears above the token row (e.g. 4 bands with a small label like 'layer 1', 'layer 2', '\u2026', 'layer 96'), and the meaning visibly moves up through them (e.g. a glow or small chip copies rising band by band, staggered). At cue:layer and cue:ideas, label the low band 'grammar' and a high band 'ideas'. The real chips must be back in their home row, unchanged, and all local objects gone at section end."
+  },
+  {
+   "id": "s4",
+   "target": [
+    34,
+    46
+   ],
+   "brief": "Next-token prediction. At cue:predict show a small probability bar chart in green above the right end of the row: candidates like '.' 62%, 'and' 21%, 'so' 9%, 'today' 3% (use count-up for the percentages). At cue:append the winning '.' flies down into the row as an 8th chip to the right of tok7 (same chip style as the others). At cue:words a closing caption 'one token at a time'. Last section: the final picture holds; nothing needs to exit."
+  }
+ ]
+}

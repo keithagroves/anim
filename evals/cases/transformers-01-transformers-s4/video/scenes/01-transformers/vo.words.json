@@ -1,0 +1,796 @@
+{
+ "duration": 45.025,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 1.0,
+ "text": "How does a language model read your words? First, it chops the text into tokens: small pieces of words. Each token becomes a list of numbers, called an embedding, a kind of address for its meaning. Then comes the key idea: attention. Every token looks at every other token, and decides which ones matter most. In the sentence, the cat sat because it was tired, the word it pays the most attention to cat. A transformer stacks this step dozens of times. Each layer refines the meaning, from simple patterns, like grammar, to bigger ideas. Finally, it predicts the next token, as a probability for every possible word. It picks one, adds it to the text, and repeats. That's how it writes, one token at a time.",
+ "words": [
+  {
+   "text": "How",
+   "start": 0.775,
+   "end": 0.887
+  },
+  {
+   "text": "does",
+   "start": 0.887,
+   "end": 1.038
+  },
+  {
+   "text": "a",
+   "start": 1.038,
+   "end": 1.1
+  },
+  {
+   "text": "language",
+   "start": 1.1,
+   "end": 1.5
+  },
+  {
+   "text": "model",
+   "start": 1.5,
+   "end": 1.875
+  },
+  {
+   "text": "read",
+   "start": 1.875,
+   "end": 2.062
+  },
+  {
+   "text": "your",
+   "start": 2.062,
+   "end": 2.175
+  },
+  {
+   "text": "words",
+   "start": 2.175,
+   "end": 2.875
+  },
+  {
+   "text": "?",
+   "start": 2.875,
+   "end": 3.0
+  },
+  {
+   "text": "First",
+   "start": 3.0,
+   "end": 3.45
+  },
+  {
+   "text": ",",
+   "start": 3.45,
+   "end": 3.525
+  },
+  {
+   "text": "it",
+   "start": 3.525,
+   "end": 3.65
+  },
+  {
+   "text": "chops",
+   "start": 3.65,
+   "end": 3.962
+  },
+  {
+   "text": "the",
+   "start": 3.962,
+   "end": 4.05
+  },
+  {
+   "text": "text",
+   "start": 4.05,
+   "end": 4.388
+  },
+  {
+   "text": "into",
+   "start": 4.388,
+   "end": 4.6
+  },
+  {
+   "text": "tokens",
+   "start": 4.6,
+   "end": 5.3
+  },
+  {
+   "text": ":",
+   "start": 5.3,
+   "end": 5.412
+  },
+  {
+   "text": "small",
+   "start": 5.412,
+   "end": 5.725
+  },
+  {
+   "text": "pieces",
+   "start": 5.725,
+   "end": 6.088
+  },
+  {
+   "text": "of",
+   "start": 6.088,
+   "end": 6.175
+  },
+  {
+   "text": "words",
+   "start": 6.175,
+   "end": 6.9
+  },
+  {
+   "text": ".",
+   "start": 6.9,
+   "end": 7.037
+  },
+  {
+   "text": "Each",
+   "start": 7.037,
+   "end": 7.287
+  },
+  {
+   "text": "token",
+   "start": 7.287,
+   "end": 7.7
+  },
+  {
+   "text": "becomes",
+   "start": 7.7,
+   "end": 8.037
+  },
+  {
+   "text": "a",
+   "start": 8.037,
+   "end": 8.1
+  },
+  {
+   "text": "list",
+   "start": 8.1,
+   "end": 8.312
+  },
+  {
+   "text": "of",
+   "start": 8.312,
+   "end": 8.4
+  },
+  {
+   "text": "numbers",
+   "start": 8.4,
+   "end": 8.9
+  },
+  {
+   "text": ",",
+   "start": 8.9,
+   "end": 8.95
+  },
+  {
+   "text": "called",
+   "start": 8.95,
+   "end": 9.213
+  },
+  {
+   "text": "an",
+   "start": 9.213,
+   "end": 9.287
+  },
+  {
+   "text": "embedding",
+   "start": 9.287,
+   "end": 9.825
+  },
+  {
+   "text": ",",
+   "start": 9.825,
+   "end": 9.9
+  },
+  {
+   "text": "a",
+   "start": 9.9,
+   "end": 9.975
+  },
+  {
+   "text": "kind",
+   "start": 9.975,
+   "end": 10.188
+  },
+  {
+   "text": "of",
+   "start": 10.188,
+   "end": 10.262
+  },
+  {
+   "text": "address",
+   "start": 10.262,
+   "end": 10.65
+  },
+  {
+   "text": "for",
+   "start": 10.65,
+   "end": 10.762
+  },
+  {
+   "text": "its",
+   "start": 10.762,
+   "end": 10.925
+  },
+  {
+   "text": "meaning",
+   "start": 10.925,
+   "end": 11.675
+  },
+  {
+   "text": ".",
+   "start": 11.675,
+   "end": 11.812
+  },
+  {
+   "text": "Then",
+   "start": 11.812,
+   "end": 12.05
+  },
+  {
+   "text": "comes",
+   "start": 12.05,
+   "end": 12.375
+  },
+  {
+   "text": "the",
+   "start": 12.375,
+   "end": 12.512
+  },
+  {
+   "text": "key",
+   "start": 12.512,
+   "end": 12.762
+  },
+  {
+   "text": "idea",
+   "start": 12.762,
+   "end": 13.3
+  },
+  {
+   "text": ":",
+   "start": 13.3,
+   "end": 13.412
+  },
+  {
+   "text": "attention",
+   "start": 13.412,
+   "end": 14.35
+  },
+  {
+   "text": ".",
+   "start": 14.35,
+   "end": 14.488
+  },
+  {
+   "text": "Every",
+   "start": 14.488,
+   "end": 14.8
+  },
+  {
+   "text": "token",
+   "start": 14.8,
+   "end": 15.225
+  },
+  {
+   "text": "looks",
+   "start": 15.225,
+   "end": 15.438
+  },
+  {
+   "text": "at",
+   "start": 15.438,
+   "end": 15.525
+  },
+  {
+   "text": "every",
+   "start": 15.525,
+   "end": 15.812
+  },
+  {
+   "text": "other",
+   "start": 15.812,
+   "end": 16.0
+  },
+  {
+   "text": "token",
+   "start": 16.0,
+   "end": 16.55
+  },
+  {
+   "text": ",",
+   "start": 16.55,
+   "end": 16.625
+  },
+  {
+   "text": "and",
+   "start": 16.625,
+   "end": 16.738
+  },
+  {
+   "text": "decides",
+   "start": 16.738,
+   "end": 17.212
+  },
+  {
+   "text": "which",
+   "start": 17.212,
+   "end": 17.4
+  },
+  {
+   "text": "ones",
+   "start": 17.4,
+   "end": 17.675
+  },
+  {
+   "text": "matter",
+   "start": 17.675,
+   "end": 18.05
+  },
+  {
+   "text": "most",
+   "start": 18.05,
+   "end": 18.85
+  },
+  {
+   "text": ".",
+   "start": 18.85,
+   "end": 18.988
+  },
+  {
+   "text": "In",
+   "start": 18.988,
+   "end": 19.113
+  },
+  {
+   "text": "the",
+   "start": 19.113,
+   "end": 19.212
+  },
+  {
+   "text": "sentence",
+   "start": 19.212,
+   "end": 19.775
+  },
+  {
+   "text": ",",
+   "start": 19.775,
+   "end": 19.825
+  },
+  {
+   "text": "the",
+   "start": 19.825,
+   "end": 19.938
+  },
+  {
+   "text": "cat",
+   "start": 19.938,
+   "end": 20.288
+  },
+  {
+   "text": "sat",
+   "start": 20.288,
+   "end": 20.6
+  },
+  {
+   "text": "because",
+   "start": 20.6,
+   "end": 20.837
+  },
+  {
+   "text": "it",
+   "start": 20.837,
+   "end": 20.913
+  },
+  {
+   "text": "was",
+   "start": 20.913,
+   "end": 21.075
+  },
+  {
+   "text": "tired",
+   "start": 21.075,
+   "end": 21.7
+  },
+  {
+   "text": ",",
+   "start": 21.7,
+   "end": 21.8
+  },
+  {
+   "text": "the",
+   "start": 21.8,
+   "end": 21.938
+  },
+  {
+   "text": "word",
+   "start": 21.938,
+   "end": 22.188
+  },
+  {
+   "text": "it",
+   "start": 22.188,
+   "end": 22.275
+  },
+  {
+   "text": "pays",
+   "start": 22.275,
+   "end": 22.575
+  },
+  {
+   "text": "the",
+   "start": 22.575,
+   "end": 22.675
+  },
+  {
+   "text": "most",
+   "start": 22.675,
+   "end": 22.913
+  },
+  {
+   "text": "attention",
+   "start": 22.913,
+   "end": 23.375
+  },
+  {
+   "text": "to",
+   "start": 23.375,
+   "end": 23.5
+  },
+  {
+   "text": "cat",
+   "start": 23.5,
+   "end": 24.2
+  },
+  {
+   "text": ".",
+   "start": 24.2,
+   "end": 24.337
+  },
+  {
+   "text": "A",
+   "start": 24.337,
+   "end": 24.45
+  },
+  {
+   "text": "transformer",
+   "start": 24.45,
+   "end": 25.137
+  },
+  {
+   "text": "stacks",
+   "start": 25.137,
+   "end": 25.525
+  },
+  {
+   "text": "this",
+   "start": 25.525,
+   "end": 25.7
+  },
+  {
+   "text": "step",
+   "start": 25.7,
+   "end": 26.038
+  },
+  {
+   "text": "dozens",
+   "start": 26.038,
+   "end": 26.387
+  },
+  {
+   "text": "of",
+   "start": 26.387,
+   "end": 26.475
+  },
+  {
+   "text": "times",
+   "start": 26.475,
+   "end": 27.225
+  },
+  {
+   "text": ".",
+   "start": 27.225,
+   "end": 27.387
+  },
+  {
+   "text": "Each",
+   "start": 27.775,
+   "end": 28.062
+  },
+  {
+   "text": "layer",
+   "start": 28.062,
+   "end": 28.45
+  },
+  {
+   "text": "refines",
+   "start": 28.45,
+   "end": 28.963
+  },
+  {
+   "text": "the",
+   "start": 28.963,
+   "end": 29.05
+  },
+  {
+   "text": "meaning",
+   "start": 29.05,
+   "end": 29.55
+  },
+  {
+   "text": ",",
+   "start": 29.55,
+   "end": 29.625
+  },
+  {
+   "text": "from",
+   "start": 29.625,
+   "end": 29.838
+  },
+  {
+   "text": "simple",
+   "start": 29.838,
+   "end": 30.2
+  },
+  {
+   "text": "patterns",
+   "start": 30.2,
+   "end": 30.7
+  },
+  {
+   "text": ",",
+   "start": 30.7,
+   "end": 30.75
+  },
+  {
+   "text": "like",
+   "start": 30.75,
+   "end": 30.975
+  },
+  {
+   "text": "grammar",
+   "start": 30.975,
+   "end": 31.475
+  },
+  {
+   "text": ",",
+   "start": 31.475,
+   "end": 31.55
+  },
+  {
+   "text": "to",
+   "start": 31.55,
+   "end": 31.688
+  },
+  {
+   "text": "bigger",
+   "start": 31.688,
+   "end": 32.038
+  },
+  {
+   "text": "ideas",
+   "start": 32.038,
+   "end": 33.05
+  },
+  {
+   "text": ".",
+   "start": 33.05,
+   "end": 33.2
+  },
+  {
+   "text": "Finally",
+   "start": 33.2,
+   "end": 33.725
+  },
+  {
+   "text": ",",
+   "start": 33.725,
+   "end": 33.8
+  },
+  {
+   "text": "it",
+   "start": 33.8,
+   "end": 33.925
+  },
+  {
+   "text": "predicts",
+   "start": 33.925,
+   "end": 34.35
+  },
+  {
+   "text": "the",
+   "start": 34.35,
+   "end": 34.45
+  },
+  {
+   "text": "next",
+   "start": 34.45,
+   "end": 34.725
+  },
+  {
+   "text": "token",
+   "start": 34.725,
+   "end": 35.225
+  },
+  {
+   "text": ",",
+   "start": 35.225,
+   "end": 35.3
+  },
+  {
+   "text": "as",
+   "start": 35.3,
+   "end": 35.413
+  },
+  {
+   "text": "a",
+   "start": 35.413,
+   "end": 35.475
+  },
+  {
+   "text": "probability",
+   "start": 35.475,
+   "end": 36.175
+  },
+  {
+   "text": "for",
+   "start": 36.175,
+   "end": 36.338
+  },
+  {
+   "text": "every",
+   "start": 36.338,
+   "end": 36.675
+  },
+  {
+   "text": "possible",
+   "start": 36.675,
+   "end": 37.175
+  },
+  {
+   "text": "word",
+   "start": 37.175,
+   "end": 37.85
+  },
+  {
+   "text": ".",
+   "start": 37.85,
+   "end": 37.975
+  },
+  {
+   "text": "It",
+   "start": 37.975,
+   "end": 38.15
+  },
+  {
+   "text": "picks",
+   "start": 38.15,
+   "end": 38.45
+  },
+  {
+   "text": "one",
+   "start": 38.45,
+   "end": 38.925
+  },
+  {
+   "text": ",",
+   "start": 38.925,
+   "end": 39.038
+  },
+  {
+   "text": "adds",
+   "start": 39.038,
+   "end": 39.312
+  },
+  {
+   "text": "it",
+   "start": 39.312,
+   "end": 39.4
+  },
+  {
+   "text": "to",
+   "start": 39.4,
+   "end": 39.487
+  },
+  {
+   "text": "the",
+   "start": 39.487,
+   "end": 39.588
+  },
+  {
+   "text": "text",
+   "start": 39.588,
+   "end": 40.05
+  },
+  {
+   "text": ",",
+   "start": 40.05,
+   "end": 40.1
+  },
+  {
+   "text": "and",
+   "start": 40.1,
+   "end": 40.225
+  },
+  {
+   "text": "repeats",
+   "start": 40.225,
+   "end": 41.125
+  },
+  {
+   "text": ".",
+   "start": 41.125,
+   "end": 41.237
+  },
+  {
+   "text": "That's",
+   "start": 41.237,
+   "end": 41.525
+  },
+  {
+   "text": "how",
+   "start": 41.525,
+   "end": 41.663
+  },
+  {
+   "text": "it",
+   "start": 41.663,
+   "end": 41.75
+  },
+  {
+   "text": "writes",
+   "start": 41.75,
+   "end": 42.275
+  },
+  {
+   "text": ",",
+   "start": 42.275,
+   "end": 42.388
+  },
+  {
+   "text": "one",
+   "start": 42.388,
+   "end": 42.625
+  },
+  {
+   "text": "token",
+   "start": 42.625,
+   "end": 42.95
+  },
+  {
+   "text": "at",
+   "start": 42.95,
+   "end": 43.038
+  },
+  {
+   "text": "a",
+   "start": 43.038,
+   "end": 43.1
+  },
+  {
+   "text": "time",
+   "start": 43.1,
+   "end": 43.775
+  },
+  {
+   "text": ".",
+   "start": 43.775,
+   "end": 43.925
+  }
+ ],
+ "cues": {
+  "tokens": 4.6,
+  "vector": 8.1,
+  "embedding": 9.287,
+  "attention": 13.412,
+  "looks": 15.225,
+  "it": 20.837,
+  "cat": 23.5,
+  "stack": 25.137,
+  "layer": 28.062,
+  "ideas": 31.688,
+  "predict": 33.925,
+  "probs": 35.475,
+  "append": 39.038,
+  "words": 41.237
+ }
+}

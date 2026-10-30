@@ -1,0 +1,166 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.title": {
+      "type": "text",
+      "text": "Booked. But how?",
+      "style": "h2",
+      "at": {
+        "region": "top",
+        "align": "top"
+      }
+    },
+    "s1.quote": {
+      "type": "text",
+      "text": "“Book the cheapest flight NYC → LA”",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "above": "cell1",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "s1.box": {
+      "type": "rect",
+      "w": 1136,
+      "h": 192,
+      "radius": "md",
+      "fill": "bg",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "layer": 10,
+      "at": {
+        "in": "cells",
+        "align": "center",
+        "dy": -18
+      }
+    },
+    "s1.boxLabel": {
+      "type": "text",
+      "text": "agent",
+      "style": "label",
+      "fill": "muted",
+      "layer": 11,
+      "at": {
+        "in": "cells",
+        "align": "center"
+      }
+    },
+    "s1.lit": {
+      "type": "circle",
+      "r": 12,
+      "fill": "score",
+      "layer": 11,
+      "at": {
+        "in": "light6",
+        "align": "center"
+      }
+    },
+    "s1.where": {
+      "type": "text",
+      "text": "?",
+      "style": "h2",
+      "fill": "fault",
+      "layer": 11,
+      "at": {
+        "above": "s1.box",
+        "gap": "sm"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "tapeIn",
+      "target": "tape",
+      "preset": "wipe-in",
+      "at": "start-1.2",
+      "dur": 0.8,
+      "ease": "out"
+    },
+    {
+      "id": "boxIn",
+      "target": [
+        "s1.box",
+        "s1.boxLabel"
+      ],
+      "preset": "fade-in",
+      "at": "start-1.0",
+      "dur": 0.4,
+      "stagger": 0.1
+    },
+    {
+      "id": "titleIn",
+      "target": "s1.title",
+      "preset": "words-in",
+      "at": "start-0.9"
+    },
+    {
+      "target": "s1.quote",
+      "preset": "fade-in",
+      "at": "start-0.5",
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.box",
+        "s1.boxLabel"
+      ],
+      "preset": "breathe",
+      "at": 0,
+      "amount": 0.008,
+      "period": 3,
+      "dur": 6.8
+    },
+    {
+      "target": "s1.title",
+      "preset": "pulse",
+      "at": "cue:how",
+      "amount": 0.06,
+      "dur": 0.5
+    },
+    {
+      "id": "lit",
+      "target": "s1.lit",
+      "preset": "pop",
+      "at": "cue:answer",
+      "overshoot": 1.5,
+      "dur": 0.45
+    },
+    {
+      "id": "heavy",
+      "target": "s1.box",
+      "preset": "to",
+      "at": "cue:box",
+      "dur": 0.4,
+      "ease": "out",
+      "to": {
+        "stroke": "text",
+        "strokeWidth": "bold"
+      }
+    },
+    {
+      "target": [
+        "s1.box",
+        "s1.boxLabel"
+      ],
+      "preset": "pulse",
+      "with": "heavy",
+      "amount": 0.025,
+      "dur": 0.5
+    },
+    {
+      "target": "s1.where",
+      "preset": "pop",
+      "at": "cue:where-0.45",
+      "overshoot": 1.5,
+      "dur": 0.4
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6",
+      "side": "up"
+    }
+  ]
+}

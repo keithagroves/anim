@@ -1,0 +1,98 @@
+{
+  "id": "diagram",
+  "name": "Whiteboard diagram",
+  "summary": "An architecture or feature diagram built box by box as each part is named. Semantic layout, no coordinates. The same scene also plays live on the tldraw canvas.",
+  "goodFor": [
+    "system architecture",
+    "a proposed feature",
+    "a pipeline or data flow",
+    "anything with boxes and arrows"
+  ],
+  "examples": [
+    "videos/feature-whiteboard",
+    "videos/architecture"
+  ],
+  "length": "20–45 s, one scene (or a silent diagram)",
+  "sectionLength": "one section is often enough",
+  "uses": {
+    "narration": "optional",
+    "sectionAgents": "no",
+    "footage": "no",
+    "canvas": "yes",
+    "score": "optional"
+  },
+  "steps": [
+    "Pick a look before drawing anything (docs/looks.md): 3–4 looks made up for this subject (a 1–3 word name + a ≤12-word line each), 1–2 palettes besides theirs, a backdrop that fits (anim sheet <video> --scene <id> --backdrops); write style.md and theme.json",
+    "List the parts and their connections; group them into frames (labelled regions)",
+    "Write scene.json objects with relative placement (rightOf, below, in) and arrows between anchors (box.right, box.top:0.3)",
+    "Optional narration.txt with a {cue:part} on each part's name; anim voice",
+    "Timeline: draw-on each box on its cue, then its arrows; anim lint (arrow-crosses, box-overlap)",
+    "anim canvas <video> --watch to see it drawn on tldraw while you edit",
+    "anim render <video>"
+  ],
+  "scaffold": {
+    "theme": {
+      "palette": {
+        "flow": "#4f8cff",
+        "local": "#2fd18b",
+        "claude": "#8b6cff",
+        "out": "#ffb547"
+      },
+      "backdrop": "dots"
+    },
+    "narration": "Here's how it works. {cue:input}Input comes in here, {cue:core}the core does the work, {cue:output}and the result comes out here.",
+    "objects": {
+      "input": {
+        "type": "rect",
+        "text": "Input",
+        "w": 260,
+        "h": 110,
+        "stroke": "flow",
+        "at": {
+          "region": "middle",
+          "align": "left",
+          "dx": 120
+        }
+      },
+      "core": {
+        "type": "rect",
+        "text": "Core",
+        "w": 260,
+        "h": 110,
+        "stroke": "claude",
+        "at": {
+          "rightOf": "input",
+          "gap": 160
+        }
+      },
+      "output": {
+        "type": "rect",
+        "text": "Output",
+        "w": 260,
+        "h": 110,
+        "stroke": "out",
+        "at": {
+          "rightOf": "core",
+          "gap": 160
+        }
+      },
+      "a1": {
+        "type": "arrow",
+        "from": "input.right",
+        "to": "core.left"
+      },
+      "a2": {
+        "type": "arrow",
+        "from": "core.right",
+        "to": "output.left"
+      }
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "seconds": 12,
+        "brief": "Draw each box on its cue (draw-on), then its arrow."
+      }
+    ]
+  }
+}

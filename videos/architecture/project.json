@@ -1,0 +1,16 @@
+{
+  "title": "anim architecture",
+  "type": "diagram",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice": {
+    "voice": "af_heart",
+    "speed": 1.0
+  },
+  "scenes": [
+    "01-architecture"
+  ]
+}

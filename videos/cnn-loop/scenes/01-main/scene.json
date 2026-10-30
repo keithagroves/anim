@@ -1,0 +1,662 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Convolutional neural network",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "LeCun et al., 1998 (LeNet) · filters slide over the image; the network learns them",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  slide a filter over the image",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  each stop writes one value",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  many filters, many maps",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  pool: keep the strongest",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap5": {
+      "type": "text",
+      "text": "5  classify",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4",
+        "cap5"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "limit": {
+      "type": "text",
+      "text": "limit: sees a small window at a time;\nlong-range links need many layers",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "example digit · the filter shown finds horizontal strokes",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "img": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#eef2f7\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"205\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"205\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"239\" y=\"239\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 272,
+      "h": 272,
+      "viewBox": "0 0 272 272",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 760,
+        "dy": 330
+      }
+    },
+    "imgL": {
+      "type": "text",
+      "text": "input image",
+      "style": "small",
+      "at": {
+        "below": "img",
+        "gap": "sm"
+      }
+    },
+    "fmB3": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 204,
+      "h": 204,
+      "viewBox": "0 0 204 204",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1168,
+        "dy": 316
+      },
+      "layer": -3
+    },
+    "fmB2": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 204,
+      "h": 204,
+      "viewBox": "0 0 204 204",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1152,
+        "dy": 332
+      },
+      "layer": -2
+    },
+    "fmB1": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 204,
+      "h": 204,
+      "viewBox": "0 0 204 204",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1136,
+        "dy": 348
+      },
+      "layer": -1
+    },
+    "fm": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"103\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"137\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"103\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"137\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"171\" y=\"171\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 204,
+      "h": 204,
+      "viewBox": "0 0 204 204",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1120,
+        "dy": 364
+      }
+    },
+    "fmL": {
+      "type": "text",
+      "text": "feature maps",
+      "style": "small",
+      "at": {
+        "below": "fm",
+        "gap": "sm"
+      }
+    },
+    "plB3": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 102,
+      "h": 102,
+      "viewBox": "0 0 102 102",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1456,
+        "dy": 362
+      },
+      "layer": -3
+    },
+    "plB2": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 102,
+      "h": 102,
+      "viewBox": "0 0 102 102",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1444,
+        "dy": 374
+      },
+      "layer": -2
+    },
+    "plB1": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 102,
+      "h": 102,
+      "viewBox": "0 0 102 102",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1432,
+        "dy": 386
+      },
+      "layer": -1
+    },
+    "pl": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"1\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"35\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"1\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"35\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><rect x=\"69\" y=\"69\" width=\"32\" height=\"32\" rx=\"3\" fill=\"#171d2b\" stroke=\"#3a4560\" stroke-width=\"1.5\"/>",
+      "w": 102,
+      "h": 102,
+      "viewBox": "0 0 102 102",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1420,
+        "dy": 398
+      }
+    },
+    "plL": {
+      "type": "text",
+      "text": "pooled",
+      "style": "small",
+      "at": {
+        "below": "pl",
+        "gap": "sm"
+      }
+    },
+    "a1": {
+      "type": "arrow",
+      "from": [
+        1046,
+        466
+      ],
+      "to": [
+        1106,
+        466
+      ],
+      "stroke": "line"
+    },
+    "a2": {
+      "type": "arrow",
+      "from": [
+        1380,
+        466
+      ],
+      "to": [
+        1410,
+        466
+      ],
+      "stroke": "line"
+    },
+    "fc": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"22\" y=\"29\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text><rect x=\"45\" y=\"1\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"66\" y=\"29\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text><rect x=\"89\" y=\"1\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"110\" y=\"29\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text><rect x=\"1\" y=\"45\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"22\" y=\"73\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#ffb547\">+2</text><rect x=\"45\" y=\"45\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"66\" y=\"73\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#ffb547\">+2</text><rect x=\"89\" y=\"45\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"110\" y=\"73\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#ffb547\">+2</text><rect x=\"1\" y=\"89\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"22\" y=\"117\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text><rect x=\"45\" y=\"89\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"66\" y=\"117\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text><rect x=\"89\" y=\"89\" width=\"42\" height=\"42\" rx=\"4\" fill=\"#171d2b\" stroke=\"#ffb547\" stroke-width=\"1.5\"/><text x=\"110\" y=\"117\" text-anchor=\"middle\" font-family=\"JetBrains Mono Variable\" font-size=\"20\" font-weight=\"600\" fill=\"#8f98ab\">-1</text>",
+      "w": 132,
+      "h": 132,
+      "viewBox": "0 0 132 132",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 830,
+        "dy": 692
+      }
+    },
+    "fcL": {
+      "type": "text",
+      "text": "filter",
+      "style": "small",
+      "at": {
+        "leftOf": "fc",
+        "gap": "sm"
+      }
+    },
+    "wires": {
+      "type": "svg",
+      "svg": "<line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"350\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"396\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"442\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"488\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"534\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1562\" y1=\"431\" x2=\"1591\" y2=\"580\" stroke=\"#3a4560\" stroke-width=\"1.5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"350\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"396\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"442\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"488\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"534\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"300\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"333\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"366\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"399\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"432\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"465\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"498\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"531\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"564\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/><line x1=\"1619\" y1=\"580\" x2=\"1688\" y2=\"597\" stroke=\"#3a4560\" stroke-width=\"1\" opacity=\".5\"/>",
+      "w": 1920,
+      "h": 1080,
+      "viewBox": "0 0 1920 1080",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 0,
+        "dy": 0
+      },
+      "layer": -5
+    },
+    "n0": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 337
+      }
+    },
+    "n1": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 383
+      }
+    },
+    "n2": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 429
+      }
+    },
+    "n3": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 475
+      }
+    },
+    "n4": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 521
+      }
+    },
+    "n5": {
+      "type": "circle",
+      "r": 13,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1592,
+        "dy": 567
+      }
+    },
+    "d0": {
+      "type": "text",
+      "text": "0",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 287
+      }
+    },
+    "b0": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 292
+      }
+    },
+    "d1": {
+      "type": "text",
+      "text": "1",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 320
+      }
+    },
+    "b1": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 325
+      }
+    },
+    "d2": {
+      "type": "text",
+      "text": "2",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 353
+      }
+    },
+    "b2": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 358
+      }
+    },
+    "d3": {
+      "type": "text",
+      "text": "3",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 386
+      }
+    },
+    "b3": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 391
+      }
+    },
+    "d4": {
+      "type": "text",
+      "text": "4",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 419
+      }
+    },
+    "b4": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 424
+      }
+    },
+    "d5": {
+      "type": "text",
+      "text": "5",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 452
+      }
+    },
+    "b5": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 457
+      }
+    },
+    "d6": {
+      "type": "text",
+      "text": "6",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 485
+      }
+    },
+    "b6": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 490
+      }
+    },
+    "d7": {
+      "type": "text",
+      "text": "7",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 518
+      }
+    },
+    "b7": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 523
+      }
+    },
+    "d8": {
+      "type": "text",
+      "text": "8",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 551
+      }
+    },
+    "b8": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 556
+      }
+    },
+    "d9": {
+      "type": "text",
+      "text": "9",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 584
+      }
+    },
+    "b9": {
+      "type": "rect",
+      "w": 4,
+      "h": 16,
+      "radius": 2,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1726,
+        "dy": 589
+      }
+    },
+    "outL": {
+      "type": "text",
+      "text": "class · example",
+      "style": "small",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1690,
+        "dy": 621
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop: filter scan, maps, pool, classify; resets so the last frame is the first."
+    }
+  ]
+}

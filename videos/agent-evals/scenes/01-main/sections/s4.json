@@ -1,0 +1,458 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.title": {
+      "type": "text",
+      "text": "Action: right tool, right arguments",
+      "style": "h2",
+      "hud": true,
+      "layer": 960,
+      "at": {
+        "region": "top",
+        "align": "top"
+      }
+    },
+    "s4.zone3": {
+      "type": "rect",
+      "w": 300,
+      "h": 212,
+      "fill": "none",
+      "opacity": 0,
+      "at": {
+        "in": "cell3",
+        "align": "bottom",
+        "pad": 0,
+        "dy": 16
+      }
+    },
+    "s4.zoneArgs": {
+      "type": "rect",
+      "w": 480,
+      "h": 460,
+      "fill": "none",
+      "opacity": 0,
+      "at": {
+        "in": "s4.zone3",
+        "align": "top",
+        "pad": 0
+      }
+    },
+    "s4.zone2": {
+      "type": "rect",
+      "w": 500,
+      "h": 360,
+      "fill": "none",
+      "opacity": 0,
+      "at": {
+        "in": "cell2",
+        "align": "top",
+        "pad": 0,
+        "dy": -62
+      }
+    },
+    "s4.spot": {
+      "type": "spotlight",
+      "w": 332,
+      "h": 244,
+      "radius": 18,
+      "opacity": 0.7,
+      "at": {
+        "in": "s4.zone3"
+      }
+    },
+    "s4.calc": {
+      "type": "text",
+      "text": "calculator",
+      "style": "mono",
+      "fill": "fault",
+      "anchor": "start",
+      "layer": 20,
+      "at": {
+        "in": "cell3",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "s4.l3": {
+      "type": "circle",
+      "r": 12,
+      "fill": "fault",
+      "layer": 20,
+      "at": {
+        "in": "light3",
+        "align": "center"
+      }
+    },
+    "s4.chip": {
+      "type": "chip",
+      "text": "needed: search_flights",
+      "to": "s4.calc.right",
+      "at": {
+        "below": "cell4",
+        "gap": "md",
+        "align": "left"
+      }
+    },
+    "s4.args": {
+      "type": "rect",
+      "w": 340,
+      "h": 76,
+      "radius": "md",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "layer": 20,
+      "at": {
+        "below": "cell3",
+        "gap": "md"
+      }
+    },
+    "s4.argA": {
+      "type": "text",
+      "text": "{\"",
+      "style": "mono",
+      "layer": 21
+    },
+    "s4.argKey": {
+      "type": "text",
+      "text": "city",
+      "style": "mono",
+      "layer": 21
+    },
+    "s4.argB": {
+      "type": "text",
+      "text": "\": \"LA\"}",
+      "style": "mono",
+      "layer": 21
+    },
+    "s4.argRow": {
+      "type": "group",
+      "children": [
+        "s4.argA",
+        "s4.argKey",
+        "s4.argB"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": 0,
+        "align": "center"
+      },
+      "layer": 21,
+      "at": {
+        "in": "s4.args",
+        "align": "center"
+      }
+    },
+    "s4.schema": {
+      "type": "rect",
+      "w": 460,
+      "h": 112,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "layer": 20,
+      "at": {
+        "below": "s4.args",
+        "gap": "sm"
+      }
+    },
+    "s4.expects": {
+      "type": "text",
+      "text": "expects: location",
+      "style": "mono",
+      "anchor": "start",
+      "layer": 21,
+      "at": {
+        "in": "s4.schema",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "s4.example": {
+      "type": "text",
+      "text": "\"Los Angeles, CA, USA\"",
+      "style": "mono",
+      "fill": "muted",
+      "anchor": "start",
+      "layer": 21,
+      "at": {
+        "in": "s4.schema",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "s4.l2": {
+      "type": "circle",
+      "r": 12,
+      "fill": "score",
+      "layer": 20,
+      "at": {
+        "in": "light2",
+        "align": "center"
+      }
+    },
+    "s4.toolM": {
+      "type": "text",
+      "text": "ToolCorrectnessMetric",
+      "style": "mono",
+      "fill": "score",
+      "layer": 20,
+      "at": {
+        "below": "cell2",
+        "gap": "lg"
+      }
+    },
+    "s4.argM": {
+      "type": "text",
+      "text": "ArgumentCorrectnessMetric",
+      "style": "mono",
+      "fill": "score",
+      "layer": 20,
+      "at": {
+        "below": "s4.toolM",
+        "gap": "sm"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "title",
+      "target": "s4.title",
+      "preset": "words-in",
+      "at": "start+0.1"
+    },
+    {
+      "id": "zoom3",
+      "target": "camera",
+      "preset": "focus",
+      "on": "cell3",
+      "zoom": 1.6,
+      "at": "cue:wrong-0.95",
+      "dur": 0.8,
+      "ease": "arrive"
+    },
+    {
+      "target": "s4.spot",
+      "preset": "fade-in",
+      "with": "zoom3",
+      "offset": 0.3,
+      "dur": 0.5
+    },
+    {
+      "id": "hide3",
+      "target": "name3",
+      "preset": "to",
+      "at": "cue:wrong",
+      "dur": 0.3,
+      "ease": "in",
+      "to": {
+        "opacity": 0
+      }
+    },
+    {
+      "id": "calc",
+      "target": "s4.calc",
+      "preset": "rise-in",
+      "with": "hide3",
+      "offset": 0.15,
+      "dur": 0.4,
+      "distance": 12,
+      "ease": "out"
+    },
+    {
+      "id": "l3",
+      "target": "s4.l3",
+      "preset": "pop",
+      "with": "calc",
+      "offset": 0.3,
+      "overshoot": 1.5,
+      "dur": 0.4
+    },
+    {
+      "id": "chip",
+      "target": "s4.chip",
+      "preset": "rise-in",
+      "at": "cue:wrong+0.85",
+      "distance": 12,
+      "dur": 0.35,
+      "ease": "out"
+    },
+    {
+      "id": "unchip",
+      "target": "s4.chip",
+      "preset": "fade-out",
+      "at": "cue:args-1.05",
+      "dur": 0.3,
+      "ease": "in"
+    },
+    {
+      "target": [
+        "s4.calc",
+        "s4.l3"
+      ],
+      "preset": "fade-out",
+      "with": "unchip",
+      "offset": 0.1,
+      "dur": 0.3,
+      "ease": "in",
+      "stagger": 0.05
+    },
+    {
+      "target": "name3",
+      "preset": "to",
+      "with": "unchip",
+      "offset": 0.45,
+      "dur": 0.35,
+      "ease": "out",
+      "to": {
+        "opacity": 1
+      }
+    },
+    {
+      "target": "s4.spot",
+      "preset": "to",
+      "at": "cue:args-0.25",
+      "dur": 0.6,
+      "ease": "glide",
+      "to": {
+        "at": {
+          "in": "s4.zoneArgs"
+        },
+        "w": 512,
+        "h": 492
+      }
+    },
+    {
+      "id": "args",
+      "target": "s4.args",
+      "preset": "rise-in",
+      "at": "cue:args",
+      "dur": 0.45,
+      "distance": 24,
+      "ease": "out"
+    },
+    {
+      "target": "s4.argRow",
+      "preset": "fade-in",
+      "with": "args",
+      "offset": 0.2,
+      "dur": 0.35
+    },
+    {
+      "id": "schema",
+      "target": "s4.schema",
+      "preset": "rise-in",
+      "at": "cue:location",
+      "dur": 0.45,
+      "distance": 24,
+      "ease": "out"
+    },
+    {
+      "target": [
+        "s4.expects",
+        "s4.example"
+      ],
+      "preset": "fade-in",
+      "with": "schema",
+      "offset": 0.15,
+      "dur": 0.35,
+      "stagger": 0.15
+    },
+    {
+      "id": "cityRed",
+      "target": "s4.argKey",
+      "preset": "to",
+      "at": "cue:location+0.75",
+      "dur": 0.35,
+      "ease": "out",
+      "to": {
+        "fill": "fault"
+      }
+    },
+    {
+      "target": "s4.argKey",
+      "preset": "pulse",
+      "with": "cityRed",
+      "amount": 0.12,
+      "dur": 0.45
+    },
+    {
+      "id": "away",
+      "target": [
+        "s4.args",
+        "s4.argRow",
+        "s4.schema",
+        "s4.expects",
+        "s4.example"
+      ],
+      "preset": "fade-out",
+      "at": "cue:toolc-0.6",
+      "dur": 0.3,
+      "ease": "in",
+      "stagger": 0.03
+    },
+    {
+      "id": "zoom2",
+      "target": "camera",
+      "preset": "focus",
+      "on": "cell2",
+      "zoom": 1.6,
+      "at": "cue:toolc-0.65",
+      "dur": 0.8,
+      "ease": "glide"
+    },
+    {
+      "target": "s4.spot",
+      "preset": "to",
+      "with": "zoom2",
+      "dur": 0.8,
+      "ease": "glide",
+      "to": {
+        "at": {
+          "in": "s4.zone2"
+        },
+        "w": 532,
+        "h": 392
+      }
+    },
+    {
+      "id": "toolM",
+      "target": "s4.toolM",
+      "preset": "words-in",
+      "at": "cue:toolc"
+    },
+    {
+      "target": "s4.l2",
+      "preset": "pop",
+      "with": "toolM",
+      "offset": 0.3,
+      "overshoot": 1.5,
+      "dur": 0.4
+    },
+    {
+      "target": "s4.argM",
+      "preset": "words-in",
+      "at": "cue:argc"
+    },
+    {
+      "target": "s4.spot",
+      "preset": "fade-out",
+      "at": "end-1.0",
+      "dur": 0.35,
+      "ease": "in"
+    },
+    {
+      "target": "camera",
+      "preset": "focus",
+      "on": "full",
+      "at": "end-0.95",
+      "dur": 0.8,
+      "ease": "glide"
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6"
+    }
+  ]
+}

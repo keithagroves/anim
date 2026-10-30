@@ -1,0 +1,900 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Transformer",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "“Attention Is All You Need” · Vaswani et al., 2017",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  embed + position",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  self-attention: all words at once",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  feed forward",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  decoder: masked self-attention",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap5": {
+      "type": "text",
+      "text": "5  cross-attention to the encoder",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap6": {
+      "type": "text",
+      "text": "6  predict the next word",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4",
+        "cap5",
+        "cap6"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "change": {
+      "type": "text",
+      "text": "what changed: every word at once, and any two\nwords linked directly by attention",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "Figure 1 redrawn · example tokens (English → German)",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "eMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "attn",
+      "strokeWidth": "thin"
+    },
+    "eMHAT": {
+      "type": "text",
+      "text": "Multi-Head Attention",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "eMHA"
+      }
+    },
+    "eAN1": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "norm",
+      "strokeWidth": "thin"
+    },
+    "eAN1T": {
+      "type": "text",
+      "text": "Add & Norm",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "eAN1"
+      }
+    },
+    "eFF": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "ff",
+      "strokeWidth": "thin"
+    },
+    "eFFT": {
+      "type": "text",
+      "text": "Feed Forward",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "eFF"
+      }
+    },
+    "eAN2": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "norm",
+      "strokeWidth": "thin"
+    },
+    "eAN2T": {
+      "type": "text",
+      "text": "Add & Norm",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "eAN2"
+      }
+    },
+    "eFrame": {
+      "type": "rect",
+      "w": 388,
+      "h": 278,
+      "radius": "md",
+      "fill": "surface2",
+      "fillOpacity": 0.5,
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "layer": -1,
+      "at": {
+        "region": "center-third",
+        "dx": 70,
+        "dy": 62.0
+      }
+    },
+    "eStack": {
+      "type": "group",
+      "children": [
+        "eAN2",
+        "eFF",
+        "eAN1",
+        "eMHA"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": 18
+      },
+      "at": {
+        "in": "eFrame",
+        "pad": 0
+      }
+    },
+    "ea_eMHA": {
+      "type": "arrow",
+      "from": "eMHA.top",
+      "to": "eAN1.bottom",
+      "stroke": "line"
+    },
+    "ea_eAN1": {
+      "type": "arrow",
+      "from": "eAN1.top",
+      "to": "eFF.bottom",
+      "stroke": "line"
+    },
+    "ea_eFF": {
+      "type": "arrow",
+      "from": "eFF.top",
+      "to": "eAN2.bottom",
+      "stroke": "line"
+    },
+    "dMMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "attn",
+      "strokeWidth": "thin"
+    },
+    "dMMHAT": {
+      "type": "text",
+      "text": "Masked Multi-Head Attention",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dMMHA"
+      }
+    },
+    "dAN1": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "norm",
+      "strokeWidth": "thin"
+    },
+    "dAN1T": {
+      "type": "text",
+      "text": "Add & Norm",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dAN1"
+      }
+    },
+    "dMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "attn",
+      "strokeWidth": "thin"
+    },
+    "dMHAT": {
+      "type": "text",
+      "text": "Multi-Head Attention",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dMHA"
+      }
+    },
+    "dAN2": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "norm",
+      "strokeWidth": "thin"
+    },
+    "dAN2T": {
+      "type": "text",
+      "text": "Add & Norm",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dAN2"
+      }
+    },
+    "dFF": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "ff",
+      "strokeWidth": "thin"
+    },
+    "dFFT": {
+      "type": "text",
+      "text": "Feed Forward",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dFF"
+      }
+    },
+    "dAN3": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "norm",
+      "strokeWidth": "thin"
+    },
+    "dAN3T": {
+      "type": "text",
+      "text": "Add & Norm",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dAN3"
+      }
+    },
+    "dFrame": {
+      "type": "rect",
+      "w": 388,
+      "h": 402,
+      "radius": "md",
+      "fill": "surface2",
+      "fillOpacity": 0.5,
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "layer": -1,
+      "at": {
+        "region": "right-third",
+        "dx": -60,
+        "dy": 0
+      }
+    },
+    "dStack": {
+      "type": "group",
+      "children": [
+        "dAN3",
+        "dFF",
+        "dAN2",
+        "dMHA",
+        "dAN1",
+        "dMMHA"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": 18
+      },
+      "at": {
+        "in": "dFrame",
+        "pad": 0
+      }
+    },
+    "da_dMMHA": {
+      "type": "arrow",
+      "from": "dMMHA.top",
+      "to": "dAN1.bottom",
+      "stroke": "line"
+    },
+    "da_dAN1": {
+      "type": "arrow",
+      "from": "dAN1.top",
+      "to": "dMHA.bottom",
+      "stroke": "line"
+    },
+    "da_dMHA": {
+      "type": "arrow",
+      "from": "dMHA.top",
+      "to": "dAN2.bottom",
+      "stroke": "line"
+    },
+    "da_dAN2": {
+      "type": "arrow",
+      "from": "dAN2.top",
+      "to": "dFF.bottom",
+      "stroke": "line"
+    },
+    "da_dFF": {
+      "type": "arrow",
+      "from": "dFF.top",
+      "to": "dAN3.bottom",
+      "stroke": "line"
+    },
+    "eN": {
+      "type": "text",
+      "text": "N×",
+      "style": "label",
+      "fill": "muted",
+      "at": {
+        "leftOf": "eFrame",
+        "gap": 76
+      }
+    },
+    "dN": {
+      "type": "text",
+      "text": "×N",
+      "style": "label",
+      "fill": "muted",
+      "at": {
+        "rightOf": "dFrame",
+        "gap": 76
+      }
+    },
+    "res_eMHA": {
+      "type": "arrow",
+      "from": "eMHA.left:0.9",
+      "to": "eAN1.left:0.5",
+      "stroke": "muted",
+      "bend": 45
+    },
+    "res_eFF": {
+      "type": "arrow",
+      "from": "eFF.left:0.9",
+      "to": "eAN2.left:0.5",
+      "stroke": "muted",
+      "bend": 45
+    },
+    "res_dMMHA": {
+      "type": "arrow",
+      "from": "dMMHA.right:0.9",
+      "to": "dAN1.right:0.5",
+      "stroke": "muted",
+      "bend": -45
+    },
+    "res_dMHA": {
+      "type": "arrow",
+      "from": "dMHA.right:0.9",
+      "to": "dAN2.right:0.5",
+      "stroke": "muted",
+      "bend": -45
+    },
+    "res_dFF": {
+      "type": "arrow",
+      "from": "dFF.right:0.9",
+      "to": "dAN3.right:0.5",
+      "stroke": "muted",
+      "bend": -45
+    },
+    "ePlus": {
+      "type": "circle",
+      "r": 20,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "below": "eFrame",
+        "gap": 34
+      }
+    },
+    "ePlusT": {
+      "type": "text",
+      "text": "+",
+      "style": "label",
+      "at": {
+        "in": "ePlus"
+      }
+    },
+    "eWave": {
+      "type": "path",
+      "d": "M0 20C8 0 16 0 24 20S40 40 48 20",
+      "w": 48,
+      "h": 40,
+      "viewBox": "0 0 48 40",
+      "fill": "none",
+      "stroke": "embed",
+      "strokeWidth": "md",
+      "at": {
+        "leftOf": "ePlus",
+        "gap": 44
+      }
+    },
+    "eWaveT": {
+      "type": "text",
+      "text": "positional\nencoding",
+      "style": "small",
+      "anchor": "end",
+      "at": {
+        "leftOf": "eWave",
+        "gap": "sm"
+      }
+    },
+    "eaWave": {
+      "type": "arrow",
+      "from": "eWave.right",
+      "to": "ePlus.left",
+      "stroke": "line"
+    },
+    "eEmb": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "embed",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "ePlus",
+        "gap": 30
+      }
+    },
+    "eEmbT": {
+      "type": "text",
+      "text": "Input Embedding",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "eEmb"
+      }
+    },
+    "eTok1": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin"
+    },
+    "eTok1T": {
+      "type": "text",
+      "text": "the",
+      "style": "small",
+      "fill": "input",
+      "layer": 5,
+      "at": {
+        "in": "eTok1"
+      }
+    },
+    "eTok2": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin"
+    },
+    "eTok2T": {
+      "type": "text",
+      "text": "cat",
+      "style": "small",
+      "fill": "input",
+      "layer": 5,
+      "at": {
+        "in": "eTok2"
+      }
+    },
+    "eTok3": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "thin"
+    },
+    "eTok3T": {
+      "type": "text",
+      "text": "sat",
+      "style": "small",
+      "fill": "input",
+      "layer": 5,
+      "at": {
+        "in": "eTok3"
+      }
+    },
+    "eToks": {
+      "type": "group",
+      "children": [
+        "eTok1",
+        "eTok2",
+        "eTok3"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": "xs"
+      },
+      "at": {
+        "below": "eEmb",
+        "gap": 22
+      }
+    },
+    "eTokL": {
+      "type": "text",
+      "text": "inputs",
+      "style": "small",
+      "at": {
+        "below": "eToks",
+        "gap": "xs"
+      }
+    },
+    "eaTok": {
+      "type": "arrow",
+      "from": "eToks.top",
+      "to": "eEmb.bottom",
+      "stroke": "line"
+    },
+    "eaEmb": {
+      "type": "arrow",
+      "from": "eEmb.top",
+      "to": "ePlus.bottom",
+      "stroke": "line"
+    },
+    "eaIn": {
+      "type": "arrow",
+      "from": "ePlus.top",
+      "to": "eMHA.bottom",
+      "stroke": "line"
+    },
+    "dPlus": {
+      "type": "circle",
+      "r": 20,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "below": "dFrame",
+        "gap": 34
+      }
+    },
+    "dPlusT": {
+      "type": "text",
+      "text": "+",
+      "style": "label",
+      "at": {
+        "in": "dPlus"
+      }
+    },
+    "dWave": {
+      "type": "path",
+      "d": "M0 20C8 0 16 0 24 20S40 40 48 20",
+      "w": 48,
+      "h": 40,
+      "viewBox": "0 0 48 40",
+      "fill": "none",
+      "stroke": "embed",
+      "strokeWidth": "md",
+      "at": {
+        "rightOf": "dPlus",
+        "gap": 44
+      }
+    },
+    "dWaveT": {
+      "type": "text",
+      "text": "positional\nencoding",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "rightOf": "dWave",
+        "gap": "sm"
+      }
+    },
+    "daWave": {
+      "type": "arrow",
+      "from": "dWave.left",
+      "to": "dPlus.right",
+      "stroke": "line"
+    },
+    "dEmb": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "embed",
+      "strokeWidth": "thin",
+      "at": {
+        "below": "dPlus",
+        "gap": 30
+      }
+    },
+    "dEmbT": {
+      "type": "text",
+      "text": "Output Embedding",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "dEmb"
+      }
+    },
+    "dTok1": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin"
+    },
+    "dTok1T": {
+      "type": "text",
+      "text": "<s>",
+      "style": "small",
+      "fill": "output",
+      "layer": 5,
+      "at": {
+        "in": "dTok1"
+      }
+    },
+    "dTok2": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin"
+    },
+    "dTok2T": {
+      "type": "text",
+      "text": "die",
+      "style": "small",
+      "fill": "output",
+      "layer": 5,
+      "at": {
+        "in": "dTok2"
+      }
+    },
+    "dTok3": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin"
+    },
+    "dTok3T": {
+      "type": "text",
+      "text": "Katze",
+      "style": "small",
+      "fill": "output",
+      "layer": 5,
+      "at": {
+        "in": "dTok3"
+      }
+    },
+    "dToks": {
+      "type": "group",
+      "children": [
+        "dTok1",
+        "dTok2",
+        "dTok3"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": "xs"
+      },
+      "at": {
+        "below": "dEmb",
+        "gap": 22
+      }
+    },
+    "dTokL": {
+      "type": "text",
+      "text": "outputs (shifted right)",
+      "style": "small",
+      "at": {
+        "below": "dToks",
+        "gap": "xs"
+      }
+    },
+    "daTok": {
+      "type": "arrow",
+      "from": "dToks.top",
+      "to": "dEmb.bottom",
+      "stroke": "line"
+    },
+    "daEmb": {
+      "type": "arrow",
+      "from": "dEmb.top",
+      "to": "dPlus.bottom",
+      "stroke": "line"
+    },
+    "daIn": {
+      "type": "arrow",
+      "from": "dPlus.top",
+      "to": "dMMHA.bottom",
+      "stroke": "line"
+    },
+    "lin": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "dFrame",
+        "gap": 28
+      }
+    },
+    "linT": {
+      "type": "text",
+      "text": "Linear",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "lin"
+      }
+    },
+    "soft": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "lin",
+        "gap": 14
+      }
+    },
+    "softT": {
+      "type": "text",
+      "text": "Softmax",
+      "style": "small",
+      "fill": "text",
+      "layer": 5,
+      "at": {
+        "in": "soft"
+      }
+    },
+    "probL": {
+      "type": "text",
+      "text": "output probabilities",
+      "style": "small",
+      "at": {
+        "above": "soft",
+        "gap": "xs"
+      }
+    },
+    "aOut": {
+      "type": "arrow",
+      "from": "dAN3.top",
+      "to": "lin.bottom",
+      "stroke": "line"
+    },
+    "aLin": {
+      "type": "arrow",
+      "from": "lin.top",
+      "to": "soft.bottom",
+      "stroke": "line"
+    },
+    "cross": {
+      "type": "arrow",
+      "from": "eFrame.top",
+      "to": "dMHA.left",
+      "stroke": "line",
+      "bend": 110
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop: one translation step flows up through Figure 1; resets so the last frame is the first."
+    }
+  ]
+}

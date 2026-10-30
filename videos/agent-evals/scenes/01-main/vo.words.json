@@ -1,0 +1,1414 @@
+{
+ "duration": 78.425,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 0.9,
+ "text": "Your agent says it booked the cheapest flight. How do you know it got there the right way? Grade only the answer, and the agent is a black box. When it breaks, you can't see where. So record the whole run. An agent works in a loop. The reasoning layer, the LLM, makes a plan and picks a tool. The action layer calls the tool, and the result goes back to reason again, until the task is done. Each layer fails in its own way. Reasoning fails with a bad plan, with steps missing or out of order. Or a good plan the agent doesn't follow. So score both: plan quality, and plan adherence. Action fails at the tools. The wrong tool, like a calculator when it needed search. Or the right tool with wrong arguments: a city, when the tool wants a full location. Score that one decision: tool correctness, and argument correctness. That gives three scopes. End to end grades only the final output. Trajectory reads the whole ordered trace. Did it finish the task, without wasted steps? And component grades a single span, like the call that picked the tool. In development, run all of it on a fixed set of goldens, and compare each version. In production, catch the runs that fail, and add each one to the set. That's how you find exactly where it broke.",
+ "words": [
+  {
+   "text": "Your",
+   "start": 0.825,
+   "end": 0.975
+  },
+  {
+   "text": "agent",
+   "start": 0.975,
+   "end": 1.325
+  },
+  {
+   "text": "says",
+   "start": 1.325,
+   "end": 1.575
+  },
+  {
+   "text": "it",
+   "start": 1.575,
+   "end": 1.675
+  },
+  {
+   "text": "booked",
+   "start": 1.675,
+   "end": 1.925
+  },
+  {
+   "text": "the",
+   "start": 1.925,
+   "end": 2.038
+  },
+  {
+   "text": "cheapest",
+   "start": 2.038,
+   "end": 2.5
+  },
+  {
+   "text": "flight",
+   "start": 2.5,
+   "end": 3.225
+  },
+  {
+   "text": ".",
+   "start": 3.225,
+   "end": 3.337
+  },
+  {
+   "text": "How",
+   "start": 3.337,
+   "end": 3.487
+  },
+  {
+   "text": "do",
+   "start": 3.487,
+   "end": 3.587
+  },
+  {
+   "text": "you",
+   "start": 3.587,
+   "end": 3.663
+  },
+  {
+   "text": "know",
+   "start": 3.663,
+   "end": 3.788
+  },
+  {
+   "text": "it",
+   "start": 3.788,
+   "end": 3.875
+  },
+  {
+   "text": "got",
+   "start": 3.875,
+   "end": 4.05
+  },
+  {
+   "text": "there",
+   "start": 4.05,
+   "end": 4.188
+  },
+  {
+   "text": "the",
+   "start": 4.188,
+   "end": 4.275
+  },
+  {
+   "text": "right",
+   "start": 4.275,
+   "end": 4.525
+  },
+  {
+   "text": "way",
+   "start": 4.525,
+   "end": 5.025
+  },
+  {
+   "text": "?",
+   "start": 5.025,
+   "end": 5.188
+  },
+  {
+   "text": "Grade",
+   "start": 5.188,
+   "end": 5.487
+  },
+  {
+   "text": "only",
+   "start": 5.487,
+   "end": 5.763
+  },
+  {
+   "text": "the",
+   "start": 5.763,
+   "end": 5.9
+  },
+  {
+   "text": "answer",
+   "start": 5.9,
+   "end": 6.35
+  },
+  {
+   "text": ",",
+   "start": 6.35,
+   "end": 6.425
+  },
+  {
+   "text": "and",
+   "start": 6.425,
+   "end": 6.537
+  },
+  {
+   "text": "the",
+   "start": 6.537,
+   "end": 6.662
+  },
+  {
+   "text": "agent",
+   "start": 6.662,
+   "end": 7.1
+  },
+  {
+   "text": "is",
+   "start": 7.1,
+   "end": 7.213
+  },
+  {
+   "text": "a",
+   "start": 7.213,
+   "end": 7.275
+  },
+  {
+   "text": "black",
+   "start": 7.275,
+   "end": 7.6
+  },
+  {
+   "text": "box",
+   "start": 7.6,
+   "end": 8.25
+  },
+  {
+   "text": ".",
+   "start": 8.25,
+   "end": 8.325
+  },
+  {
+   "text": "When",
+   "start": 8.325,
+   "end": 8.463
+  },
+  {
+   "text": "it",
+   "start": 8.463,
+   "end": 8.55
+  },
+  {
+   "text": "breaks",
+   "start": 8.55,
+   "end": 8.9
+  },
+  {
+   "text": ",",
+   "start": 8.9,
+   "end": 8.95
+  },
+  {
+   "text": "you",
+   "start": 8.95,
+   "end": 9.05
+  },
+  {
+   "text": "can't",
+   "start": 9.05,
+   "end": 9.325
+  },
+  {
+   "text": "see",
+   "start": 9.325,
+   "end": 9.525
+  },
+  {
+   "text": "where",
+   "start": 9.525,
+   "end": 10.075
+  },
+  {
+   "text": ".",
+   "start": 10.075,
+   "end": 10.225
+  },
+  {
+   "text": "So",
+   "start": 10.225,
+   "end": 10.45
+  },
+  {
+   "text": "record",
+   "start": 10.45,
+   "end": 10.838
+  },
+  {
+   "text": "the",
+   "start": 10.838,
+   "end": 10.925
+  },
+  {
+   "text": "whole",
+   "start": 10.925,
+   "end": 11.175
+  },
+  {
+   "text": "run",
+   "start": 11.175,
+   "end": 11.75
+  },
+  {
+   "text": ".",
+   "start": 11.75,
+   "end": 11.875
+  },
+  {
+   "text": "An",
+   "start": 11.875,
+   "end": 12.025
+  },
+  {
+   "text": "agent",
+   "start": 12.025,
+   "end": 12.375
+  },
+  {
+   "text": "works",
+   "start": 12.375,
+   "end": 12.662
+  },
+  {
+   "text": "in",
+   "start": 12.662,
+   "end": 12.738
+  },
+  {
+   "text": "a",
+   "start": 12.738,
+   "end": 12.8
+  },
+  {
+   "text": "loop",
+   "start": 12.8,
+   "end": 13.45
+  },
+  {
+   "text": ".",
+   "start": 13.45,
+   "end": 13.575
+  },
+  {
+   "text": "The",
+   "start": 13.575,
+   "end": 13.675
+  },
+  {
+   "text": "reasoning",
+   "start": 13.675,
+   "end": 14.1
+  },
+  {
+   "text": "layer",
+   "start": 14.1,
+   "end": 14.475
+  },
+  {
+   "text": ",",
+   "start": 14.475,
+   "end": 14.512
+  },
+  {
+   "text": "the",
+   "start": 14.512,
+   "end": 14.662
+  },
+  {
+   "text": "LLM",
+   "start": 14.662,
+   "end": 15.25
+  },
+  {
+   "text": ",",
+   "start": 15.25,
+   "end": 15.3
+  },
+  {
+   "text": "makes",
+   "start": 15.3,
+   "end": 15.537
+  },
+  {
+   "text": "a",
+   "start": 15.537,
+   "end": 15.6
+  },
+  {
+   "text": "plan",
+   "start": 15.6,
+   "end": 16.0
+  },
+  {
+   "text": "and",
+   "start": 16.0,
+   "end": 16.125
+  },
+  {
+   "text": "picks",
+   "start": 16.125,
+   "end": 16.363
+  },
+  {
+   "text": "a",
+   "start": 16.363,
+   "end": 16.462
+  },
+  {
+   "text": "tool",
+   "start": 16.462,
+   "end": 17.225
+  },
+  {
+   "text": ".",
+   "start": 17.225,
+   "end": 17.35
+  },
+  {
+   "text": "The",
+   "start": 17.35,
+   "end": 17.512
+  },
+  {
+   "text": "action",
+   "start": 17.512,
+   "end": 17.925
+  },
+  {
+   "text": "layer",
+   "start": 17.925,
+   "end": 18.25
+  },
+  {
+   "text": "calls",
+   "start": 18.25,
+   "end": 18.55
+  },
+  {
+   "text": "the",
+   "start": 18.55,
+   "end": 18.663
+  },
+  {
+   "text": "tool",
+   "start": 18.663,
+   "end": 19.1
+  },
+  {
+   "text": ",",
+   "start": 19.1,
+   "end": 19.175
+  },
+  {
+   "text": "and",
+   "start": 19.175,
+   "end": 19.288
+  },
+  {
+   "text": "the",
+   "start": 19.288,
+   "end": 19.375
+  },
+  {
+   "text": "result",
+   "start": 19.375,
+   "end": 19.8
+  },
+  {
+   "text": "goes",
+   "start": 19.8,
+   "end": 20.075
+  },
+  {
+   "text": "back",
+   "start": 20.075,
+   "end": 20.35
+  },
+  {
+   "text": "to",
+   "start": 20.35,
+   "end": 20.475
+  },
+  {
+   "text": "reason",
+   "start": 20.475,
+   "end": 20.8
+  },
+  {
+   "text": "again",
+   "start": 20.8,
+   "end": 21.15
+  },
+  {
+   "text": ",",
+   "start": 21.15,
+   "end": 21.188
+  },
+  {
+   "text": "until",
+   "start": 21.188,
+   "end": 21.413
+  },
+  {
+   "text": "the",
+   "start": 21.413,
+   "end": 21.5
+  },
+  {
+   "text": "task",
+   "start": 21.5,
+   "end": 21.863
+  },
+  {
+   "text": "is",
+   "start": 21.863,
+   "end": 22.0
+  },
+  {
+   "text": "done",
+   "start": 22.0,
+   "end": 22.65
+  },
+  {
+   "text": ".",
+   "start": 22.65,
+   "end": 22.812
+  },
+  {
+   "text": "Each",
+   "start": 22.812,
+   "end": 23.125
+  },
+  {
+   "text": "layer",
+   "start": 23.125,
+   "end": 23.512
+  },
+  {
+   "text": "fails",
+   "start": 23.512,
+   "end": 23.962
+  },
+  {
+   "text": "in",
+   "start": 23.962,
+   "end": 24.038
+  },
+  {
+   "text": "its",
+   "start": 24.038,
+   "end": 24.2
+  },
+  {
+   "text": "own",
+   "start": 24.2,
+   "end": 24.45
+  },
+  {
+   "text": "way",
+   "start": 24.45,
+   "end": 25.1
+  },
+  {
+   "text": ".",
+   "start": 25.1,
+   "end": 25.3
+  },
+  {
+   "text": "Reasoning",
+   "start": 25.3,
+   "end": 25.837
+  },
+  {
+   "text": "fails",
+   "start": 25.837,
+   "end": 26.262
+  },
+  {
+   "text": "with",
+   "start": 26.262,
+   "end": 26.387
+  },
+  {
+   "text": "a",
+   "start": 26.387,
+   "end": 26.45
+  },
+  {
+   "text": "bad",
+   "start": 26.45,
+   "end": 26.75
+  },
+  {
+   "text": "plan",
+   "start": 26.75,
+   "end": 27.225
+  },
+  {
+   "text": ",",
+   "start": 27.225,
+   "end": 27.3
+  },
+  {
+   "text": "with",
+   "start": 27.3,
+   "end": 27.475
+  },
+  {
+   "text": "steps",
+   "start": 27.475,
+   "end": 27.837
+  },
+  {
+   "text": "missing",
+   "start": 27.837,
+   "end": 28.337
+  },
+  {
+   "text": "or",
+   "start": 28.337,
+   "end": 28.5
+  },
+  {
+   "text": "out",
+   "start": 28.5,
+   "end": 28.688
+  },
+  {
+   "text": "of",
+   "start": 28.688,
+   "end": 28.775
+  },
+  {
+   "text": "order",
+   "start": 28.775,
+   "end": 29.475
+  },
+  {
+   "text": ".",
+   "start": 29.475,
+   "end": 29.663
+  },
+  {
+   "text": "Or",
+   "start": 30.05,
+   "end": 30.188
+  },
+  {
+   "text": "a",
+   "start": 30.188,
+   "end": 30.25
+  },
+  {
+   "text": "good",
+   "start": 30.25,
+   "end": 30.475
+  },
+  {
+   "text": "plan",
+   "start": 30.475,
+   "end": 30.775
+  },
+  {
+   "text": "the",
+   "start": 30.775,
+   "end": 30.925
+  },
+  {
+   "text": "agent",
+   "start": 30.925,
+   "end": 31.238
+  },
+  {
+   "text": "doesn't",
+   "start": 31.238,
+   "end": 31.5
+  },
+  {
+   "text": "follow",
+   "start": 31.5,
+   "end": 32.15
+  },
+  {
+   "text": ".",
+   "start": 32.15,
+   "end": 32.325
+  },
+  {
+   "text": "So",
+   "start": 32.325,
+   "end": 32.55
+  },
+  {
+   "text": "score",
+   "start": 32.55,
+   "end": 32.85
+  },
+  {
+   "text": "both",
+   "start": 32.85,
+   "end": 33.275
+  },
+  {
+   "text": ":",
+   "start": 33.275,
+   "end": 33.35
+  },
+  {
+   "text": "plan",
+   "start": 33.35,
+   "end": 33.625
+  },
+  {
+   "text": "quality",
+   "start": 33.625,
+   "end": 34.075
+  },
+  {
+   "text": ",",
+   "start": 34.075,
+   "end": 34.125
+  },
+  {
+   "text": "and",
+   "start": 34.125,
+   "end": 34.25
+  },
+  {
+   "text": "plan",
+   "start": 34.25,
+   "end": 34.525
+  },
+  {
+   "text": "adherence",
+   "start": 34.525,
+   "end": 35.5
+  },
+  {
+   "text": ".",
+   "start": 35.5,
+   "end": 35.675
+  },
+  {
+   "text": "Action",
+   "start": 35.675,
+   "end": 36.138
+  },
+  {
+   "text": "fails",
+   "start": 36.138,
+   "end": 36.462
+  },
+  {
+   "text": "at",
+   "start": 36.462,
+   "end": 36.538
+  },
+  {
+   "text": "the",
+   "start": 36.538,
+   "end": 36.625
+  },
+  {
+   "text": "tools",
+   "start": 36.625,
+   "end": 37.35
+  },
+  {
+   "text": ".",
+   "start": 37.35,
+   "end": 37.45
+  },
+  {
+   "text": "The",
+   "start": 37.45,
+   "end": 37.575
+  },
+  {
+   "text": "wrong",
+   "start": 37.575,
+   "end": 37.913
+  },
+  {
+   "text": "tool",
+   "start": 37.913,
+   "end": 38.25
+  },
+  {
+   "text": ",",
+   "start": 38.25,
+   "end": 38.288
+  },
+  {
+   "text": "like",
+   "start": 38.288,
+   "end": 38.438
+  },
+  {
+   "text": "a",
+   "start": 38.438,
+   "end": 38.513
+  },
+  {
+   "text": "calculator",
+   "start": 38.513,
+   "end": 39.188
+  },
+  {
+   "text": "when",
+   "start": 39.188,
+   "end": 39.312
+  },
+  {
+   "text": "it",
+   "start": 39.312,
+   "end": 39.4
+  },
+  {
+   "text": "needed",
+   "start": 39.4,
+   "end": 39.725
+  },
+  {
+   "text": "search",
+   "start": 39.725,
+   "end": 40.4
+  },
+  {
+   "text": ".",
+   "start": 40.4,
+   "end": 40.525
+  },
+  {
+   "text": "Or",
+   "start": 40.525,
+   "end": 40.638
+  },
+  {
+   "text": "the",
+   "start": 40.638,
+   "end": 40.725
+  },
+  {
+   "text": "right",
+   "start": 40.725,
+   "end": 40.975
+  },
+  {
+   "text": "tool",
+   "start": 40.975,
+   "end": 41.237
+  },
+  {
+   "text": "with",
+   "start": 41.237,
+   "end": 41.413
+  },
+  {
+   "text": "wrong",
+   "start": 41.413,
+   "end": 41.75
+  },
+  {
+   "text": "arguments",
+   "start": 41.75,
+   "end": 42.3
+  },
+  {
+   "text": ":",
+   "start": 42.3,
+   "end": 42.35
+  },
+  {
+   "text": "a",
+   "start": 42.35,
+   "end": 42.462
+  },
+  {
+   "text": "city",
+   "start": 42.462,
+   "end": 42.775
+  },
+  {
+   "text": ",",
+   "start": 42.775,
+   "end": 42.812
+  },
+  {
+   "text": "when",
+   "start": 42.812,
+   "end": 42.938
+  },
+  {
+   "text": "the",
+   "start": 42.938,
+   "end": 43.038
+  },
+  {
+   "text": "tool",
+   "start": 43.038,
+   "end": 43.325
+  },
+  {
+   "text": "wants",
+   "start": 43.325,
+   "end": 43.538
+  },
+  {
+   "text": "a",
+   "start": 43.538,
+   "end": 43.6
+  },
+  {
+   "text": "full",
+   "start": 43.6,
+   "end": 43.825
+  },
+  {
+   "text": "location",
+   "start": 43.825,
+   "end": 44.8
+  },
+  {
+   "text": ".",
+   "start": 44.8,
+   "end": 44.95
+  },
+  {
+   "text": "Score",
+   "start": 44.95,
+   "end": 45.25
+  },
+  {
+   "text": "that",
+   "start": 45.25,
+   "end": 45.425
+  },
+  {
+   "text": "one",
+   "start": 45.425,
+   "end": 45.625
+  },
+  {
+   "text": "decision",
+   "start": 45.625,
+   "end": 46.2
+  },
+  {
+   "text": ":",
+   "start": 46.2,
+   "end": 46.288
+  },
+  {
+   "text": "tool",
+   "start": 46.288,
+   "end": 46.575
+  },
+  {
+   "text": "correctness",
+   "start": 46.575,
+   "end": 47.2
+  },
+  {
+   "text": ",",
+   "start": 47.2,
+   "end": 47.25
+  },
+  {
+   "text": "and",
+   "start": 47.25,
+   "end": 47.413
+  },
+  {
+   "text": "argument",
+   "start": 47.413,
+   "end": 47.875
+  },
+  {
+   "text": "correctness",
+   "start": 47.875,
+   "end": 48.85
+  },
+  {
+   "text": ".",
+   "start": 48.85,
+   "end": 48.975
+  },
+  {
+   "text": "That",
+   "start": 48.975,
+   "end": 49.225
+  },
+  {
+   "text": "gives",
+   "start": 49.225,
+   "end": 49.513
+  },
+  {
+   "text": "three",
+   "start": 49.513,
+   "end": 49.763
+  },
+  {
+   "text": "scopes",
+   "start": 49.763,
+   "end": 50.575
+  },
+  {
+   "text": ".",
+   "start": 50.575,
+   "end": 50.712
+  },
+  {
+   "text": "End",
+   "start": 50.712,
+   "end": 50.925
+  },
+  {
+   "text": "to",
+   "start": 50.925,
+   "end": 51.05
+  },
+  {
+   "text": "end",
+   "start": 51.05,
+   "end": 51.325
+  },
+  {
+   "text": "grades",
+   "start": 51.325,
+   "end": 51.75
+  },
+  {
+   "text": "only",
+   "start": 51.75,
+   "end": 52.05
+  },
+  {
+   "text": "the",
+   "start": 52.05,
+   "end": 52.188
+  },
+  {
+   "text": "final",
+   "start": 52.188,
+   "end": 52.6
+  },
+  {
+   "text": "output",
+   "start": 52.6,
+   "end": 53.375
+  },
+  {
+   "text": ".",
+   "start": 53.375,
+   "end": 53.487
+  },
+  {
+   "text": "Trajectory",
+   "start": 53.487,
+   "end": 54.163
+  },
+  {
+   "text": "reads",
+   "start": 54.163,
+   "end": 54.525
+  },
+  {
+   "text": "the",
+   "start": 54.525,
+   "end": 54.663
+  },
+  {
+   "text": "whole",
+   "start": 54.663,
+   "end": 55.038
+  },
+  {
+   "text": "ordered",
+   "start": 55.038,
+   "end": 55.425
+  },
+  {
+   "text": "trace",
+   "start": 55.425,
+   "end": 56.25
+  },
+  {
+   "text": ".",
+   "start": 56.25,
+   "end": 56.35
+  },
+  {
+   "text": "Did",
+   "start": 56.35,
+   "end": 56.487
+  },
+  {
+   "text": "it",
+   "start": 56.487,
+   "end": 56.575
+  },
+  {
+   "text": "finish",
+   "start": 56.575,
+   "end": 56.875
+  },
+  {
+   "text": "the",
+   "start": 56.875,
+   "end": 56.987
+  },
+  {
+   "text": "task",
+   "start": 56.987,
+   "end": 57.475
+  },
+  {
+   "text": ",",
+   "start": 57.475,
+   "end": 57.525
+  },
+  {
+   "text": "without",
+   "start": 57.525,
+   "end": 57.875
+  },
+  {
+   "text": "wasted",
+   "start": 57.875,
+   "end": 58.325
+  },
+  {
+   "text": "steps",
+   "start": 58.325,
+   "end": 59.05
+  },
+  {
+   "text": "?",
+   "start": 59.05,
+   "end": 59.212
+  },
+  {
+   "text": "And",
+   "start": 59.6,
+   "end": 59.75
+  },
+  {
+   "text": "component",
+   "start": 59.75,
+   "end": 60.275
+  },
+  {
+   "text": "grades",
+   "start": 60.275,
+   "end": 60.75
+  },
+  {
+   "text": "a",
+   "start": 60.75,
+   "end": 60.875
+  },
+  {
+   "text": "single",
+   "start": 60.875,
+   "end": 61.312
+  },
+  {
+   "text": "span",
+   "start": 61.312,
+   "end": 61.95
+  },
+  {
+   "text": ",",
+   "start": 61.95,
+   "end": 62.025
+  },
+  {
+   "text": "like",
+   "start": 62.025,
+   "end": 62.2
+  },
+  {
+   "text": "the",
+   "start": 62.2,
+   "end": 62.337
+  },
+  {
+   "text": "call",
+   "start": 62.337,
+   "end": 62.725
+  },
+  {
+   "text": "that",
+   "start": 62.725,
+   "end": 62.9
+  },
+  {
+   "text": "picked",
+   "start": 62.9,
+   "end": 63.175
+  },
+  {
+   "text": "the",
+   "start": 63.175,
+   "end": 63.287
+  },
+  {
+   "text": "tool",
+   "start": 63.287,
+   "end": 64.175
+  },
+  {
+   "text": ".",
+   "start": 64.175,
+   "end": 64.337
+  },
+  {
+   "text": "In",
+   "start": 64.337,
+   "end": 64.475
+  },
+  {
+   "text": "development",
+   "start": 64.475,
+   "end": 65.175
+  },
+  {
+   "text": ",",
+   "start": 65.175,
+   "end": 65.287
+  },
+  {
+   "text": "run",
+   "start": 65.287,
+   "end": 65.587
+  },
+  {
+   "text": "all",
+   "start": 65.587,
+   "end": 65.85
+  },
+  {
+   "text": "of",
+   "start": 65.85,
+   "end": 65.975
+  },
+  {
+   "text": "it",
+   "start": 65.975,
+   "end": 66.125
+  },
+  {
+   "text": "on",
+   "start": 66.125,
+   "end": 66.263
+  },
+  {
+   "text": "a",
+   "start": 66.263,
+   "end": 66.388
+  },
+  {
+   "text": "fixed",
+   "start": 66.388,
+   "end": 66.725
+  },
+  {
+   "text": "set",
+   "start": 66.725,
+   "end": 66.888
+  },
+  {
+   "text": "of",
+   "start": 66.888,
+   "end": 66.975
+  },
+  {
+   "text": "goldens",
+   "start": 66.975,
+   "end": 67.65
+  },
+  {
+   "text": ",",
+   "start": 67.65,
+   "end": 67.725
+  },
+  {
+   "text": "and",
+   "start": 67.725,
+   "end": 67.85
+  },
+  {
+   "text": "compare",
+   "start": 67.85,
+   "end": 68.337
+  },
+  {
+   "text": "each",
+   "start": 68.337,
+   "end": 68.65
+  },
+  {
+   "text": "version",
+   "start": 68.65,
+   "end": 69.575
+  },
+  {
+   "text": ".",
+   "start": 69.575,
+   "end": 69.737
+  },
+  {
+   "text": "In",
+   "start": 69.737,
+   "end": 69.875
+  },
+  {
+   "text": "production",
+   "start": 69.875,
+   "end": 70.7
+  },
+  {
+   "text": ",",
+   "start": 70.7,
+   "end": 70.812
+  },
+  {
+   "text": "catch",
+   "start": 70.812,
+   "end": 71.125
+  },
+  {
+   "text": "the",
+   "start": 71.125,
+   "end": 71.25
+  },
+  {
+   "text": "runs",
+   "start": 71.25,
+   "end": 71.625
+  },
+  {
+   "text": "that",
+   "start": 71.625,
+   "end": 71.862
+  },
+  {
+   "text": "fail",
+   "start": 71.862,
+   "end": 72.45
+  },
+  {
+   "text": ",",
+   "start": 72.45,
+   "end": 72.55
+  },
+  {
+   "text": "and",
+   "start": 72.55,
+   "end": 72.725
+  },
+  {
+   "text": "add",
+   "start": 72.725,
+   "end": 73.0
+  },
+  {
+   "text": "each",
+   "start": 73.0,
+   "end": 73.25
+  },
+  {
+   "text": "one",
+   "start": 73.25,
+   "end": 73.475
+  },
+  {
+   "text": "to",
+   "start": 73.475,
+   "end": 73.575
+  },
+  {
+   "text": "the",
+   "start": 73.575,
+   "end": 73.712
+  },
+  {
+   "text": "set",
+   "start": 73.712,
+   "end": 74.5
+  },
+  {
+   "text": ".",
+   "start": 74.5,
+   "end": 74.675
+  },
+  {
+   "text": "That's",
+   "start": 74.675,
+   "end": 74.975
+  },
+  {
+   "text": "how",
+   "start": 74.975,
+   "end": 75.15
+  },
+  {
+   "text": "you",
+   "start": 75.15,
+   "end": 75.3
+  },
+  {
+   "text": "find",
+   "start": 75.3,
+   "end": 75.6
+  },
+  {
+   "text": "exactly",
+   "start": 75.6,
+   "end": 76.2
+  },
+  {
+   "text": "where",
+   "start": 76.2,
+   "end": 76.375
+  },
+  {
+   "text": "it",
+   "start": 76.375,
+   "end": 76.475
+  },
+  {
+   "text": "broke",
+   "start": 76.475,
+   "end": 77.15
+  },
+  {
+   "text": ".",
+   "start": 77.15,
+   "end": 77.325
+  }
+ ],
+ "cues": {
+  "how": 3.337,
+  "answer": 5.9,
+  "box": 7.275,
+  "where": 9.525,
+  "loop": 12.8,
+  "reason": 13.675,
+  "action": 17.512,
+  "observe": 20.075,
+  "done": 22.0,
+  "plan": 26.45,
+  "drift": 31.238,
+  "quality": 33.35,
+  "adherence": 34.25,
+  "wrong": 37.575,
+  "args": 41.413,
+  "location": 43.825,
+  "toolc": 46.288,
+  "argc": 47.413,
+  "e2e": 50.712,
+  "traj": 53.487,
+  "complete": 56.575,
+  "efficient": 57.525,
+  "comp": 59.75,
+  "goldens": 66.975,
+  "catch": 70.812,
+  "feed": 72.725,
+  "end": 74.675
+ }
+}

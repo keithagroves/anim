@@ -1,0 +1,3 @@
+Your app runs in containers. {cue:one}One container is easy to manage. But real systems run {cue:many}hundreds of them, {cue:servers}spread across many servers.
+Kubernetes is the {cue:conductor}conductor. You {cue:declare}declare what you want, like {cue:three}three copies of your web app, and Kubernetes {cue:place}places them on servers for you.
+Now, if a server {cue:fail}fails, Kubernetes notices, and {cue:replace}starts a replacement somewhere healthy. {cue:goal}You describe the goal. Kubernetes keeps it true.

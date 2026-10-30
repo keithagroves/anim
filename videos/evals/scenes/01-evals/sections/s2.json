@@ -1,0 +1,35 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.title": { "type": "text", "text": "harness", "style": "h2", "fill": "muted", "at": { "region": "top", "align": "center" } },
+
+    "s2.trial2": { "type": "rect", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "agent", "strokeWidth": "thin", "opacity": 0.45, "layer": -2, "at": { "in": "agents", "dx": 20, "dy": -20 } },
+    "s2.trial1": { "type": "rect", "w": 280, "h": 110, "radius": "md", "fill": "card", "stroke": "agent", "strokeWidth": "thin", "opacity": 0.7, "layer": -1, "at": { "in": "agents", "dx": 10, "dy": -10 } },
+    "s2.trialsLabel": { "type": "text", "text": "×3 trials", "style": "label", "fill": "agent", "at": { "below": "agents", "gap": "sm" } },
+
+    "s2.c1Text": { "type": "text", "text": "compiles", "style": "body", "anchor": "start", "at": { "below": "gate", "gap": "md", "align": "left", "dx": 56 } },
+    "s2.c2Text": { "type": "text", "text": "lint clean", "style": "body", "anchor": "start", "at": { "below": "s2.c1Text", "gap": "sm", "align": "left" } },
+    "s2.c3Text": { "type": "text", "text": "seams line up", "style": "body", "anchor": "start", "at": { "below": "s2.c2Text", "gap": "sm", "align": "left" } },
+    "s2.c1Tick": { "type": "path", "d": "M3 13 L10 20 L23 5", "w": 26, "h": 26, "fill": "none", "stroke": "good", "strokeWidth": 4, "at": { "leftOf": "s2.c1Text", "gap": "sm" } },
+    "s2.c2Tick": { "type": "path", "d": "M3 13 L10 20 L23 5", "w": 26, "h": 26, "fill": "none", "stroke": "good", "strokeWidth": 4, "at": { "leftOf": "s2.c2Text", "gap": "sm" } },
+    "s2.c3Tick": { "type": "path", "d": "M3 13 L10 20 L23 5", "w": 26, "h": 26, "fill": "none", "stroke": "good", "strokeWidth": 4, "at": { "leftOf": "s2.c3Text", "gap": "sm" } }
+  },
+  "timeline": [
+    { "id": "title", "target": "s2.title", "preset": "fade-in", "at": "cue:harness", "offset": -0.3, "dur": "base" },
+    { "id": "a1", "target": "a1", "preset": "draw-on", "at": "cue:harness", "dur": "base", "ease": "inOut" },
+    { "id": "agents", "target": "agents", "preset": "rise-in", "after": "a1", "gap": -0.15, "dur": "base" },
+
+    { "id": "trials", "target": ["s2.trial1", "s2.trial2"], "preset": "fade-in", "at": "cue:trials", "offset": -0.35, "stagger": 0.1, "dur": "fast" },
+    { "target": "s2.trialsLabel", "preset": "rise-in", "with": "trials", "offset": 0.1, "dur": "fast" },
+
+    { "id": "a2", "target": "a2", "preset": "draw-on", "at": "cue:gate", "dur": "base", "ease": "inOut" },
+    { "id": "gate", "target": "gate", "preset": "rise-in", "after": "a2", "gap": -0.15, "dur": "base" },
+    { "target": "gate", "preset": "highlight", "color": "gate", "at": 6.3, "dur": "base" },
+
+    { "target": ["s2.c1Tick", "s2.c1Text"], "preset": "pop", "at": 7.1, "stagger": 0.06, "dur": "fast" },
+    { "target": ["s2.c2Tick", "s2.c2Text"], "preset": "pop", "at": 7.8, "stagger": 0.06, "dur": "fast" },
+    { "target": ["s2.c3Tick", "s2.c3Text"], "preset": "pop", "at": 8.6, "stagger": 0.06, "dur": "fast" },
+
+    { "id": "clear", "target": ["s2.title", "s2.trial2", "s2.trial1", "s2.trialsLabel", "s2.c1Tick", "s2.c1Text", "s2.c2Tick", "s2.c2Text", "s2.c3Tick", "s2.c3Text"], "preset": "fade-out", "at": 9.55, "stagger": 0.015, "dur": 0.3 }
+  ]
+}

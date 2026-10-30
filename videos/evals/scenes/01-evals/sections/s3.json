@@ -1,0 +1,49 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.free": { "type": "text", "text": "free · local", "style": "caption", "fill": "judge", "at": { "below": "judge", "gap": "sm" } },
+    "s3.optA": { "type": "rect", "text": "A pass", "w": 150, "h": 64, "radius": "sm", "fill": "card", "stroke": "good", "strokeWidth": "thin", "layer": 2, "at": { "below": "judge", "gap": "xl", "dx": -95 } },
+    "s3.optB": { "type": "rect", "text": "B fail", "w": 150, "h": 64, "radius": "sm", "fill": "card", "stroke": "bad", "strokeWidth": "thin", "layer": 1, "at": { "below": "judge", "gap": "xl", "dx": 95 } },
+    "s3.asked": { "type": "text", "text": "asked both ways", "style": "caption", "fill": "muted", "at": { "below": "s3.optA", "gap": "md", "dx": 95 } },
+
+    "s3.title": { "type": "text", "text": "trust", "style": "h2", "at": { "region": "top", "align": "top" } },
+
+    "s3.human": { "type": "rect", "text": "blind labels", "w": 280, "h": 100, "radius": "md", "fill": "card", "stroke": "human", "shadow": true, "at": { "below": "judge", "gap": "xl", "dy": 60 } },
+    "s3.hArrow": { "type": "arrow", "from": "s3.human.top", "to": "judge.bottom", "bend": 50, "stroke": "human" },
+
+    "s3.track": { "type": "rect", "w": 360, "h": 28, "radius": "sm", "fill": "surface2", "stroke": "line", "strokeWidth": "thin", "at": { "leftOf": "s3.human", "gap": "xl" } },
+    "s3.zone": { "type": "rect", "w": 360, "h": 72, "opacity": 0, "at": { "in": "s3.track", "align": "center", "pad": 0 } },
+    "s3.fill": { "type": "rect", "w": 216, "h": 28, "radius": "sm", "fill": "judge", "layer": 2, "at": { "in": "s3.track", "align": "left", "pad": 0 } },
+    "s3.thresh": { "type": "line", "from": "s3.zone.top:0.6", "to": "s3.zone.bottom:0.6", "stroke": "text", "strokeWidth": "md", "layer": 3 },
+    "s3.agree": { "type": "text", "text": "agreement", "style": "label", "fill": "muted", "anchor": "start", "at": { "above": "s3.zone", "gap": "xs", "align": "left" } },
+    "s3.kappa": { "type": "text", "text": "κ ≥ 0.6 → trusted", "style": "caption", "fill": "text", "at": { "below": "s3.zone", "gap": "xs", "align": "right" } }
+  },
+  "timeline": [
+    { "id": "a3in", "target": "a3", "preset": "draw-on", "at": "cue:judge", "dur": "base" },
+    { "id": "judgeIn", "target": "judge", "preset": "rise-in", "with": "a3in", "offset": 0.3, "dur": "base" },
+    { "target": "s3.free", "preset": "fade-in", "after": "judgeIn", "gap": 0.2, "dur": "fast" },
+    { "target": "judge", "preset": "pulse", "at": "cue:swap", "offset": -1.6, "amount": 0.05 },
+
+    { "id": "optsIn", "target": ["s3.optA", "s3.optB"], "preset": "pop", "at": "cue:swap", "offset": -0.3, "stagger": 0.08, "dur": "fast" },
+    { "id": "swapA1", "target": "s3.optA", "preset": "to", "at": "cue:swap", "offset": 0.3, "dur": 0.4, "ease": "inOut", "to": { "dx": 95, "dy": 50 } },
+    { "id": "swapA2", "target": "s3.optA", "preset": "to", "after": "swapA1", "dur": 0.4, "ease": "inOut", "to": { "dx": 190, "dy": 0 } },
+    { "target": "s3.optB", "preset": "to", "with": "swapA1", "dur": 0.4, "ease": "inOut", "to": { "dx": -95, "dy": -50 } },
+    { "target": "s3.optB", "preset": "to", "with": "swapA2", "dur": 0.4, "ease": "inOut", "to": { "dx": -190, "dy": 0 } },
+    { "target": "s3.asked", "preset": "fade-in", "after": "swapA2", "gap": 0.1, "dur": "fast" },
+    { "target": ["s3.free", "s3.optA", "s3.optB", "s3.asked"], "preset": "fade-out", "at": "cue:trust", "offset": -0.9, "stagger": 0.05, "dur": "fast" },
+
+    { "target": "s3.title", "preset": "rise-in", "at": "cue:trust", "dur": "base" },
+    { "target": "judge", "preset": "highlight", "at": "cue:trust", "offset": 0.6, "color": "judge" },
+
+    { "id": "humanIn", "target": "s3.human", "preset": "rise-in", "at": "cue:label", "dur": "base" },
+    { "target": "s3.hArrow", "preset": "draw-on", "after": "humanIn", "gap": 0.05, "dur": 0.5 },
+
+    { "id": "meterIn", "target": ["s3.track", "s3.agree", "s3.thresh", "s3.kappa"], "preset": "fade-in", "at": "cue:kappa", "offset": -0.4, "stagger": 0.06, "dur": "fast" },
+    { "id": "fillIn", "target": "s3.fill", "preset": "wipe-in", "at": "cue:kappa", "dur": 0.6, "ease": "out" },
+    { "target": "s3.thresh", "preset": "pulse", "after": "fillIn", "amount": 0.15, "dur": "fast" },
+
+    { "id": "outro", "target": ["s3.title", "s3.human", "s3.hArrow", "s3.track", "s3.fill", "s3.thresh", "s3.agree", "s3.kappa"], "preset": "fade-out", "at": "cue:kappa", "offset": 1.35, "dur": 0.6 },
+    { "target": ["judge", "a3", "gate", "a2", "agents", "a1"], "preset": "fade-out", "with": "outro", "stagger": 0.03, "dur": 0.6 },
+    { "target": "gold", "preset": "to", "with": "outro", "dur": 0.7, "to": { "opacity": 0.3 } }
+  ]
+}

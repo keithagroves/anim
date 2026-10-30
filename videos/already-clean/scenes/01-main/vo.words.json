@@ -1,0 +1,1955 @@
+{
+ "duration": 115.01,
+ "lead": 0.5,
+ "tail": 2.2,
+ "engine": "chatterbox",
+ "voice": "/Users/keithgroves/projects/anim/vo/ref/my-voice-ref.wav",
+ "exaggeration": 0.7,
+ "cfgWeight": 0.4,
+ "text": "For years, interpretability had a famous problem neuron. It fired for cat faces, and for the fronts of cars. The leading explanation was superposition: when a network runs out of neurons, it folds unrelated things together, like a knot. So researchers trained a second model to unfold it. Now Nick Cammarata at Goodfire argues the knot was never there. Neural networks are already clean. Look at that neuron again, and ask what one thing it sees. Cat ears, car grilles, fox snouts: they all come to a point. It's a V detector. And its negative side is an O. Round things push it down. The textbook superposition circuit showed a car neuron feeding into dog neurons, as if the car were hidden there. But the pictures misled us: the visualizations kept sliding into dogs. Rendered through the car, those neurons are cars, or a pose that cars and dogs share. And the model's messy last layer? Almost none of its neurons made sense. Train a modern network the same size, on the same data, with residual connections and layer norm, and ninety-nine to a hundred percent of its last-layer neurons are easy to read. It was a learning problem, not superposition. Most of what's left grows like a branch. One language neuron detected I.Y. It grew to D.I.Y., and then to \"do it yourself\", which has no I.Y. at all. He calls this recursive generalization: similar things sharing a neuron, not unrelated ones. In twenty twenty-three, an automated study found about one point seven percent of language model neurons interpretable. Now, in a thirty-two billion parameter model, roughly ninety percent of neuron poles have one main job, about seven percent have two related jobs, and only two to four percent aren't understood yet. It holds up to trillions of parameters. And understanding compounds, like a crossword: every neuron you solve constrains its neighbours. Maybe interpretability has its own bitter lesson: scale up ordinary investigation, instead of clever decompositions. It's a working hypothesis. But if it holds, we can study networks directly, with no untangling required.",
+ "words": [
+  {
+   "text": "For",
+   "start": 0.5,
+   "end": 0.7
+  },
+  {
+   "text": "years,",
+   "start": 0.7,
+   "end": 1.18
+  },
+  {
+   "text": "interpretability",
+   "start": 1.64,
+   "end": 2.2
+  },
+  {
+   "text": "had",
+   "start": 2.2,
+   "end": 2.36
+  },
+  {
+   "text": "a",
+   "start": 2.36,
+   "end": 2.5
+  },
+  {
+   "text": "famous",
+   "start": 2.5,
+   "end": 2.68
+  },
+  {
+   "text": "problem",
+   "start": 2.68,
+   "end": 3.08
+  },
+  {
+   "text": "neuron.",
+   "start": 3.08,
+   "end": 3.36
+  },
+  {
+   "text": "It",
+   "start": 3.84,
+   "end": 3.98
+  },
+  {
+   "text": "fired",
+   "start": 3.98,
+   "end": 4.3
+  },
+  {
+   "text": "for",
+   "start": 4.3,
+   "end": 4.54
+  },
+  {
+   "text": "cat",
+   "start": 4.54,
+   "end": 4.76
+  },
+  {
+   "text": "faces,",
+   "start": 4.76,
+   "end": 5.1
+  },
+  {
+   "text": "and",
+   "start": 5.56,
+   "end": 5.58
+  },
+  {
+   "text": "for",
+   "start": 5.58,
+   "end": 5.7
+  },
+  {
+   "text": "the",
+   "start": 5.7,
+   "end": 5.8
+  },
+  {
+   "text": "fronts",
+   "start": 5.8,
+   "end": 6.0
+  },
+  {
+   "text": "of",
+   "start": 6.0,
+   "end": 6.16
+  },
+  {
+   "text": "cars.",
+   "start": 6.16,
+   "end": 6.4
+  },
+  {
+   "text": "The",
+   "start": 6.86,
+   "end": 6.96
+  },
+  {
+   "text": "leading",
+   "start": 6.96,
+   "end": 7.14
+  },
+  {
+   "text": "explanation",
+   "start": 7.14,
+   "end": 7.5
+  },
+  {
+   "text": "was",
+   "start": 7.5,
+   "end": 7.9
+  },
+  {
+   "text": "superposition:",
+   "start": 7.9,
+   "end": 8.8
+  },
+  {
+   "text": "when",
+   "start": 9.3,
+   "end": 9.38
+  },
+  {
+   "text": "a",
+   "start": 9.38,
+   "end": 9.48
+  },
+  {
+   "text": "network",
+   "start": 9.48,
+   "end": 9.68
+  },
+  {
+   "text": "runs",
+   "start": 9.68,
+   "end": 9.9
+  },
+  {
+   "text": "out",
+   "start": 9.9,
+   "end": 10.06
+  },
+  {
+   "text": "of",
+   "start": 10.06,
+   "end": 10.16
+  },
+  {
+   "text": "neurons,",
+   "start": 10.16,
+   "end": 10.46
+  },
+  {
+   "text": "it",
+   "start": 10.86,
+   "end": 10.9
+  },
+  {
+   "text": "folds",
+   "start": 10.9,
+   "end": 11.34
+  },
+  {
+   "text": "unrelated",
+   "start": 11.34,
+   "end": 11.94
+  },
+  {
+   "text": "things",
+   "start": 11.94,
+   "end": 12.32
+  },
+  {
+   "text": "together,",
+   "start": 12.32,
+   "end": 12.62
+  },
+  {
+   "text": "like",
+   "start": 12.62,
+   "end": 12.84
+  },
+  {
+   "text": "a",
+   "start": 12.84,
+   "end": 12.98
+  },
+  {
+   "text": "knot.",
+   "start": 12.98,
+   "end": 13.2
+  },
+  {
+   "text": "So",
+   "start": 13.72,
+   "end": 13.98
+  },
+  {
+   "text": "researchers",
+   "start": 14.42,
+   "end": 14.64
+  },
+  {
+   "text": "trained",
+   "start": 14.64,
+   "end": 14.98
+  },
+  {
+   "text": "a",
+   "start": 14.98,
+   "end": 15.14
+  },
+  {
+   "text": "second",
+   "start": 15.14,
+   "end": 15.34
+  },
+  {
+   "text": "model",
+   "start": 15.34,
+   "end": 15.68
+  },
+  {
+   "text": "to",
+   "start": 15.68,
+   "end": 15.88
+  },
+  {
+   "text": "unfold",
+   "start": 15.88,
+   "end": 16.14
+  },
+  {
+   "text": "it.",
+   "start": 16.14,
+   "end": 16.34
+  },
+  {
+   "text": "Now",
+   "start": 16.69,
+   "end": 16.87
+  },
+  {
+   "text": "Nick",
+   "start": 16.87,
+   "end": 17.07
+  },
+  {
+   "text": "Cammarata",
+   "start": 17.07,
+   "end": 17.57
+  },
+  {
+   "text": "at",
+   "start": 17.57,
+   "end": 17.73
+  },
+  {
+   "text": "Goodfire",
+   "start": 17.73,
+   "end": 18.05
+  },
+  {
+   "text": "argues",
+   "start": 18.05,
+   "end": 18.41
+  },
+  {
+   "text": "the",
+   "start": 18.41,
+   "end": 18.65
+  },
+  {
+   "text": "knot",
+   "start": 18.65,
+   "end": 18.77
+  },
+  {
+   "text": "was",
+   "start": 18.77,
+   "end": 18.95
+  },
+  {
+   "text": "never",
+   "start": 18.95,
+   "end": 19.17
+  },
+  {
+   "text": "there.",
+   "start": 19.17,
+   "end": 19.49
+  },
+  {
+   "text": "Neural",
+   "start": 20.34,
+   "end": 20.58
+  },
+  {
+   "text": "networks",
+   "start": 20.58,
+   "end": 20.88
+  },
+  {
+   "text": "are",
+   "start": 20.88,
+   "end": 21.06
+  },
+  {
+   "text": "already",
+   "start": 21.06,
+   "end": 21.46
+  },
+  {
+   "text": "clean.",
+   "start": 21.46,
+   "end": 21.84
+  },
+  {
+   "text": "Look",
+   "start": 22.63,
+   "end": 22.77
+  },
+  {
+   "text": "at",
+   "start": 22.77,
+   "end": 22.87
+  },
+  {
+   "text": "that",
+   "start": 22.87,
+   "end": 22.97
+  },
+  {
+   "text": "neuron",
+   "start": 22.97,
+   "end": 23.21
+  },
+  {
+   "text": "again,",
+   "start": 23.21,
+   "end": 23.47
+  },
+  {
+   "text": "and",
+   "start": 23.47,
+   "end": 23.69
+  },
+  {
+   "text": "ask",
+   "start": 23.69,
+   "end": 23.91
+  },
+  {
+   "text": "what",
+   "start": 23.91,
+   "end": 24.27
+  },
+  {
+   "text": "one",
+   "start": 24.27,
+   "end": 24.57
+  },
+  {
+   "text": "thing",
+   "start": 24.57,
+   "end": 24.73
+  },
+  {
+   "text": "it",
+   "start": 24.73,
+   "end": 24.89
+  },
+  {
+   "text": "sees.",
+   "start": 24.89,
+   "end": 25.11
+  },
+  {
+   "text": "Cat",
+   "start": 25.64,
+   "end": 25.92
+  },
+  {
+   "text": "ears,",
+   "start": 25.92,
+   "end": 26.14
+  },
+  {
+   "text": "car",
+   "start": 26.32,
+   "end": 26.44
+  },
+  {
+   "text": "grilles,",
+   "start": 26.44,
+   "end": 26.7
+  },
+  {
+   "text": "fox",
+   "start": 26.92,
+   "end": 26.98
+  },
+  {
+   "text": "snouts:",
+   "start": 26.98,
+   "end": 27.34
+  },
+  {
+   "text": "they",
+   "start": 27.68,
+   "end": 27.86
+  },
+  {
+   "text": "all",
+   "start": 27.86,
+   "end": 27.98
+  },
+  {
+   "text": "come",
+   "start": 27.98,
+   "end": 28.14
+  },
+  {
+   "text": "to",
+   "start": 28.14,
+   "end": 28.28
+  },
+  {
+   "text": "a",
+   "start": 28.28,
+   "end": 28.38
+  },
+  {
+   "text": "point.",
+   "start": 28.38,
+   "end": 28.58
+  },
+  {
+   "text": "It's",
+   "start": 28.96,
+   "end": 29.18
+  },
+  {
+   "text": "a",
+   "start": 29.18,
+   "end": 29.22
+  },
+  {
+   "text": "V",
+   "start": 29.22,
+   "end": 29.36
+  },
+  {
+   "text": "detector.",
+   "start": 29.36,
+   "end": 29.78
+  },
+  {
+   "text": "And",
+   "start": 30.18,
+   "end": 30.3
+  },
+  {
+   "text": "its",
+   "start": 30.3,
+   "end": 30.4
+  },
+  {
+   "text": "negative",
+   "start": 30.4,
+   "end": 30.7
+  },
+  {
+   "text": "side",
+   "start": 30.7,
+   "end": 31.02
+  },
+  {
+   "text": "is",
+   "start": 31.02,
+   "end": 31.16
+  },
+  {
+   "text": "an",
+   "start": 31.16,
+   "end": 31.3
+  },
+  {
+   "text": "O.",
+   "start": 31.54,
+   "end": 31.54
+  },
+  {
+   "text": "Round",
+   "start": 32.04,
+   "end": 32.24
+  },
+  {
+   "text": "things",
+   "start": 32.24,
+   "end": 32.68
+  },
+  {
+   "text": "push",
+   "start": 32.68,
+   "end": 33.0
+  },
+  {
+   "text": "it",
+   "start": 33.0,
+   "end": 33.2
+  },
+  {
+   "text": "down.",
+   "start": 33.2,
+   "end": 33.46
+  },
+  {
+   "text": "The",
+   "start": 34.16,
+   "end": 34.3
+  },
+  {
+   "text": "textbook",
+   "start": 34.3,
+   "end": 34.6
+  },
+  {
+   "text": "superposition",
+   "start": 34.6,
+   "end": 35.28
+  },
+  {
+   "text": "circuit",
+   "start": 35.28,
+   "end": 35.58
+  },
+  {
+   "text": "showed",
+   "start": 35.58,
+   "end": 35.8
+  },
+  {
+   "text": "a",
+   "start": 35.8,
+   "end": 35.96
+  },
+  {
+   "text": "car",
+   "start": 35.96,
+   "end": 36.18
+  },
+  {
+   "text": "neuron",
+   "start": 36.18,
+   "end": 36.42
+  },
+  {
+   "text": "feeding",
+   "start": 36.42,
+   "end": 36.68
+  },
+  {
+   "text": "into",
+   "start": 36.68,
+   "end": 36.96
+  },
+  {
+   "text": "dog",
+   "start": 36.96,
+   "end": 37.24
+  },
+  {
+   "text": "neurons,",
+   "start": 37.24,
+   "end": 37.56
+  },
+  {
+   "text": "as",
+   "start": 37.56,
+   "end": 37.7
+  },
+  {
+   "text": "if",
+   "start": 37.7,
+   "end": 37.84
+  },
+  {
+   "text": "the",
+   "start": 37.84,
+   "end": 37.94
+  },
+  {
+   "text": "car",
+   "start": 37.94,
+   "end": 38.1
+  },
+  {
+   "text": "were",
+   "start": 38.1,
+   "end": 38.24
+  },
+  {
+   "text": "hidden",
+   "start": 38.24,
+   "end": 38.42
+  },
+  {
+   "text": "there.",
+   "start": 38.42,
+   "end": 38.7
+  },
+  {
+   "text": "But",
+   "start": 39.05,
+   "end": 39.17
+  },
+  {
+   "text": "the",
+   "start": 39.17,
+   "end": 39.31
+  },
+  {
+   "text": "pictures",
+   "start": 39.31,
+   "end": 39.57
+  },
+  {
+   "text": "misled",
+   "start": 39.57,
+   "end": 39.91
+  },
+  {
+   "text": "us:",
+   "start": 39.91,
+   "end": 40.31
+  },
+  {
+   "text": "the",
+   "start": 40.59,
+   "end": 40.69
+  },
+  {
+   "text": "visualizations",
+   "start": 40.69,
+   "end": 41.29
+  },
+  {
+   "text": "kept",
+   "start": 41.29,
+   "end": 41.51
+  },
+  {
+   "text": "sliding",
+   "start": 41.51,
+   "end": 41.91
+  },
+  {
+   "text": "into",
+   "start": 41.91,
+   "end": 42.13
+  },
+  {
+   "text": "dogs.",
+   "start": 42.13,
+   "end": 42.45
+  },
+  {
+   "text": "Rendered",
+   "start": 43.04,
+   "end": 43.26
+  },
+  {
+   "text": "through",
+   "start": 43.26,
+   "end": 43.46
+  },
+  {
+   "text": "the",
+   "start": 43.46,
+   "end": 43.6
+  },
+  {
+   "text": "car,",
+   "start": 43.6,
+   "end": 43.92
+  },
+  {
+   "text": "those",
+   "start": 44.26,
+   "end": 44.48
+  },
+  {
+   "text": "neurons",
+   "start": 44.48,
+   "end": 44.76
+  },
+  {
+   "text": "are",
+   "start": 44.76,
+   "end": 44.96
+  },
+  {
+   "text": "cars,",
+   "start": 44.96,
+   "end": 45.42
+  },
+  {
+   "text": "or",
+   "start": 45.68,
+   "end": 45.9
+  },
+  {
+   "text": "a",
+   "start": 45.9,
+   "end": 46.02
+  },
+  {
+   "text": "pose",
+   "start": 46.02,
+   "end": 46.3
+  },
+  {
+   "text": "that",
+   "start": 46.3,
+   "end": 46.54
+  },
+  {
+   "text": "cars",
+   "start": 46.54,
+   "end": 46.86
+  },
+  {
+   "text": "and",
+   "start": 46.86,
+   "end": 47.04
+  },
+  {
+   "text": "dogs",
+   "start": 47.04,
+   "end": 47.28
+  },
+  {
+   "text": "share.",
+   "start": 47.28,
+   "end": 47.62
+  },
+  {
+   "text": "And",
+   "start": 48.32,
+   "end": 48.7
+  },
+  {
+   "text": "the",
+   "start": 48.7,
+   "end": 49.16
+  },
+  {
+   "text": "model's",
+   "start": 49.16,
+   "end": 49.52
+  },
+  {
+   "text": "messy",
+   "start": 49.52,
+   "end": 49.76
+  },
+  {
+   "text": "last",
+   "start": 49.76,
+   "end": 50.02
+  },
+  {
+   "text": "layer?",
+   "start": 50.02,
+   "end": 50.32
+  },
+  {
+   "text": "Almost",
+   "start": 50.74,
+   "end": 50.96
+  },
+  {
+   "text": "none",
+   "start": 50.96,
+   "end": 51.16
+  },
+  {
+   "text": "of",
+   "start": 51.16,
+   "end": 51.26
+  },
+  {
+   "text": "its",
+   "start": 51.26,
+   "end": 51.36
+  },
+  {
+   "text": "neurons",
+   "start": 51.36,
+   "end": 51.66
+  },
+  {
+   "text": "made",
+   "start": 51.66,
+   "end": 51.88
+  },
+  {
+   "text": "sense.",
+   "start": 51.88,
+   "end": 52.18
+  },
+  {
+   "text": "Train",
+   "start": 52.68,
+   "end": 52.98
+  },
+  {
+   "text": "a",
+   "start": 52.98,
+   "end": 53.16
+  },
+  {
+   "text": "modern",
+   "start": 53.16,
+   "end": 53.38
+  },
+  {
+   "text": "network",
+   "start": 53.38,
+   "end": 53.76
+  },
+  {
+   "text": "the",
+   "start": 53.76,
+   "end": 53.96
+  },
+  {
+   "text": "same",
+   "start": 53.96,
+   "end": 54.16
+  },
+  {
+   "text": "size,",
+   "start": 54.16,
+   "end": 54.52
+  },
+  {
+   "text": "on",
+   "start": 54.78,
+   "end": 54.84
+  },
+  {
+   "text": "the",
+   "start": 54.84,
+   "end": 54.94
+  },
+  {
+   "text": "same",
+   "start": 54.94,
+   "end": 55.12
+  },
+  {
+   "text": "data,",
+   "start": 55.12,
+   "end": 55.4
+  },
+  {
+   "text": "with",
+   "start": 55.7,
+   "end": 55.8
+  },
+  {
+   "text": "residual",
+   "start": 55.8,
+   "end": 56.14
+  },
+  {
+   "text": "connections",
+   "start": 56.14,
+   "end": 56.56
+  },
+  {
+   "text": "and",
+   "start": 56.56,
+   "end": 56.76
+  },
+  {
+   "text": "layer",
+   "start": 56.76,
+   "end": 56.9
+  },
+  {
+   "text": "norm,",
+   "start": 56.9,
+   "end": 57.14
+  },
+  {
+   "text": "and",
+   "start": 57.52,
+   "end": 57.66
+  },
+  {
+   "text": "ninety-nine",
+   "start": 57.66,
+   "end": 58.1
+  },
+  {
+   "text": "to",
+   "start": 58.1,
+   "end": 58.28
+  },
+  {
+   "text": "a",
+   "start": 58.28,
+   "end": 58.299
+  },
+  {
+   "text": "hundred",
+   "start": 58.299,
+   "end": 58.429
+  },
+  {
+   "text": "percent",
+   "start": 58.429,
+   "end": 58.56
+  },
+  {
+   "text": "of",
+   "start": 58.86,
+   "end": 58.96
+  },
+  {
+   "text": "its",
+   "start": 58.96,
+   "end": 59.06
+  },
+  {
+   "text": "last-layer",
+   "start": 59.06,
+   "end": 59.48
+  },
+  {
+   "text": "neurons",
+   "start": 59.48,
+   "end": 59.78
+  },
+  {
+   "text": "are",
+   "start": 59.78,
+   "end": 59.9
+  },
+  {
+   "text": "easy",
+   "start": 59.9,
+   "end": 60.1
+  },
+  {
+   "text": "to",
+   "start": 60.1,
+   "end": 60.28
+  },
+  {
+   "text": "read.",
+   "start": 60.28,
+   "end": 60.44
+  },
+  {
+   "text": "It",
+   "start": 60.85,
+   "end": 60.97
+  },
+  {
+   "text": "was",
+   "start": 60.97,
+   "end": 61.09
+  },
+  {
+   "text": "a",
+   "start": 61.09,
+   "end": 61.23
+  },
+  {
+   "text": "learning",
+   "start": 61.23,
+   "end": 61.45
+  },
+  {
+   "text": "problem,",
+   "start": 61.45,
+   "end": 61.87
+  },
+  {
+   "text": "not",
+   "start": 62.03,
+   "end": 62.11
+  },
+  {
+   "text": "superposition.",
+   "start": 62.11,
+   "end": 62.71
+  },
+  {
+   "text": "Most",
+   "start": 63.55,
+   "end": 63.81
+  },
+  {
+   "text": "of",
+   "start": 63.81,
+   "end": 63.95
+  },
+  {
+   "text": "what's",
+   "start": 63.95,
+   "end": 64.17
+  },
+  {
+   "text": "left",
+   "start": 64.17,
+   "end": 64.37
+  },
+  {
+   "text": "grows",
+   "start": 64.37,
+   "end": 64.59
+  },
+  {
+   "text": "like",
+   "start": 64.59,
+   "end": 64.81
+  },
+  {
+   "text": "a",
+   "start": 64.81,
+   "end": 64.93
+  },
+  {
+   "text": "branch.",
+   "start": 64.93,
+   "end": 65.23
+  },
+  {
+   "text": "One",
+   "start": 65.76,
+   "end": 65.96
+  },
+  {
+   "text": "language",
+   "start": 65.96,
+   "end": 66.26
+  },
+  {
+   "text": "neuron",
+   "start": 66.26,
+   "end": 66.54
+  },
+  {
+   "text": "detected",
+   "start": 66.54,
+   "end": 66.92
+  },
+  {
+   "text": "I.Y.",
+   "start": 66.92,
+   "end": 67.5
+  },
+  {
+   "text": "It",
+   "start": 67.82,
+   "end": 67.92
+  },
+  {
+   "text": "grew",
+   "start": 67.92,
+   "end": 68.06
+  },
+  {
+   "text": "to",
+   "start": 68.06,
+   "end": 68.22
+  },
+  {
+   "text": "D.I.Y.,",
+   "start": 68.22,
+   "end": 68.56
+  },
+  {
+   "text": "and",
+   "start": 69.06,
+   "end": 69.24
+  },
+  {
+   "text": "then",
+   "start": 69.24,
+   "end": 69.36
+  },
+  {
+   "text": "to",
+   "start": 69.36,
+   "end": 69.48
+  },
+  {
+   "text": "\"do",
+   "start": 69.48,
+   "end": 69.6
+  },
+  {
+   "text": "it",
+   "start": 69.6,
+   "end": 69.7
+  },
+  {
+   "text": "yourself\",",
+   "start": 69.7,
+   "end": 70.02
+  },
+  {
+   "text": "which",
+   "start": 70.16,
+   "end": 70.26
+  },
+  {
+   "text": "has",
+   "start": 70.26,
+   "end": 70.44
+  },
+  {
+   "text": "no",
+   "start": 70.44,
+   "end": 70.6
+  },
+  {
+   "text": "I.Y.",
+   "start": 70.6,
+   "end": 71.0
+  },
+  {
+   "text": "at",
+   "start": 71.0,
+   "end": 71.14
+  },
+  {
+   "text": "all.",
+   "start": 71.14,
+   "end": 71.36
+  },
+  {
+   "text": "He",
+   "start": 71.84,
+   "end": 71.96
+  },
+  {
+   "text": "calls",
+   "start": 71.96,
+   "end": 72.16
+  },
+  {
+   "text": "this",
+   "start": 72.16,
+   "end": 72.34
+  },
+  {
+   "text": "recursive",
+   "start": 72.34,
+   "end": 72.72
+  },
+  {
+   "text": "generalization:",
+   "start": 72.72,
+   "end": 73.44
+  },
+  {
+   "text": "similar",
+   "start": 73.44,
+   "end": 73.92
+  },
+  {
+   "text": "things",
+   "start": 73.92,
+   "end": 74.24
+  },
+  {
+   "text": "sharing",
+   "start": 74.24,
+   "end": 74.54
+  },
+  {
+   "text": "a",
+   "start": 74.54,
+   "end": 74.68
+  },
+  {
+   "text": "neuron,",
+   "start": 74.68,
+   "end": 74.96
+  },
+  {
+   "text": "not",
+   "start": 75.24,
+   "end": 75.46
+  },
+  {
+   "text": "unrelated",
+   "start": 75.46,
+   "end": 75.8
+  },
+  {
+   "text": "ones.",
+   "start": 75.8,
+   "end": 76.2
+  },
+  {
+   "text": "In",
+   "start": 76.84,
+   "end": 77.0
+  },
+  {
+   "text": "twenty",
+   "start": 77.0,
+   "end": 77.226
+  },
+  {
+   "text": "twenty-three,",
+   "start": 77.226,
+   "end": 77.64
+  },
+  {
+   "text": "an",
+   "start": 77.74,
+   "end": 77.8
+  },
+  {
+   "text": "automated",
+   "start": 77.8,
+   "end": 78.16
+  },
+  {
+   "text": "study",
+   "start": 78.16,
+   "end": 78.52
+  },
+  {
+   "text": "found",
+   "start": 78.52,
+   "end": 78.78
+  },
+  {
+   "text": "about",
+   "start": 78.78,
+   "end": 78.98
+  },
+  {
+   "text": "one",
+   "start": 78.98,
+   "end": 79.148
+  },
+  {
+   "text": "point",
+   "start": 79.148,
+   "end": 79.428
+  },
+  {
+   "text": "seven",
+   "start": 79.428,
+   "end": 79.708
+  },
+  {
+   "text": "percent",
+   "start": 79.708,
+   "end": 80.1
+  },
+  {
+   "text": "of",
+   "start": 80.64,
+   "end": 81.02
+  },
+  {
+   "text": "language",
+   "start": 81.02,
+   "end": 81.34
+  },
+  {
+   "text": "model",
+   "start": 81.34,
+   "end": 81.64
+  },
+  {
+   "text": "neurons",
+   "start": 81.64,
+   "end": 82.04
+  },
+  {
+   "text": "interpretable.",
+   "start": 82.04,
+   "end": 82.74
+  },
+  {
+   "text": "Now,",
+   "start": 83.38,
+   "end": 83.62
+  },
+  {
+   "text": "in",
+   "start": 83.88,
+   "end": 84.02
+  },
+  {
+   "text": "a",
+   "start": 84.02,
+   "end": 84.14
+  },
+  {
+   "text": "thirty-two",
+   "start": 84.14,
+   "end": 84.42
+  },
+  {
+   "text": "billion",
+   "start": 84.42,
+   "end": 84.72
+  },
+  {
+   "text": "parameter",
+   "start": 84.72,
+   "end": 85.2
+  },
+  {
+   "text": "model,",
+   "start": 85.2,
+   "end": 85.58
+  },
+  {
+   "text": "roughly",
+   "start": 85.9,
+   "end": 86.08
+  },
+  {
+   "text": "ninety",
+   "start": 86.08,
+   "end": 86.237
+  },
+  {
+   "text": "percent",
+   "start": 86.237,
+   "end": 86.42
+  },
+  {
+   "text": "of",
+   "start": 86.76,
+   "end": 86.88
+  },
+  {
+   "text": "neuron",
+   "start": 86.88,
+   "end": 87.08
+  },
+  {
+   "text": "poles",
+   "start": 87.08,
+   "end": 87.36
+  },
+  {
+   "text": "have",
+   "start": 87.36,
+   "end": 87.56
+  },
+  {
+   "text": "one",
+   "start": 87.56,
+   "end": 87.8
+  },
+  {
+   "text": "main",
+   "start": 87.8,
+   "end": 88.02
+  },
+  {
+   "text": "job,",
+   "start": 88.02,
+   "end": 88.28
+  },
+  {
+   "text": "about",
+   "start": 88.48,
+   "end": 88.6
+  },
+  {
+   "text": "seven",
+   "start": 88.6,
+   "end": 88.75
+  },
+  {
+   "text": "percent",
+   "start": 88.75,
+   "end": 88.96
+  },
+  {
+   "text": "have",
+   "start": 89.28,
+   "end": 89.44
+  },
+  {
+   "text": "two",
+   "start": 89.44,
+   "end": 89.7
+  },
+  {
+   "text": "related",
+   "start": 89.7,
+   "end": 89.94
+  },
+  {
+   "text": "jobs,",
+   "start": 89.94,
+   "end": 90.26
+  },
+  {
+   "text": "and",
+   "start": 90.56,
+   "end": 90.72
+  },
+  {
+   "text": "only",
+   "start": 90.72,
+   "end": 90.88
+  },
+  {
+   "text": "two",
+   "start": 90.88,
+   "end": 90.974
+  },
+  {
+   "text": "to",
+   "start": 90.974,
+   "end": 91.036
+  },
+  {
+   "text": "four",
+   "start": 91.036,
+   "end": 91.161
+  },
+  {
+   "text": "percent",
+   "start": 91.161,
+   "end": 91.38
+  },
+  {
+   "text": "aren't",
+   "start": 91.72,
+   "end": 91.92
+  },
+  {
+   "text": "understood",
+   "start": 91.92,
+   "end": 92.22
+  },
+  {
+   "text": "yet.",
+   "start": 92.22,
+   "end": 92.44
+  },
+  {
+   "text": "It",
+   "start": 92.77,
+   "end": 92.91
+  },
+  {
+   "text": "holds",
+   "start": 92.91,
+   "end": 93.09
+  },
+  {
+   "text": "up",
+   "start": 93.09,
+   "end": 93.23
+  },
+  {
+   "text": "to",
+   "start": 93.23,
+   "end": 93.41
+  },
+  {
+   "text": "trillions",
+   "start": 93.41,
+   "end": 93.77
+  },
+  {
+   "text": "of",
+   "start": 93.77,
+   "end": 94.09
+  },
+  {
+   "text": "parameters.",
+   "start": 94.09,
+   "end": 94.45
+  },
+  {
+   "text": "And",
+   "start": 95.25,
+   "end": 95.39
+  },
+  {
+   "text": "understanding",
+   "start": 95.39,
+   "end": 95.77
+  },
+  {
+   "text": "compounds,",
+   "start": 95.77,
+   "end": 96.31
+  },
+  {
+   "text": "like",
+   "start": 96.31,
+   "end": 96.73
+  },
+  {
+   "text": "a",
+   "start": 96.73,
+   "end": 96.87
+  },
+  {
+   "text": "crossword:",
+   "start": 96.87,
+   "end": 97.37
+  },
+  {
+   "text": "every",
+   "start": 97.79,
+   "end": 97.91
+  },
+  {
+   "text": "neuron",
+   "start": 97.91,
+   "end": 98.21
+  },
+  {
+   "text": "you",
+   "start": 98.21,
+   "end": 98.41
+  },
+  {
+   "text": "solve",
+   "start": 98.41,
+   "end": 98.79
+  },
+  {
+   "text": "constrains",
+   "start": 98.79,
+   "end": 99.59
+  },
+  {
+   "text": "its",
+   "start": 99.59,
+   "end": 99.83
+  },
+  {
+   "text": "neighbours.",
+   "start": 99.83,
+   "end": 100.09
+  },
+  {
+   "text": "Maybe",
+   "start": 100.61,
+   "end": 100.85
+  },
+  {
+   "text": "interpretability",
+   "start": 100.85,
+   "end": 101.53
+  },
+  {
+   "text": "has",
+   "start": 101.53,
+   "end": 101.77
+  },
+  {
+   "text": "its",
+   "start": 101.77,
+   "end": 101.95
+  },
+  {
+   "text": "own",
+   "start": 101.95,
+   "end": 102.19
+  },
+  {
+   "text": "bitter",
+   "start": 102.19,
+   "end": 102.45
+  },
+  {
+   "text": "lesson:",
+   "start": 102.45,
+   "end": 102.81
+  },
+  {
+   "text": "scale",
+   "start": 103.15,
+   "end": 103.43
+  },
+  {
+   "text": "up",
+   "start": 103.43,
+   "end": 103.61
+  },
+  {
+   "text": "ordinary",
+   "start": 103.61,
+   "end": 103.95
+  },
+  {
+   "text": "investigation,",
+   "start": 103.95,
+   "end": 104.55
+  },
+  {
+   "text": "instead",
+   "start": 104.55,
+   "end": 105.13
+  },
+  {
+   "text": "of",
+   "start": 105.13,
+   "end": 105.29
+  },
+  {
+   "text": "clever",
+   "start": 105.29,
+   "end": 105.55
+  },
+  {
+   "text": "decompositions.",
+   "start": 105.55,
+   "end": 106.39
+  },
+  {
+   "text": "It's",
+   "start": 106.86,
+   "end": 107.04
+  },
+  {
+   "text": "a",
+   "start": 107.04,
+   "end": 107.14
+  },
+  {
+   "text": "working",
+   "start": 107.14,
+   "end": 107.4
+  },
+  {
+   "text": "hypothesis.",
+   "start": 107.4,
+   "end": 107.96
+  },
+  {
+   "text": "But",
+   "start": 108.58,
+   "end": 108.7
+  },
+  {
+   "text": "if",
+   "start": 108.7,
+   "end": 108.78
+  },
+  {
+   "text": "it",
+   "start": 108.78,
+   "end": 108.9
+  },
+  {
+   "text": "holds,",
+   "start": 108.9,
+   "end": 109.18
+  },
+  {
+   "text": "we",
+   "start": 109.42,
+   "end": 109.54
+  },
+  {
+   "text": "can",
+   "start": 109.54,
+   "end": 109.64
+  },
+  {
+   "text": "study",
+   "start": 109.64,
+   "end": 109.88
+  },
+  {
+   "text": "networks",
+   "start": 109.88,
+   "end": 110.2
+  },
+  {
+   "text": "directly,",
+   "start": 110.2,
+   "end": 110.64
+  },
+  {
+   "text": "with",
+   "start": 110.64,
+   "end": 111.16
+  },
+  {
+   "text": "no",
+   "start": 111.16,
+   "end": 111.4
+  },
+  {
+   "text": "untangling",
+   "start": 111.4,
+   "end": 111.98
+  },
+  {
+   "text": "required.",
+   "start": 111.98,
+   "end": 112.52
+  }
+ ],
+ "cues": {
+  "cats": 4.54,
+  "cars": 5.8,
+  "superposition": 7.9,
+  "knot": 12.98,
+  "second": 15.14,
+  "clean": 20.34,
+  "point": 28.38,
+  "vee": 29.22,
+  "oh": 31.54,
+  "car": 35.96,
+  "dogs": 36.96,
+  "through": 43.26,
+  "pose": 46.02,
+  "none": 50.96,
+  "same": 53.96,
+  "nearly": 57.66,
+  "branch": 64.93,
+  "iy": 66.92,
+  "diy": 68.22,
+  "diyfull": 69.48,
+  "recursive": 72.34,
+  "onepoint": 78.98,
+  "ninety": 86.08,
+  "seven": 88.6,
+  "few": 90.88,
+  "trillions": 93.41,
+  "crossword": 96.87,
+  "bitter": 102.19,
+  "study": 109.64,
+  "end": 111.16
+ },
+ "takes": [
+  {
+   "text": "For years, interpretability had a famous problem neuron.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "It fired for cat faces, and for the fronts of cars.",
+   "seed": 8,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "The leading explanation was superposition: when a network runs out of neurons, it folds unrelated things together, like a knot.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "So researchers trained a second model to unfold it.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Now Nick Cammarata at Goodfire argues the knot was never there.",
+   "seed": 7,
+   "ratio": 0.909,
+   "diff": [
+    "replace: 'cammarata' \u2192 'camarada'"
+   ]
+  },
+  {
+   "text": "Neural networks are already clean.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Look at that neuron again, and ask what one thing it sees.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Cat ears, car grilles, fox snouts: they all come to a point.",
+   "seed": 9,
+   "ratio": 0.917,
+   "diff": [
+    "replace: 'grilles' \u2192 'grills'"
+   ]
+  },
+  {
+   "text": "It's a V detector.",
+   "seed": 8,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "And its negative side is an O. Round things push it down.",
+   "seed": 7,
+   "ratio": 0.917,
+   "diff": [
+    "replace: 'o' \u2192 'oh'"
+   ]
+  },
+  {
+   "text": "The textbook superposition circuit showed a car neuron feeding into dog neurons, as if the car were hidden there.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "But the pictures misled us: the visualizations kept sliding into dogs.",
+   "seed": 8,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Rendered through the car, those neurons are cars, or a pose that cars and dogs share.",
+   "seed": 7,
+   "ratio": 0.97,
+   "diff": [
+    "insert: '' \u2192 'it'"
+   ]
+  },
+  {
+   "text": "And the model's messy last layer?",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Almost none of its neurons made sense.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Train a modern network the same size, on the same data, with residual connections and layer norm, and ninety-nine to a hundred percent of its last-layer neurons are easy to read.",
+   "seed": 7,
+   "ratio": 0.852,
+   "diff": [
+    "replace: 'ninetynine' \u2192 '99'",
+    "replace: 'a hundred percent' \u2192 '100'",
+    "replace: 'lastlayer' \u2192 'last layer'"
+   ]
+  },
+  {
+   "text": "It was a learning problem, not superposition.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "Most of what's left grows like a branch.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "One language neuron detected I.Y. It grew to D.I.Y., and then to \"do it yourself\", which has no I.Y. at all.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "He calls this recursive generalization: similar things sharing a neuron, not unrelated ones.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "In twenty twenty-three, an automated study found about one point seven percent of language model neurons interpretable.",
+   "seed": 7,
+   "ratio": 0.71,
+   "diff": [
+    "replace: 'twenty twentythree' \u2192 '2023'",
+    "replace: 'one point seven percent' \u2192 '1 7'"
+   ]
+  },
+  {
+   "text": "Now, in a thirty-two billion parameter model, roughly ninety percent of neuron poles have one main job, about seven percent have two related jobs, and only two to four percent aren't understood yet.",
+   "seed": 7,
+   "ratio": 0.774,
+   "diff": [
+    "replace: 'thirtytwo' \u2192 '32'",
+    "replace: 'ninety percent' \u2192 '90'",
+    "replace: 'seven percent' \u2192 '7'",
+    "replace: 'two to four percent' \u2192 '2 4'"
+   ]
+  },
+  {
+   "text": "It holds up to trillions of parameters.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "And understanding compounds, like a crossword: every neuron you solve constrains its neighbours.",
+   "seed": 7,
+   "ratio": 0.923,
+   "diff": [
+    "replace: 'neighbours' \u2192 'neighbors'"
+   ]
+  },
+  {
+   "text": "Maybe interpretability has its own bitter lesson: scale up ordinary investigation, instead of clever decompositions.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "It's a working hypothesis.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  },
+  {
+   "text": "But if it holds, we can study networks directly, with no untangling required.",
+   "seed": 7,
+   "ratio": 1.0,
+   "diff": []
+  }
+ ]
+}

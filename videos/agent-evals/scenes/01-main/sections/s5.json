@@ -1,0 +1,44 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.title": { "type": "text", "text": "Three scopes", "style": "h2", "at": { "region": "top", "align": "top" } },
+    "s5.link": { "type": "line", "from": "light1.top", "to": "light6.top", "bend": 110, "stroke": "score", "strokeWidth": "thin", "text": "end-to-end", "style": "label", "labelColor": "score" },
+    "s5.trajBracket": { "type": "path", "d": "M2 2 V18 H1686 V2", "w": 1688, "h": 20, "fill": "none", "stroke": "score", "strokeWidth": "md", "at": { "below": "tape", "gap": "sm" } },
+    "s5.trajLabel": { "type": "text", "text": "trajectory", "style": "label", "fill": "score", "at": { "below": "s5.trajBracket", "gap": "xs" } },
+    "s5.compBracket": { "type": "path", "d": "M2 18 V2 H266 V18", "w": 268, "h": 20, "fill": "none", "stroke": "score", "strokeWidth": "md", "at": { "above": "light2", "gap": "sm" } },
+    "s5.compLabel": { "type": "text", "text": "component", "style": "label", "fill": "score", "at": { "above": "s5.compBracket", "gap": "xs" } }
+  },
+  "timeline": [
+    { "id": "title", "target": "s5.title", "preset": "words-in", "at": 0.05 },
+
+    { "id": "dim", "target": ["cell2", "kind2", "name2", "light2", "cell3", "kind3", "name3", "light3", "cell4", "kind4", "name4", "light4", "cell5", "kind5", "name5", "light5"], "preset": "to", "at": "cue:e2e", "stagger": 0.02, "dur": 0.4, "to": { "opacity": 0.3 } },
+    { "id": "ends", "target": ["cell1", "cell6"], "preset": "to", "with": "dim", "offset": 0.2, "stagger": 0.1, "dur": 0.35, "to": { "stroke": "score", "strokeWidth": "md" } },
+    { "id": "link", "target": "s5.link", "preset": "draw-on", "with": "dim", "offset": 0.4, "dur": 0.7 },
+    { "id": "l16", "target": ["light1", "light6"], "preset": "to", "after": "link", "gap": 0.1, "stagger": 0.2, "dur": 0.25, "to": { "fill": "score", "stroke": "score" } },
+    { "target": ["light1", "light6"], "preset": "pulse", "after": "l16", "stagger": 0.2, "amount": 0.25, "dur": 0.35 },
+
+    { "id": "undim", "target": ["cell2", "kind2", "name2", "light2", "cell3", "kind3", "name3", "light3", "cell4", "kind4", "name4", "light4", "cell5", "kind5", "name5", "light5"], "preset": "to", "at": "cue:traj", "offset": -0.15, "stagger": 0.02, "dur": 0.4, "to": { "opacity": 1 } },
+    { "target": ["cell1", "cell6"], "preset": "to", "with": "undim", "dur": 0.35, "to": { "stroke": "line", "strokeWidth": "thin" } },
+    { "target": ["light1", "light6"], "preset": "to", "with": "undim", "dur": 0.35, "to": { "fill": "none", "stroke": "line" } },
+    { "target": "s5.link", "preset": "fade-out", "at": "cue:traj", "offset": -0.55, "dur": 0.3, "ease": "in" },
+    { "id": "tb", "target": "s5.trajBracket", "preset": "draw-on", "at": "cue:traj", "offset": 0.3, "dur": 0.6 },
+    { "target": "s5.trajLabel", "preset": "rise-in", "after": "tb", "gap": -0.2, "dur": 0.4, "distance": 16 },
+
+    { "id": "l6", "target": "light6", "preset": "to", "at": "cue:complete", "dur": 0.25, "to": { "fill": "score", "stroke": "score" } },
+    { "target": "light6", "preset": "pulse", "after": "l6", "amount": 0.25, "dur": 0.35 },
+
+    { "id": "eff", "target": ["light2", "light3", "light4", "light5"], "preset": "to", "at": "cue:efficient", "offset": 0.1, "stagger": 0.3, "dur": 0.25, "to": { "fill": "score", "stroke": "score" } },
+    { "target": ["light2", "light3", "light4", "light5"], "preset": "pulse", "with": "eff", "offset": 0.2, "stagger": 0.3, "amount": 0.2, "dur": 0.35 },
+
+    { "id": "dimAll", "target": ["light3", "light4", "light5", "light6", "s5.trajBracket", "s5.trajLabel"], "preset": "to", "at": "cue:comp", "offset": -0.1, "stagger": 0.03, "dur": 0.4, "to": { "opacity": 0.3 } },
+    { "id": "cb", "target": "s5.compBracket", "preset": "draw-on", "at": "cue:comp", "offset": 0.2, "dur": 0.5 },
+    { "target": "cell2", "preset": "to", "with": "cb", "offset": 0.1, "dur": 0.35, "to": { "stroke": "score", "strokeWidth": "md" } },
+    { "id": "cl", "target": "s5.compLabel", "preset": "rise-in", "after": "cb", "gap": -0.2, "dur": 0.4, "distance": 16 },
+    { "target": "light2", "preset": "pulse", "after": "cl", "amount": 0.25, "dur": 0.35 },
+    { "target": "s5.compBracket", "preset": "breathe", "after": "cl", "amount": 0.015, "dur": 1.9 },
+
+    { "target": ["light2", "light3", "light4", "light5", "light6"], "preset": "to", "at": "end-0.6", "dur": 0.35, "to": { "fill": "none", "stroke": "line", "opacity": 1 } },
+    { "target": "cell2", "preset": "to", "at": "end-0.6", "dur": 0.35, "to": { "stroke": "line", "strokeWidth": "thin" } },
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

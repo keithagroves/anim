@@ -1,0 +1,635 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Long short-term memory (LSTM)",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "Hochreiter & Schmidhuber, 1997 · an RNN cell with gates that guard a memory line",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  cell state: long-term memory",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  gates read hₜ₋₁ and xₜ",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  forget gate: what to drop",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  input gate: what to add",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap5": {
+      "type": "text",
+      "text": "5  output gate: what to show",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap6": {
+      "type": "text",
+      "text": "6  pass cₜ and hₜ to the next step",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4",
+        "cap5",
+        "cap6"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "limit": {
+      "type": "text",
+      "text": "limit: still one step at a time,\nso it can't run a sentence in parallel",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "one time step · σ = gate (0 to 1) · tanh = value (−1 to 1)",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "cell": {
+      "type": "rect",
+      "w": 880,
+      "h": 560,
+      "radius": "lg",
+      "fill": "surface2",
+      "fillOpacity": 0.45,
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 830.0,
+        "dy": 250.0
+      },
+      "layer": -2
+    },
+    "xf": {
+      "type": "circle",
+      "r": 22,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1038.0,
+        "dy": 318.0
+      },
+      "layer": 2
+    },
+    "xfT": {
+      "type": "text",
+      "text": "×",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "xf"
+      }
+    },
+    "plus": {
+      "type": "circle",
+      "r": 22,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1308.0,
+        "dy": 318.0
+      },
+      "layer": 2
+    },
+    "plusT": {
+      "type": "text",
+      "text": "+",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "plus"
+      }
+    },
+    "xi": {
+      "type": "circle",
+      "r": 22,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1308.0,
+        "dy": 478.0
+      },
+      "layer": 2
+    },
+    "xiT": {
+      "type": "text",
+      "text": "×",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "xi"
+      }
+    },
+    "xo": {
+      "type": "circle",
+      "r": 22,
+      "fill": "surface",
+      "stroke": "text",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1568.0,
+        "dy": 528.0
+      },
+      "layer": 2
+    },
+    "xoT": {
+      "type": "text",
+      "text": "×",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "xo"
+      }
+    },
+    "tanhC": {
+      "type": "rect",
+      "w": 84,
+      "h": 40,
+      "radius": 20,
+      "fill": "surface",
+      "stroke": "cand",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1548.0,
+        "dy": 420.0
+      },
+      "layer": 2
+    },
+    "tanhCT": {
+      "type": "text",
+      "text": "tanh",
+      "style": "small",
+      "layer": 3,
+      "at": {
+        "in": "tanhC"
+      }
+    },
+    "gf": {
+      "type": "rect",
+      "w": 72,
+      "h": 52,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "gate",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1024.0,
+        "dy": 624.0
+      },
+      "layer": 2
+    },
+    "gfT": {
+      "type": "text",
+      "text": "σ",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "gf"
+      }
+    },
+    "gfL": {
+      "type": "text",
+      "text": "forget",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1000.0,
+        "dy": 757.0
+      }
+    },
+    "gi": {
+      "type": "rect",
+      "w": 72,
+      "h": 52,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "gate",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1194.0,
+        "dy": 624.0
+      },
+      "layer": 2
+    },
+    "giT": {
+      "type": "text",
+      "text": "σ",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "gi"
+      }
+    },
+    "giL": {
+      "type": "text",
+      "text": "input",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1170.0,
+        "dy": 757.0
+      }
+    },
+    "gc": {
+      "type": "rect",
+      "w": 96,
+      "h": 52,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "cand",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1327.0,
+        "dy": 624.0
+      },
+      "layer": 2
+    },
+    "gcT": {
+      "type": "text",
+      "text": "tanh",
+      "style": "small",
+      "layer": 3,
+      "at": {
+        "in": "gc"
+      }
+    },
+    "gcL": {
+      "type": "text",
+      "text": "candidate",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1315.0,
+        "dy": 757.0
+      }
+    },
+    "go": {
+      "type": "rect",
+      "w": 72,
+      "h": 52,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "gate",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1484.0,
+        "dy": 624.0
+      },
+      "layer": 2
+    },
+    "goT": {
+      "type": "text",
+      "text": "σ",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "go"
+      }
+    },
+    "goL": {
+      "type": "text",
+      "text": "output",
+      "style": "small",
+      "fill": "muted",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1460.0,
+        "dy": 757.0
+      }
+    },
+    "c1": {
+      "type": "arrow",
+      "from": [
+        760,
+        340
+      ],
+      "to": "xf.left",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c2": {
+      "type": "arrow",
+      "from": "xf.right",
+      "to": "plus.left",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c3": {
+      "type": "arrow",
+      "from": "plus.right",
+      "to": [
+        1780,
+        340
+      ],
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "bus": {
+      "type": "line",
+      "from": [
+        760,
+        730
+      ],
+      "to": [
+        1520,
+        730
+      ],
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "xin": {
+      "type": "line",
+      "from": [
+        950,
+        880
+      ],
+      "to": [
+        950,
+        730
+      ],
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "b_gf": {
+      "type": "arrow",
+      "from": [
+        1060,
+        730
+      ],
+      "to": "gf.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "b_gi": {
+      "type": "arrow",
+      "from": [
+        1230,
+        730
+      ],
+      "to": "gi.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "b_gc": {
+      "type": "arrow",
+      "from": [
+        1375,
+        730
+      ],
+      "to": "gc.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "b_go": {
+      "type": "arrow",
+      "from": [
+        1520,
+        730
+      ],
+      "to": "go.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "f2x": {
+      "type": "arrow",
+      "from": "gf.top",
+      "to": "xf.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "i2x": {
+      "type": "arrow",
+      "from": "gi.top",
+      "to": "xi.left",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c2x": {
+      "type": "arrow",
+      "from": "gc.top",
+      "to": "xi.right",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "x2p": {
+      "type": "arrow",
+      "from": "xi.top",
+      "to": "plus.bottom",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "c2t": {
+      "type": "arrow",
+      "from": [
+        1590,
+        340
+      ],
+      "to": "tanhC.top",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "t2x": {
+      "type": "arrow",
+      "from": "tanhC.bottom",
+      "to": "xo.top",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "o2x": {
+      "type": "arrow",
+      "from": "go.top",
+      "to": "xo.left",
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "xo2": {
+      "type": "line",
+      "from": "xo.bottom",
+      "to": [
+        1590,
+        730
+      ],
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "hout": {
+      "type": "arrow",
+      "from": [
+        1590,
+        730
+      ],
+      "to": [
+        1780,
+        730
+      ],
+      "stroke": "line",
+      "strokeWidth": "md"
+    },
+    "lcIn": {
+      "type": "text",
+      "text": "cₜ₋₁",
+      "style": "h3",
+      "fill": "state",
+      "anchor": "end",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 664.0,
+        "dy": 315.0
+      }
+    },
+    "lcOut": {
+      "type": "text",
+      "text": "cₜ",
+      "style": "h3",
+      "fill": "state",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1796.0,
+        "dy": 315.0
+      }
+    },
+    "lhIn": {
+      "type": "text",
+      "text": "hₜ₋₁",
+      "style": "h3",
+      "fill": "input",
+      "anchor": "end",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 664.0,
+        "dy": 705.0
+      }
+    },
+    "lhOut": {
+      "type": "text",
+      "text": "hₜ",
+      "style": "h3",
+      "fill": "output",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1796.0,
+        "dy": 705.0
+      }
+    },
+    "lx": {
+      "type": "text",
+      "text": "xₜ",
+      "style": "h3",
+      "fill": "input",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 920.0,
+        "dy": 885.0
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop through one LSTM step; resets so the last frame is the first."
+    }
+  ]
+}

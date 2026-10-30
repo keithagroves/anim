@@ -1,0 +1,5 @@
+What if a model could answer without writing a word? {cue:tokens}A chat model replies one token at a time, and your code has to {cue:parse}parse whatever comes back.
+A decision model works differently. You give it the {cue:state}state, like a support ticket, and {cue:questions}typed questions with the answers you allow. {cue:pass}It reads everything once, and returns {cue:probs}a probability for every option.
+There are three kinds of question. {cue:choice}Choice picks one label. {cue:noul}Noul is a yes or no, given as a probability. {cue:score}Score places the input on a scale. And it {cue:closed}can't answer outside the options you gave it.
+TypeSafe launched {cue:jev}Jev, a hosted model, in September. {cue:clef}Cloudflare followed with open-weight Clef and Clef Flash, and {cue:ollama}Ollama now runs them on your own machine.
+We use Clef Flash as a {cue:judge}judge. It looks at frames from our videos, and answers every rubric question in a single call. {cue:limit}It won't explain itself, and hard reasoning still needs a big model. {cue:end}So let the decision model decide, and let the language model write.

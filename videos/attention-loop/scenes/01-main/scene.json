@@ -1,0 +1,345 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Attention",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "“Attention Is All You Need” · Vaswani et al., 2017 · scaled dot-product attention",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  each word: a query, key and value",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  query scored against every key",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  softmax turns scores into weights",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  output = weighted sum of values",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap5": {
+      "type": "text",
+      "text": "5  every word does this at once",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4",
+        "cap5"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "formula": {
+      "type": "text",
+      "text": "Attention(Q, K, V) = softmax(QKᵀ / √dₖ) V",
+      "style": "mono",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "example sentence · vectors and weights are illustrative",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "t0": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 770.0,
+        "dy": 315.0
+      }
+    },
+    "t0T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t0"
+      }
+    },
+    "t1": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 916.0,
+        "dy": 315.0
+      }
+    },
+    "t1T": {
+      "type": "text",
+      "text": "cat",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t1"
+      }
+    },
+    "t2": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1062.0,
+        "dy": 315.0
+      }
+    },
+    "t2T": {
+      "type": "text",
+      "text": "sat",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t2"
+      }
+    },
+    "t3": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1208.0,
+        "dy": 315.0
+      }
+    },
+    "t3T": {
+      "type": "text",
+      "text": "because",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t3"
+      }
+    },
+    "t4": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1354.0,
+        "dy": 315.0
+      }
+    },
+    "t4T": {
+      "type": "text",
+      "text": "it",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t4"
+      }
+    },
+    "t5": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1500.0,
+        "dy": 315.0
+      }
+    },
+    "t5T": {
+      "type": "text",
+      "text": "was",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t5"
+      }
+    },
+    "t6": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1646.0,
+        "dy": 315.0
+      }
+    },
+    "t6T": {
+      "type": "text",
+      "text": "tired",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t6"
+      }
+    },
+    "labq": {
+      "type": "text",
+      "text": "q",
+      "style": "small",
+      "fill": "state",
+      "anchor": "end",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 740,
+        "dy": 386
+      }
+    },
+    "labk": {
+      "type": "text",
+      "text": "k",
+      "style": "small",
+      "fill": "input",
+      "anchor": "end",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 740,
+        "dy": 412
+      }
+    },
+    "labv": {
+      "type": "text",
+      "text": "v",
+      "style": "small",
+      "fill": "output",
+      "anchor": "end",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 740,
+        "dy": 438
+      }
+    },
+    "wBase": {
+      "type": "rect",
+      "w": 1006,
+      "h": 2,
+      "radius": 1,
+      "fill": "line",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 770,
+        "dy": 640
+      }
+    },
+    "wLab": {
+      "type": "text",
+      "text": "weights for “it” · example",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 770,
+        "dy": 700
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop of scaled dot-product attention for one word, then all words; resets so the last frame is the first."
+    }
+  ]
+}

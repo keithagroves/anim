@@ -1,0 +1,26 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.no": { "type": "text", "text": "100×", "style": "stat", "fill": "bad",
+               "at": { "region": "center", "align": "right", "dx": -40 } },
+    "s1.slower": { "type": "text", "text": "slower", "style": "body", "fill": "muted",
+                   "at": { "below": "s1.no", "gap": 24, "align": "center" } },
+    "s1.cap": { "type": "text", "text": "keeps your frequently-used data close", "style": "body", "fill": "muted",
+                "at": { "region": "center", "align": "right", "dx": -60, "dy": 270 } }
+  },
+  "timeline": [
+    { "id": "chip-in", "target": "chip", "preset": "pop", "at": 0.8, "dur": 0.5 },
+    { "target": "chip", "preset": "pulse", "at": 2.2, "amount": 0.05, "dur": 0.6 },
+    { "id": "ram-in", "target": "ram", "preset": "rise-in", "at": "cue:slow", "distance": 70, "dur": "slow" },
+    { "target": "ramTime", "preset": "fade-in", "with": "ram-in", "offset": 0.15, "dur": "fast" },
+    { "id": "no-in", "target": "s1.no", "preset": "pop", "after": "ram-in", "gap": 0.35 },
+    { "target": "s1.slower", "preset": "fade-in", "after": "no-in", "gap": 0.1, "dur": "fast" },
+    { "id": "no-out", "target": "s1.no", "preset": "pop-out", "at": 6.72, "dur": "fast" },
+    { "target": "s1.slower", "preset": "fade-out", "with": "no-out", "dur": "fast" },
+    { "id": "cache-in", "target": "cache", "preset": "pop", "at": "cue:closer", "offset": 0.15, "dur": 0.7 },
+    { "target": "cacheTime", "preset": "fade-in", "with": "cache-in", "offset": 0.15, "dur": "fast" },
+    { "target": "cache", "preset": "pulse", "at": 8.1, "amount": 0.04, "dur": 0.6 },
+    { "id": "cap", "target": "s1.cap", "preset": "fade-in", "after": "cache-in", "gap": 0.75, "dur": "fast" },
+    { "target": "s1.cap", "preset": "fade-out", "at": 11.0, "dur": "fast" }
+  ]
+}

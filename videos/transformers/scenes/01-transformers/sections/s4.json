@@ -1,0 +1,60 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.bar4": { "type": "rect", "w": 17, "h": 36, "radius": 6, "fill": "pred", "at": { "above": "tok6Box", "gap": 72, "align": "left" } },
+    "s4.bar3": { "type": "rect", "w": 50, "h": 36, "radius": 6, "fill": "pred", "at": { "above": "s4.bar4", "gap": 14, "align": "left" } },
+    "s4.bar2": { "type": "rect", "w": 116, "h": 36, "radius": 6, "fill": "pred", "at": { "above": "s4.bar3", "gap": 14, "align": "left" } },
+    "s4.bar1": { "type": "rect", "w": 341, "h": 36, "radius": 6, "fill": "pred", "at": { "above": "s4.bar2", "gap": 14, "align": "left" } },
+
+    "s4.l1": { "type": "text", "text": "\".\"", "style": "mono", "anchor": "end", "at": { "leftOf": "s4.bar1", "gap": "sm" } },
+    "s4.l2": { "type": "text", "text": "and", "style": "mono", "anchor": "end", "at": { "leftOf": "s4.bar2", "gap": "sm" } },
+    "s4.l3": { "type": "text", "text": "so", "style": "mono", "anchor": "end", "at": { "leftOf": "s4.bar3", "gap": "sm" } },
+    "s4.l4": { "type": "text", "text": "today", "style": "mono", "anchor": "end", "at": { "leftOf": "s4.bar4", "gap": "sm" } },
+
+    "s4.p1": { "type": "text", "text": "{value}%", "style": "label", "fill": "pred", "anchor": "start", "at": { "rightOf": "s4.bar1", "gap": "sm" } },
+    "s4.p2": { "type": "text", "text": "{value}%", "style": "label", "fill": "pred", "anchor": "start", "at": { "rightOf": "s4.bar2", "gap": "sm" } },
+    "s4.p3": { "type": "text", "text": "{value}%", "style": "label", "fill": "pred", "anchor": "start", "at": { "rightOf": "s4.bar3", "gap": "sm" } },
+    "s4.p4": { "type": "text", "text": "{value}%", "style": "label", "fill": "pred", "anchor": "start", "at": { "rightOf": "s4.bar4", "gap": "sm" } },
+
+    "s4.alt2": { "type": "group", "children": ["s4.bar2", "s4.l2", "s4.p2"] },
+    "s4.alt3": { "type": "group", "children": ["s4.bar3", "s4.l3", "s4.p3"] },
+    "s4.alt4": { "type": "group", "children": ["s4.bar4", "s4.l4", "s4.p4"] },
+
+    "s4.head": { "type": "text", "text": "next token?", "style": "caption", "fill": "pred", "at": { "above": "s4.bar1", "gap": "sm", "align": "left" } },
+
+    "s4.tok8Box": {
+      "type": "rect", "w": 150, "h": 84, "radius": "md", "fill": "token", "stroke": "tokenEdge",
+      "strokeWidth": "thin", "shadow": true, "at": { "rightOf": "tok7Box", "gap": 20 }
+    },
+    "s4.tok8Text": { "type": "text", "text": ".", "style": "label", "at": { "in": "s4.tok8Box" } },
+    "s4.tok8": { "type": "group", "children": ["s4.tok8Box", "s4.tok8Text"] },
+
+    "s4.caption": { "type": "text", "text": "one token at a time", "style": "h2", "at": { "below": "tok4Box", "gap": "lg" } }
+  },
+  "timeline": [
+    { "id": "head", "target": "s4.head", "preset": "rise-in", "at": "cue:predict", "distance": 20 },
+    { "id": "labels", "target": "s4.l*", "preset": "rise-in", "with": "head", "offset": 0.2, "stagger": 0.08, "distance": 20 },
+
+    { "id": "bars", "target": "s4.bar*", "preset": "wipe-in", "at": "cue:probs", "stagger": 0.08, "dur": "slow", "ease": "out" },
+    { "target": "s4.p*", "preset": "fade-in", "with": "bars", "stagger": 0.08, "dur": "fast" },
+    { "target": "s4.p1", "preset": "count-up", "with": "bars", "to": { "value": 62 }, "dur": 1.2 },
+    { "target": "s4.p2", "preset": "count-up", "with": "bars", "offset": 0.08, "to": { "value": 21 }, "dur": 1.2 },
+    { "target": "s4.p3", "preset": "count-up", "with": "bars", "offset": 0.16, "to": { "value": 9 }, "dur": 1.2 },
+    { "target": "s4.p4", "preset": "count-up", "with": "bars", "offset": 0.24, "to": { "value": 3 }, "dur": 1.2 },
+
+    { "id": "pick", "target": "s4.alt*", "preset": "to", "at": "cue:probs", "offset": 2.2, "to": { "opacity": 0.3 }, "dur": "base" },
+    { "target": "s4.bar1", "preset": "pulse", "with": "pick", "amount": 0.06 },
+
+    { "id": "fly", "target": "s4.tok8", "preset": "fly-from", "at": "cue:append", "from": "s4.l1", "dur": 1.0 },
+    { "target": "s4.l1", "preset": "fade-out", "with": "fly", "dur": "fast" },
+    { "target": "s4.tok8Box", "preset": "highlight", "after": "fly", "color": "pred" },
+
+    { "id": "clear", "target": "s4.head", "preset": "fade-out", "at": "cue:words" },
+    { "target": "s4.bar1", "preset": "fade-out", "with": "clear" },
+    { "target": "s4.p1", "preset": "fade-out", "with": "clear" },
+    { "target": "s4.alt*", "preset": "fade-out", "with": "clear" },
+    { "id": "cap", "target": "s4.caption", "preset": "rise-in", "with": "clear", "offset": 0.2, "dur": "slow" },
+    { "id": "wave", "target": "tok*Box", "preset": "highlight", "after": "cap", "gap": 0.1, "stagger": 0.15, "color": "pred" },
+    { "target": "s4.tok8Box", "preset": "highlight", "with": "wave", "offset": 1.05, "color": "pred" }
+  ]
+}

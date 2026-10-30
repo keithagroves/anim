@@ -1,0 +1,1053 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.k1": {
+      "type": "text",
+      "text": "1  eight heads, each with its own\n    learned Wq, Wk, Wv",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap1",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m1": {
+      "type": "circle",
+      "r": 6,
+      "fill": "state",
+      "at": {
+        "leftOf": "cap1",
+        "gap": "sm",
+        "align": "top",
+        "dy": 10
+      }
+    },
+    "s1.gc0": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"1.00\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ffb547\" fill-opacity=\"0.14\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 790,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc1": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.12\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"0.17\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff8fb3\" fill-opacity=\"1.00\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 920,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc2": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.18\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.13\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4f8cff\" fill-opacity=\"0.15\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1050,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc3": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#c9b8ff\" fill-opacity=\"1.00\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1180,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc4": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#5fd3e6\" fill-opacity=\"0.15\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1310,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc5": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#ff7a5c\" fill-opacity=\"0.30\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1440,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc6": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.93\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e6e07a\" fill-opacity=\"0.48\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1570,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.gc7": {
+      "type": "svg",
+      "svg": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"15\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"1\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"29\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"15\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"43\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"29\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"57\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"43\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"71\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"57\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/><rect x=\"85\" y=\"71\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"1\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"15\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"29\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"43\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"57\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"71\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"0.14\"/><rect x=\"85\" y=\"85\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#b08cff\" fill-opacity=\"1.00\"/>",
+      "w": 98,
+      "h": 98,
+      "viewBox": "0 0 98 98",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1700,
+        "dy": 470
+      },
+      "layer": 2
+    },
+    "s1.k2": {
+      "type": "text",
+      "text": "2  head 1: each word → the one before",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap2",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m2": {
+      "type": "circle",
+      "r": 6,
+      "fill": "h1",
+      "at": {
+        "leftOf": "cap2",
+        "gap": "sm",
+        "align": "top",
+        "dy": 10
+      }
+    },
+    "s1.a0_1": {
+      "type": "arrow",
+      "from": "t1.top",
+      "to": "t0.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a0_2": {
+      "type": "arrow",
+      "from": "t2.top",
+      "to": "t1.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a0_3": {
+      "type": "arrow",
+      "from": "t3.top",
+      "to": "t2.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a0_4": {
+      "type": "arrow",
+      "from": "t4.top",
+      "to": "t3.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a0_5": {
+      "type": "arrow",
+      "from": "t5.top",
+      "to": "t4.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a0_6": {
+      "type": "arrow",
+      "from": "t6.top",
+      "to": "t5.top",
+      "bend": -36,
+      "stroke": "h1",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.k3": {
+      "type": "text",
+      "text": "3  head 2: “it” → “cat”",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap3",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m3": {
+      "type": "circle",
+      "r": 6,
+      "fill": "h2",
+      "at": {
+        "leftOf": "cap3",
+        "gap": "sm",
+        "align": "top",
+        "dy": 10
+      }
+    },
+    "s1.a1_4": {
+      "type": "arrow",
+      "from": "t4.top",
+      "to": "t1.top",
+      "bend": -110,
+      "stroke": "h2",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.k4": {
+      "type": "text",
+      "text": "4  head 3: verb → its subject",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap4",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m4": {
+      "type": "circle",
+      "r": 6,
+      "fill": "h3",
+      "at": {
+        "leftOf": "cap4",
+        "gap": "sm",
+        "align": "top",
+        "dy": 10
+      }
+    },
+    "s1.a2_2": {
+      "type": "arrow",
+      "from": "t2.top",
+      "to": "t1.top",
+      "bend": -36,
+      "stroke": "h3",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.a2_5": {
+      "type": "arrow",
+      "from": "t5.top",
+      "to": "t4.top",
+      "bend": -36,
+      "stroke": "h3",
+      "strokeWidth": 3,
+      "layer": 1
+    },
+    "s1.k5": {
+      "type": "text",
+      "text": "5  join all 8, mix them with Wᴼ",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap5",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m5": {
+      "type": "circle",
+      "r": 6,
+      "fill": "output",
+      "at": {
+        "leftOf": "cap5",
+        "gap": "sm",
+        "align": "top",
+        "dy": 10
+      }
+    },
+    "s1.seg0": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h1",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 790,
+        "dy": 790
+      }
+    },
+    "s1.seg1": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h2",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 850,
+        "dy": 790
+      }
+    },
+    "s1.seg2": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h3",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 910,
+        "dy": 790
+      }
+    },
+    "s1.seg3": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h4",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 970,
+        "dy": 790
+      }
+    },
+    "s1.seg4": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h5",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1030,
+        "dy": 790
+      }
+    },
+    "s1.seg5": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h6",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1090,
+        "dy": 790
+      }
+    },
+    "s1.seg6": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h7",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1150,
+        "dy": 790
+      }
+    },
+    "s1.seg7": {
+      "type": "rect",
+      "w": 56,
+      "h": 26,
+      "radius": 4,
+      "fill": "h8",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1210,
+        "dy": 790
+      }
+    },
+    "s1.segL": {
+      "type": "text",
+      "text": "concat: 8 × 64 = 512 numbers",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 790,
+        "dy": 830
+      }
+    },
+    "s1.arr1": {
+      "type": "arrow",
+      "from": [
+        1300,
+        803
+      ],
+      "to": [
+        1370,
+        803
+      ],
+      "stroke": "line",
+      "strokeWidth": 2.5
+    },
+    "s1.wo": {
+      "type": "rect",
+      "w": 96,
+      "h": 56,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1382,
+        "dy": 775
+      }
+    },
+    "s1.woT": {
+      "type": "text",
+      "text": "× Wᴼ",
+      "style": "mono",
+      "size": 26,
+      "layer": 3,
+      "at": {
+        "in": "s1.wo"
+      }
+    },
+    "s1.arr2": {
+      "type": "arrow",
+      "from": [
+        1490,
+        803
+      ],
+      "to": [
+        1560,
+        803
+      ],
+      "stroke": "line",
+      "strokeWidth": 2.5
+    },
+    "s1.out": {
+      "type": "rect",
+      "w": 240,
+      "h": 26,
+      "radius": 4,
+      "fill": "output",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1574,
+        "dy": 790
+      }
+    },
+    "s1.outL": {
+      "type": "text",
+      "text": "one vector per word,\ninformed by every head",
+      "style": "small",
+      "fill": "output",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1574,
+        "dy": 830
+      }
+    }
+  },
+  "timeline": [
+    {
+      "target": [
+        "s1.k1",
+        "s1.m1"
+      ],
+      "preset": "fade-in",
+      "at": 0.8,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k1",
+        "s1.m1"
+      ],
+      "preset": "fade-out",
+      "at": 2.8,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.gc0",
+      "preset": "wipe-in",
+      "at": 0.9,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc1",
+      "preset": "wipe-in",
+      "at": 1.04,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc2",
+      "preset": "wipe-in",
+      "at": 1.1800000000000002,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc3",
+      "preset": "wipe-in",
+      "at": 1.32,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc4",
+      "preset": "wipe-in",
+      "at": 1.46,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc5",
+      "preset": "wipe-in",
+      "at": 1.6,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc6",
+      "preset": "wipe-in",
+      "at": 1.7400000000000002,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.gc7",
+      "preset": "wipe-in",
+      "at": 1.8800000000000001,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k2",
+        "s1.m2"
+      ],
+      "preset": "fade-in",
+      "at": 2.8,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k2",
+        "s1.m2"
+      ],
+      "preset": "fade-out",
+      "at": 5.0,
+      "dur": 0.3
+    },
+    {
+      "target": "g0",
+      "preset": "to",
+      "to": {
+        "stroke": "h1",
+        "strokeWidth": 3,
+        "scale": 1.12
+      },
+      "at": 2.9,
+      "dur": 0.35
+    },
+    {
+      "target": "g0",
+      "preset": "to",
+      "to": {
+        "stroke": "line",
+        "strokeWidth": 1.5,
+        "scale": 1
+      },
+      "at": 4.7,
+      "dur": 0.35
+    },
+    {
+      "target": "s1.a0_1",
+      "preset": "draw-on",
+      "at": 3.15,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_1",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t1",
+        "t0"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 3.5,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a0_2",
+      "preset": "draw-on",
+      "at": 3.25,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_2",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t2",
+        "t1"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 3.6,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a0_3",
+      "preset": "draw-on",
+      "at": 3.35,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_3",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t3",
+        "t2"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 3.7,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a0_4",
+      "preset": "draw-on",
+      "at": 3.45,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_4",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t4",
+        "t3"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 3.8,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a0_5",
+      "preset": "draw-on",
+      "at": 3.55,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_5",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t5",
+        "t4"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 3.9,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a0_6",
+      "preset": "draw-on",
+      "at": 3.65,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a0_6",
+      "preset": "fade-out",
+      "at": 4.65,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t6",
+        "t5"
+      ],
+      "preset": "highlight",
+      "color": "h1",
+      "at": 4.0,
+      "dur": 0.6
+    },
+    {
+      "target": [
+        "s1.k3",
+        "s1.m3"
+      ],
+      "preset": "fade-in",
+      "at": 5.0,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k3",
+        "s1.m3"
+      ],
+      "preset": "fade-out",
+      "at": 7.2,
+      "dur": 0.3
+    },
+    {
+      "target": "g1",
+      "preset": "to",
+      "to": {
+        "stroke": "h2",
+        "strokeWidth": 3,
+        "scale": 1.12
+      },
+      "at": 5.1,
+      "dur": 0.35
+    },
+    {
+      "target": "g1",
+      "preset": "to",
+      "to": {
+        "stroke": "line",
+        "strokeWidth": 1.5,
+        "scale": 1
+      },
+      "at": 6.9,
+      "dur": 0.35
+    },
+    {
+      "target": "s1.a1_4",
+      "preset": "draw-on",
+      "at": 5.35,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a1_4",
+      "preset": "fade-out",
+      "at": 6.8500000000000005,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t4",
+        "t1"
+      ],
+      "preset": "highlight",
+      "color": "h2",
+      "at": 5.7,
+      "dur": 0.6
+    },
+    {
+      "target": [
+        "s1.k4",
+        "s1.m4"
+      ],
+      "preset": "fade-in",
+      "at": 7.2,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k4",
+        "s1.m4"
+      ],
+      "preset": "fade-out",
+      "at": 9.4,
+      "dur": 0.3
+    },
+    {
+      "target": "g2",
+      "preset": "to",
+      "to": {
+        "stroke": "h3",
+        "strokeWidth": 3,
+        "scale": 1.12
+      },
+      "at": 7.3,
+      "dur": 0.35
+    },
+    {
+      "target": "g2",
+      "preset": "to",
+      "to": {
+        "stroke": "line",
+        "strokeWidth": 1.5,
+        "scale": 1
+      },
+      "at": 9.1,
+      "dur": 0.35
+    },
+    {
+      "target": "s1.a2_2",
+      "preset": "draw-on",
+      "at": 7.55,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a2_2",
+      "preset": "fade-out",
+      "at": 9.05,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t2",
+        "t1"
+      ],
+      "preset": "highlight",
+      "color": "h3",
+      "at": 7.9,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.a2_5",
+      "preset": "draw-on",
+      "at": 7.6499999999999995,
+      "dur": 0.5,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.a2_5",
+      "preset": "fade-out",
+      "at": 9.05,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "t5",
+        "t4"
+      ],
+      "preset": "highlight",
+      "color": "h3",
+      "at": 8.0,
+      "dur": 0.6
+    },
+    {
+      "target": [
+        "s1.k5",
+        "s1.m5"
+      ],
+      "preset": "fade-in",
+      "at": 9.4,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k5",
+        "s1.m5"
+      ],
+      "preset": "fade-out",
+      "at": 13.0,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.seg0",
+      "preset": "fly-from",
+      "from": "g0",
+      "at": 9.5,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg1",
+      "preset": "fly-from",
+      "from": "g1",
+      "at": 9.58,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg2",
+      "preset": "fly-from",
+      "from": "g2",
+      "at": 9.66,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg3",
+      "preset": "fly-from",
+      "from": "g3",
+      "at": 9.74,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg4",
+      "preset": "fly-from",
+      "from": "g4",
+      "at": 9.82,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg5",
+      "preset": "fly-from",
+      "from": "g5",
+      "at": 9.9,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg6",
+      "preset": "fly-from",
+      "from": "g6",
+      "at": 9.98,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.seg7",
+      "preset": "fly-from",
+      "from": "g7",
+      "at": 10.06,
+      "dur": 0.75,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.segL",
+      "preset": "fade-in",
+      "at": 10.3,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.arr1",
+      "preset": "draw-on",
+      "at": 10.6,
+      "dur": 0.35
+    },
+    {
+      "target": [
+        "s1.wo",
+        "s1.woT"
+      ],
+      "preset": "pop",
+      "at": 10.85,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.arr2",
+      "preset": "draw-on",
+      "at": 11.2,
+      "dur": 0.35
+    },
+    {
+      "target": "s1.out",
+      "preset": "wipe-in",
+      "at": 11.45,
+      "dur": 0.5
+    },
+    {
+      "target": "s1.outL",
+      "preset": "fade-in",
+      "at": 11.8,
+      "dur": 0.3
+    },
+    {
+      "target": [
+        "s1.gc0",
+        "s1.gc1",
+        "s1.gc2",
+        "s1.gc3",
+        "s1.gc4",
+        "s1.gc5",
+        "s1.gc6",
+        "s1.gc7",
+        "s1.seg0",
+        "s1.seg1",
+        "s1.seg2",
+        "s1.seg3",
+        "s1.seg4",
+        "s1.seg5",
+        "s1.seg6",
+        "s1.seg7",
+        "s1.segL",
+        "s1.arr1",
+        "s1.wo",
+        "s1.woT",
+        "s1.arr2",
+        "s1.out",
+        "s1.outL"
+      ],
+      "preset": "fade-out",
+      "at": 13.0,
+      "dur": 0.8,
+      "stagger": 0
+    }
+  ]
+}

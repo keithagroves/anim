@@ -1,0 +1,324 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.title": {
+      "type": "text",
+      "text": "Repeated in many layers",
+      "style": "h2",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "s5.L0": {
+      "type": "rect",
+      "w": 1350,
+      "h": 58,
+      "radius": "md",
+      "fill": "input",
+      "fillOpacity": 0.12,
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 285,
+        "dy": 503
+      }
+    },
+    "s5.L0T": {
+      "type": "text",
+      "text": "layer 1",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 519
+      }
+    },
+    "s5.L1": {
+      "type": "rect",
+      "w": 1350,
+      "h": 58,
+      "radius": "md",
+      "fill": "input",
+      "fillOpacity": 0.19,
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 285,
+        "dy": 431
+      }
+    },
+    "s5.L1T": {
+      "type": "text",
+      "text": "layer 2",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 447
+      }
+    },
+    "s5.L2": {
+      "type": "rect",
+      "w": 1350,
+      "h": 58,
+      "radius": "md",
+      "fill": "input",
+      "fillOpacity": 0.26,
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 285,
+        "dy": 359
+      }
+    },
+    "s5.L2T": {
+      "type": "text",
+      "text": "layer 3",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 375
+      }
+    },
+    "s5.L3": {
+      "type": "rect",
+      "w": 1350,
+      "h": 58,
+      "radius": "md",
+      "fill": "input",
+      "fillOpacity": 0.33,
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 285,
+        "dy": 287
+      }
+    },
+    "s5.L3T": {
+      "type": "text",
+      "text": "layer 4",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 303
+      }
+    },
+    "s5.L4": {
+      "type": "rect",
+      "w": 1350,
+      "h": 58,
+      "radius": "md",
+      "fill": "input",
+      "fillOpacity": 0.4,
+      "stroke": "input",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 285,
+        "dy": 215
+      }
+    },
+    "s5.L4T": {
+      "type": "text",
+      "text": "… many more",
+      "style": "small",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 305,
+        "dy": 231
+      }
+    },
+    "s5.g": {
+      "type": "text",
+      "text": "grammar: “cat” goes with “sat”",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 505,
+        "dy": 515
+      }
+    },
+    "s5.m": {
+      "type": "text",
+      "text": "meaning: a tired cat, resting",
+      "style": "label",
+      "fill": "text",
+      "anchor": "start",
+      "layer": 3,
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 505,
+        "dy": 227
+      }
+    },
+    "s5.note": {
+      "type": "text",
+      "text": "big models use dozens of layers",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "target": "s5.title",
+      "preset": "words-in",
+      "at": "start+0.15"
+    },
+    {
+      "target": [
+        "s5.L0",
+        "s5.L0T"
+      ],
+      "preset": "rise-in",
+      "distance": 20,
+      "at": "cue:stack+0.00",
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s5.L1",
+        "s5.L1T"
+      ],
+      "preset": "rise-in",
+      "distance": 20,
+      "at": "cue:stack+0.20",
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s5.L2",
+        "s5.L2T"
+      ],
+      "preset": "rise-in",
+      "distance": 20,
+      "at": "cue:stack+0.40",
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s5.L3",
+        "s5.L3T"
+      ],
+      "preset": "rise-in",
+      "distance": 20,
+      "at": "cue:stack+0.60",
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s5.L4",
+        "s5.L4T"
+      ],
+      "preset": "rise-in",
+      "distance": 20,
+      "at": "cue:stack+0.80",
+      "dur": 0.4
+    },
+    {
+      "target": "s5.g",
+      "preset": "fade-in",
+      "at": "cue:grammar",
+      "dur": 0.35
+    },
+    {
+      "target": "s5.L0",
+      "preset": "to",
+      "to": {
+        "fillOpacity": 0.4
+      },
+      "at": "cue:grammar",
+      "dur": 0.3
+    },
+    {
+      "target": "s5.m",
+      "preset": "fade-in",
+      "at": "cue:meaning",
+      "dur": 0.35
+    },
+    {
+      "target": "s5.L4",
+      "preset": "to",
+      "to": {
+        "fillOpacity": 0.6
+      },
+      "at": "cue:meaning",
+      "dur": 0.3
+    },
+    {
+      "target": "s5.note",
+      "preset": "fade-in",
+      "at": "cue:stack+1",
+      "dur": 0.4
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.45",
+      "dur": 0.35,
+      "stagger": 0
+    },
+    {
+      "target": [
+        "tok0",
+        "tok0T",
+        "tok1",
+        "tok1T",
+        "tok2",
+        "tok2T",
+        "tok3",
+        "tok3T",
+        "tok4",
+        "tok4T",
+        "tok5",
+        "tok5T",
+        "tok6",
+        "tok6T"
+      ],
+      "preset": "fade-out",
+      "at": "end-0.45",
+      "dur": 0.35,
+      "stagger": 0
+    }
+  ]
+}

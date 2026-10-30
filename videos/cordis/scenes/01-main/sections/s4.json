@@ -1,0 +1,318 @@
+{
+ "id": "s4",
+ "objects": {
+  "s4.title": {
+   "type": "text",
+   "text": "Reactive coeffects",
+   "style": "h3",
+   "fill": "dep",
+   "anchor": "start",
+   "at": {
+    "region": "top-left",
+    "align": "top-left"
+   }
+  },
+  "s4.needs": {
+   "type": "rect",
+   "w": 300,
+   "h": 60,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "dep",
+   "strokeWidth": "md",
+   "text": "needs: database",
+   "style": "mono",
+   "labelColor": "dep",
+   "at": {
+    "below": "plugBox",
+    "gap": "sm",
+    "align": "center"
+   }
+  },
+  "s4.inactive": {
+   "type": "text",
+   "text": "inactive",
+   "style": "label",
+   "fill": "muted",
+   "at": {
+    "below": "s4.needs",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s4.active": {
+   "type": "text",
+   "text": "active",
+   "style": "label",
+   "fill": "good",
+   "at": {
+    "below": "s4.needs",
+    "gap": "md",
+    "align": "center"
+   }
+  },
+  "s4.socket": {
+   "type": "rect",
+   "w": 300,
+   "h": 120,
+   "radius": "md",
+   "fill": "ctxFill",
+   "fillOpacity": 0,
+   "stroke": "dep",
+   "strokeWidth": "md",
+   "dash": "14 10",
+   "text": "database?",
+   "style": "small",
+   "labelColor": "muted",
+   "at": {
+    "in": "ctxBox",
+    "align": "bottom-right",
+    "pad": "lg"
+   }
+  },
+  "s4.db": {
+   "type": "rect",
+   "w": 300,
+   "h": 120,
+   "radius": "md",
+   "fill": "dep",
+   "shadow": true,
+   "text": "database",
+   "style": "h3",
+   "labelColor": "#ffffff",
+   "at": {
+    "in": "s4.socket"
+   }
+  },
+  "s4.query": {
+   "type": "rect",
+   "w": 180,
+   "h": 60,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "text": "query",
+   "style": "mono",
+   "labelColor": "text",
+   "at": {
+    "in": "ctxBox",
+    "align": "left",
+    "pad": "lg",
+    "dy": -158
+   }
+  }
+ },
+ "timeline": [
+  {
+   "id": "title",
+   "target": "s4.title",
+   "preset": "rise-in",
+   "at": "cue:reactive",
+   "offset": -0.2,
+   "dur": "base"
+  },
+  {
+   "id": "needs",
+   "target": "s4.needs",
+   "preset": "pop",
+   "at": "cue:needs",
+   "dur": "fast"
+  },
+  {
+   "id": "socket",
+   "target": "s4.socket",
+   "preset": "draw-on",
+   "after": "needs",
+   "gap": 0.9,
+   "dur": "slow"
+  },
+  {
+   "id": "grey",
+   "target": "plugBox",
+   "preset": "to",
+   "at": "cue:inactive",
+   "dur": "base",
+   "to": {
+    "fill": "surface2"
+   }
+  },
+  {
+   "id": "inact",
+   "target": "s4.inactive",
+   "preset": "fade-in",
+   "with": "grey",
+   "offset": 0.15,
+   "dur": "fast"
+  },
+  {
+   "id": "db",
+   "target": "s4.db",
+   "preset": "fly-from",
+   "at": "cue:provides",
+   "offset": -0.1,
+   "dur": 0.85,
+   "from": {
+    "region": "full",
+    "align": "bottom-right"
+   }
+  },
+  {
+   "id": "socketHide",
+   "target": "s4.socket",
+   "preset": "fade-out",
+   "after": "db",
+   "dur": "fast"
+  },
+  {
+   "id": "link",
+   "target": "plugLink",
+   "preset": "draw-on",
+   "dur": "base",
+   "at": "cue:activates"
+  },
+  {
+   "id": "wake",
+   "target": "plugBox",
+   "preset": "to",
+   "dur": "base",
+   "to": {
+    "fill": "plugin"
+   },
+   "with": "link",
+   "offset": 0.35
+  },
+  {
+   "id": "tagOk",
+   "target": "s4.needs",
+   "preset": "to",
+   "with": "link",
+   "dur": "base",
+   "to": {
+    "stroke": "good"
+   },
+   "offset": 0.7
+  },
+  {
+   "id": "inactOut",
+   "target": "s4.inactive",
+   "preset": "fade-out",
+   "with": "link",
+   "dur": "fast",
+   "offset": 0.7
+  },
+  {
+   "id": "act",
+   "target": "s4.active",
+   "preset": "fade-in",
+   "dur": "fast",
+   "after": "inactOut",
+   "gap": 0.05
+  },
+  {
+   "id": "query",
+   "target": "s4.query",
+   "preset": "fly-from",
+   "after": "link",
+   "dur": 0.7,
+   "from": "plugBox"
+  },
+  {
+   "id": "dbOut",
+   "target": "s4.db",
+   "preset": "sink-out",
+   "at": "cue:leaves",
+   "dur": "base"
+  },
+  {
+   "id": "socketBack",
+   "target": "s4.socket",
+   "preset": "to",
+   "dur": "fast",
+   "to": {
+    "opacity": 1
+   },
+   "after": "dbOut",
+   "gap": 0.05
+  },
+  {
+   "id": "unlink",
+   "target": "plugLink",
+   "preset": "fade-out",
+   "dur": "fast",
+   "after": "dbOut",
+   "gap": 0.15
+  },
+  {
+   "id": "sleep",
+   "target": "plugBox",
+   "preset": "to",
+   "dur": "base",
+   "to": {
+    "fill": "surface2"
+   },
+   "with": "unlink",
+   "offset": 0.1
+  },
+  {
+   "id": "queryOut",
+   "target": "s4.query",
+   "preset": "pop-out",
+   "dur": "fast",
+   "with": "unlink",
+   "offset": 0.4
+  },
+  {
+   "id": "tagBack",
+   "target": "s4.needs",
+   "preset": "to",
+   "dur": "base",
+   "to": {
+    "stroke": "dep"
+   },
+   "with": "unlink",
+   "offset": 0.7
+  },
+  {
+   "id": "actOut",
+   "target": "s4.active",
+   "preset": "fade-out",
+   "dur": "fast",
+   "with": "unlink",
+   "offset": 0.75
+  },
+  {
+   "id": "inact2",
+   "target": "s4.inactive",
+   "preset": "to",
+   "dur": "fast",
+   "to": {
+    "opacity": 1
+   },
+   "after": "actOut",
+   "gap": 0.05
+  },
+  {
+   "id": "wait",
+   "target": "s4.socket",
+   "preset": "pulse",
+   "after": "inact2",
+   "gap": 0.4,
+   "amount": 0.04,
+   "dur": 0.8
+  },
+  {
+   "id": "clear",
+   "target": [
+    "s4.title",
+    "s4.needs",
+    "s4.inactive",
+    "s4.socket"
+   ],
+   "preset": "fade-out",
+   "stagger": 0.08,
+   "dur": "base",
+   "at": 14.534
+  }
+ ]
+}

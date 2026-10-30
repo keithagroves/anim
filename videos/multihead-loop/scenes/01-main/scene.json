@@ -1,0 +1,510 @@
+{
+  "id": "01-main",
+  "objects": {
+    "title": {
+      "type": "text",
+      "text": "Multi-head attention",
+      "style": "h3",
+      "anchor": "start",
+      "at": {
+        "region": "top-left",
+        "align": "top-left"
+      }
+    },
+    "src": {
+      "type": "text",
+      "text": "“Attention Is All You Need” · Vaswani et al., 2017 · 8 heads in parallel",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "below": "title",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "cap1": {
+      "type": "text",
+      "text": "1  eight heads, each with its own\n    learned Wq, Wk, Wv",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap2": {
+      "type": "text",
+      "text": "2  head 1: each word → the one before",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap3": {
+      "type": "text",
+      "text": "3  head 2: “it” → “cat”",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap4": {
+      "type": "text",
+      "text": "4  head 3: verb → its subject",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "cap5": {
+      "type": "text",
+      "text": "5  join all 8, mix them with Wᴼ",
+      "style": "body",
+      "fill": "muted",
+      "anchor": "start"
+    },
+    "caps": {
+      "type": "group",
+      "children": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4",
+        "cap5"
+      ],
+      "layout": {
+        "dir": "col",
+        "gap": "sm",
+        "align": "start"
+      },
+      "at": {
+        "region": "left-third",
+        "align": "left"
+      }
+    },
+    "formula": {
+      "type": "text",
+      "text": "MultiHead(Q, K, V) =\n  Concat(head₁ … head₈) Wᴼ\n\n8 heads × dₖ 64 = 512",
+      "style": "mono",
+      "size": 26,
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "below": "caps",
+        "gap": "lg",
+        "align": "left"
+      }
+    },
+    "credit": {
+      "type": "text",
+      "text": "example sentence · head patterns are illustrative (real heads: paper Figs. 3–5)",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "bottom-left",
+        "align": "bottom-left"
+      }
+    },
+    "t0": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 770.0,
+        "dy": 315.0
+      }
+    },
+    "t0T": {
+      "type": "text",
+      "text": "the",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t0"
+      }
+    },
+    "t1": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 916.0,
+        "dy": 315.0
+      }
+    },
+    "t1T": {
+      "type": "text",
+      "text": "cat",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t1"
+      }
+    },
+    "t2": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1062.0,
+        "dy": 315.0
+      }
+    },
+    "t2T": {
+      "type": "text",
+      "text": "sat",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t2"
+      }
+    },
+    "t3": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1208.0,
+        "dy": 315.0
+      }
+    },
+    "t3T": {
+      "type": "text",
+      "text": "because",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t3"
+      }
+    },
+    "t4": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1354.0,
+        "dy": 315.0
+      }
+    },
+    "t4T": {
+      "type": "text",
+      "text": "it",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t4"
+      }
+    },
+    "t5": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1500.0,
+        "dy": 315.0
+      }
+    },
+    "t5T": {
+      "type": "text",
+      "text": "was",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t5"
+      }
+    },
+    "t6": {
+      "type": "rect",
+      "w": 130,
+      "h": 50,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1646.0,
+        "dy": 315.0
+      }
+    },
+    "t6T": {
+      "type": "text",
+      "text": "tired",
+      "style": "mono",
+      "layer": 3,
+      "at": {
+        "in": "t6"
+      }
+    },
+    "g0": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 785,
+        "dy": 465
+      }
+    },
+    "g0L": {
+      "type": "text",
+      "text": "head 1",
+      "style": "small",
+      "fill": "h1",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 805.0,
+        "dy": 582
+      }
+    },
+    "g1": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 915,
+        "dy": 465
+      }
+    },
+    "g1L": {
+      "type": "text",
+      "text": "head 2",
+      "style": "small",
+      "fill": "h2",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 935.0,
+        "dy": 582
+      }
+    },
+    "g2": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1045,
+        "dy": 465
+      }
+    },
+    "g2L": {
+      "type": "text",
+      "text": "head 3",
+      "style": "small",
+      "fill": "h3",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1065.0,
+        "dy": 582
+      }
+    },
+    "g3": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1175,
+        "dy": 465
+      }
+    },
+    "g3L": {
+      "type": "text",
+      "text": "head 4",
+      "style": "small",
+      "fill": "h4",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1195.0,
+        "dy": 582
+      }
+    },
+    "g4": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1305,
+        "dy": 465
+      }
+    },
+    "g4L": {
+      "type": "text",
+      "text": "head 5",
+      "style": "small",
+      "fill": "h5",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1325.0,
+        "dy": 582
+      }
+    },
+    "g5": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1435,
+        "dy": 465
+      }
+    },
+    "g5L": {
+      "type": "text",
+      "text": "head 6",
+      "style": "small",
+      "fill": "h6",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1455.0,
+        "dy": 582
+      }
+    },
+    "g6": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1565,
+        "dy": 465
+      }
+    },
+    "g6L": {
+      "type": "text",
+      "text": "head 7",
+      "style": "small",
+      "fill": "h7",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1585.0,
+        "dy": 582
+      }
+    },
+    "g7": {
+      "type": "rect",
+      "w": 108,
+      "h": 108,
+      "radius": 6,
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1695,
+        "dy": 465
+      }
+    },
+    "g7L": {
+      "type": "text",
+      "text": "head 8",
+      "style": "small",
+      "fill": "h8",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1715.0,
+        "dy": 582
+      }
+    },
+    "gNote": {
+      "type": "text",
+      "text": "each grid: a row per word, lit where it attends",
+      "style": "small",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 785,
+        "dy": 624
+      }
+    }
+  },
+  "keys": {},
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        15
+      ],
+      "brief": "15 s loop of multi-head attention: eight grids fill, three heads show their arcs, then the eight outputs concatenate and mix through Wᴼ; resets so the last frame is the first."
+    }
+  ]
+}

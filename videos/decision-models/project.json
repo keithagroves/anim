@@ -1,0 +1,16 @@
+{
+  "title": "Decision models",
+  "type": "explainer",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice": {
+    "voice": "af_heart",
+    "speed": 1
+  },
+  "scenes": [
+    "01-main"
+  ]
+}

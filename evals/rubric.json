@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "criteria": [
+    {
+      "id": "narration_sync",
+      "question": "Does every narration cue in this section get a visible beat at about the same moment, showing what is being said?",
+      "pass": "Each cue lands within about half a second of its word, and the picture matches the words.",
+      "fail": "A cue has no beat, a beat lands clearly early or late, or the visuals show something other than what's being said."
+    },
+    {
+      "id": "focus",
+      "question": "At every moment, is there one clear focal point, so the viewer knows where to look?",
+      "pass": "Attention is guided one thing at a time; secondary elements stay quiet.",
+      "fail": "Several unrelated things compete at once, or the eye has nothing to follow."
+    },
+    {
+      "id": "readability",
+      "question": "Is all on-screen text legible, high-contrast, on screen long enough to read, and free of collisions with other elements?",
+      "pass": "Every label and caption is easy to read and sits on a clean background.",
+      "fail": "Text is too small, low-contrast, too brief, clipped, or overlaps shapes or other text."
+    },
+    {
+      "id": "composition",
+      "question": "Is every frame balanced and aligned, inside the safe area, with empty space that looks intentional?",
+      "pass": "Elements are aligned and evenly spaced, and nothing is cramped or stranded.",
+      "fail": "Awkward crowding, misalignment, elements off-canvas, or large accidental gaps."
+    },
+    {
+      "id": "motion",
+      "question": "Is the motion purposeful and alive: one thing moving at a time, groups staggered, arrivals that settle, and no stretch where the frame is frozen?",
+      "pass": "Every movement has a reason; related entrances stagger about 0.2\u20130.4 s; shapes land with a little overshoot while text and UI only ease; held things keep a slight motion; nothing snaps on or off; something new happens at least every ~4 s.",
+      "fail": "Frantic or jarring motion, several things starting at once, objects snapping on or off with no transition, a frozen frame for more than ~2.5 s, or bouncing UI."
+    },
+    {
+      "id": "style",
+      "question": "Does the section follow the style guide (colour meanings, sparse text, motion personality)?",
+      "pass": "Colours mean what the guide says they mean, text is sparse, and the motion feels like the rest of the video.",
+      "fail": "Colour meanings are broken (e.g. red used for something other than failure), there's too much text, or the motion is off-tone."
+    },
+    {
+      "id": "accuracy",
+      "question": "Is the visual explanation technically correct, without misleading the viewer about the concept?",
+      "pass": "The metaphor matches how the real system behaves.",
+      "fail": "The visuals imply something false or confusing about the concept."
+    }
+  ],
+  "overall": {
+    "id": "overall",
+    "question": "Would you ship this section as-is?",
+    "pass": "Yes: good enough to publish without edits.",
+    "fail": "No: it needs at least one change."
+  }
+}

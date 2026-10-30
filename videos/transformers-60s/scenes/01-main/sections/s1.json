@@ -1,0 +1,250 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.b0": {
+      "type": "rect",
+      "w": 250,
+      "h": 64,
+      "radius": 32,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 505,
+        "dy": 190
+      }
+    },
+    "s1.b0T": {
+      "type": "text",
+      "text": "ChatGPT",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "s1.b0"
+      }
+    },
+    "s1.a0": {
+      "type": "arrow",
+      "from": "s1.b0.bottom",
+      "to": "s1.tf.top:0.25",
+      "stroke": "line",
+      "strokeWidth": 2.5
+    },
+    "s1.b1": {
+      "type": "rect",
+      "w": 250,
+      "h": 64,
+      "radius": 32,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 835,
+        "dy": 190
+      }
+    },
+    "s1.b1T": {
+      "type": "text",
+      "text": "Claude",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "s1.b1"
+      }
+    },
+    "s1.a1": {
+      "type": "arrow",
+      "from": "s1.b1.bottom",
+      "to": "s1.tf.top:0.5",
+      "stroke": "line",
+      "strokeWidth": 2.5
+    },
+    "s1.b2": {
+      "type": "rect",
+      "w": 250,
+      "h": 64,
+      "radius": 32,
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 1165,
+        "dy": 190
+      }
+    },
+    "s1.b2T": {
+      "type": "text",
+      "text": "Gemini",
+      "style": "label",
+      "layer": 3,
+      "at": {
+        "in": "s1.b2"
+      }
+    },
+    "s1.a2": {
+      "type": "arrow",
+      "from": "s1.b2.bottom",
+      "to": "s1.tf.top:0.75",
+      "stroke": "line",
+      "strokeWidth": 2.5
+    },
+    "s1.tf": {
+      "type": "rect",
+      "w": 560,
+      "h": 130,
+      "radius": "lg",
+      "fill": "surface",
+      "stroke": "input",
+      "strokeWidth": "bold",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 680,
+        "dy": 400
+      }
+    },
+    "s1.tfT": {
+      "type": "text",
+      "text": "transformer",
+      "style": "h2",
+      "fill": "text",
+      "layer": 3,
+      "at": {
+        "in": "s1.tf"
+      }
+    },
+    "s1.sent": {
+      "type": "text",
+      "text": "the cat sat on the",
+      "style": "h2",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "region": "full",
+        "align": "top-left",
+        "dx": 560,
+        "dy": 700
+      }
+    },
+    "s1.blank": {
+      "type": "rect",
+      "w": 200,
+      "h": 78,
+      "radius": "md",
+      "fill": "none",
+      "stroke": "pred",
+      "strokeWidth": "md",
+      "dash": "10 8",
+      "at": {
+        "rightOf": "s1.sent",
+        "gap": "md"
+      }
+    },
+    "s1.mat": {
+      "type": "text",
+      "text": "mat",
+      "style": "h2",
+      "fill": "pred",
+      "layer": 3,
+      "at": {
+        "in": "s1.blank"
+      }
+    },
+    "s1.q": {
+      "type": "text",
+      "text": "next word?",
+      "style": "label",
+      "fill": "pred",
+      "at": {
+        "below": "s1.blank",
+        "gap": "sm"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "target": [
+        "s1.b0",
+        "s1.b0T"
+      ],
+      "preset": "pop",
+      "at": -0.5,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.a0",
+      "preset": "draw-on",
+      "at": "cue:tf-0.4",
+      "dur": 0.5
+    },
+    {
+      "target": [
+        "s1.b1",
+        "s1.b1T"
+      ],
+      "preset": "pop",
+      "at": -0.25,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.a1",
+      "preset": "draw-on",
+      "at": "cue:tf-0.4",
+      "dur": 0.5
+    },
+    {
+      "target": [
+        "s1.b2",
+        "s1.b2T"
+      ],
+      "preset": "pop",
+      "at": 0.0,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.a2",
+      "preset": "draw-on",
+      "at": "cue:tf-0.4",
+      "dur": 0.5
+    },
+    {
+      "target": [
+        "s1.tf",
+        "s1.tfT"
+      ],
+      "preset": "pop",
+      "at": "cue:tf",
+      "dur": 0.5
+    },
+    {
+      "target": "s1.sent",
+      "preset": "words-in",
+      "at": "cue:guess-0.5"
+    },
+    {
+      "target": [
+        "s1.blank",
+        "s1.q"
+      ],
+      "preset": "fade-in",
+      "at": "cue:guess",
+      "dur": 0.3
+    },
+    {
+      "target": "s1.mat",
+      "preset": "pop",
+      "at": "cue:guess+0.6",
+      "dur": 0.4
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6"
+    }
+  ]
+}

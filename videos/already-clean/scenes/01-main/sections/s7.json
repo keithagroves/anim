@@ -1,0 +1,45 @@
+{
+  "id": "s7",
+  "objects": {
+    "s7.r1": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "rightOf": "cell", "gap": 10 } },
+    "s7.r2": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "rightOf": "s7.r1", "gap": 10 } },
+    "s7.r3": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "rightOf": "s7.r2", "gap": 10 } },
+    "s7.l1": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "leftOf": "cell", "gap": 10 } },
+    "s7.l2": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "leftOf": "s7.l1", "gap": 10 } },
+    "s7.u1": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "above": "cell", "gap": 10 } },
+    "s7.u2": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "above": "s7.u1", "gap": 10 } },
+    "s7.ux": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "rightOf": "s7.u2", "gap": 10 } },
+    "s7.d1": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "below": "cell", "gap": 10 } },
+    "s7.d2": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "cellDim", "fillOpacity": 0.15, "stroke": "cellDim", "strokeWidth": "md", "layer": 2, "at": { "below": "s7.d1", "gap": 10 } },
+
+    "s7.compounds": { "type": "text", "text": "understanding compounds", "style": "caption", "fill": "muted", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -40 } },
+    "s7.bitter": { "type": "text", "text": "a bitter lesson\nfor interpretability?", "style": "h3", "fill": "fix", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -60 } },
+    "s7.scale": { "type": "text", "text": "scale ordinary investigation", "style": "caption", "fill": "muted", "anchor": "start", "at": { "below": "s7.bitter", "gap": "sm", "align": "left" } },
+    "s7.chip": { "type": "rect", "w": 340, "h": 60, "radius": "lg", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "a working hypothesis", "style": "label", "labelColor": "muted", "at": { "below": "s7.scale", "gap": "md", "align": "left" } },
+
+    "s7.title": { "type": "text", "text": "neural networks\nare already clean", "style": "h2", "anchor": "start", "at": { "region": "right-half", "align": "left", "dx": 120, "dy": -40 } },
+    "s7.credit": { "type": "text", "text": "Nick Cammarata · Goodfire · 2026", "style": "caption", "fill": "muted", "anchor": "start", "at": { "below": "s7.title", "gap": "md", "align": "left" } }
+  },
+  "timeline": [
+    { "id": "comp", "target": "s7.compounds", "preset": "words-in", "at": 0.3 },
+
+    { "id": "grid", "target": ["s7.r1", "s7.u1", "s7.l1", "s7.d1", "s7.r2", "s7.u2", "s7.l2", "s7.d2", "s7.ux", "s7.r3"], "preset": "scale-in", "at": "cue:crossword", "dur": 0.4, "stagger": 0.05, "ease": "out" },
+    { "id": "solve", "target": ["s7.r1", "s7.u1", "s7.l1", "s7.d1", "s7.r2", "s7.u2", "s7.l2", "s7.d2", "s7.ux", "s7.r3"], "preset": "to", "at": "cue:crossword+1.05", "dur": 0.35, "stagger": 0.25, "ease": "out", "to": { "fill": "cell", "fillOpacity": 0.85, "stroke": "cell" } },
+    { "target": ["s7.r1", "s7.u1", "s7.l1", "s7.d1", "s7.r2", "s7.u2", "s7.l2", "s7.d2", "s7.ux", "s7.r3"], "preset": "pulse", "with": "solve", "dur": 0.4, "stagger": 0.25, "amount": 0.12 },
+
+    { "id": "compOut", "target": "s7.compounds", "preset": "sink-out", "at": "cue:bitter-0.5", "dur": 0.3 },
+    { "id": "bitter", "target": "s7.bitter", "preset": "words-in", "at": "cue:bitter-0.1" },
+    { "id": "scale", "target": "s7.scale", "preset": "words-in", "at": "cue:bitter+0.85" },
+    { "id": "chip", "target": "s7.chip", "preset": "rise-in", "at": 11.6, "distance": 12, "dur": 0.35 },
+
+    { "id": "wordsOut", "target": ["s7.bitter", "s7.scale"], "preset": "words-out", "at": "cue:study", "stagger": 0.08 },
+    { "target": "s7.chip", "preset": "fade-out", "at": "cue:study", "offset": 0.1, "dur": 0.3 },
+    { "target": ["s7.r3", "s7.ux", "s7.d2", "s7.l2", "s7.u2", "s7.r2", "s7.d1", "s7.l1", "s7.u1", "s7.r1"], "preset": "fade-out", "at": "cue:study", "dur": 0.35, "stagger": 0.03, "ease": "in" },
+
+    { "id": "title", "target": "s7.title", "preset": "words-in", "after": "wordsOut", "gap": 0.1 },
+    { "id": "cred", "target": "s7.credit", "preset": "words-in", "with": "title", "offset": 0.65 },
+    { "id": "pulse", "target": "neuron", "preset": "pulse", "at": "cue:end", "amount": 0.1, "dur": 0.6 },
+    { "id": "lit", "target": "cell", "preset": "to", "with": "pulse", "dur": 0.25, "to": { "fill": "cell" } },
+    { "target": "cell", "preset": "to", "after": "lit", "gap": 0.1, "dur": 0.4, "to": { "fill": "cellDim" } }
+  ]
+}

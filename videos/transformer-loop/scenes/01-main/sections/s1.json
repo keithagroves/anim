@@ -1,0 +1,1012 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.g_eTok1": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "input",
+      "fillOpacity": 0.3,
+      "stroke": "input",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eTok1",
+        "pad": 0
+      }
+    },
+    "s1.g_eTok2": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "input",
+      "fillOpacity": 0.3,
+      "stroke": "input",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eTok2",
+        "pad": 0
+      }
+    },
+    "s1.g_eTok3": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "input",
+      "fillOpacity": 0.3,
+      "stroke": "input",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eTok3",
+        "pad": 0
+      }
+    },
+    "s1.g_eEmb": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "embed",
+      "fillOpacity": 0.3,
+      "stroke": "embed",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eEmb",
+        "pad": 0
+      }
+    },
+    "s1.k1": {
+      "type": "text",
+      "text": "1  embed + position",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap1",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m1": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap1",
+        "gap": "sm"
+      }
+    },
+    "s1.g_eMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "attn",
+      "fillOpacity": 0.3,
+      "stroke": "attn",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eMHA",
+        "pad": 0
+      }
+    },
+    "s1.k2": {
+      "type": "text",
+      "text": "2  self-attention: all words at once",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap2",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m2": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap2",
+        "gap": "sm"
+      }
+    },
+    "s1.g_eAN1": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "norm",
+      "fillOpacity": 0.3,
+      "stroke": "norm",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eAN1",
+        "pad": 0
+      }
+    },
+    "s1.g_eFF": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "ff",
+      "fillOpacity": 0.3,
+      "stroke": "ff",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eFF",
+        "pad": 0
+      }
+    },
+    "s1.k3": {
+      "type": "text",
+      "text": "3  feed forward",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap3",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m3": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap3",
+        "gap": "sm"
+      }
+    },
+    "s1.g_eAN2": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "norm",
+      "fillOpacity": 0.3,
+      "stroke": "norm",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "eAN2",
+        "pad": 0
+      }
+    },
+    "s1.g_dTok1": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.3,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dTok1",
+        "pad": 0
+      }
+    },
+    "s1.g_dTok2": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.3,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dTok2",
+        "pad": 0
+      }
+    },
+    "s1.g_dTok3": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.3,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dTok3",
+        "pad": 0
+      }
+    },
+    "s1.g_dEmb": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "embed",
+      "fillOpacity": 0.3,
+      "stroke": "embed",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dEmb",
+        "pad": 0
+      }
+    },
+    "s1.k4": {
+      "type": "text",
+      "text": "4  decoder: masked self-attention",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap4",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m4": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap4",
+        "gap": "sm"
+      }
+    },
+    "s1.g_dMMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "attn",
+      "fillOpacity": 0.3,
+      "stroke": "attn",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dMMHA",
+        "pad": 0
+      }
+    },
+    "s1.g_dAN1": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "norm",
+      "fillOpacity": 0.3,
+      "stroke": "norm",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dAN1",
+        "pad": 0
+      }
+    },
+    "s1.cross": {
+      "type": "arrow",
+      "from": "eFrame.top",
+      "to": "dMHA.left",
+      "stroke": "attn",
+      "bend": 110,
+      "strokeWidth": "bold"
+    },
+    "s1.g_dMHA": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "attn",
+      "fillOpacity": 0.3,
+      "stroke": "attn",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dMHA",
+        "pad": 0
+      }
+    },
+    "s1.k5": {
+      "type": "text",
+      "text": "5  cross-attention to the encoder",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap5",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m5": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap5",
+        "gap": "sm"
+      }
+    },
+    "s1.g_dAN2": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "norm",
+      "fillOpacity": 0.3,
+      "stroke": "norm",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dAN2",
+        "pad": 0
+      }
+    },
+    "s1.g_dFF": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "ff",
+      "fillOpacity": 0.3,
+      "stroke": "ff",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dFF",
+        "pad": 0
+      }
+    },
+    "s1.g_dAN3": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "norm",
+      "fillOpacity": 0.3,
+      "stroke": "norm",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "dAN3",
+        "pad": 0
+      }
+    },
+    "s1.g_lin": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.3,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "lin",
+        "pad": 0
+      }
+    },
+    "s1.k6": {
+      "type": "text",
+      "text": "6  predict the next word",
+      "style": "body",
+      "fill": "text",
+      "anchor": "start",
+      "at": {
+        "in": "cap6",
+        "align": "left",
+        "pad": 0
+      }
+    },
+    "s1.m6": {
+      "type": "circle",
+      "r": 6,
+      "fill": "attn",
+      "at": {
+        "leftOf": "cap6",
+        "gap": "sm"
+      }
+    },
+    "s1.g_soft": {
+      "type": "rect",
+      "w": 340,
+      "h": 44,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.3,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "opacity": 0,
+      "at": {
+        "in": "soft",
+        "pad": 0
+      }
+    },
+    "s1.pred": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "output",
+      "fillOpacity": 0.25,
+      "stroke": "output",
+      "strokeWidth": "md",
+      "at": {
+        "above": "probL",
+        "gap": "xs"
+      }
+    },
+    "s1.predT": {
+      "type": "text",
+      "text": "saß",
+      "style": "small",
+      "fill": "output",
+      "layer": 5,
+      "at": {
+        "in": "s1.pred"
+      }
+    },
+    "s1.nt": {
+      "type": "rect",
+      "w": 110,
+      "h": 40,
+      "radius": "sm",
+      "fill": "surface",
+      "stroke": "output",
+      "strokeWidth": "thin",
+      "at": {
+        "rightOf": "dTok3",
+        "gap": "xs"
+      }
+    },
+    "s1.ntT": {
+      "type": "text",
+      "text": "saß",
+      "style": "small",
+      "fill": "output",
+      "layer": 5,
+      "at": {
+        "in": "s1.nt"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "target": "s1.g_eTok1",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 0.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eTok1",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 1.8,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_eTok2",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 0.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eTok2",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 1.8,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_eTok3",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 0.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eTok3",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 1.8,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_eEmb",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 1.2,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eEmb",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 2.1,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k1",
+        "s1.m1"
+      ],
+      "preset": "fade-in",
+      "at": 0.9,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k1",
+        "s1.m1"
+      ],
+      "preset": "fade-out",
+      "at": 2.1,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_eMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 2.1,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 3.0,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k2",
+        "s1.m2"
+      ],
+      "preset": "fade-in",
+      "at": 2.1,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k2",
+        "s1.m2"
+      ],
+      "preset": "fade-out",
+      "at": 3.3,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_eAN1",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 2.8,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eAN1",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 3.6999999999999997,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_eFF",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 3.3,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eFF",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 4.2,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k3",
+        "s1.m3"
+      ],
+      "preset": "fade-in",
+      "at": 3.3,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k3",
+        "s1.m3"
+      ],
+      "preset": "fade-out",
+      "at": 4.9,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_eAN2",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 3.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_eAN2",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 4.8,
+      "dur": 0.4
+    },
+    {
+      "target": "eFrame",
+      "preset": "highlight",
+      "color": "attn",
+      "at": 4.3,
+      "dur": 0.6
+    },
+    {
+      "target": "s1.g_dTok1",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 4.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dTok1",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 5.800000000000001,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dTok2",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 4.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dTok2",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 5.800000000000001,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dTok3",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 4.9,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dTok3",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 5.800000000000001,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dEmb",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 5.2,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dEmb",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 6.1000000000000005,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k4",
+        "s1.m4"
+      ],
+      "preset": "fade-in",
+      "at": 4.9,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k4",
+        "s1.m4"
+      ],
+      "preset": "fade-out",
+      "at": 7.0,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_dMMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 6.0,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dMMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 6.9,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dAN1",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 6.6,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dAN1",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 7.5,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.cross",
+      "preset": "draw-on",
+      "at": 7.0,
+      "dur": 0.7,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.cross",
+      "preset": "fade-out",
+      "at": 8.4,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 7.5,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dMHA",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 8.4,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k5",
+        "s1.m5"
+      ],
+      "preset": "fade-in",
+      "at": 7.0,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k5",
+        "s1.m5"
+      ],
+      "preset": "fade-out",
+      "at": 8.8,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_dAN2",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 8.1,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dAN2",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 9.0,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dFF",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 8.6,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dFF",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 9.5,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_dAN3",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 9.1,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_dAN3",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 10.0,
+      "dur": 0.4
+    },
+    {
+      "target": "s1.g_lin",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 9.6,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_lin",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 10.5,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.k6",
+        "s1.m6"
+      ],
+      "preset": "fade-in",
+      "at": 9.6,
+      "dur": 0.25
+    },
+    {
+      "target": [
+        "s1.k6",
+        "s1.m6"
+      ],
+      "preset": "fade-out",
+      "at": 13.2,
+      "dur": 0.3
+    },
+    {
+      "target": "s1.g_soft",
+      "preset": "to",
+      "to": {
+        "opacity": 1
+      },
+      "at": 10.1,
+      "dur": 0.25
+    },
+    {
+      "target": "s1.g_soft",
+      "preset": "to",
+      "to": {
+        "opacity": 0
+      },
+      "at": 11.0,
+      "dur": 0.4
+    },
+    {
+      "target": [
+        "s1.pred",
+        "s1.predT"
+      ],
+      "preset": "pop",
+      "at": 10.6,
+      "dur": 0.45
+    },
+    {
+      "target": "s1.nt",
+      "preset": "fly-from",
+      "from": "s1.pred",
+      "at": 11.6,
+      "dur": 0.9,
+      "ease": "inOut"
+    },
+    {
+      "target": "s1.ntT",
+      "preset": "fly-from",
+      "from": "s1.predT",
+      "at": 11.6,
+      "dur": 0.9,
+      "ease": "inOut"
+    },
+    {
+      "target": [
+        "s1.pred",
+        "s1.predT",
+        "s1.nt",
+        "s1.ntT"
+      ],
+      "preset": "fade-out",
+      "at": 13.2,
+      "dur": 0.8
+    }
+  ]
+}

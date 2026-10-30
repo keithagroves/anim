@@ -1,0 +1,34 @@
+{
+  "palette": {
+    "task": "#ffb547",
+    "report": "#4f8cff",
+    "judge": "#a07bff",
+    "checker": "#3ec7e0",
+    "good": "#2fd18b",
+    "card": "#141a2c",
+    "ink": "#2a3352"
+  },
+  "backdrop": {
+    "preset": "aurora",
+    "glows": [
+      {
+        "color": "task",
+        "x": 0.12,
+        "y": 0.18,
+        "r": 0.42,
+        "opacity": 0.16,
+        "drift": 60,
+        "period": 28
+      },
+      {
+        "color": "judge",
+        "x": 0.88,
+        "y": 0.82,
+        "r": 0.5,
+        "opacity": 0.2,
+        "drift": 70,
+        "period": 34
+      }
+    ]
+  }
+}

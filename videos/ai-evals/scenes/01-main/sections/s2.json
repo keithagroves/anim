@@ -1,0 +1,30 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.title": { "type": "text", "text": "Level 1 · unit tests", "style": "h2", "at": { "region": "top", "align": "top" } },
+    "s2.dot1": { "type": "rect", "w": 48, "h": 48, "radius": 24, "fill": "pass", "text": "1", "style": "label", "labelColor": "surface" },
+    "s2.dot2": { "type": "rect", "w": 48, "h": 48, "radius": 24, "fill": "surface2", "stroke": "line", "strokeWidth": "thin", "text": "2", "style": "label", "labelColor": "muted" },
+    "s2.dot3": { "type": "rect", "w": 48, "h": 48, "radius": 24, "fill": "surface2", "stroke": "line", "strokeWidth": "thin", "text": "3", "style": "label", "labelColor": "muted" },
+    "s2.dots": { "type": "group", "children": ["s2.dot1", "s2.dot2", "s2.dot3"], "layout": { "dir": "row", "gap": "sm", "align": "center" }, "at": { "below": "s2.title", "gap": "sm", "align": "center" } },
+    "s2.assert": { "type": "rect", "w": 760, "h": 96, "radius": "md", "fill": "text", "text": "assert no_raw_ids(reply)", "style": "mono", "labelColor": "surface", "at": { "below": "s2.dots", "gap": "md", "align": "center", "dy": 36 } },
+    "s2.tick1": { "type": "path", "d": "M7 19 L15 27 L29 10", "w": 36, "h": 36, "viewBox": "0 0 36 36", "fill": "none", "stroke": "pass", "strokeWidth": 5, "at": { "in": "mark1", "align": "center", "pad": 0 } },
+    "s2.tick2": { "type": "path", "d": "M7 19 L15 27 L29 10", "w": 36, "h": 36, "viewBox": "0 0 36 36", "fill": "none", "stroke": "pass", "strokeWidth": 5, "at": { "in": "mark2", "align": "center", "pad": 0 } },
+    "s2.tick4": { "type": "path", "d": "M7 19 L15 27 L29 10", "w": 36, "h": 36, "viewBox": "0 0 36 36", "fill": "none", "stroke": "pass", "strokeWidth": 5, "at": { "in": "mark4", "align": "center", "pad": 0 } },
+    "s2.tick5": { "type": "path", "d": "M7 19 L15 27 L29 10", "w": 36, "h": 36, "viewBox": "0 0 36 36", "fill": "none", "stroke": "pass", "strokeWidth": 5, "at": { "in": "mark5", "align": "center", "pad": 0 } },
+    "s2.cross3": { "type": "path", "d": "M9 9 L27 27 M27 9 L9 27", "w": 36, "h": 36, "viewBox": "0 0 36 36", "fill": "none", "stroke": "fail", "strokeWidth": 5, "at": { "in": "mark3", "align": "center", "pad": 0 } },
+    "s2.leak": { "type": "text", "text": "a3f9-…", "style": "mono", "fill": "fail", "anchor": "start", "at": { "rightOf": "row3", "gap": "sm", "align": "center" } }
+  },
+  "timeline": [
+    { "id": "title", "target": "s2.title", "preset": "words-in", "at": 0.05 },
+    { "id": "dots", "target": ["s2.dot1", "s2.dot2", "s2.dot3"], "preset": "pop", "at": "cue:three", "stagger": 0.12, "overshoot": 1.6, "dur": 0.45 },
+    { "target": "s2.dot1", "preset": "pulse", "after": "dots", "gap": 0.15, "amount": 0.12, "dur": 0.45 },
+    { "id": "card", "target": "s2.assert", "preset": "rise-in", "at": "cue:unit", "distance": 40, "dur": 0.55, "ease": "out" },
+    { "target": "s2.assert", "preset": "breathe", "after": "card", "amount": 0.01, "period": 3, "dur": 4.5 },
+    { "id": "ticks", "target": ["s2.tick1", "s2.tick2", "s2.tick4", "s2.tick5"], "preset": "draw-on", "at": "cue:every", "stagger": 0.12, "dur": 0.3 },
+    { "id": "cross", "target": "s2.cross3", "preset": "draw-on", "at": "cue:ids", "dur": 0.3 },
+    { "target": "mark3", "preset": "highlight", "with": "cross", "color": "fail", "dur": 0.9 },
+    { "id": "leak", "target": "s2.leak", "preset": "pop", "with": "cross", "offset": 0.2, "overshoot": 1.5, "dur": 0.45 },
+    { "target": "s2.leak", "preset": "wobble", "after": "leak", "amount": 5, "dur": 0.6 },
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}

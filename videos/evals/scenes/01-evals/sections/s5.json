@@ -1,0 +1,53 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.title": { "type": "text", "text": "after release", "style": "h2", "at": { "region": "top", "align": "top", "dy": 10 } },
+
+    "s5.traces":  { "type": "rect", "text": "traces",          "w": 250, "h": 90, "radius": "md", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "right-two-thirds", "dx": 0,    "dy": -230 } },
+    "s5.monitor": { "type": "rect", "text": "monitor → owner", "w": 300, "h": 90, "radius": "md", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "right-two-thirds", "dx": 360,  "dy": -40 } },
+    "s5.analyze": { "type": "rect", "text": "analyze",         "w": 250, "h": 90, "radius": "md", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "right-two-thirds", "dx": 220,  "dy": 210 } },
+    "s5.propose": { "type": "rect", "text": "propose fix",     "w": 250, "h": 90, "radius": "md", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "right-two-thirds", "dx": -220, "dy": 210 } },
+    "s5.evals":   { "type": "rect", "text": "evals pass?",     "w": 250, "h": 90, "radius": "md", "fill": "card", "stroke": "gate", "shadow": true, "at": { "region": "right-two-thirds", "dx": -360, "dy": -40 } },
+
+    "s5.tickDot": { "type": "circle", "r": 22, "fill": "good", "layer": 5, "at": { "in": "s5.evals", "align": "top-right", "dx": 18, "dy": -18 } },
+    "s5.tick":    { "type": "svg", "w": 26, "h": 26, "viewBox": "0 0 26 26", "layer": 6, "svg": "<polyline points='6,13.5 11,18.5 20,8' fill='none' stroke='#0b1020' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/>", "at": { "in": "s5.tickDot" } },
+
+    "s5.ar1": { "type": "arrow", "from": "s5.traces.right",  "to": "s5.monitor.top",    "bend": 40 },
+    "s5.ar2": { "type": "arrow", "from": "s5.monitor.bottom", "to": "s5.analyze.right", "bend": 40 },
+    "s5.ar3": { "type": "arrow", "from": "s5.analyze.left",  "to": "s5.propose.right",  "bend": 40 },
+    "s5.ar4": { "type": "arrow", "from": "s5.propose.left",  "to": "s5.evals.bottom",   "bend": 40 },
+    "s5.ar5": { "type": "arrow", "from": "s5.evals.top",     "to": "s5.traces.left",    "bend": 40 },
+
+    "s5.newgold": { "type": "arrow", "from": "s5.evals.left", "to": "goldBack2.right", "bend": -70, "stroke": "gold", "dash": "12 10" },
+    "s5.ngLabel": { "type": "text", "text": "new gold", "style": "label", "fill": "gold", "at": { "above": "s5.evals", "gap": "md", "align": "left", "dx": -230 } },
+    "s5.chip": { "type": "rect", "text": "+ new case", "w": 200, "h": 56, "radius": "md", "fill": "card", "stroke": "gold", "layer": 5, "at": { "above": "goldBack2", "gap": "sm" } },
+
+    "s5.caption": { "type": "text", "text": "tests grow with the app", "style": "h3", "fill": "muted", "at": { "region": "bottom", "align": "bottom", "dy": -10 } }
+  },
+  "timeline": [
+    { "target": "gold", "preset": "to", "to": { "opacity": 1 }, "at": 0, "dur": "slow", "ease": "inOut" },
+    { "target": "s5.title", "preset": "type-on", "at": 0.4 },
+
+    { "target": "s5.traces", "preset": "rise-in", "at": "cue:trace" },
+
+    { "target": "s5.ar1", "preset": "draw-on", "at": "cue:alert", "offset": -0.35, "dur": "fast" },
+    { "target": "s5.monitor", "preset": "rise-in", "at": "cue:alert" },
+
+    { "target": "s5.ar2", "preset": "draw-on", "at": "cue:analyze", "offset": -0.35, "dur": "fast" },
+    { "target": "s5.analyze", "preset": "rise-in", "at": "cue:analyze" },
+
+    { "target": "s5.ar3", "preset": "draw-on", "at": "cue:propose", "offset": -0.35, "dur": "fast" },
+    { "target": "s5.propose", "preset": "rise-in", "at": "cue:propose" },
+
+    { "target": "s5.ar4", "preset": "draw-on", "at": "cue:evals", "offset": -0.35, "dur": "fast" },
+    { "target": "s5.evals", "preset": "rise-in", "at": "cue:evals" },
+    { "target": ["s5.tickDot", "s5.tick"], "preset": "pop", "at": "cue:evals", "offset": 1.0, "stagger": 0.05, "dur": "fast" },
+    { "target": "s5.ar5", "preset": "draw-on", "at": "cue:evals", "offset": 1.7, "dur": "base" },
+
+    { "id": "ng", "target": "s5.newgold", "preset": "draw-on", "at": "cue:newgold", "dur": "slow" },
+    { "target": "s5.ngLabel", "preset": "fade-in", "with": "ng", "offset": 0.5, "dur": "base" },
+    { "target": "s5.chip", "preset": "pop", "after": "ng", "gap": 0.05, "dur": "fast" },
+    { "target": "gold", "preset": "pulse", "after": "ng", "gap": 0.15, "amount": 0.06 },
+    { "target": "s5.caption", "preset": "fade-in", "at": "cue:newgold", "offset": 2.2, "dur": "base" }
+  ]
+}

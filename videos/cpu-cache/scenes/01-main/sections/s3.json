@@ -1,0 +1,39 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.missByte": { "type": "rect", "w": 56, "h": 56, "radius": "sm", "fill": "item", "shadow": true,
+                     "at": { "in": "chipBox", "align": "center" } },
+    "s3.missTag": { "type": "rect", "w": 200, "h": 72, "radius": "md", "fill": "miss",
+                    "text": "MISS", "style": "label",
+                    "at": { "in": "cacheBox", "align": "right", "pad": "sm", "dy": -110 } },
+    "s3.missArrow": { "type": "arrow", "from": "cacheBox.bottom:0.45", "to": "ramBox.top:0.4",
+                      "stroke": "miss", "strokeWidth": "thin", "dash": "10 8" },
+    "s3.lru": { "type": "text", "text": "LRU", "style": "label", "fill": "warn",
+                "at": { "in": "cacheBox", "align": "left", "dx": 196, "dy": -4 } },
+    "s3.ending": { "type": "text", "text": "throw out the least-recently-used", "style": "h3", "fill": "text",
+                   "at": { "region": "bottom", "align": "center" } }
+  },
+  "timeline": [
+    { "id": "m1", "target": "s3.missByte", "preset": "pop", "at": "cue:miss", "dur": "fast" },
+    { "id": "m2", "target": "s3.missByte", "preset": "to", "after": "m1", "gap": 0.3, "dur": 0.55,
+      "to": { "at": { "in": "cacheBox", "align": "left", "pad": "sm", "dx": 300 } } },
+    { "id": "mt", "target": "s3.missTag", "preset": "pop", "with": "m2", "offset": 0.3, "dur": "fast" },
+    { "id": "ch", "target": "cacheBox", "preset": "highlight", "with": "m2", "offset": 0.2, "color": "miss", "dur": 0.8 },
+    { "id": "restoreC", "target": "cacheBox", "preset": "to", "after": "ch", "gap": 0.15, "dur": 0.35, "to": { "stroke": "cache" } },
+    { "id": "ma", "target": "s3.missArrow", "preset": "draw-on", "with": "m2", "offset": 0.5, "dur": 0.5 },
+    { "id": "m3", "target": "s3.missByte", "preset": "to", "with": "m2", "offset": 0.7, "dur": 0.6,
+      "to": { "at": { "in": "ramBox", "align": "center" } } },
+    { "id": "ramp", "target": "ram", "preset": "pulse", "with": "m3", "amount": 0.035, "dur": 0.7 },
+    { "id": "mt-out", "target": "s3.missTag", "preset": "pop-out", "after": "ramp", "gap": 0.4, "dur": "fast" },
+    { "id": "mb-out", "target": "s3.missByte", "preset": "fade-out", "after": "ramp", "gap": 0.6, "dur": "fast" },
+    { "id": "ma-out", "target": "s3.missArrow", "preset": "fade-out", "after": "ramp", "gap": 0.7, "dur": "fast" },
+    { "id": "lru", "target": "s3.lru", "preset": "scale-in", "at": "cue:out", "offset": -0.35, "dur": "fast" },
+    { "id": "gray", "target": "byte", "preset": "to", "with": "lru", "offset": 0.25, "dur": 0.5, "to": { "fill": "muted" } },
+    { "id": "eject", "target": "byte", "preset": "to", "after": "lru", "gap": 0.55, "dur": 0.8,
+      "to": { "at": { "region": "center", "align": "right", "dx": -80, "dy": -140 }, "fill": "muted", "opacity": 0 } },
+    { "id": "lru-out", "target": "s3.lru", "preset": "fade-out", "after": "eject", "gap": 0.05, "dur": "fast" },
+    { "id": "ramp2", "target": "ram", "preset": "pulse", "after": "eject", "gap": 0.75, "amount": 0.025, "dur": 0.7 },
+    { "id": "end", "target": "s3.ending", "preset": "fade-in", "after": "ramp2", "gap": 0.5, "dur": "slow" },
+    { "id": "final", "target": "chip", "preset": "pulse", "after": "end", "gap": 0.9, "amount": 0.045, "dur": 0.9 }
+  ]
+}

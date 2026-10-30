@@ -1,0 +1,55 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.page1": { "type": "rect", "w": 20, "h": 26, "radius": 3, "fill": "card", "stroke": "report", "strokeWidth": "thin", "layer": 2, "at": { "below": "task", "gap": 24, "dx": -70 } },
+    "s1.page2": { "type": "rect", "w": 20, "h": 26, "radius": 3, "fill": "card", "stroke": "report", "strokeWidth": "thin", "layer": 2, "at": { "below": "task", "gap": 62, "dx": -104 } },
+    "s1.page3": { "type": "rect", "w": 20, "h": 26, "radius": 3, "fill": "card", "stroke": "report", "strokeWidth": "thin", "layer": 2, "at": { "below": "task", "gap": 96, "dx": -62 } },
+    "s1.page4": { "type": "rect", "w": 20, "h": 26, "radius": 3, "fill": "card", "stroke": "report", "strokeWidth": "thin", "layer": 2, "at": { "below": "task", "gap": 44, "dx": -136 } },
+
+    "s1.question": { "type": "text", "text": "how do you grade one?", "style": "h2", "at": { "region": "right-two-thirds", "align": "top", "dy": 40 } },
+    "s1.name": { "type": "text", "text": "DeepResearchEval", "style": "h1", "at": { "region": "right-two-thirds", "align": "top", "dy": 30 } },
+
+    "s1.c1Box": { "type": "rect", "w": 640, "h": 84, "radius": "md", "fill": "card", "stroke": "muted", "strokeWidth": "md", "at": { "region": "right-two-thirds", "align": "center", "dy": -96 } },
+    "s1.c1Cross": { "type": "path", "d": "M5 5 L23 23 M23 5 L5 23", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "bad", "strokeWidth": 4, "layer": 2, "at": { "in": "s1.c1Box", "align": "left", "pad": "md" } },
+    "s1.c1Text": { "type": "text", "text": "experts write every task", "style": "body", "anchor": "start", "layer": 2, "at": { "in": "s1.c1Box", "align": "left", "pad": 92 } },
+    "s1.card1": { "type": "group", "children": ["s1.c1Box", "s1.c1Cross", "s1.c1Text"] },
+
+    "s1.c2Box": { "type": "rect", "w": 640, "h": 84, "radius": "md", "fill": "card", "stroke": "muted", "strokeWidth": "md", "at": { "below": "s1.c1Box", "gap": "md" } },
+    "s1.c2Cross": { "type": "path", "d": "M5 5 L23 23 M23 5 L5 23", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "bad", "strokeWidth": 4, "layer": 2, "at": { "in": "s1.c2Box", "align": "left", "pad": "md" } },
+    "s1.c2Text": { "type": "text", "text": "one fixed rubric for all", "style": "body", "anchor": "start", "layer": 2, "at": { "in": "s1.c2Box", "align": "left", "pad": 92 } },
+    "s1.card2": { "type": "group", "children": ["s1.c2Box", "s1.c2Cross", "s1.c2Text"] },
+
+    "s1.c3Box": { "type": "rect", "w": 640, "h": 84, "radius": "md", "fill": "card", "stroke": "muted", "strokeWidth": "md", "at": { "below": "s1.c2Box", "gap": "md" } },
+    "s1.c3Cross": { "type": "path", "d": "M5 5 L23 23 M23 5 L5 23", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "bad", "strokeWidth": 4, "layer": 2, "at": { "in": "s1.c3Box", "align": "left", "pad": "md" } },
+    "s1.c3Text": { "type": "text", "text": "only cited facts get checked", "style": "body", "anchor": "start", "layer": 2, "at": { "in": "s1.c3Box", "align": "left", "pad": 92 } },
+    "s1.card3": { "type": "group", "children": ["s1.c3Box", "s1.c3Cross", "s1.c3Text"] },
+
+    "s1.c1Tick": { "type": "path", "d": "M3 15 L11 23 L25 5", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "good", "strokeWidth": 4, "layer": 3, "at": { "in": "s1.c1Box", "align": "left", "pad": "md" } },
+    "s1.c2Tick": { "type": "path", "d": "M3 15 L11 23 L25 5", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "good", "strokeWidth": 4, "layer": 3, "at": { "in": "s1.c2Box", "align": "left", "pad": "md" } },
+    "s1.c3Tick": { "type": "path", "d": "M3 15 L11 23 L25 5", "w": 28, "h": 28, "viewBox": "0 0 28 28", "fill": "none", "stroke": "good", "strokeWidth": 4, "layer": 3, "at": { "in": "s1.c3Box", "align": "left", "pad": "md" } }
+  },
+  "timeline": [
+    { "id": "task", "target": "task", "preset": "rise-in", "at": 0.3, "dur": "base", "ease": "out" },
+    { "id": "arrow", "target": "agentArrow", "preset": "draw-on", "at": 1.0, "dur": 1.6, "ease": "inOut" },
+    { "target": "agentLabel", "preset": "fade-in", "with": "arrow", "offset": 0.3, "dur": "base" },
+
+    { "id": "pagesIn", "target": ["s1.page1", "s1.page2", "s1.page3", "s1.page4"], "preset": "pop", "at": 1.2, "stagger": 0.35, "dur": 0.25 },
+    { "id": "pagesOut", "target": ["s1.page1", "s1.page2", "s1.page3", "s1.page4"], "preset": "fade-out", "at": 2.1, "stagger": 0.4, "dur": 0.3 },
+
+    { "id": "report", "target": "report", "preset": "rise-in", "at": "cue:report", "dur": "base", "ease": "out" },
+
+    { "id": "question", "target": "s1.question", "preset": "type-on", "at": 5.7, "dur": 1.0 },
+
+    { "target": "s1.card1", "preset": "pop", "at": "cue:experts", "dur": "base" },
+    { "target": "s1.card2", "preset": "pop", "at": "cue:rubric", "dur": "base" },
+    { "target": "s1.card3", "preset": "pop", "at": "cue:cited", "dur": "base" },
+
+    { "id": "qOut", "target": "s1.question", "preset": "fade-out", "at": "cue:name", "dur": "fast" },
+    { "id": "name", "target": "s1.name", "preset": "type-on", "at": "cue:name", "offset": 0.38, "dur": 0.7 },
+    { "id": "crossOut", "target": ["s1.c1Cross", "s1.c2Cross", "s1.c3Cross"], "preset": "fade-out", "at": "cue:name", "offset": 0.3, "stagger": 0.12, "dur": "fast" },
+    { "target": ["s1.c1Tick", "s1.c2Tick", "s1.c3Tick"], "preset": "pop", "with": "crossOut", "offset": 0.1, "stagger": 0.12, "dur": "fast" },
+    { "target": ["s1.c1Box", "s1.c2Box", "s1.c3Box"], "preset": "to", "with": "crossOut", "offset": 0.1, "stagger": 0.12, "dur": "fast", "to": { "stroke": "good" } },
+
+    { "id": "clear", "target": ["s1.name", "s1.card1", "s1.card2", "s1.card3", "s1.c1Tick", "s1.c2Tick", "s1.c3Tick"], "preset": "fade-out", "at": 17.6, "dur": 0.55 }
+  ]
+}

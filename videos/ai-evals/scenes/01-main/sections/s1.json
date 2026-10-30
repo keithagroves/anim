@@ -1,0 +1,29 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.headline": { "type": "text", "text": "Vibe checks don't scale", "style": "h2", "anchor": "middle", "at": { "region": "top", "align": "center", "dy": -40 } },
+    "s1.underline": { "type": "rect", "w": 560, "h": 6, "radius": 3, "fill": "text", "at": { "below": "s1.headline", "gap": "sm", "align": "center" } },
+    "s1.tick": { "type": "path", "d": "M9 21 L17 29 L31 12", "w": 46, "h": 46, "viewBox": "0 0 40 40", "fill": "none", "stroke": "pass", "strokeWidth": "bold", "at": { "in": "mark2", "align": "center" } },
+    "s1.cross": { "type": "path", "d": "M12 12 L28 28 M28 12 L12 28", "w": 46, "h": 46, "viewBox": "0 0 40 40", "fill": "none", "stroke": "fail", "strokeWidth": "bold", "at": { "in": "mark4", "align": "center" } }
+  },
+  "timeline": [
+    { "id": "head", "target": "s1.headline", "preset": "words-in", "at": "start-0.6" },
+    { "id": "under", "target": "s1.underline", "preset": "wipe-in", "at": 2.3, "dur": 0.5, "ease": "out" },
+
+    { "id": "page", "target": "page", "preset": "fade-in", "at": "cue:measure-0.1", "dur": 0.3 },
+    { "id": "card", "target": "pageCard", "preset": "rise-in", "with": "page", "dur": 0.55, "distance": 60, "ease": "out" },
+    { "target": "pageTag", "preset": "fade-in", "with": "card", "offset": 0.25, "dur": 0.35 },
+    { "id": "rows", "target": ["row1", "row2", "row3", "row4", "row5"], "preset": "rise-in", "with": "card", "offset": 0.25, "stagger": 0.08, "dur": 0.4, "distance": 24 },
+    { "target": ["rule1", "rule2", "rule3", "rule4", "rule5"], "preset": "wipe-in", "with": "rows", "offset": 0.1, "stagger": 0.08, "dur": 0.4 },
+    { "id": "marks", "target": ["mark1", "mark2", "mark3", "mark4", "mark5"], "preset": "draw-on", "with": "rows", "offset": 0.4, "stagger": 0.1, "dur": 0.35 },
+
+    { "id": "tick", "target": "s1.tick", "preset": "draw-on", "at": "cue:better", "dur": 0.3 },
+    { "target": "mark2", "preset": "pulse", "with": "tick", "offset": 0.2, "amount": 0.1, "dur": 0.4 },
+
+    { "id": "cross", "target": "s1.cross", "preset": "draw-on", "at": "cue:breaks-0.1", "dur": 0.25 },
+    { "target": "mark4", "preset": "highlight", "with": "cross", "color": "fail", "dur": 0.45 },
+    { "id": "wob", "target": "s1.tick", "preset": "wobble", "after": "cross", "gap": 0, "amount": 9, "cycles": 3, "dur": 0.45 },
+
+    { "preset": "clear", "at": "end-0.6", "target": ["s1.tick", "s1.cross", "s1.underline", "s1.headline"] }
+  ]
+}

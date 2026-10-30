@@ -1,0 +1,84 @@
+{
+  "id": "product-tour",
+  "name": "Product tour / changelog",
+  "summary": "Real footage of an app, recorded with Playwright and played in a framed window. Callout cards and highlight rings land on narration cues. Work that can't be filmed yet is shown as a flow diagram.",
+  "goodFor": [
+    "what's new / release notes",
+    "a feature walkthrough",
+    "a demo of a web app",
+    "before/after of a change"
+  ],
+  "examples": [],
+  "length": "45–90 s, one scene, one section per change",
+  "sectionLength": "8–15 s",
+  "uses": {
+    "narration": "yes",
+    "sectionAgents": "no",
+    "footage": "yes",
+    "canvas": "no",
+    "score": "yes"
+  },
+  "steps": [
+    "Find the changes (git log --stat, uncommitted diff) and pick 3–5 a viewer would notice",
+    "Pick a look before drawing anything (docs/looks.md): 3–4 looks made up for this product's film, each framing its UI, never restyling it (a 1–3 word name + a ≤12-word line each), 1–2 palettes besides theirs, a backdrop that fits (anim sheet <video> --scene <id> --backdrops); write style.md and theme.json",
+    "Run the app locally; edit record.mts (one record() per shot: page, scrolls and clicks, with mark() at each moment)",
+    "npx tsx <video>/record.mts http://localhost:<port>; check stills of the clips (ffmpeg -ss <t>) before building on them",
+    "Write narration.txt (one sentence per change, a {cue:} where each shows up); anim voice",
+    "scene.json: the shared footage window (type video, src clips/<shot>.webm); per section, play the clip segment between marks, timed to the cues",
+    "Per beat, one region: focus the camera on it (1.6–2.4×), hold 1.4–2.2 s, a spotlight on it and a chip naming it (≤ 6 words, beside it, never over it); highlight rings over the footage (rects placed `in` the window, measured from stills) where a chip isn't enough",
+    "score.json (beat-fitted tempo, foley: true), anim score <video> --levels",
+    "anim lint (including the walkthrough rules: focus-zoom, focus-hold, camera-speed, chip-words, chip-time, chip-over), anim sheet --times …, anim render, anim eval voice"
+  ],
+  "scaffold": {
+    "theme": {
+      "palette": {
+        "brand": "#5b8fa8",
+        "shipped": "#2fd18b",
+        "wip": "#ffb547",
+        "card": "#141a2c"
+      },
+      "backdrop": "dots"
+    },
+    "narration": "Here's what's new. {cue:change1}First change, in one sentence. {cue:change2}Second change, in one sentence. {cue:change3}And what's coming next.",
+    "objects": {
+      "screen": {
+        "type": "video",
+        "src": "clips/home.webm",
+        "w": 1280,
+        "h": 720,
+        "radius": "md",
+        "stroke": "brand",
+        "strokeWidth": "thin",
+        "fill": "card",
+        "shadow": true,
+        "at": {
+          "region": "center",
+          "align": "left",
+          "dy": 40
+        }
+      }
+    },
+    "sections": [
+      {
+        "id": "s1",
+        "seconds": 6,
+        "brief": "Title and the list of changes as chips."
+      },
+      {
+        "id": "s2",
+        "seconds": 12,
+        "brief": "Change 1: footage of it, a highlight ring and a callout card."
+      },
+      {
+        "id": "s3",
+        "seconds": 12,
+        "brief": "Change 2: footage, a ring and a callout."
+      },
+      {
+        "id": "s4",
+        "seconds": 12,
+        "brief": "What's next, as a flow diagram."
+      }
+    ]
+  }
+}

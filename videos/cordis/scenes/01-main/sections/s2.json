@@ -1,0 +1,449 @@
+{
+ "id": "s2",
+ "objects": {
+  "s2.cite": {
+   "type": "text",
+   "text": "Shi, Zhang, Cui \u00b7 Peking U. & DeepSeek",
+   "style": "small",
+   "fill": "muted",
+   "anchor": "start",
+   "at": {
+    "region": "left-third",
+    "align": "top-left"
+   }
+  },
+  "s2.tHead": {
+   "type": "text",
+   "text": "Time:",
+   "style": "h3",
+   "fill": "undo",
+   "anchor": "start",
+   "at": {
+    "region": "left-third",
+    "align": "left",
+    "dy": 70
+   }
+  },
+  "s2.tPhrase": {
+   "type": "text",
+   "text": "undo what it changed",
+   "style": "body",
+   "fill": "text",
+   "anchor": "start",
+   "at": {
+    "below": "s2.tHead",
+    "gap": "xs",
+    "align": "left"
+   }
+  },
+  "s2.sHead": {
+   "type": "text",
+   "text": "Space:",
+   "style": "h3",
+   "fill": "dep",
+   "anchor": "start",
+   "at": {
+    "below": "s2.tPhrase",
+    "gap": "lg",
+    "align": "left"
+   }
+  },
+  "s2.sPhrase": {
+   "type": "text",
+   "text": "dependencies come and go",
+   "style": "body",
+   "fill": "text",
+   "anchor": "start",
+   "at": {
+    "below": "s2.sHead",
+    "gap": "xs",
+    "align": "left"
+   }
+  },
+  "s2.chip1Box": {
+   "type": "rect",
+   "w": 250,
+   "h": 64,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "at": {
+    "in": "ctxBox",
+    "align": "top-left",
+    "pad": "lg",
+    "dy": 110
+   }
+  },
+  "s2.chip1Text": {
+   "type": "text",
+   "text": "cmd /greet",
+   "style": "mono",
+   "fill": "text",
+   "at": {
+    "in": "s2.chip1Box"
+   }
+  },
+  "s2.chip1": {
+   "type": "group",
+   "children": [
+    "s2.chip1Box",
+    "s2.chip1Text"
+   ],
+   "layer": 4
+  },
+  "s2.chip2Box": {
+   "type": "rect",
+   "w": 220,
+   "h": 64,
+   "radius": "sm",
+   "fill": "chip",
+   "stroke": "plugin",
+   "strokeWidth": "md",
+   "at": {
+    "rightOf": "s2.chip1Box",
+    "gap": "md"
+   }
+  },
+  "s2.chip2Text": {
+   "type": "text",
+   "text": "conn db",
+   "style": "mono",
+   "fill": "text",
+   "at": {
+    "in": "s2.chip2Box"
+   }
+  },
+  "s2.chip2": {
+   "type": "group",
+   "children": [
+    "s2.chip2Box",
+    "s2.chip2Text"
+   ],
+   "layer": 4
+  },
+  "s2.aBox": {
+   "type": "rect",
+   "w": 170,
+   "h": 120,
+   "radius": "md",
+   "fill": "plugin",
+   "shadow": true,
+   "at": {
+    "in": "ctxBox",
+    "align": "center",
+    "dx": -260,
+    "dy": 30
+   }
+  },
+  "s2.aText": {
+   "type": "text",
+   "text": "A",
+   "style": "h2",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s2.aBox"
+   }
+  },
+  "s2.aCard": {
+   "type": "group",
+   "children": [
+    "s2.aBox",
+    "s2.aText"
+   ],
+   "layer": 4
+  },
+  "s2.bBox": {
+   "type": "rect",
+   "w": 170,
+   "h": 120,
+   "radius": "md",
+   "fill": "plugin",
+   "shadow": true,
+   "at": {
+    "in": "ctxBox",
+    "align": "center",
+    "dx": 260,
+    "dy": 30
+   }
+  },
+  "s2.bText": {
+   "type": "text",
+   "text": "B",
+   "style": "h2",
+   "fill": "#ffffff",
+   "at": {
+    "in": "s2.bBox"
+   }
+  },
+  "s2.bCard": {
+   "type": "group",
+   "children": [
+    "s2.bBox",
+    "s2.bText"
+   ],
+   "layer": 4
+  },
+  "s2.need": {
+   "type": "arrow",
+   "from": "s2.aBox.right",
+   "to": "s2.bBox.left",
+   "stroke": "dep",
+   "strokeWidth": "md",
+   "text": "needs",
+   "style": "label",
+   "layer": 3
+  },
+  "s2.broken": {
+   "type": "arrow",
+   "from": "s2.aBox.right",
+   "to": "s2.bBox.left",
+   "stroke": "bad",
+   "strokeWidth": "md",
+   "dash": "12 10",
+   "layer": 3
+  },
+  "s2.bGhost": {
+   "type": "rect",
+   "w": 170,
+   "h": 120,
+   "radius": "md",
+   "fill": "none",
+   "stroke": "muted",
+   "strokeWidth": "thin",
+   "dash": "10 8",
+   "layer": 3,
+   "at": {
+    "in": "ctxBox",
+    "align": "center",
+    "dx": 260,
+    "dy": 30
+   }
+  }
+ },
+ "timeline": [
+  {
+   "id": "citeIn",
+   "target": "s2.cite",
+   "preset": "fade-in",
+   "at": 0.02,
+   "dur": "fast"
+  },
+  {
+   "id": "headsIn",
+   "target": [
+    "s2.tHead",
+    "s2.sHead"
+   ],
+   "preset": "rise-in",
+   "at": 1.41,
+   "stagger": 0.2,
+   "dur": "base"
+  },
+  {
+   "target": "s2.sHead",
+   "preset": "to",
+   "to": {
+    "opacity": 0.35
+   },
+   "at": "cue:time",
+   "offset": -0.45,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.cite",
+   "preset": "fade-out",
+   "at": "cue:time",
+   "offset": -0.05,
+   "dur": "fast"
+  },
+  {
+   "id": "plugIn",
+   "target": "plug",
+   "preset": "rise-in",
+   "at": "cue:time",
+   "dur": "base"
+  },
+  {
+   "id": "linkIn",
+   "target": "plugLink",
+   "preset": "draw-on",
+   "after": "plugIn",
+   "dur": 0.45
+  },
+  {
+   "id": "chip1In",
+   "target": "s2.chip1",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "at": "cue:time",
+   "offset": 0.85,
+   "dur": 0.6
+  },
+  {
+   "id": "chip2In",
+   "target": "s2.chip2",
+   "preset": "fly-from",
+   "from": "plugBox",
+   "with": "chip1In",
+   "offset": 0.25,
+   "dur": 0.6
+  },
+  {
+   "id": "unplug",
+   "target": "plugLink",
+   "preset": "fade-out",
+   "at": 4.162,
+   "dur": "fast"
+  },
+  {
+   "target": "plug",
+   "preset": "to",
+   "to": {
+    "dx": -40,
+    "opacity": 0.5
+   },
+   "with": "unplug",
+   "dur": 0.5
+  },
+  {
+   "id": "leftover",
+   "target": [
+    "s2.chip1Box",
+    "s2.chip2Box"
+   ],
+   "preset": "to",
+   "to": {
+    "stroke": "bad"
+   },
+   "at": 4.491,
+   "stagger": 0.1,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.tPhrase",
+   "preset": "rise-in",
+   "at": 4.531,
+   "dur": "base"
+  },
+  {
+   "id": "undone",
+   "target": [
+    "s2.chip1",
+    "s2.chip2"
+   ],
+   "preset": "pop-out",
+   "at": 5.735,
+   "stagger": 0.1,
+   "dur": "fast"
+  },
+  {
+   "target": [
+    "s2.tHead",
+    "s2.tPhrase"
+   ],
+   "preset": "to",
+   "to": {
+    "opacity": 0.35
+   },
+   "at": "cue:space",
+   "offset": -0.3,
+   "dur": "fast"
+  },
+  {
+   "target": "plug",
+   "preset": "to",
+   "to": {
+    "dx": 0,
+    "opacity": 1
+   },
+   "at": "cue:space",
+   "offset": -0.3,
+   "dur": "base"
+  },
+  {
+   "target": "s2.sHead",
+   "preset": "to",
+   "to": {
+    "opacity": 1
+   },
+   "at": "cue:space",
+   "dur": "fast"
+  },
+  {
+   "id": "cardsIn",
+   "target": [
+    "s2.aCard",
+    "s2.bCard"
+   ],
+   "preset": "pop",
+   "at": "cue:space",
+   "offset": 0.1,
+   "stagger": 0.15,
+   "dur": 0.45
+  },
+  {
+   "id": "needIn",
+   "target": "s2.need",
+   "preset": "draw-on",
+   "at": 7.89,
+   "dur": 0.6
+  },
+  {
+   "target": "s2.sPhrase",
+   "preset": "rise-in",
+   "at": 9.214,
+   "dur": "base"
+  },
+  {
+   "id": "bGone",
+   "target": "s2.bCard",
+   "preset": "pop-out",
+   "at": 9.698,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.need",
+   "preset": "fade-out",
+   "at": 10.34,
+   "dur": "fast"
+  },
+  {
+   "id": "brokenIn",
+   "target": "s2.broken",
+   "preset": "fade-in",
+   "with": "s2.need",
+   "dur": "fast"
+  },
+  {
+   "target": "s2.bGhost",
+   "preset": "fade-in",
+   "with": "bGone",
+   "offset": 0.05,
+   "dur": "fast"
+  },
+  {
+   "target": "s2.broken",
+   "preset": "shake",
+   "after": "brokenIn",
+   "amount": 8,
+   "cycles": 3,
+   "dur": 0.4
+  },
+  {
+   "target": [
+    "s2.aCard",
+    "s2.broken",
+    "s2.bGhost",
+    "s2.tHead",
+    "s2.tPhrase",
+    "s2.sHead",
+    "s2.sPhrase"
+   ],
+   "preset": "fade-out",
+   "at": 11.119,
+   "stagger": 0.04,
+   "dur": "fast"
+  }
+ ]
+}

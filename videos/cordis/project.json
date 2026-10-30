@@ -1,0 +1,19 @@
+{
+  "title": "Add anything, remove anything",
+  "type": "explainer",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice": {
+    "engine": "chatterbox",
+    "ref": "vo/ref/my-voice-ref.wav",
+    "exaggeration": 0.7,
+    "cfgWeight": 0.4,
+    "seed": 7
+  },
+  "scenes": [
+    "01-main"
+  ]
+}

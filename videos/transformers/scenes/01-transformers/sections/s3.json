@@ -1,0 +1,47 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.band1": { "type": "rect", "w": 1440, "h": 80, "radius": "md", "fill": "layer", "fillOpacity": 0.16, "stroke": "layer", "strokeWidth": "thin", "at": { "above": "tok4Box", "gap": "md" } },
+    "s3.band2": { "type": "rect", "w": 1440, "h": 80, "radius": "md", "fill": "layer", "fillOpacity": 0.16, "stroke": "layer", "strokeWidth": "thin", "at": { "above": "s3.band1", "gap": 24 } },
+    "s3.band3": { "type": "rect", "w": 1440, "h": 80, "radius": "md", "fill": "layer", "fillOpacity": 0.16, "stroke": "layer", "strokeWidth": "thin", "at": { "above": "s3.band2", "gap": 24 } },
+    "s3.band4": { "type": "rect", "w": 1440, "h": 80, "radius": "md", "fill": "layer", "fillOpacity": 0.16, "stroke": "layer", "strokeWidth": "thin", "at": { "above": "s3.band3", "gap": 24 } },
+
+    "s3.lab1": { "type": "text", "text": "layer 1", "style": "small", "fill": "#b9a8ff", "anchor": "start", "at": { "in": "s3.band1", "align": "left", "pad": "sm" } },
+    "s3.lab2": { "type": "text", "text": "layer 2", "style": "small", "fill": "#b9a8ff", "anchor": "start", "at": { "in": "s3.band2", "align": "left", "pad": "sm" } },
+    "s3.lab3": { "type": "text", "text": "…", "style": "small", "fill": "#b9a8ff", "anchor": "start", "at": { "in": "s3.band3", "align": "left", "pad": "sm" } },
+    "s3.lab4": { "type": "text", "text": "layer 96", "style": "small", "fill": "#b9a8ff", "anchor": "start", "at": { "in": "s3.band4", "align": "left", "pad": "sm" } },
+
+    "s3.grammar": { "type": "text", "text": "grammar", "style": "label", "fill": "text", "anchor": "end", "at": { "in": "s3.band1", "align": "right", "pad": "sm" } },
+    "s3.ideas": { "type": "text", "text": "ideas", "style": "label", "fill": "text", "anchor": "end", "at": { "in": "s3.band4", "align": "right", "pad": "sm" } },
+
+    "s3.dot1": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": -510 } },
+    "s3.dot2": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": -340 } },
+    "s3.dot3": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": -170 } },
+    "s3.dot4": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": 0 } },
+    "s3.dot5": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": 170 } },
+    "s3.dot6": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": 340 } },
+    "s3.dot7": { "type": "circle", "r": 10, "fill": "#d9ceff", "layer": 5, "at": { "in": "s3.band1", "dx": 510 } }
+  },
+  "timeline": [
+    { "id": "bands", "target": "s3.band*", "preset": "rise-in", "at": "cue:stack", "stagger": 0.1, "dur": "base", "distance": 30 },
+    { "target": "s3.lab*", "preset": "fade-in", "with": "bands", "offset": 0.2, "stagger": 0.1, "dur": "fast" },
+
+    { "id": "dotsIn", "target": "s3.dot*", "preset": "rise-in", "at": 1.6, "distance": 60, "stagger": 0.06, "dur": "base", "ease": "out" },
+    { "target": "s3.band1", "preset": "to", "to": { "fillOpacity": 0.4 }, "at": 2.2, "dur": "fast" },
+
+    { "target": "s3.grammar", "preset": "type-on", "at": "cue:layer" },
+
+    { "target": "s3.dot*", "preset": "to", "to": { "dy": -104 }, "at": 4.3, "stagger": 0.05, "dur": 0.5, "ease": "inOut" },
+    { "target": "s3.band2", "preset": "to", "to": { "fillOpacity": 0.4 }, "at": 4.7, "dur": "fast" },
+
+    { "target": "s3.dot*", "preset": "to", "to": { "dy": -208 }, "at": 5.3, "stagger": 0.05, "dur": 0.5, "ease": "inOut" },
+    { "target": "s3.band3", "preset": "to", "to": { "fillOpacity": 0.4 }, "at": 5.7, "dur": "fast" },
+
+    { "target": "s3.dot*", "preset": "to", "to": { "dy": -312 }, "at": 6.3, "stagger": 0.05, "dur": 0.5, "ease": "inOut" },
+    { "target": "s3.band4", "preset": "to", "to": { "fillOpacity": 0.55 }, "at": 6.7, "dur": "fast" },
+
+    { "target": "s3.ideas", "preset": "type-on", "at": "cue:ideas", "offset": -0.15 },
+
+    { "target": "s3.*", "preset": "fade-out", "at": 8.15, "dur": 0.5 }
+  ]
+}

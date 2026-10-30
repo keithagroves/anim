@@ -1,0 +1,44 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.watch": { "type": "line", "from": "control.bottom", "to": "node3.top", "dash": "12 10", "stroke": "control", "strokeWidth": "md", "layer": -1 },
+
+    "s3.podBox": { "type": "rect", "w": 132, "h": 96, "radius": "md", "fill": "pod", "at": { "in": "node2", "dy": 24, "dx": 86 } },
+    "s3.podText": { "type": "text", "text": "web", "style": "label", "fill": "bg", "at": { "in": "s3.podBox" } },
+    "s3.pod": { "type": "group", "children": ["s3.podBox", "s3.podText"] },
+
+    "s3.statusCard": { "type": "rect", "w": 400, "h": 150, "radius": "md", "fill": "surface2", "stroke": "nodeEdge", "strokeWidth": "thin",
+                       "at": { "region": "top-right", "align": "top-right", "dy": 8 } },
+    "s3.statusText": { "type": "text", "text": "app: web\nrunning: {value}/3", "value": 2, "decimals": 0, "style": "mono", "anchor": "start", "fill": "warn",
+                       "at": { "in": "s3.statusCard", "align": "left", "pad": "md" } },
+    "s3.status": { "type": "group", "children": ["s3.statusCard", "s3.statusText"] },
+
+    "s3.line1": { "type": "text", "text": "You describe the goal.", "style": "h2", "fill": "text" },
+    "s3.line2": { "type": "text", "text": "Kubernetes keeps it true.", "style": "h2", "fill": "good" },
+    "s3.caption": { "type": "group", "children": ["s3.line1", "s3.line2"], "layout": { "dir": "col", "gap": "sm", "align": "center" },
+                    "at": { "region": "middle", "dy": -70 } }
+  },
+  "timeline": [
+    { "id": "shake", "target": "server3", "preset": "shake", "at": "cue:fail", "dur": 0.7, "amount": 18 },
+    { "target": "podC", "preset": "shake", "with": "shake", "dur": 0.7, "amount": 18 },
+    { "target": "node3", "preset": "to", "with": "shake", "dur": "fast", "to": { "stroke": "bad", "fill": "#3a1622", "strokeWidth": "bold" } },
+    { "target": "podCBox", "preset": "to", "at": "cue:fail", "offset": 0.25, "dur": "fast", "to": { "fill": "#5b6478" } },
+    { "id": "podDie", "target": "podC", "preset": "pop-out", "at": "cue:fail", "offset": 0.75, "dur": 0.4 },
+
+    { "id": "notice", "target": "k8s", "preset": "pulse", "at": "cue:fail", "offset": 1.2, "dur": 0.6, "amount": 0.06 },
+    { "target": "s3.watch", "preset": "draw-on", "with": "notice", "offset": 0.15, "dur": 0.6 },
+    { "target": "s3.status", "preset": "rise-in", "with": "notice", "offset": 0.25, "dur": "base" },
+
+    { "target": "podB", "preset": "to", "at": "cue:replace", "dur": "base", "to": { "dx": -86 } },
+    { "id": "fly", "target": "s3.pod", "preset": "fly-from", "at": "cue:replace", "offset": 0.1, "from": "control", "dur": 1.0 },
+    { "target": "s3.watch", "preset": "fade-out", "with": "fly", "offset": 0.3, "dur": "base" },
+    { "target": "s3.statusText", "preset": "count-up", "after": "fly", "dur": 0.4, "to": { "value": 3 } },
+    { "target": "s3.statusText", "preset": "to", "after": "fly", "dur": 0.4, "to": { "fill": "good" } },
+    { "target": "s3.pod", "preset": "pulse", "after": "fly", "dur": 0.4, "amount": 0.08 },
+
+    { "target": "s3.line1", "preset": "rise-in", "at": "cue:goal", "dur": "base", "distance": 24 },
+    { "target": "specCard", "preset": "highlight", "at": "cue:goal", "offset": 0.2, "color": "accent", "dur": 1.2 },
+    { "target": "s3.line2", "preset": "rise-in", "at": "cue:goal", "offset": 1.45, "dur": "base", "distance": 24 },
+    { "target": "s3.statusCard", "preset": "highlight", "at": "cue:goal", "offset": 1.6, "color": "good", "dur": 1.2 }
+  ]
+}

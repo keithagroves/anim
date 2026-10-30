@@ -1,0 +1,2 @@
+Here's a new feature: narrated whiteboard mode. You write one {cue:scene}scene file, with boxes, arrows and narration. The {cue:solver}solver lays everything out and times it, and Kokoro turns the script into a {cue:voice}voice, with a timestamp for every word.
+Then the same scene goes two ways: to a {cue:video}video, or to a {cue:canvas}live canvas, where each shape is drawn {cue:sync}exactly as its word is spoken. And because it's real tldraw, you can {cue:edit}grab any box, and keep editing.

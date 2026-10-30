@@ -1,0 +1,59 @@
+{
+  "id": "01-what-is-k8s",
+  "objects": {
+    "node2": { "type": "rect", "w": 460, "h": 300, "radius": "lg", "fill": "node", "stroke": "nodeEdge", "strokeWidth": "thin", "shadow": true,
+               "at": { "region": "center", "align": "bottom", "dy": -24 } },
+    "node1": { "type": "rect", "w": 460, "h": 300, "radius": "lg", "fill": "node", "stroke": "nodeEdge", "strokeWidth": "thin", "shadow": true,
+               "at": { "leftOf": "node2", "gap": 72 } },
+    "node3": { "type": "rect", "w": 460, "h": 300, "radius": "lg", "fill": "node", "stroke": "nodeEdge", "strokeWidth": "thin", "shadow": true,
+               "at": { "rightOf": "node2", "gap": 72 } },
+    "node1Label": { "type": "text", "text": "server 1", "style": "label", "fill": "muted", "at": { "in": "node1", "align": "top-left", "pad": "md" } },
+    "node2Label": { "type": "text", "text": "server 2", "style": "label", "fill": "muted", "at": { "in": "node2", "align": "top-left", "pad": "md" } },
+    "node3Label": { "type": "text", "text": "server 3", "style": "label", "fill": "muted", "at": { "in": "node3", "align": "top-left", "pad": "md" } },
+    "server1": { "type": "group", "children": ["node1", "node1Label"] },
+    "server2": { "type": "group", "children": ["node2", "node2Label"] },
+    "server3": { "type": "group", "children": ["node3", "node3Label"] },
+
+    "control": { "type": "rect", "w": 520, "h": 128, "radius": "lg", "fill": "control", "shadow": true,
+                 "at": { "region": "top", "align": "top", "dy": 8 } },
+    "controlLabel": { "type": "text", "text": "Kubernetes", "style": "h3", "fill": "#ffffff", "at": { "in": "control" } },
+    "k8s": { "type": "group", "children": ["control", "controlLabel"] },
+
+    "specCard": { "type": "rect", "w": 400, "h": 150, "radius": "md", "fill": "surface2", "stroke": "nodeEdge", "strokeWidth": "thin",
+                  "at": { "region": "top-left", "align": "top-left", "dy": 8 } },
+    "specText": { "type": "text", "text": "app: web\nreplicas: 3", "style": "mono", "anchor": "start", "at": { "in": "specCard", "align": "left", "pad": "md" } },
+    "spec": { "type": "group", "children": ["specCard", "specText"] },
+
+    "podABox": { "type": "rect", "w": 132, "h": 96, "radius": "md", "fill": "pod", "at": { "in": "node1", "dy": 24 } },
+    "podAText": { "type": "text", "text": "web", "style": "label", "fill": "bg", "at": { "in": "podABox" } },
+    "podA": { "type": "group", "children": ["podABox", "podAText"] },
+    "podBBox": { "type": "rect", "w": 132, "h": 96, "radius": "md", "fill": "pod", "at": { "in": "node2", "dy": 24 } },
+    "podBText": { "type": "text", "text": "web", "style": "label", "fill": "bg", "at": { "in": "podBBox" } },
+    "podB": { "type": "group", "children": ["podBBox", "podBText"] },
+    "podCBox": { "type": "rect", "w": 132, "h": 96, "radius": "md", "fill": "pod", "at": { "in": "node3", "dy": 24 } },
+    "podCText": { "type": "text", "text": "web", "style": "label", "fill": "bg", "at": { "in": "podCBox" } },
+    "podC": { "type": "group", "children": ["podCBox", "podCText"] }
+  },
+  "keys": {
+    "0": {
+      "server1": { "opacity": 0 }, "server2": { "opacity": 0 }, "server3": { "opacity": 0 },
+      "k8s": { "opacity": 0 }, "spec": { "opacity": 0 },
+      "podA": { "opacity": 0 }, "podB": { "opacity": 0 }, "podC": { "opacity": 0 }
+    },
+    "s1": {
+      "server1": { "opacity": 1 }, "server2": { "opacity": 1 }, "server3": { "opacity": 1 }
+    },
+    "s2": {
+      "k8s": { "opacity": 1 }, "spec": { "opacity": 1 },
+      "podA": { "opacity": 1 }, "podB": { "opacity": 1 }, "podC": { "opacity": 1 }
+    }
+  },
+  "through": [
+    { "target": "camera", "preset": "drift", "at": 0, "dur": "all", "amount": 0.035 }
+  ],
+  "sections": [
+    { "id": "s1", "target": [0, 9], "brief": "Containers, then too many containers, then servers. Show ONE blue container landing at center (cue:one), then it multiplies into a big grid of small containers — 'hundreds' (cue:many), then the three servers appear and the containers stream down into them and vanish (cue:servers). End on exactly key s1: three empty servers, nothing else visible." },
+    { "id": "s2", "target": [9, 17.5], "brief": "Kubernetes as conductor. The purple Kubernetes card arrives (cue:conductor). The spec card appears and its text types on (cue:declare / cue:three) — emphasize 'replicas: 3'. Then the three green pods fly from the Kubernetes card into servers 1, 2, 3 (cue:place), staggered. End on exactly key s2: k8s, spec and pods A/B/C fully visible in their home positions." },
+    { "id": "s3", "target": [17.5, 26.6], "brief": "Self-healing. Server 3 fails (cue:fail): it shakes, turns red, and its pod dies. Kubernetes notices (pulse the k8s card; optionally a dashed line to server 3). A replacement green pod flies from Kubernetes into a healthy server (cue:replace). Then the closing caption 'You describe the goal. Kubernetes keeps it true.' (cue:goal) — e.g. highlight the spec card and show a '3/3 running' status. Last section: nothing needs to exit." }
+  ]
+}

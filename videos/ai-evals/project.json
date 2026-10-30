@@ -1,0 +1,16 @@
+{
+  "title": "Your AI product needs evals",
+  "type": "explainer",
+  "fps": 30,
+  "size": [
+    1080,
+    1920
+  ],
+  "voice": {
+    "voice": "af_heart",
+    "speed": 0.9
+  },
+  "scenes": [
+    "01-main"
+  ]
+}

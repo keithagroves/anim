@@ -1,0 +1,12 @@
+{
+ "id": "transformers-01-transformers-s3",
+ "scene": "01-transformers",
+ "section": "s3",
+ "tags": [
+  "seed",
+  "transformers",
+  "type:explainer"
+ ],
+ "source": "video:videos/transformers",
+ "createdAt": "2026-10-10T16:34:56.219Z"
+}

@@ -1,0 +1,30 @@
+{
+  "palette": {
+    "bg": "#0f1420",
+    "surface": "#171d2b",
+    "surface2": "#202839",
+    "line": "#3a4560",
+    "text": "#eef2f7",
+    "muted": "#8f98ab",
+    "input": "#4f8cff",
+    "state": "#ffb547",
+    "output": "#2fd18b",
+    "accent": "#ffb547",
+    "accent2": "#4f8cff",
+    "gate": "#c9b8ff",
+    "cand": "#ff8fb3",
+    "h1": "#ffb547",
+    "h2": "#ff8fb3",
+    "h3": "#4f8cff",
+    "h4": "#c9b8ff",
+    "h5": "#5fd3e6",
+    "h6": "#ff7a5c",
+    "h7": "#e6e07a",
+    "h8": "#b08cff"
+  },
+  "backdrop": {
+    "preset": "dots",
+    "opacity": 0.4,
+    "vignette": 0.4
+  }
+}

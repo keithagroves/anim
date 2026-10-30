@@ -1,0 +1,2060 @@
+{
+ "duration": 120.8,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 1.0,
+ "text": "Deep research agents search the web for minutes, then hand back a long, cited report. So how do you grade one? Most benchmarks need experts to write every task, score every report on one fixed rubric, and only check the facts that come with a citation. A new paper, DeepResearchEval, automates all three. First, the tasks. Starting from ten domains, a model invents fifty personas: people with real jobs and real questions. Each one asks for four research tasks. Then come two filters. One keeps only tasks that truly need recent, multi-source digging. The other lets a model try each task without the web. If it does well anyway, the task is cut. A hundred and fifty-five survive. Next, quality. Every report is judged on four general dimensions, like coverage and insight. Then the judge reads the task, and adds dimensions just for it, like metric utility for a policy comparison. Each dimension gets a weight and its own criteria, scored one to ten, and they all roll up into one score. Then, facts. An agent splits the report into segments, and pulls out every checkable statement: numbers, dates, names. It searches the web for each one, cited or not, and labels it right, wrong, or unknown. The share that's right is the factual ratio. The authors tested nine deep research systems. On quality, Gemini 2.5 Pro led, at eight point five out of ten. But for every system, the task-specific score was the lowest. The reports read well, but often miss what that particular task needed. On facts, Manus led, with eighty-two percent of its statements right. Outright errors were rare. Most of the risk was unknowns: claims the evidence couldn't confirm either way. Can the judges be trusted? A second judge kept seven of the nine systems in the same place, and the fact checker agreed with human experts on seventy-three percent of statements. And because the tasks are generated, not hand-written, the benchmark can stay live, with fresh tasks whenever they're needed.",
+ "words": [
+  {
+   "text": "Deep",
+   "start": 0.825,
+   "end": 1.025
+  },
+  {
+   "text": "research",
+   "start": 1.025,
+   "end": 1.462
+  },
+  {
+   "text": "agents",
+   "start": 1.462,
+   "end": 1.85
+  },
+  {
+   "text": "search",
+   "start": 1.85,
+   "end": 2.087
+  },
+  {
+   "text": "the",
+   "start": 2.087,
+   "end": 2.175
+  },
+  {
+   "text": "web",
+   "start": 2.175,
+   "end": 2.4
+  },
+  {
+   "text": "for",
+   "start": 2.4,
+   "end": 2.525
+  },
+  {
+   "text": "minutes",
+   "start": 2.525,
+   "end": 3.05
+  },
+  {
+   "text": ",",
+   "start": 3.05,
+   "end": 3.125
+  },
+  {
+   "text": "then",
+   "start": 3.125,
+   "end": 3.275
+  },
+  {
+   "text": "hand",
+   "start": 3.275,
+   "end": 3.525
+  },
+  {
+   "text": "back",
+   "start": 3.525,
+   "end": 3.8
+  },
+  {
+   "text": "a",
+   "start": 3.8,
+   "end": 3.913
+  },
+  {
+   "text": "long",
+   "start": 3.913,
+   "end": 4.325
+  },
+  {
+   "text": ",",
+   "start": 4.325,
+   "end": 4.388
+  },
+  {
+   "text": "cited",
+   "start": 4.388,
+   "end": 4.737
+  },
+  {
+   "text": "report",
+   "start": 4.737,
+   "end": 5.525
+  },
+  {
+   "text": ".",
+   "start": 5.525,
+   "end": 5.662
+  },
+  {
+   "text": "So",
+   "start": 5.662,
+   "end": 5.8
+  },
+  {
+   "text": "how",
+   "start": 5.8,
+   "end": 5.938
+  },
+  {
+   "text": "do",
+   "start": 5.938,
+   "end": 6.037
+  },
+  {
+   "text": "you",
+   "start": 6.037,
+   "end": 6.125
+  },
+  {
+   "text": "grade",
+   "start": 6.125,
+   "end": 6.425
+  },
+  {
+   "text": "one",
+   "start": 6.425,
+   "end": 6.95
+  },
+  {
+   "text": "?",
+   "start": 6.95,
+   "end": 7.062
+  },
+  {
+   "text": "Most",
+   "start": 7.062,
+   "end": 7.325
+  },
+  {
+   "text": "benchmarks",
+   "start": 7.325,
+   "end": 7.85
+  },
+  {
+   "text": "need",
+   "start": 7.85,
+   "end": 8.05
+  },
+  {
+   "text": "experts",
+   "start": 8.05,
+   "end": 8.525
+  },
+  {
+   "text": "to",
+   "start": 8.525,
+   "end": 8.625
+  },
+  {
+   "text": "write",
+   "start": 8.625,
+   "end": 8.875
+  },
+  {
+   "text": "every",
+   "start": 8.875,
+   "end": 9.175
+  },
+  {
+   "text": "task",
+   "start": 9.175,
+   "end": 9.725
+  },
+  {
+   "text": ",",
+   "start": 9.725,
+   "end": 9.838
+  },
+  {
+   "text": "score",
+   "start": 9.838,
+   "end": 10.15
+  },
+  {
+   "text": "every",
+   "start": 10.15,
+   "end": 10.45
+  },
+  {
+   "text": "report",
+   "start": 10.45,
+   "end": 10.838
+  },
+  {
+   "text": "on",
+   "start": 10.838,
+   "end": 10.975
+  },
+  {
+   "text": "one",
+   "start": 10.975,
+   "end": 11.213
+  },
+  {
+   "text": "fixed",
+   "start": 11.213,
+   "end": 11.525
+  },
+  {
+   "text": "rubric",
+   "start": 11.525,
+   "end": 12.025
+  },
+  {
+   "text": ",",
+   "start": 12.025,
+   "end": 12.1
+  },
+  {
+   "text": "and",
+   "start": 12.1,
+   "end": 12.225
+  },
+  {
+   "text": "only",
+   "start": 12.225,
+   "end": 12.537
+  },
+  {
+   "text": "check",
+   "start": 12.537,
+   "end": 12.787
+  },
+  {
+   "text": "the",
+   "start": 12.787,
+   "end": 12.875
+  },
+  {
+   "text": "facts",
+   "start": 12.875,
+   "end": 13.213
+  },
+  {
+   "text": "that",
+   "start": 13.213,
+   "end": 13.35
+  },
+  {
+   "text": "come",
+   "start": 13.35,
+   "end": 13.537
+  },
+  {
+   "text": "with",
+   "start": 13.537,
+   "end": 13.637
+  },
+  {
+   "text": "a",
+   "start": 13.637,
+   "end": 13.7
+  },
+  {
+   "text": "citation",
+   "start": 13.7,
+   "end": 14.775
+  },
+  {
+   "text": ".",
+   "start": 14.775,
+   "end": 14.912
+  },
+  {
+   "text": "A",
+   "start": 14.912,
+   "end": 15.025
+  },
+  {
+   "text": "new",
+   "start": 15.025,
+   "end": 15.2
+  },
+  {
+   "text": "paper",
+   "start": 15.2,
+   "end": 15.675
+  },
+  {
+   "text": ",",
+   "start": 15.675,
+   "end": 15.787
+  },
+  {
+   "text": "DeepResearchEval",
+   "start": 15.787,
+   "end": 16.75
+  },
+  {
+   "text": ",",
+   "start": 16.75,
+   "end": 16.825
+  },
+  {
+   "text": "automates",
+   "start": 16.825,
+   "end": 17.325
+  },
+  {
+   "text": "all",
+   "start": 17.325,
+   "end": 17.538
+  },
+  {
+   "text": "three",
+   "start": 17.538,
+   "end": 18.175
+  },
+  {
+   "text": ".",
+   "start": 18.175,
+   "end": 18.325
+  },
+  {
+   "text": "First",
+   "start": 18.325,
+   "end": 18.725
+  },
+  {
+   "text": ",",
+   "start": 18.725,
+   "end": 18.775
+  },
+  {
+   "text": "the",
+   "start": 18.775,
+   "end": 18.875
+  },
+  {
+   "text": "tasks",
+   "start": 18.875,
+   "end": 19.725
+  },
+  {
+   "text": ".",
+   "start": 19.725,
+   "end": 19.875
+  },
+  {
+   "text": "Starting",
+   "start": 19.875,
+   "end": 20.3
+  },
+  {
+   "text": "from",
+   "start": 20.3,
+   "end": 20.512
+  },
+  {
+   "text": "ten",
+   "start": 20.512,
+   "end": 20.775
+  },
+  {
+   "text": "domains",
+   "start": 20.775,
+   "end": 21.375
+  },
+  {
+   "text": ",",
+   "start": 21.375,
+   "end": 21.45
+  },
+  {
+   "text": "a",
+   "start": 21.45,
+   "end": 21.562
+  },
+  {
+   "text": "model",
+   "start": 21.562,
+   "end": 21.95
+  },
+  {
+   "text": "invents",
+   "start": 21.95,
+   "end": 22.387
+  },
+  {
+   "text": "fifty",
+   "start": 22.387,
+   "end": 22.7
+  },
+  {
+   "text": "personas",
+   "start": 22.7,
+   "end": 23.475
+  },
+  {
+   "text": ":",
+   "start": 23.475,
+   "end": 23.575
+  },
+  {
+   "text": "people",
+   "start": 23.575,
+   "end": 23.913
+  },
+  {
+   "text": "with",
+   "start": 23.913,
+   "end": 24.087
+  },
+  {
+   "text": "real",
+   "start": 24.087,
+   "end": 24.387
+  },
+  {
+   "text": "jobs",
+   "start": 24.387,
+   "end": 24.85
+  },
+  {
+   "text": "and",
+   "start": 24.85,
+   "end": 24.975
+  },
+  {
+   "text": "real",
+   "start": 24.975,
+   "end": 25.225
+  },
+  {
+   "text": "questions",
+   "start": 25.225,
+   "end": 26.15
+  },
+  {
+   "text": ".",
+   "start": 26.15,
+   "end": 26.288
+  },
+  {
+   "text": "Each",
+   "start": 26.288,
+   "end": 26.525
+  },
+  {
+   "text": "one",
+   "start": 26.525,
+   "end": 26.762
+  },
+  {
+   "text": "asks",
+   "start": 26.762,
+   "end": 27.125
+  },
+  {
+   "text": "for",
+   "start": 27.125,
+   "end": 27.3
+  },
+  {
+   "text": "four",
+   "start": 27.3,
+   "end": 27.575
+  },
+  {
+   "text": "research",
+   "start": 27.575,
+   "end": 27.975
+  },
+  {
+   "text": "tasks",
+   "start": 27.975,
+   "end": 28.725
+  },
+  {
+   "text": ".",
+   "start": 28.725,
+   "end": 28.887
+  },
+  {
+   "text": "Then",
+   "start": 29.25,
+   "end": 29.45
+  },
+  {
+   "text": "come",
+   "start": 29.45,
+   "end": 29.688
+  },
+  {
+   "text": "two",
+   "start": 29.688,
+   "end": 29.913
+  },
+  {
+   "text": "filters",
+   "start": 29.913,
+   "end": 30.8
+  },
+  {
+   "text": ".",
+   "start": 30.8,
+   "end": 30.913
+  },
+  {
+   "text": "One",
+   "start": 30.913,
+   "end": 31.15
+  },
+  {
+   "text": "keeps",
+   "start": 31.15,
+   "end": 31.45
+  },
+  {
+   "text": "only",
+   "start": 31.45,
+   "end": 31.763
+  },
+  {
+   "text": "tasks",
+   "start": 31.763,
+   "end": 32.25
+  },
+  {
+   "text": "that",
+   "start": 32.25,
+   "end": 32.413
+  },
+  {
+   "text": "truly",
+   "start": 32.413,
+   "end": 32.825
+  },
+  {
+   "text": "need",
+   "start": 32.825,
+   "end": 33.113
+  },
+  {
+   "text": "recent",
+   "start": 33.113,
+   "end": 33.55
+  },
+  {
+   "text": ",",
+   "start": 33.55,
+   "end": 33.625
+  },
+  {
+   "text": "multi-source",
+   "start": 33.625,
+   "end": 34.275
+  },
+  {
+   "text": "digging",
+   "start": 34.275,
+   "end": 34.925
+  },
+  {
+   "text": ".",
+   "start": 34.925,
+   "end": 35.025
+  },
+  {
+   "text": "The",
+   "start": 35.025,
+   "end": 35.125
+  },
+  {
+   "text": "other",
+   "start": 35.125,
+   "end": 35.363
+  },
+  {
+   "text": "lets",
+   "start": 35.363,
+   "end": 35.538
+  },
+  {
+   "text": "a",
+   "start": 35.538,
+   "end": 35.638
+  },
+  {
+   "text": "model",
+   "start": 35.638,
+   "end": 36.038
+  },
+  {
+   "text": "try",
+   "start": 36.038,
+   "end": 36.375
+  },
+  {
+   "text": "each",
+   "start": 36.375,
+   "end": 36.6
+  },
+  {
+   "text": "task",
+   "start": 36.6,
+   "end": 36.987
+  },
+  {
+   "text": "without",
+   "start": 36.987,
+   "end": 37.288
+  },
+  {
+   "text": "the",
+   "start": 37.288,
+   "end": 37.375
+  },
+  {
+   "text": "web",
+   "start": 37.375,
+   "end": 38.05
+  },
+  {
+   "text": ".",
+   "start": 38.05,
+   "end": 38.175
+  },
+  {
+   "text": "If",
+   "start": 38.175,
+   "end": 38.312
+  },
+  {
+   "text": "it",
+   "start": 38.312,
+   "end": 38.4
+  },
+  {
+   "text": "does",
+   "start": 38.4,
+   "end": 38.625
+  },
+  {
+   "text": "well",
+   "start": 38.625,
+   "end": 38.85
+  },
+  {
+   "text": "anyway",
+   "start": 38.85,
+   "end": 39.275
+  },
+  {
+   "text": ",",
+   "start": 39.275,
+   "end": 39.325
+  },
+  {
+   "text": "the",
+   "start": 39.325,
+   "end": 39.438
+  },
+  {
+   "text": "task",
+   "start": 39.438,
+   "end": 39.825
+  },
+  {
+   "text": "is",
+   "start": 39.825,
+   "end": 39.987
+  },
+  {
+   "text": "cut",
+   "start": 39.987,
+   "end": 40.7
+  },
+  {
+   "text": ".",
+   "start": 40.7,
+   "end": 40.838
+  },
+  {
+   "text": "A",
+   "start": 40.838,
+   "end": 40.95
+  },
+  {
+   "text": "hundred",
+   "start": 40.95,
+   "end": 41.338
+  },
+  {
+   "text": "and",
+   "start": 41.338,
+   "end": 41.45
+  },
+  {
+   "text": "fifty-five",
+   "start": 41.45,
+   "end": 42.025
+  },
+  {
+   "text": "survive",
+   "start": 42.025,
+   "end": 42.875
+  },
+  {
+   "text": ".",
+   "start": 42.875,
+   "end": 43.025
+  },
+  {
+   "text": "Next",
+   "start": 43.025,
+   "end": 43.475
+  },
+  {
+   "text": ",",
+   "start": 43.475,
+   "end": 43.525
+  },
+  {
+   "text": "quality",
+   "start": 43.525,
+   "end": 44.275
+  },
+  {
+   "text": ".",
+   "start": 44.275,
+   "end": 44.413
+  },
+  {
+   "text": "Every",
+   "start": 44.413,
+   "end": 44.75
+  },
+  {
+   "text": "report",
+   "start": 44.75,
+   "end": 45.15
+  },
+  {
+   "text": "is",
+   "start": 45.15,
+   "end": 45.312
+  },
+  {
+   "text": "judged",
+   "start": 45.312,
+   "end": 45.7
+  },
+  {
+   "text": "on",
+   "start": 45.7,
+   "end": 45.925
+  },
+  {
+   "text": "four",
+   "start": 45.925,
+   "end": 46.263
+  },
+  {
+   "text": "general",
+   "start": 46.263,
+   "end": 46.625
+  },
+  {
+   "text": "dimensions",
+   "start": 46.625,
+   "end": 47.325
+  },
+  {
+   "text": ",",
+   "start": 47.325,
+   "end": 47.4
+  },
+  {
+   "text": "like",
+   "start": 47.4,
+   "end": 47.638
+  },
+  {
+   "text": "coverage",
+   "start": 47.638,
+   "end": 48.188
+  },
+  {
+   "text": "and",
+   "start": 48.188,
+   "end": 48.325
+  },
+  {
+   "text": "insight",
+   "start": 48.325,
+   "end": 49.25
+  },
+  {
+   "text": ".",
+   "start": 49.25,
+   "end": 49.388
+  },
+  {
+   "text": "Then",
+   "start": 49.388,
+   "end": 49.588
+  },
+  {
+   "text": "the",
+   "start": 49.588,
+   "end": 49.688
+  },
+  {
+   "text": "judge",
+   "start": 49.688,
+   "end": 50.062
+  },
+  {
+   "text": "reads",
+   "start": 50.062,
+   "end": 50.4
+  },
+  {
+   "text": "the",
+   "start": 50.4,
+   "end": 50.513
+  },
+  {
+   "text": "task",
+   "start": 50.513,
+   "end": 51.1
+  },
+  {
+   "text": ",",
+   "start": 51.1,
+   "end": 51.2
+  },
+  {
+   "text": "and",
+   "start": 51.2,
+   "end": 51.338
+  },
+  {
+   "text": "adds",
+   "start": 51.338,
+   "end": 51.65
+  },
+  {
+   "text": "dimensions",
+   "start": 51.65,
+   "end": 52.237
+  },
+  {
+   "text": "just",
+   "start": 52.237,
+   "end": 52.5
+  },
+  {
+   "text": "for",
+   "start": 52.5,
+   "end": 52.65
+  },
+  {
+   "text": "it",
+   "start": 52.65,
+   "end": 52.925
+  },
+  {
+   "text": ",",
+   "start": 52.925,
+   "end": 53.0
+  },
+  {
+   "text": "like",
+   "start": 53.0,
+   "end": 53.237
+  },
+  {
+   "text": "metric",
+   "start": 53.237,
+   "end": 53.65
+  },
+  {
+   "text": "utility",
+   "start": 53.65,
+   "end": 54.225
+  },
+  {
+   "text": "for",
+   "start": 54.225,
+   "end": 54.338
+  },
+  {
+   "text": "a",
+   "start": 54.338,
+   "end": 54.4
+  },
+  {
+   "text": "policy",
+   "start": 54.4,
+   "end": 54.825
+  },
+  {
+   "text": "comparison",
+   "start": 54.825,
+   "end": 55.775
+  },
+  {
+   "text": ".",
+   "start": 55.775,
+   "end": 55.938
+  },
+  {
+   "text": "Each",
+   "start": 56.325,
+   "end": 56.525
+  },
+  {
+   "text": "dimension",
+   "start": 56.525,
+   "end": 57.025
+  },
+  {
+   "text": "gets",
+   "start": 57.025,
+   "end": 57.238
+  },
+  {
+   "text": "a",
+   "start": 57.238,
+   "end": 57.338
+  },
+  {
+   "text": "weight",
+   "start": 57.338,
+   "end": 57.675
+  },
+  {
+   "text": "and",
+   "start": 57.675,
+   "end": 57.788
+  },
+  {
+   "text": "its",
+   "start": 57.788,
+   "end": 57.9
+  },
+  {
+   "text": "own",
+   "start": 57.9,
+   "end": 58.15
+  },
+  {
+   "text": "criteria",
+   "start": 58.15,
+   "end": 58.85
+  },
+  {
+   "text": ",",
+   "start": 58.85,
+   "end": 58.95
+  },
+  {
+   "text": "scored",
+   "start": 58.95,
+   "end": 59.25
+  },
+  {
+   "text": "one",
+   "start": 59.25,
+   "end": 59.425
+  },
+  {
+   "text": "to",
+   "start": 59.425,
+   "end": 59.55
+  },
+  {
+   "text": "ten",
+   "start": 59.55,
+   "end": 59.925
+  },
+  {
+   "text": ",",
+   "start": 59.925,
+   "end": 60.0
+  },
+  {
+   "text": "and",
+   "start": 60.0,
+   "end": 60.113
+  },
+  {
+   "text": "they",
+   "start": 60.113,
+   "end": 60.225
+  },
+  {
+   "text": "all",
+   "start": 60.225,
+   "end": 60.45
+  },
+  {
+   "text": "roll",
+   "start": 60.45,
+   "end": 60.713
+  },
+  {
+   "text": "up",
+   "start": 60.713,
+   "end": 60.863
+  },
+  {
+   "text": "into",
+   "start": 60.863,
+   "end": 61.1
+  },
+  {
+   "text": "one",
+   "start": 61.1,
+   "end": 61.325
+  },
+  {
+   "text": "score",
+   "start": 61.325,
+   "end": 62.075
+  },
+  {
+   "text": ".",
+   "start": 62.075,
+   "end": 62.238
+  },
+  {
+   "text": "Then",
+   "start": 62.238,
+   "end": 62.55
+  },
+  {
+   "text": ",",
+   "start": 62.55,
+   "end": 62.638
+  },
+  {
+   "text": "facts",
+   "start": 62.638,
+   "end": 63.425
+  },
+  {
+   "text": ".",
+   "start": 63.425,
+   "end": 63.525
+  },
+  {
+   "text": "An",
+   "start": 63.525,
+   "end": 63.663
+  },
+  {
+   "text": "agent",
+   "start": 63.663,
+   "end": 64.025
+  },
+  {
+   "text": "splits",
+   "start": 64.025,
+   "end": 64.363
+  },
+  {
+   "text": "the",
+   "start": 64.363,
+   "end": 64.45
+  },
+  {
+   "text": "report",
+   "start": 64.45,
+   "end": 64.812
+  },
+  {
+   "text": "into",
+   "start": 64.812,
+   "end": 65.025
+  },
+  {
+   "text": "segments",
+   "start": 65.025,
+   "end": 65.45
+  },
+  {
+   "text": ",",
+   "start": 65.45,
+   "end": 65.5
+  },
+  {
+   "text": "and",
+   "start": 65.5,
+   "end": 65.625
+  },
+  {
+   "text": "pulls",
+   "start": 65.625,
+   "end": 65.863
+  },
+  {
+   "text": "out",
+   "start": 65.863,
+   "end": 66.075
+  },
+  {
+   "text": "every",
+   "start": 66.075,
+   "end": 66.388
+  },
+  {
+   "text": "checkable",
+   "start": 66.388,
+   "end": 66.85
+  },
+  {
+   "text": "statement",
+   "start": 66.85,
+   "end": 67.525
+  },
+  {
+   "text": ":",
+   "start": 67.525,
+   "end": 67.638
+  },
+  {
+   "text": "numbers",
+   "start": 67.638,
+   "end": 68.075
+  },
+  {
+   "text": ",",
+   "start": 68.075,
+   "end": 68.125
+  },
+  {
+   "text": "dates",
+   "start": 68.125,
+   "end": 68.425
+  },
+  {
+   "text": ",",
+   "start": 68.425,
+   "end": 68.475
+  },
+  {
+   "text": "names",
+   "start": 68.475,
+   "end": 69.2
+  },
+  {
+   "text": ".",
+   "start": 69.2,
+   "end": 69.3
+  },
+  {
+   "text": "It",
+   "start": 69.3,
+   "end": 69.45
+  },
+  {
+   "text": "searches",
+   "start": 69.45,
+   "end": 69.788
+  },
+  {
+   "text": "the",
+   "start": 69.788,
+   "end": 69.875
+  },
+  {
+   "text": "web",
+   "start": 69.875,
+   "end": 70.125
+  },
+  {
+   "text": "for",
+   "start": 70.125,
+   "end": 70.25
+  },
+  {
+   "text": "each",
+   "start": 70.25,
+   "end": 70.475
+  },
+  {
+   "text": "one",
+   "start": 70.475,
+   "end": 70.775
+  },
+  {
+   "text": ",",
+   "start": 70.775,
+   "end": 70.863
+  },
+  {
+   "text": "cited",
+   "start": 70.863,
+   "end": 71.225
+  },
+  {
+   "text": "or",
+   "start": 71.225,
+   "end": 71.35
+  },
+  {
+   "text": "not",
+   "start": 71.35,
+   "end": 71.65
+  },
+  {
+   "text": ",",
+   "start": 71.65,
+   "end": 71.7
+  },
+  {
+   "text": "and",
+   "start": 71.7,
+   "end": 71.825
+  },
+  {
+   "text": "labels",
+   "start": 71.825,
+   "end": 72.175
+  },
+  {
+   "text": "it",
+   "start": 72.175,
+   "end": 72.338
+  },
+  {
+   "text": "right",
+   "start": 72.338,
+   "end": 72.675
+  },
+  {
+   "text": ",",
+   "start": 72.675,
+   "end": 72.763
+  },
+  {
+   "text": "wrong",
+   "start": 72.763,
+   "end": 73.15
+  },
+  {
+   "text": ",",
+   "start": 73.15,
+   "end": 73.2
+  },
+  {
+   "text": "or",
+   "start": 73.2,
+   "end": 73.325
+  },
+  {
+   "text": "unknown",
+   "start": 73.325,
+   "end": 74.2
+  },
+  {
+   "text": ".",
+   "start": 74.2,
+   "end": 74.325
+  },
+  {
+   "text": "The",
+   "start": 74.325,
+   "end": 74.463
+  },
+  {
+   "text": "share",
+   "start": 74.463,
+   "end": 74.713
+  },
+  {
+   "text": "that's",
+   "start": 74.713,
+   "end": 74.95
+  },
+  {
+   "text": "right",
+   "start": 74.95,
+   "end": 75.25
+  },
+  {
+   "text": "is",
+   "start": 75.25,
+   "end": 75.388
+  },
+  {
+   "text": "the",
+   "start": 75.388,
+   "end": 75.475
+  },
+  {
+   "text": "factual",
+   "start": 75.475,
+   "end": 75.9
+  },
+  {
+   "text": "ratio",
+   "start": 75.9,
+   "end": 76.775
+  },
+  {
+   "text": ".",
+   "start": 76.775,
+   "end": 76.9
+  },
+  {
+   "text": "The",
+   "start": 76.9,
+   "end": 77.062
+  },
+  {
+   "text": "authors",
+   "start": 77.062,
+   "end": 77.475
+  },
+  {
+   "text": "tested",
+   "start": 77.475,
+   "end": 77.888
+  },
+  {
+   "text": "nine",
+   "start": 77.888,
+   "end": 78.213
+  },
+  {
+   "text": "deep",
+   "start": 78.213,
+   "end": 78.475
+  },
+  {
+   "text": "research",
+   "start": 78.475,
+   "end": 78.9
+  },
+  {
+   "text": "systems",
+   "start": 78.9,
+   "end": 79.675
+  },
+  {
+   "text": ".",
+   "start": 79.675,
+   "end": 79.775
+  },
+  {
+   "text": "On",
+   "start": 79.775,
+   "end": 79.925
+  },
+  {
+   "text": "quality",
+   "start": 79.925,
+   "end": 80.425
+  },
+  {
+   "text": ",",
+   "start": 80.425,
+   "end": 80.513
+  },
+  {
+   "text": "Gemini",
+   "start": 80.513,
+   "end": 80.938
+  },
+  {
+   "text": "2.5",
+   "start": 80.938,
+   "end": 81.7
+  },
+  {
+   "text": "Pro",
+   "start": 81.7,
+   "end": 81.95
+  },
+  {
+   "text": "led",
+   "start": 81.95,
+   "end": 82.325
+  },
+  {
+   "text": ",",
+   "start": 82.325,
+   "end": 82.425
+  },
+  {
+   "text": "at",
+   "start": 82.425,
+   "end": 82.525
+  },
+  {
+   "text": "eight",
+   "start": 82.525,
+   "end": 82.725
+  },
+  {
+   "text": "point",
+   "start": 82.725,
+   "end": 83.013
+  },
+  {
+   "text": "five",
+   "start": 83.013,
+   "end": 83.35
+  },
+  {
+   "text": "out",
+   "start": 83.35,
+   "end": 83.488
+  },
+  {
+   "text": "of",
+   "start": 83.488,
+   "end": 83.575
+  },
+  {
+   "text": "ten",
+   "start": 83.575,
+   "end": 84.225
+  },
+  {
+   "text": ".",
+   "start": 84.225,
+   "end": 84.388
+  },
+  {
+   "text": "But",
+   "start": 84.725,
+   "end": 84.85
+  },
+  {
+   "text": "for",
+   "start": 84.85,
+   "end": 84.975
+  },
+  {
+   "text": "every",
+   "start": 84.975,
+   "end": 85.275
+  },
+  {
+   "text": "system",
+   "start": 85.275,
+   "end": 85.725
+  },
+  {
+   "text": ",",
+   "start": 85.725,
+   "end": 85.8
+  },
+  {
+   "text": "the",
+   "start": 85.8,
+   "end": 85.913
+  },
+  {
+   "text": "task-specific",
+   "start": 85.913,
+   "end": 86.7
+  },
+  {
+   "text": "score",
+   "start": 86.7,
+   "end": 87.05
+  },
+  {
+   "text": "was",
+   "start": 87.05,
+   "end": 87.225
+  },
+  {
+   "text": "the",
+   "start": 87.225,
+   "end": 87.325
+  },
+  {
+   "text": "lowest",
+   "start": 87.325,
+   "end": 88.175
+  },
+  {
+   "text": ".",
+   "start": 88.175,
+   "end": 88.3
+  },
+  {
+   "text": "The",
+   "start": 88.3,
+   "end": 88.4
+  },
+  {
+   "text": "reports",
+   "start": 88.4,
+   "end": 88.875
+  },
+  {
+   "text": "read",
+   "start": 88.875,
+   "end": 89.1
+  },
+  {
+   "text": "well",
+   "start": 89.1,
+   "end": 89.425
+  },
+  {
+   "text": ",",
+   "start": 89.425,
+   "end": 89.5
+  },
+  {
+   "text": "but",
+   "start": 89.5,
+   "end": 89.65
+  },
+  {
+   "text": "often",
+   "start": 89.65,
+   "end": 90.025
+  },
+  {
+   "text": "miss",
+   "start": 90.025,
+   "end": 90.238
+  },
+  {
+   "text": "what",
+   "start": 90.238,
+   "end": 90.375
+  },
+  {
+   "text": "that",
+   "start": 90.375,
+   "end": 90.55
+  },
+  {
+   "text": "particular",
+   "start": 90.55,
+   "end": 91.1
+  },
+  {
+   "text": "task",
+   "start": 91.1,
+   "end": 91.475
+  },
+  {
+   "text": "needed",
+   "start": 91.475,
+   "end": 92.125
+  },
+  {
+   "text": ".",
+   "start": 92.125,
+   "end": 92.225
+  },
+  {
+   "text": "On",
+   "start": 92.225,
+   "end": 92.438
+  },
+  {
+   "text": "facts",
+   "start": 92.438,
+   "end": 92.85
+  },
+  {
+   "text": ",",
+   "start": 92.85,
+   "end": 92.9
+  },
+  {
+   "text": "Manus",
+   "start": 92.9,
+   "end": 93.25
+  },
+  {
+   "text": "led",
+   "start": 93.25,
+   "end": 93.525
+  },
+  {
+   "text": ",",
+   "start": 93.525,
+   "end": 93.6
+  },
+  {
+   "text": "with",
+   "start": 93.6,
+   "end": 93.788
+  },
+  {
+   "text": "eighty-two",
+   "start": 93.788,
+   "end": 94.3
+  },
+  {
+   "text": "percent",
+   "start": 94.3,
+   "end": 94.638
+  },
+  {
+   "text": "of",
+   "start": 94.638,
+   "end": 94.713
+  },
+  {
+   "text": "its",
+   "start": 94.713,
+   "end": 94.813
+  },
+  {
+   "text": "statements",
+   "start": 94.813,
+   "end": 95.25
+  },
+  {
+   "text": "right",
+   "start": 95.25,
+   "end": 95.85
+  },
+  {
+   "text": ".",
+   "start": 95.85,
+   "end": 95.988
+  },
+  {
+   "text": "Outright",
+   "start": 95.988,
+   "end": 96.4
+  },
+  {
+   "text": "errors",
+   "start": 96.4,
+   "end": 96.75
+  },
+  {
+   "text": "were",
+   "start": 96.75,
+   "end": 96.9
+  },
+  {
+   "text": "rare",
+   "start": 96.9,
+   "end": 97.5
+  },
+  {
+   "text": ".",
+   "start": 97.5,
+   "end": 97.613
+  },
+  {
+   "text": "Most",
+   "start": 97.613,
+   "end": 97.863
+  },
+  {
+   "text": "of",
+   "start": 97.863,
+   "end": 97.938
+  },
+  {
+   "text": "the",
+   "start": 97.938,
+   "end": 98.025
+  },
+  {
+   "text": "risk",
+   "start": 98.025,
+   "end": 98.338
+  },
+  {
+   "text": "was",
+   "start": 98.338,
+   "end": 98.5
+  },
+  {
+   "text": "unknowns",
+   "start": 98.5,
+   "end": 99.35
+  },
+  {
+   "text": ":",
+   "start": 99.35,
+   "end": 99.463
+  },
+  {
+   "text": "claims",
+   "start": 99.463,
+   "end": 99.788
+  },
+  {
+   "text": "the",
+   "start": 99.788,
+   "end": 99.9
+  },
+  {
+   "text": "evidence",
+   "start": 99.9,
+   "end": 100.325
+  },
+  {
+   "text": "couldn't",
+   "start": 100.325,
+   "end": 100.55
+  },
+  {
+   "text": "confirm",
+   "start": 100.55,
+   "end": 101.025
+  },
+  {
+   "text": "either",
+   "start": 101.025,
+   "end": 101.3
+  },
+  {
+   "text": "way",
+   "start": 101.3,
+   "end": 101.95
+  },
+  {
+   "text": ".",
+   "start": 101.95,
+   "end": 102.088
+  },
+  {
+   "text": "Can",
+   "start": 102.088,
+   "end": 102.238
+  },
+  {
+   "text": "the",
+   "start": 102.238,
+   "end": 102.338
+  },
+  {
+   "text": "judges",
+   "start": 102.338,
+   "end": 102.7
+  },
+  {
+   "text": "be",
+   "start": 102.7,
+   "end": 102.85
+  },
+  {
+   "text": "trusted",
+   "start": 102.85,
+   "end": 103.6
+  },
+  {
+   "text": "?",
+   "start": 103.6,
+   "end": 103.738
+  },
+  {
+   "text": "A",
+   "start": 103.738,
+   "end": 103.863
+  },
+  {
+   "text": "second",
+   "start": 103.863,
+   "end": 104.238
+  },
+  {
+   "text": "judge",
+   "start": 104.238,
+   "end": 104.6
+  },
+  {
+   "text": "kept",
+   "start": 104.6,
+   "end": 104.913
+  },
+  {
+   "text": "seven",
+   "start": 104.913,
+   "end": 105.213
+  },
+  {
+   "text": "of",
+   "start": 105.213,
+   "end": 105.288
+  },
+  {
+   "text": "the",
+   "start": 105.288,
+   "end": 105.375
+  },
+  {
+   "text": "nine",
+   "start": 105.375,
+   "end": 105.65
+  },
+  {
+   "text": "systems",
+   "start": 105.65,
+   "end": 106.125
+  },
+  {
+   "text": "in",
+   "start": 106.125,
+   "end": 106.213
+  },
+  {
+   "text": "the",
+   "start": 106.213,
+   "end": 106.312
+  },
+  {
+   "text": "same",
+   "start": 106.312,
+   "end": 106.65
+  },
+  {
+   "text": "place",
+   "start": 106.65,
+   "end": 107.275
+  },
+  {
+   "text": ",",
+   "start": 107.275,
+   "end": 107.35
+  },
+  {
+   "text": "and",
+   "start": 107.35,
+   "end": 107.463
+  },
+  {
+   "text": "the",
+   "start": 107.463,
+   "end": 107.55
+  },
+  {
+   "text": "fact",
+   "start": 107.55,
+   "end": 107.863
+  },
+  {
+   "text": "checker",
+   "start": 107.863,
+   "end": 108.225
+  },
+  {
+   "text": "agreed",
+   "start": 108.225,
+   "end": 108.613
+  },
+  {
+   "text": "with",
+   "start": 108.613,
+   "end": 108.775
+  },
+  {
+   "text": "human",
+   "start": 108.775,
+   "end": 109.125
+  },
+  {
+   "text": "experts",
+   "start": 109.125,
+   "end": 109.675
+  },
+  {
+   "text": "on",
+   "start": 109.675,
+   "end": 109.9
+  },
+  {
+   "text": "seventy-three",
+   "start": 109.9,
+   "end": 110.55
+  },
+  {
+   "text": "percent",
+   "start": 110.55,
+   "end": 110.888
+  },
+  {
+   "text": "of",
+   "start": 110.888,
+   "end": 110.975
+  },
+  {
+   "text": "statements",
+   "start": 110.975,
+   "end": 111.825
+  },
+  {
+   "text": ".",
+   "start": 111.825,
+   "end": 111.988
+  },
+  {
+   "text": "And",
+   "start": 112.325,
+   "end": 112.463
+  },
+  {
+   "text": "because",
+   "start": 112.463,
+   "end": 112.75
+  },
+  {
+   "text": "the",
+   "start": 112.75,
+   "end": 112.888
+  },
+  {
+   "text": "tasks",
+   "start": 112.888,
+   "end": 113.4
+  },
+  {
+   "text": "are",
+   "start": 113.4,
+   "end": 113.563
+  },
+  {
+   "text": "generated",
+   "start": 113.563,
+   "end": 114.325
+  },
+  {
+   "text": ",",
+   "start": 114.325,
+   "end": 114.425
+  },
+  {
+   "text": "not",
+   "start": 114.425,
+   "end": 114.65
+  },
+  {
+   "text": "hand-written",
+   "start": 114.65,
+   "end": 115.4
+  },
+  {
+   "text": ",",
+   "start": 115.4,
+   "end": 115.5
+  },
+  {
+   "text": "the",
+   "start": 115.5,
+   "end": 115.6
+  },
+  {
+   "text": "benchmark",
+   "start": 115.6,
+   "end": 116.175
+  },
+  {
+   "text": "can",
+   "start": 116.175,
+   "end": 116.35
+  },
+  {
+   "text": "stay",
+   "start": 116.35,
+   "end": 116.625
+  },
+  {
+   "text": "live",
+   "start": 116.625,
+   "end": 117.25
+  },
+  {
+   "text": ",",
+   "start": 117.25,
+   "end": 117.35
+  },
+  {
+   "text": "with",
+   "start": 117.35,
+   "end": 117.538
+  },
+  {
+   "text": "fresh",
+   "start": 117.538,
+   "end": 117.863
+  },
+  {
+   "text": "tasks",
+   "start": 117.863,
+   "end": 118.4
+  },
+  {
+   "text": "whenever",
+   "start": 118.4,
+   "end": 118.738
+  },
+  {
+   "text": "they're",
+   "start": 118.738,
+   "end": 118.9
+  },
+  {
+   "text": "needed",
+   "start": 118.9,
+   "end": 119.525
+  },
+  {
+   "text": ".",
+   "start": 119.525,
+   "end": 119.7
+  }
+ ],
+ "cues": {
+  "report": 4.388,
+  "experts": 8.05,
+  "rubric": 10.975,
+  "cited": 13.7,
+  "name": 15.787,
+  "tasks": 18.875,
+  "domains": 20.512,
+  "personas": 22.387,
+  "candidates": 27.3,
+  "qualify": 32.413,
+  "nosearch": 36.987,
+  "cut": 39.987,
+  "kept": 40.838,
+  "quality": 43.525,
+  "general": 46.263,
+  "specific": 51.65,
+  "weight": 57.338,
+  "criteria": 58.15,
+  "score": 61.325,
+  "facts": 62.638,
+  "segments": 65.025,
+  "statements": 66.388,
+  "search": 69.45,
+  "uncited": 71.35,
+  "right": 72.338,
+  "wrong": 72.763,
+  "unknown": 73.325,
+  "ratio": 75.475,
+  "nine": 77.888,
+  "gemini": 80.513,
+  "every": 84.975,
+  "taskspec": 85.913,
+  "manus": 92.9,
+  "rare": 96.4,
+  "unknowns": 98.5,
+  "gpt5": 103.863,
+  "humans": 108.775,
+  "live": 116.625
+ }
+}

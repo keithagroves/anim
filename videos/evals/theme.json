@@ -1,0 +1,11 @@
+{
+  "palette": {
+    "gold": "#ffb547",
+    "agent": "#8b6cff",
+    "gate": "#4f8cff",
+    "judge": "#2fd18b",
+    "human": "#ff6b9a",
+    "card": "#1a2038"
+  },
+  "backdrop": "dots"
+}

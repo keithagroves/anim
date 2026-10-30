@@ -1,0 +1,485 @@
+{
+  "id": "01-main",
+  "objects": {
+    "cell1": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind1": {
+      "type": "text",
+      "text": "input",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell1",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name1": {
+      "type": "text",
+      "text": "request",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell1",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light1": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell1",
+        "gap": "sm"
+      }
+    },
+    "cell2": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind2": {
+      "type": "text",
+      "text": "llm",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell2",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name2": {
+      "type": "text",
+      "text": "plan",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell2",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light2": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell2",
+        "gap": "sm"
+      }
+    },
+    "cell3": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind3": {
+      "type": "text",
+      "text": "tool",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell3",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name3": {
+      "type": "text",
+      "text": "search_flights",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell3",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light3": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell3",
+        "gap": "sm"
+      }
+    },
+    "cell4": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind4": {
+      "type": "text",
+      "text": "observe",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell4",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name4": {
+      "type": "text",
+      "text": "2 flights",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell4",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light4": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell4",
+        "gap": "sm"
+      }
+    },
+    "cell5": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind5": {
+      "type": "text",
+      "text": "tool",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell5",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name5": {
+      "type": "text",
+      "text": "book_flight",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell5",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light5": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell5",
+        "gap": "sm"
+      }
+    },
+    "cell6": {
+      "type": "rect",
+      "w": 268,
+      "h": 132,
+      "radius": "md",
+      "fill": "surface",
+      "stroke": "line",
+      "strokeWidth": "thin"
+    },
+    "kind6": {
+      "type": "text",
+      "text": "output",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "cell6",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "name6": {
+      "type": "text",
+      "text": "answer",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "cell6",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "light6": {
+      "type": "circle",
+      "r": 12,
+      "fill": "none",
+      "stroke": "line",
+      "strokeWidth": "md",
+      "at": {
+        "above": "cell6",
+        "gap": "sm"
+      }
+    },
+    "cells": {
+      "type": "group",
+      "children": [
+        "cell1",
+        "cell2",
+        "cell3",
+        "cell4",
+        "cell5",
+        "cell6"
+      ],
+      "layout": {
+        "dir": "row",
+        "gap": "sm"
+      },
+      "at": {
+        "region": "center",
+        "dy": 60
+      }
+    },
+    "rail": {
+      "type": "rect",
+      "w": 1688,
+      "h": 4,
+      "radius": 2,
+      "fill": "tape",
+      "at": {
+        "below": "cells",
+        "gap": "sm"
+      }
+    },
+    "tapeTag": {
+      "type": "text",
+      "text": "trace · example run",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "below": "rail",
+        "gap": "xs",
+        "align": "left"
+      }
+    },
+    "tape": {
+      "type": "group",
+      "children": [
+        "cells",
+        "rail",
+        "tapeTag",
+        "kind1",
+        "name1",
+        "light1",
+        "kind2",
+        "name2",
+        "light2",
+        "kind3",
+        "name3",
+        "light3",
+        "kind4",
+        "name4",
+        "light4",
+        "kind5",
+        "name5",
+        "light5",
+        "kind6",
+        "name6",
+        "light6"
+      ]
+    }
+  },
+  "keys": {
+    "0": {
+      "tape": {
+        "opacity": 0
+      }
+    },
+    "s1": {
+      "tape": {
+        "opacity": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        10.17
+      ],
+      "brief": "Hook: graded only by its answer, the agent is a black box. Frame 0 is the thumbnail: the title 'Booked. But how?' (h2, top band, pre-rolled so it reads at t=0) and the tape are already up at 0 (pre-roll the tape's entrance before 0.6 s), with a local 'black box' (a rect filled `bg`, stroke `line`, label 'agent' in muted, layered above the tape) covering cells 2–5 so only 'request' and 'answer' show. A small mono quote above cell 1 at 0: “Book the cheapest flight NYC → LA” (style small). cue:answer: light6 fills `score` (pop) — the answer passed. cue:box: the black box gets heavier (stroke goes `text`, a slight scale pulse, no bounce). cue:where: a red `fault` '?' pops on the box. From ~9.0 s: the box, '?', quote and title clear (the box lifts and fades) so the whole run shows; light6 back to empty by the end. End on key s1 (tape fully visible, all lights empty).",
+      "sketch": {
+        "paths": [
+          "$4 M33 7h30v3h-30z",
+          "$5 M6 25h13v8h-13zM20 25h13v8h-13zM34 25h13v8h-13zM48 25h13v8h-13zM62 25h13v8h-13zM76 25h13v8h-13z",
+          "$4l M7 30h8v1h-8zM21 30h8v1h-8zM35 30h8v1h-8zM49 30h8v1h-8zM63 30h8v1h-8zM77 30h8v1h-8z",
+          "$2 M6 35h83v1h-83z",
+          "$4l~0.4 M11 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M25 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M39 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M53 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M67 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M81 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0",
+          "$1 M19 23h56v12h-56z",
+          "$4~0.5 M19 23h56v12h-56z",
+          "$4l M42 28h12v1.5h-12z",
+          "$3 M81 22a1.5 1.5 0 1 0 3.0 0a1.5 1.5 0 1 0 -3.0 0",
+          "#ff5d5d~1 M46 16q2 -3 4 0q0 2 -2 3v1",
+          "$4l M6 18h18v1h-18z"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "target": [
+        10.17,
+        22.76
+      ],
+      "brief": "The agent loop, on the tape. Title 'Record the whole run' (h2, top band, at section start). A thin amber playhead (local line, `tape`, taller than the cells) appears at cell 1 and steps along the tape with the narration: cell 2 at cue:reason, cell 3 at cue:action, cell 4 at cue:observe, cell 6 at cue:done. cue:loop: a curved arrow (`muted`, bend so it arcs ABOVE the tape over the lights) from cell 4 back to cell 2, drawn on; small label 'loop'. cue:reason: cell 2's stroke goes `tape` and a label 'reasoning layer · LLM' (label style) appears below the tape under cell 2. cue:action: cells 3 and 5 stroke `tape`, label 'action layer · tools' under them. cue:observe: the loop arrow pulses once. cue:done: the playhead reaches cell 6. Lights stay empty (nothing is scored yet). End with clear: strokes back to `line`, all locals off, on key s2 (= key s1).",
+      "sketch": {
+        "paths": [
+          "$4 M30 7h36v3h-36z",
+          "$5 M6 25h13v8h-13zM20 25h13v8h-13zM34 25h13v8h-13zM48 25h13v8h-13zM62 25h13v8h-13zM76 25h13v8h-13z",
+          "$4l M7 30h8v1h-8zM21 30h8v1h-8zM35 30h8v1h-8zM49 30h8v1h-8zM63 30h8v1h-8zM77 30h8v1h-8z",
+          "$2 M6 35h83v1h-83z",
+          "$4l~0.4 M11 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M25 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M39 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M53 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M67 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M81 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0",
+          "$2~0.8 M27 25h13v8h-13z",
+          "$2~0.8 M48 25h13v8h-13zM76 25h13v8h-13z",
+          "$4l~0.6 M55 20q-14 -10 -28 0",
+          "$2~0.6 M83 20v17",
+          "$4 M18 39h18v1.5h-18z",
+          "$4l M48 39h28v1.5h-28z"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "target": [
+        22.76,
+        35.62
+      ],
+      "brief": "Reasoning layer failures and their two metrics (trajectory metrics). Title 'Reasoning: plan, then follow it' (h2, top band). A small local plan card rises above cell 2 at cue:plan (surface2, label 'plan · example'), its steps in mono: '1 book_flight' '2 search_flights' — out of order: line 1 turns `fault` and light2 turns `fault`. Then the lines swap into the right order (search first) and light2 goes back to empty. cue:drift: the plan is right, but a red dashed arrow (`fault`) shows the run jumping from cell 3 straight to cell 6, skipping cell 5 (book_flight never ran); cell 5 dims. cue:quality: next to the plan card, `PlanQualityMetric` (mono, `score`) appears with a teal light. cue:adherence: a teal bracket draws on under the whole tape (cells 2–6) labelled `PlanAdherenceMetric` (mono, `score`). End with clear, all lights empty, cell 5 back, on key s3.",
+      "sketch": {
+        "paths": [
+          "$4 M26 7h44v3h-44z",
+          "$5 M6 25h13v8h-13zM20 25h13v8h-13zM34 25h13v8h-13zM48 25h13v8h-13zM62 25h13v8h-13zM76 25h13v8h-13z",
+          "$4l M7 30h8v1h-8zM21 30h8v1h-8zM35 30h8v1h-8zM49 30h8v1h-8zM63 30h8v1h-8zM77 30h8v1h-8z",
+          "$2 M6 35h83v1h-83z",
+          "$4l~0.4 M11 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M25 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M39 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M53 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M67 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M81 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0",
+          "$5d M14 11h24v10h-24z",
+          "#ff5d5d M16 14h14v1.5h-14z",
+          "$4l M16 17h16v1.5h-16z",
+          "#ff5d5d~0.6 M47 24q14 -8 35 0",
+          "$3 M40 14h22v2h-22z",
+          "$3~0.6 M20 38v2h69v-2",
+          "$3 M40 42h26v2h-26z"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "target": [
+        35.62,
+        48.93
+      ],
+      "brief": "Action layer failures — a walkthrough (docs/motion.md §7). Title 'Action: right tool, right arguments' (h2, top band, `hud: true` so the zoom never moves it). Just before cue:wrong: `focus` the camera on cell 3 (zoom about 1.6, 0.8 s, arrive ease) with a `spotlight` on cell 3 (opacity ~0.7). cue:wrong: cell 3's name is covered by a local mono 'calculator' in `fault` (the real name hidden under a surface rect or faded), light3 `fault`, and a `chip` 'needed: search_flights' beside it; hold ≥1.4 s. Before cue:args: the right name returns, light3 empty, chip goes. cue:args: an args card (local, surface2) rises below cell 3 with mono `{\"city\": \"LA\"}`. cue:location: under it, the tool's schema line in mono `expects: location` with an example `\"Los Angeles, CA, USA\"` (muted), and the 'city' key turns `fault`. cue:toolc: camera glides (focus) to cell 2, the LLM span that made the choice; spotlight moves with it; `ToolCorrectnessMetric` (mono, `score`) appears under cell 2 and light2 goes `score`. cue:argc: `ArgumentCorrectnessMetric` under it. ~1 s before the end: camera back to full (focus full), spotlight and locals clear, lights empty, on key s4.",
+      "sketch": {
+        "paths": [
+          "#0000008c M0 0h96v54h-96z",
+          "$5 M26 16h44v20h-44z",
+          "$4~0.4 M26 16h44v20h-44z",
+          "$4l M29 19h10v1.5h-10z",
+          "#ff5d5d M29 30h26v3h-26z",
+          "#ff5d5d M46 11a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+          "$4l M72 8h18v4h-18z",
+          "$4l~0.3 M72 10l-6 8",
+          "$5d M30 39h36v8h-36z",
+          "#ff5d5d M32 41h12v1.5h-12z",
+          "$4l M32 44h28v1.5h-28z",
+          "$4 M28 7h40v3h-40z"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "target": [
+        48.93,
+        64.29
+      ],
+      "brief": "Three scopes, as three ways of reading the same tape. Title 'Three scopes' (h2, top band). cue:e2e: cells 2–5 dim to ~0.3 and cells 1 and 6 get teal outlines; label 'end-to-end' (label, `score`) above the tape, a thin teal line linking cell 1 to cell 6 over the top. Lights 1 and 6 fill `score`. cue:traj: everything back to full; a teal bracket draws on under the whole tape, labelled 'trajectory'. cue:complete: light6 `score` (finished the task). cue:efficient: lights 2–5 fill `score` one by one, left to right (no wasted steps). cue:comp: all other lights and the bracket dim; a small teal bracket draws above cell 2 only, labelled 'component', cell 2 stroke `score`. Keep labels ≤2 words; no metric names here. End with clear, all lights empty, on key s5.",
+      "sketch": {
+        "paths": [
+          "$4 M36 7h24v3h-24z",
+          "$5 M6 25h13v8h-13zM20 25h13v8h-13zM34 25h13v8h-13zM48 25h13v8h-13zM62 25h13v8h-13zM76 25h13v8h-13z",
+          "$4l M7 30h8v1h-8zM21 30h8v1h-8zM35 30h8v1h-8zM49 30h8v1h-8zM63 30h8v1h-8zM77 30h8v1h-8z",
+          "$2 M6 35h83v1h-83z",
+          "$4l~0.4 M11 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M25 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M39 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M53 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M67 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0M81 22a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0",
+          "$3~0.6 M6 25h13v8h-13zM76 25h13v8h-13z",
+          "$3~0.5 M12 22q36 -9 70 0",
+          "$3 M38 15h20v1.5h-20z",
+          "$3~0.6 M6 38v2h83v-2",
+          "$3 M40 42h16v1.5h-16z",
+          "$3~0.8 M20 20v-2h13v2",
+          "$3 M25 22a1.5 1.5 0 1 0 3.0 0a1.5 1.5 0 1 0 -3.0 0M39 22a1.5 1.5 0 1 0 3.0 0a1.5 1.5 0 1 0 -3.0 0M53 22a1.5 1.5 0 1 0 3.0 0a1.5 1.5 0 1 0 -3.0 0M67 22a1.5 1.5 0 1 0 3.0 0a1.5 1.5 0 1 0 -3.0 0"
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "target": [
+        64.29,
+        78.425
+      ],
+      "brief": "Development and production, then the end card (last section). Title 'Every failure becomes a test' (h2, top band). cue:goldens: the tape scales to ~0.6 and moves up under the title; below it a row of 5 small amber-edged cards (local, surface, stroke `tape`) labelled 'goldens · example', each with a tiny mono input line; small label 'development' on the left. cue:catch: label 'production' on the right; on the tape, cell 5's light goes `fault` and cell 5 strokes `fault` (a run that failed). cue:feed: a copy of that red cell slides down into the golden row, which makes room and becomes 6 cards (the new one red-edged). cue:end: everything clears (tape too) and the end card lands: 'Score the whole run.' (h1, text) and below it 'Find exactly where it broke.' (body, muted), a single amber rail line drawn under them; small grey credit at the bottom: 'From “AI Agent Evaluation” · DeepEval guide, Confident AI'. All beats finish by ~70.8 s; the end card holds to the end.",
+      "sketch": {
+        "paths": [
+          "$4 M25 7h46v3h-46z",
+          "$5 M24.0 14h7v5h-7zM32.4 14h7v5h-7zM40.8 14h7v5h-7zM49.2 14h7v5h-7zM57.6 14h7v5h-7zM66.0 14h7v5h-7z",
+          "$2 M24 20h49v0.6h-49z",
+          "#ff5d5d~0.5 M57.6 14h7v5h-7z",
+          "$5 M14 34h10v9h-10zM26 34h10v9h-10zM38 34h10v9h-10zM50 34h10v9h-10zM62 34h10v9h-10z",
+          "$2~0.4 M14 34h10v9h-10zM26 34h10v9h-10zM38 34h10v9h-10zM50 34h10v9h-10zM62 34h10v9h-10z",
+          "#ff5d5d~0.6 M74 34h10v9h-10z",
+          "#ff5d5d~0.5 M61 21q4 6 17 12",
+          "$4l M14 46h16v1h-16z",
+          "$4l M68 46h16v1h-16z"
+        ]
+      }
+    }
+  ]
+}

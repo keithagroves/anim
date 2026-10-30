@@ -1,0 +1,13 @@
+{
+  "palette": {
+    "cpu": "#8b6cff",
+    "cache": "#4f8cff",
+    "cacheFill": "#1b2a52",
+    "ram": "#26325a",
+    "ramEdge": "#3d4d80",
+    "item": "#ffb547",
+    "hit": "#2fd18b",
+    "miss": "#ff5d6c"
+  },
+  "backdrop": "dots"
+}

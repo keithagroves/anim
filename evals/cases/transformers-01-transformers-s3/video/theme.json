@@ -1,0 +1,11 @@
+{
+  "palette": {
+    "token": "#1c2a52",
+    "tokenEdge": "#4f8cff",
+    "embed": "#4f8cff",
+    "attn": "#ffb547",
+    "layer": "#8b6cff",
+    "pred": "#2fd18b"
+  },
+  "backdrop": "dots"
+}

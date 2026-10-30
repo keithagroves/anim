@@ -1,0 +1,47 @@
+{
+  "id": "s1",
+  "objects": {
+    "s1.card": { "type": "rect", "w": 560, "h": 320, "radius": "lg", "fill": "card", "stroke": "line", "shadow": true, "at": "middle" },
+    "s1.badge": { "type": "rect", "text": "agent", "w": 130, "h": 46, "radius": "sm", "fill": "card", "stroke": "agent", "strokeWidth": "md", "layer": 2, "at": { "in": "s1.card", "align": "top-left", "pad": "md" } },
+    "s1.ln1": { "type": "rect", "w": 420, "h": 16, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.card", "align": "left", "pad": "md", "dy": -20 } },
+    "s1.ln2": { "type": "rect", "w": 320, "h": 16, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.card", "align": "left", "pad": "md", "dy": 20 } },
+    "s1.ln3": { "type": "rect", "w": 380, "h": 16, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.card", "align": "left", "pad": "md", "dy": 60 } },
+    "s1.ln4": { "type": "rect", "w": 240, "h": 16, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.card", "align": "left", "pad": "md", "dy": 100 } },
+
+    "s1.v1": { "type": "rect", "w": 360, "h": 240, "radius": "lg", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "middle", "dx": -240, "dy": -40 } },
+    "s1.v2": { "type": "rect", "w": 360, "h": 240, "radius": "lg", "fill": "card", "stroke": "line", "shadow": true, "at": { "region": "middle", "dx": 240, "dy": -40 } },
+    "s1.v1t": { "type": "text", "text": "v1", "style": "h3", "fill": "muted", "layer": 2, "at": { "in": "s1.v1", "align": "top-left", "pad": "md" } },
+    "s1.v1l1": { "type": "rect", "w": 260, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v1", "align": "left", "pad": "md", "dy": 0 } },
+    "s1.v1l2": { "type": "rect", "w": 190, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v1", "align": "left", "pad": "md", "dy": 36 } },
+    "s1.v1l3": { "type": "rect", "w": 230, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v1", "align": "left", "pad": "md", "dy": 72 } },
+    "s1.v2t": { "type": "text", "text": "v2", "style": "h3", "fill": "muted", "layer": 2, "at": { "in": "s1.v2", "align": "top-left", "pad": "md" } },
+    "s1.v2l1": { "type": "rect", "w": 170, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v2", "align": "left", "pad": "md", "dy": 0 } },
+    "s1.v2l2": { "type": "rect", "w": 280, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v2", "align": "left", "pad": "md", "dy": 36 } },
+    "s1.v2l3": { "type": "rect", "w": 130, "h": 14, "radius": "sm", "fill": "muted", "opacity": 0.55, "layer": 2, "at": { "in": "s1.v2", "align": "left", "pad": "md", "dy": 72 } },
+    "s1.q": { "type": "text", "text": "better, or just different?", "style": "h2", "anchor": "middle", "at": { "below": "s1.v1", "gap": "lg", "dx": 240 } },
+
+    "s1.title": { "type": "text", "text": "gold set", "style": "h3", "fill": "gold", "anchor": "middle", "at": { "region": "top" } },
+
+    "s1.pill": { "type": "rect", "w": 280, "h": 60, "radius": "lg", "fill": "card", "stroke": "gold", "strokeWidth": "thin", "layer": 3, "at": { "below": "goldBox", "gap": "md", "align": "left" } },
+    "s1.lock": { "type": "svg", "w": 30, "h": 36, "viewBox": "0 0 30 36", "layer": 4, "svg": "<path d='M8 16 V10 A7 7 0 0 1 22 10 V16' fill='none' stroke='#ffb547' stroke-width='3.5' stroke-linecap='round'/><rect x='3' y='15' width='24' height='19' rx='4' fill='#ffb547'/><circle cx='15' cy='24' r='2.6' fill='#1a2038'/>", "at": { "in": "s1.pill", "align": "left", "pad": "sm", "dx": 8 } },
+    "s1.frozen": { "type": "text", "text": "inputs frozen", "style": "label", "fill": "gold", "layer": 4, "at": { "rightOf": "s1.lock", "gap": "sm" } }
+  },
+  "timeline": [
+    { "id": "card", "target": "s1.card", "preset": "rise-in", "at": 0.15, "dur": "base", "ease": "out" },
+    { "id": "badge", "target": "s1.badge", "preset": "pop", "at": 1.6, "dur": "fast" },
+    { "id": "lines", "target": ["s1.ln1", "s1.ln2", "s1.ln3", "s1.ln4"], "preset": "wipe-in", "after": "badge", "gap": 0.05, "dur": 0.4, "stagger": 0.15 },
+
+    { "id": "cardOut", "target": ["s1.card", "s1.badge", "s1.ln1", "s1.ln2", "s1.ln3", "s1.ln4"], "preset": "fade-out", "at": 3.2, "dur": "fast" },
+    { "id": "vs", "target": ["s1.v1", "s1.v2"], "preset": "rise-in", "at": 3.45, "dur": "base", "stagger": 0.12, "ease": "out" },
+    { "id": "vl", "target": ["s1.v1t", "s1.v1l1", "s1.v1l2", "s1.v1l3", "s1.v2t", "s1.v2l1", "s1.v2l2", "s1.v2l3"], "preset": "wipe-in", "with": "vs", "offset": 0.35, "dur": "fast", "stagger": 0.06 },
+    { "id": "q", "target": "s1.q", "preset": "type-on", "at": 4.6 },
+    { "target": ["s1.v1", "s1.v2"], "preset": "highlight", "at": 5.8, "dur": 0.7, "stagger": 0.15, "color": "text" },
+    { "id": "vOut", "target": ["s1.v1*", "s1.v2*", "s1.q"], "preset": "fade-out", "at": 6.95, "dur": "fast" },
+
+    { "id": "gold", "target": "gold", "preset": "rise-in", "at": "cue:gold", "dur": "base", "ease": "out" },
+    { "target": "s1.title", "preset": "fade-in", "with": "gold", "offset": 0.2, "dur": "base" },
+
+    { "id": "frz", "target": ["s1.pill", "s1.lock", "s1.frozen"], "preset": "scale-in", "at": "cue:frozen", "offset": -0.45, "dur": "fast", "stagger": 0.05 },
+    { "target": ["s1.pill", "s1.lock", "s1.frozen", "s1.title"], "preset": "fade-out", "at": 10.45, "dur": "fast" }
+  ]
+}

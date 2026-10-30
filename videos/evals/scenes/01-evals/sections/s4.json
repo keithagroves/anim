@@ -1,0 +1,78 @@
+{
+  "id": "s4",
+  "objects": {
+    "s4.title": { "type": "text", "text": "experiment 001", "style": "h3", "at": { "region": "right-two-thirds", "align": "top" } },
+
+    "s4.n1": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 845, "dy": 395 } },
+    "s4.n2": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 845, "dy": 515 } },
+    "s4.n3": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 845, "dy": 635 } },
+    "s4.n4": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 1565, "dy": 395 } },
+    "s4.n5": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 1565, "dy": 515 } },
+    "s4.n6": { "type": "rect", "w": 70, "h": 50, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 1565, "dy": 635 } },
+
+    "s4.p01": { "type": "line", "from": [915, 420], "to": [1100, 420], "strokeWidth": "thin" },
+    "s4.p02": { "type": "line", "from": [1104, 417], "to": [1104, 481], "strokeWidth": "thin" },
+    "s4.p03": { "type": "line", "from": [1099, 485], "to": [1330, 485], "strokeWidth": "thin" },
+    "s4.p04": { "type": "line", "from": [1335, 488], "to": [1335, 537], "strokeWidth": "thin" },
+    "s4.p05": { "type": "arrow", "from": [1330, 541], "to": [1565, 541], "strokeWidth": "thin" },
+    "s4.p06": { "type": "line", "from": [915, 540], "to": [1040, 540], "strokeWidth": "thin" },
+    "s4.p07": { "type": "line", "from": [1045, 544], "to": [1045, 600], "strokeWidth": "thin" },
+    "s4.p08": { "type": "line", "from": [1040, 605], "to": [1250, 605], "strokeWidth": "thin" },
+    "s4.p09": { "type": "line", "from": [1254, 601], "to": [1254, 657], "strokeWidth": "thin" },
+    "s4.p10": { "type": "arrow", "from": [1250, 661], "to": [1565, 661], "strokeWidth": "thin" },
+    "s4.p11": { "type": "line", "from": [915, 660], "to": [1180, 660], "strokeWidth": "thin" },
+    "s4.p12": { "type": "line", "from": [1185, 655], "to": [1185, 425], "strokeWidth": "thin" },
+    "s4.p13": { "type": "arrow", "from": [1181, 419], "to": [1565, 419], "strokeWidth": "thin" },
+    "s4.hand": { "type": "text", "text": "every arrow, by hand", "style": "caption", "at": { "region": "right-two-thirds", "align": "center", "dy": 230 } },
+
+    "s4.chipList": { "type": "rect", "text": "list targets", "w": 320, "h": 90, "radius": "lg", "fill": "card", "stroke": "text", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 840, "dy": 395 } },
+    "s4.chipCurve": { "type": "rect", "text": "curved arrows", "w": 320, "h": 90, "radius": "lg", "fill": "card", "stroke": "text", "strokeWidth": "thin", "at": { "region": "full", "align": "top-left", "dx": 1340, "dy": 395 } },
+    "s4.curve": { "type": "arrow", "from": "s4.chipList.top", "to": "s4.chipCurve.top", "bend": 120, "stroke": "text" },
+    "s4.rule": { "type": "rect", "text": "decision rule: written first", "w": 600, "h": 100, "radius": "md", "fill": "card", "stroke": "muted", "strokeWidth": "thin", "shadow": true, "at": { "region": "full", "align": "top-left", "dx": 980, "dy": 600 } },
+    "s4.lock": { "type": "svg", "w": 44, "h": 54, "viewBox": "0 0 44 54", "svg": "<path d='M12 25 V16 a10 10 0 0 1 20 0 V25' fill='none' stroke='#e9edf9' stroke-width='5' stroke-linecap='round'/><rect x='4' y='24' width='36' height='28' rx='6' fill='#e9edf9'/><circle cx='22' cy='37' r='4' fill='#1a2038'/>", "at": { "leftOf": "s4.rule", "gap": "sm" } },
+
+    "s4.turnsHead": { "type": "text", "text": "turns / section", "style": "caption", "anchor": "start", "at": { "region": "full", "align": "top-left", "dx": 800, "dy": 266 } },
+    "s4.barBefore": { "type": "rect", "w": 600, "h": 56, "radius": "sm", "fill": "muted", "at": { "region": "full", "align": "top-left", "dx": 900, "dy": 352 } },
+    "s4.barAfter": { "type": "rect", "w": 475, "h": 56, "radius": "sm", "fill": "good", "at": { "region": "full", "align": "top-left", "dx": 900, "dy": 442 } },
+    "s4.lblBefore": { "type": "text", "text": "before", "style": "label", "fill": "muted", "anchor": "end", "at": { "leftOf": "s4.barBefore", "gap": "sm" } },
+    "s4.lblAfter": { "type": "text", "text": "after", "style": "label", "fill": "muted", "anchor": "end", "at": { "leftOf": "s4.barAfter", "gap": "sm" } },
+    "s4.valBefore": { "type": "text", "text": "{value}", "style": "h3", "anchor": "start", "at": { "rightOf": "s4.barBefore", "gap": "sm" } },
+    "s4.valAfter": { "type": "text", "text": "{value}", "style": "h3", "anchor": "start", "at": { "rightOf": "s4.barAfter", "gap": "sm" } },
+    "s4.cost": { "type": "text", "text": "−{value}% est. cost", "style": "h2", "fill": "good", "anchor": "start", "at": { "region": "full", "align": "top-left", "dx": 800, "dy": 600 } },
+    "s4.stamp": { "type": "rect", "text": "ACCEPTED", "style": "h3", "labelColor": "good", "w": 400, "h": 110, "radius": "sm", "fill": "card", "stroke": "good", "strokeWidth": "bold", "at": { "region": "full", "align": "top-left", "dx": 1360, "dy": 585 } },
+    "s4.stampCap": { "type": "text", "text": "quality held · gate {value}/7", "style": "label", "fill": "muted", "at": { "below": "s4.stamp", "gap": "md" } }
+  },
+  "timeline": [
+    { "target": "s4.title", "preset": "type-on", "at": 0.15 },
+
+    { "id": "nodes", "target": ["s4.n1", "s4.n4", "s4.n2", "s4.n5", "s4.n3", "s4.n6"], "preset": "pop", "at": "cue:lists", "offset": -3.0, "stagger": 0.05, "dur": "fast" },
+    { "id": "pieces", "target": "s4.p*", "preset": "draw-on", "at": "cue:lists", "offset": -2.7, "stagger": 0.1, "dur": 0.15, "ease": "linear" },
+    { "target": "s4.hand", "preset": "fade-in", "at": "cue:lists", "offset": -2.65 },
+    { "target": ["s4.n*", "s4.p*", "s4.hand"], "preset": "fade-out", "at": "cue:lists", "offset": -0.4, "dur": "fast" },
+
+    { "target": ["s4.chipList", "s4.chipCurve"], "preset": "pop", "at": "cue:lists", "stagger": 0.15 },
+    { "target": "s4.curve", "preset": "draw-on", "at": "cue:lists", "offset": 0.45, "dur": "slow" },
+    { "target": "s4.rule", "preset": "rise-in", "at": "cue:rule" },
+    { "target": "s4.lock", "preset": "pop", "at": "cue:rule", "offset": 0.35 },
+    { "target": ["s4.chipList", "s4.chipCurve", "s4.curve", "s4.rule", "s4.lock"], "preset": "fade-out", "at": "cue:turns", "offset": -0.5, "dur": "fast" },
+
+    { "target": "s4.turnsHead", "preset": "fade-in", "at": "cue:turns", "offset": 0.1 },
+    { "target": ["s4.lblBefore", "s4.lblAfter"], "preset": "fade-in", "at": "cue:turns", "offset": 0.3, "stagger": 0.1 },
+    { "target": "s4.barBefore", "preset": "wipe-in", "at": "cue:turns", "offset": 0.6, "dur": 0.9 },
+    { "target": "s4.valBefore", "preset": "fade-in", "at": "cue:turns", "offset": 0.6, "dur": "fast" },
+    { "target": "s4.valBefore", "preset": "count-up", "at": "cue:turns", "offset": 0.6, "dur": 0.9, "to": { "value": 24 } },
+    { "target": "s4.barAfter", "preset": "wipe-in", "at": "cue:turns", "offset": 1.4, "dur": 0.8 },
+    { "target": "s4.valAfter", "preset": "fade-in", "at": "cue:turns", "offset": 1.4, "dur": "fast" },
+    { "target": "s4.valAfter", "preset": "count-up", "at": "cue:turns", "offset": 1.4, "dur": 0.8, "to": { "value": 19 } },
+
+    { "target": "s4.cost", "preset": "fade-in", "at": "cue:cost", "dur": "fast" },
+    { "target": "s4.cost", "preset": "count-up", "at": "cue:cost", "to": { "value": 16 } },
+
+    { "target": "s4.stampCap", "preset": "fade-in", "at": "cue:accept", "offset": -0.9, "dur": "fast" },
+    { "target": "s4.stampCap", "preset": "count-up", "at": "cue:accept", "offset": -0.9, "dur": 0.6, "to": { "value": 7 } },
+    { "target": "s4.stamp", "preset": "to", "at": "cue:accept", "offset": -0.3, "dur": 0.01, "to": { "rotate": -7 } },
+    { "target": "s4.stamp", "preset": "pop", "at": "cue:accept", "offset": -0.3, "dur": "fast" },
+
+    { "target": ["s4.title", "s4.turnsHead", "s4.lblBefore", "s4.lblAfter", "s4.barBefore", "s4.barAfter", "s4.valBefore", "s4.valAfter", "s4.cost", "s4.stamp", "s4.stampCap"], "preset": "fade-out", "at": "cue:accept", "offset": 0.5, "dur": "fast" }
+  ]
+}

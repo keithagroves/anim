@@ -1,0 +1,24 @@
+{
+  "palette": {
+    "bg": "#0f1420",
+    "surface": "#171d2b",
+    "surface2": "#202839",
+    "line": "#3a4560",
+    "text": "#eef2f7",
+    "muted": "#8f98ab",
+    "input": "#4f8cff",
+    "state": "#ffb547",
+    "output": "#2fd18b",
+    "accent": "#ffb547",
+    "accent2": "#4f8cff",
+    "attn": "#ffb547",
+    "ff": "#4f8cff",
+    "norm": "#c9b8ff",
+    "embed": "#ff8fb3"
+  },
+  "backdrop": {
+    "preset": "dots",
+    "opacity": 0.4,
+    "vignette": 0.4
+  }
+}

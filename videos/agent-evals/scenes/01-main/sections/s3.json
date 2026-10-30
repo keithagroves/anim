@@ -1,0 +1,364 @@
+{
+  "id": "s3",
+  "objects": {
+    "s3.title": {
+      "type": "text",
+      "text": "Reasoning: plan, then follow it",
+      "style": "h2",
+      "at": {
+        "region": "top",
+        "align": "top"
+      }
+    },
+    "s3.card": {
+      "type": "rect",
+      "w": 380,
+      "h": 168,
+      "radius": "md",
+      "fill": "surface2",
+      "stroke": "line",
+      "strokeWidth": "thin",
+      "at": {
+        "above": "light2",
+        "gap": "sm"
+      }
+    },
+    "s3.cardTag": {
+      "type": "text",
+      "text": "plan · example",
+      "style": "small",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "s3.card",
+        "align": "top-left",
+        "pad": "sm"
+      }
+    },
+    "s3.n1": {
+      "type": "text",
+      "text": "1",
+      "style": "mono",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "s3.card",
+        "align": "bottom-left",
+        "pad": "sm",
+        "dy": -48
+      }
+    },
+    "s3.n2": {
+      "type": "text",
+      "text": "2",
+      "style": "mono",
+      "fill": "muted",
+      "anchor": "start",
+      "at": {
+        "in": "s3.card",
+        "align": "bottom-left",
+        "pad": "sm"
+      }
+    },
+    "s3.stepA": {
+      "type": "text",
+      "text": "book_flight",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "s3.card",
+        "align": "bottom-left",
+        "pad": "sm",
+        "dx": 40,
+        "dy": -48
+      }
+    },
+    "s3.stepB": {
+      "type": "text",
+      "text": "search_flights",
+      "style": "mono",
+      "anchor": "start",
+      "at": {
+        "in": "s3.card",
+        "align": "bottom-left",
+        "pad": "sm",
+        "dx": 40
+      }
+    },
+    "s3.skip": {
+      "type": "arrow",
+      "from": "light3.top",
+      "to": "light6.top",
+      "bend": 80,
+      "stroke": "fault",
+      "strokeWidth": "md",
+      "dash": "12 10"
+    },
+    "s3.quality": {
+      "type": "text",
+      "text": "PlanQualityMetric",
+      "style": "mono",
+      "fill": "score",
+      "anchor": "start",
+      "at": {
+        "rightOf": "s3.card",
+        "gap": "md",
+        "align": "top"
+      }
+    },
+    "s3.bracket": {
+      "type": "path",
+      "d": "M2 2 V18 H1402 V2",
+      "w": 1404,
+      "h": 20,
+      "fill": "none",
+      "stroke": "score",
+      "strokeWidth": "md",
+      "at": {
+        "below": "rail",
+        "gap": "sm",
+        "align": "right"
+      }
+    },
+    "s3.adherence": {
+      "type": "text",
+      "text": "PlanAdherenceMetric",
+      "style": "mono",
+      "fill": "score",
+      "at": {
+        "below": "s3.bracket",
+        "gap": "xs"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "id": "title",
+      "target": "s3.title",
+      "preset": "words-in",
+      "at": 0.05
+    },
+    {
+      "target": "cell2",
+      "preset": "highlight",
+      "at": 2.44,
+      "color": "tape",
+      "dur": 0.9
+    },
+    {
+      "id": "card",
+      "target": "s3.card",
+      "preset": "rise-in",
+      "at": "cue:plan",
+      "dur": 0.5,
+      "distance": 24
+    },
+    {
+      "target": "s3.cardTag",
+      "preset": "fade-in",
+      "with": "card",
+      "offset": 0.2,
+      "dur": 0.35
+    },
+    {
+      "id": "rows",
+      "target": [
+        "s3.n1",
+        "s3.stepA",
+        "s3.n2",
+        "s3.stepB"
+      ],
+      "preset": "rise-in",
+      "with": "card",
+      "offset": 0.3,
+      "stagger": 0.08,
+      "dur": 0.4,
+      "distance": 16
+    },
+    {
+      "id": "bad",
+      "target": "s3.stepA",
+      "preset": "to",
+      "at": 5.74,
+      "dur": 0.3,
+      "to": {
+        "fill": "fault"
+      }
+    },
+    {
+      "target": "s3.n1",
+      "preset": "to",
+      "with": "bad",
+      "dur": 0.3,
+      "to": {
+        "fill": "fault"
+      }
+    },
+    {
+      "id": "l2bad",
+      "target": "light2",
+      "preset": "to",
+      "with": "bad",
+      "offset": 0.1,
+      "dur": 0.3,
+      "to": {
+        "fill": "fault",
+        "stroke": "fault"
+      }
+    },
+    {
+      "target": "light2",
+      "preset": "pulse",
+      "after": "l2bad",
+      "amount": 0.25,
+      "dur": 0.4
+    },
+    {
+      "id": "swapA",
+      "target": "s3.stepA",
+      "preset": "to",
+      "at": 7.01,
+      "dur": 0.6,
+      "ease": "inOut",
+      "to": {
+        "dy": 48
+      }
+    },
+    {
+      "target": "s3.stepB",
+      "preset": "to",
+      "with": "swapA",
+      "dur": 0.6,
+      "ease": "inOut",
+      "to": {
+        "dy": -48
+      }
+    },
+    {
+      "id": "fixed",
+      "target": [
+        "s3.stepA",
+        "s3.n1"
+      ],
+      "preset": "to",
+      "after": "swapA",
+      "dur": 0.3,
+      "to": {
+        "fill": "text"
+      }
+    },
+    {
+      "target": "light2",
+      "preset": "to",
+      "with": "fixed",
+      "dur": 0.3,
+      "to": {
+        "fill": "none",
+        "stroke": "line"
+      }
+    },
+    {
+      "target": "s3.n1",
+      "preset": "to",
+      "after": "fixed",
+      "dur": 0.2,
+      "to": {
+        "fill": "muted"
+      }
+    },
+    {
+      "id": "skip",
+      "target": "s3.skip",
+      "preset": "draw-on",
+      "at": "cue:drift",
+      "dur": 0.6
+    },
+    {
+      "id": "dim5",
+      "target": [
+        "cell5",
+        "kind5",
+        "name5",
+        "light5"
+      ],
+      "preset": "to",
+      "after": "skip",
+      "gap": 0.1,
+      "dur": 0.4,
+      "to": {
+        "opacity": 0.3
+      }
+    },
+    {
+      "id": "q",
+      "target": "s3.quality",
+      "preset": "rise-in",
+      "at": "cue:quality",
+      "dur": 0.4,
+      "distance": 24
+    },
+    {
+      "id": "l2ok",
+      "target": "light2",
+      "preset": "to",
+      "with": "q",
+      "offset": 0.2,
+      "dur": 0.25,
+      "to": {
+        "fill": "score",
+        "stroke": "score"
+      }
+    },
+    {
+      "target": "light2",
+      "preset": "pulse",
+      "after": "l2ok",
+      "amount": 0.25,
+      "dur": 0.35
+    },
+    {
+      "id": "br",
+      "target": "s3.bracket",
+      "preset": "draw-on",
+      "at": "cue:adherence",
+      "offset": -0.2,
+      "dur": 0.5
+    },
+    {
+      "target": "s3.adherence",
+      "preset": "rise-in",
+      "at": "cue:adherence",
+      "offset": 0.1,
+      "dur": 0.35,
+      "distance": 16
+    },
+    {
+      "target": "light2",
+      "preset": "to",
+      "at": "end-0.6",
+      "dur": 0.35,
+      "to": {
+        "fill": "none",
+        "stroke": "line"
+      }
+    },
+    {
+      "target": [
+        "cell5",
+        "kind5",
+        "name5",
+        "light5"
+      ],
+      "preset": "to",
+      "at": "end-0.6",
+      "dur": 0.35,
+      "to": {
+        "opacity": 1
+      }
+    },
+    {
+      "preset": "clear",
+      "at": "end-0.6"
+    }
+  ]
+}

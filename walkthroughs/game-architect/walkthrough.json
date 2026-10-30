@@ -1,0 +1,21 @@
+{
+  "url": "http://localhost:5180/?ui=off",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "voice": "bf_emma",
+  "speed": 1,
+  "flutter": false,
+  "cursor": true,
+  "captions": "soft",
+  "keepOut": [],
+  "hide": null,
+  "devices": [],
+  "appAudio": false,
+  "music": null,
+  "voices": {
+    "you": "bm_lewis"
+  },
+  "gap": 300
+}

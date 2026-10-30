@@ -1,0 +1,81 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.title": { "type": "text", "text": "3 · facts", "style": "h2", "at": { "region": "right-two-thirds", "align": "top" } },
+    "s5.checker": { "type": "rect", "text": "fact-check agent", "w": 280, "h": 90, "radius": "md", "fill": "card", "stroke": "checker", "shadow": true, "labelColor": "checker", "at": { "region": "right-two-thirds", "align": "top-left", "dx": 24, "dy": 110 } },
+
+    "s5.seg1": { "type": "rect", "w": 260, "h": 96, "radius": "sm", "fill": "none", "stroke": "checker", "strokeWidth": "md", "layer": 2, "at": { "in": "reportBox", "align": "top-left", "pad": 32, "dx": -12, "dy": 74 } },
+    "s5.seg2": { "type": "rect", "w": 260, "h": 96, "radius": "sm", "fill": "none", "stroke": "checker", "strokeWidth": "md", "layer": 2, "at": { "in": "reportBox", "align": "top-left", "pad": 32, "dx": -12, "dy": 202 } },
+    "s5.seg3": { "type": "rect", "w": 260, "h": 96, "radius": "sm", "fill": "none", "stroke": "checker", "strokeWidth": "md", "layer": 2, "at": { "in": "reportBox", "align": "top-left", "pad": 32, "dx": -12, "dy": 334 } },
+
+    "s5.chip1": { "type": "rect", "w": 560, "h": 64, "radius": "sm", "fill": "card", "stroke": "ink", "strokeWidth": "md", "layer": 2, "at": { "rightOf": "s5.seg1", "gap": 586 } },
+    "s5.chip2": { "type": "rect", "w": 560, "h": 64, "radius": "sm", "fill": "card", "stroke": "ink", "strokeWidth": "md", "layer": 2, "at": { "below": "s5.chip1", "gap": 64 } },
+    "s5.chip3": { "type": "rect", "w": 560, "h": 64, "radius": "sm", "fill": "card", "stroke": "ink", "strokeWidth": "md", "layer": 2, "at": { "below": "s5.chip2", "gap": 64 } },
+    "s5.txt1": { "type": "text", "text": "2,788M H800 GPU hours", "style": "small", "fill": "text", "anchor": "start", "layer": 3, "at": { "in": "s5.chip1", "align": "left", "pad": "sm" } },
+    "s5.txt2": { "type": "text", "text": "FECC is a two-year program", "style": "small", "fill": "text", "anchor": "start", "layer": 3, "at": { "in": "s5.chip2", "align": "left", "pad": "sm" } },
+    "s5.txt3": { "type": "text", "text": "Dutch DUV export controls, Sept 2024", "style": "small", "fill": "text", "anchor": "start", "layer": 3, "at": { "in": "s5.chip3", "align": "left", "pad": "sm" } },
+    "s5.tag1": { "type": "rect", "text": "[1]", "w": 48, "h": 30, "radius": "sm", "fill": "surface2", "stroke": "report", "strokeWidth": "thin", "style": "small", "labelColor": "report", "layer": 3, "at": { "in": "s5.chip1", "align": "right", "pad": "sm" } },
+    "s5.tag3": { "type": "rect", "text": "[2]", "w": 48, "h": 30, "radius": "sm", "fill": "surface2", "stroke": "report", "strokeWidth": "thin", "style": "small", "labelColor": "report", "layer": 3, "at": { "in": "s5.chip3", "align": "right", "pad": "sm" } },
+
+    "s5.link1": { "type": "line", "from": "s5.seg1.right", "to": "s5.chip1.left", "stroke": "checker", "strokeWidth": "thin", "opacity": 0.7 },
+    "s5.link2": { "type": "line", "from": "s5.seg2.right", "to": "s5.chip2.left", "stroke": "checker", "strokeWidth": "thin", "opacity": 0.7 },
+    "s5.link3": { "type": "line", "from": "s5.seg3.right", "to": "s5.chip3.left", "stroke": "checker", "strokeWidth": "thin", "opacity": 0.7 },
+
+    "s5.mag": { "type": "svg", "w": 56, "h": 56, "viewBox": "0 0 56 56", "svg": "<circle cx='23' cy='23' r='15' fill='none' stroke='#3ec7e0' stroke-width='5'/><line x1='34' y1='34' x2='50' y2='50' stroke='#3ec7e0' stroke-width='7' stroke-linecap='round'/>", "at": { "below": "s5.checker", "gap": 56, "dx": -60 } },
+    "s5.webLabel": { "type": "text", "text": "web search", "style": "label", "fill": "checker", "anchor": "start", "at": { "rightOf": "s5.mag", "gap": "sm" } },
+    "s5.q1": { "type": "arrow", "from": "s5.mag.bottom", "to": "s5.chip1.left", "stroke": "checker", "bend": 40 },
+    "s5.q2": { "type": "arrow", "from": "s5.mag.bottom", "to": "s5.chip2.left", "stroke": "checker", "bend": 50 },
+    "s5.q3": { "type": "arrow", "from": "s5.mag.bottom", "to": "s5.chip3.left", "stroke": "checker", "bend": 60 },
+
+    "s5.uncited": { "type": "text", "text": "no citation — still checked", "style": "small", "fill": "checker", "anchor": "end", "at": { "below": "s5.chip2", "gap": "xs", "align": "right" } },
+
+    "s5.vRight": { "type": "rect", "text": "Right", "w": 128, "h": 48, "radius": "sm", "fill": "card", "stroke": "good", "strokeWidth": "md", "labelColor": "good", "layer": 3, "at": { "rightOf": "s5.chip3", "gap": "sm" } },
+    "s5.vWrong": { "type": "rect", "text": "Wrong", "w": 128, "h": 48, "radius": "sm", "fill": "card", "stroke": "bad", "strokeWidth": "md", "labelColor": "bad", "layer": 3, "at": { "rightOf": "s5.chip1", "gap": "sm" } },
+    "s5.vUnknown": { "type": "rect", "text": "Unknown", "w": 128, "h": 48, "radius": "sm", "fill": "card", "stroke": "muted", "strokeWidth": "md", "labelColor": "muted", "style": "small", "layer": 3, "at": { "rightOf": "s5.chip2", "gap": "sm" } },
+
+    "s5.ratio": { "type": "text", "text": "ratio = right ÷ all statements", "style": "body", "fill": "text", "at": { "below": "s5.chip3", "gap": "lg" } }
+  },
+  "timeline": [
+    { "target": "s5.title", "preset": "rise-in", "at": "cue:facts", "dur": "base" },
+    { "id": "checkIn", "target": "s5.checker", "preset": "rise-in", "at": "cue:facts", "offset": 0.3, "dur": "base" },
+
+    { "id": "segsIn", "target": ["s5.seg1", "s5.seg2", "s5.seg3"], "preset": "draw-on", "at": "cue:segments", "stagger": 0.1, "dur": 0.5 },
+    { "target": "reportBox", "preset": "highlight", "at": "cue:segments", "color": "checker" },
+
+    { "id": "link1", "target": "s5.link1", "preset": "draw-on", "at": "cue:statements", "dur": 0.4 },
+    { "target": ["s5.chip1", "s5.txt1"], "preset": "rise-in", "at": "cue:statements", "offset": 0.3, "dur": "base" },
+    { "target": "s5.tag1", "preset": "pop", "at": "cue:statements", "offset": 0.7, "dur": "fast" },
+    { "target": "s5.link2", "preset": "draw-on", "at": "cue:statements", "offset": 0.45, "dur": 0.4 },
+    { "target": ["s5.chip2", "s5.txt2"], "preset": "rise-in", "at": "cue:statements", "offset": 0.75, "dur": "base" },
+    { "target": "s5.link3", "preset": "draw-on", "at": "cue:statements", "offset": 0.9, "dur": 0.4 },
+    { "target": ["s5.chip3", "s5.txt3"], "preset": "rise-in", "at": "cue:statements", "offset": 1.2, "dur": "base" },
+    { "target": "s5.tag3", "preset": "pop", "at": "cue:statements", "offset": 1.6, "dur": "fast" },
+    { "target": ["cite1", "cite3"], "preset": "pulse", "at": "cue:statements", "offset": 1.9, "stagger": 0.15, "amount": 0.15, "dur": "fast" },
+
+    { "target": ["s5.link1", "s5.link2", "s5.link3"], "preset": "fade-out", "at": "cue:search", "offset": -0.3, "dur": 0.4 },
+    { "id": "magIn", "target": "s5.mag", "preset": "pop", "at": "cue:search", "dur": "fast" },
+    { "target": "s5.webLabel", "preset": "fade-in", "at": "cue:search", "offset": 0.1, "dur": "fast" },
+    { "target": ["s5.q1", "s5.q2", "s5.q3"], "preset": "draw-on", "at": "cue:search", "offset": 0.3, "stagger": 0.12, "dur": 0.5 },
+
+    { "target": "s5.chip2", "preset": "highlight", "at": "cue:uncited", "color": "checker" },
+    { "target": "s5.uncited", "preset": "fade-in", "at": "cue:uncited", "offset": 0.1, "dur": "fast" },
+
+    { "target": "s5.vRight", "preset": "pop", "at": "cue:right", "dur": "fast" },
+    { "target": "s5.chip3", "preset": "to", "at": "cue:right", "dur": "fast", "to": { "stroke": "good" } },
+    { "target": "s5.vWrong", "preset": "pop", "at": "cue:wrong", "dur": "fast" },
+    { "target": "s5.chip1", "preset": "to", "at": "cue:wrong", "dur": "fast", "to": { "stroke": "bad" } },
+    { "target": "s5.vUnknown", "preset": "pop", "at": "cue:unknown", "dur": "fast" },
+    { "target": "s5.chip2", "preset": "to", "at": "cue:unknown", "dur": "fast", "to": { "stroke": "muted" } },
+
+    { "target": "s5.seg3", "preset": "to", "at": "cue:right", "offset": 0.15, "dur": 0.5, "to": { "stroke": "good" } },
+    { "target": "s5.seg1", "preset": "to", "at": "cue:wrong", "offset": 0.15, "dur": 0.5, "to": { "stroke": "bad" } },
+    { "target": "s5.seg2", "preset": "to", "at": "cue:unknown", "offset": 0.15, "dur": 0.5, "to": { "stroke": "muted" } },
+    { "target": ["s5.q1", "s5.q2", "s5.q3", "s5.uncited"], "preset": "to", "at": "cue:unknown", "offset": 0.6, "dur": 0.6, "to": { "opacity": 0.3 } },
+
+    { "target": "s5.ratio", "preset": "type-on", "at": "cue:ratio", "offset": -1.4, "dur": 0.6 },
+    { "target": "s5.vRight", "preset": "pulse", "at": "cue:ratio", "offset": 0.3, "amount": 0.1, "dur": "fast" },
+
+    { "target": ["s5.title", "s5.checker", "s5.seg1", "s5.seg2", "s5.seg3", "s5.chip1", "s5.chip2", "s5.chip3", "s5.txt1", "s5.txt2", "s5.txt3", "s5.tag1", "s5.tag3", "s5.mag", "s5.webLabel", "s5.q1", "s5.q2", "s5.q3", "s5.uncited", "s5.vRight", "s5.vWrong", "s5.vUnknown"], "preset": "fade-out", "at": "cue:ratio", "offset": 0.78, "dur": 0.4 },
+    { "target": "s5.ratio", "preset": "fade-out", "at": "cue:ratio", "offset": 0.98, "dur": 0.3 }
+  ]
+}

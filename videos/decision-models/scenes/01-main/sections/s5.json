@@ -1,0 +1,65 @@
+{
+  "id": "s5",
+  "objects": {
+    "s5.frame": { "type": "rect", "w": 720, "h": 405, "radius": "md", "fill": "surface", "stroke": "line", "strokeWidth": "thin", "shadow": true, "at": { "region": "left-half", "align": "center", "dy": -60 } },
+    "s5.fTag": { "type": "text", "text": "frame", "style": "label", "fill": "muted", "anchor": "start", "at": { "above": "s5.frame", "gap": "sm", "align": "left" } },
+    "s5.fTitle": { "type": "rect", "w": 240, "h": 16, "radius": "sm", "fill": "line", "at": { "in": "s5.frame", "align": "top-left", "pad": "md" } },
+    "s5.fn1": { "type": "rect", "w": 140, "h": 84, "radius": "sm", "fill": "surface2", "stroke": "muted", "strokeWidth": "thin", "at": { "in": "s5.frame", "align": "left", "pad": "lg" } },
+    "s5.fn2": { "type": "circle", "r": 50, "fill": "surface2", "stroke": "muted", "strokeWidth": "thin", "at": { "in": "s5.frame", "align": "center" } },
+    "s5.fn3": { "type": "rect", "w": 140, "h": 84, "radius": "sm", "fill": "surface2", "stroke": "muted", "strokeWidth": "thin", "at": { "in": "s5.frame", "align": "right", "pad": "lg" } },
+    "s5.fa1": { "type": "arrow", "from": "s5.fn1.right", "to": "s5.fn2.left", "stroke": "muted", "strokeWidth": "thin" },
+    "s5.fa2": { "type": "arrow", "from": "s5.fn2.right", "to": "s5.fn3.left", "stroke": "muted", "strokeWidth": "thin" },
+    "s5.fFoot": { "type": "rect", "w": 320, "h": 12, "radius": "sm", "fill": "line", "at": { "in": "s5.frame", "align": "bottom-left", "pad": "md" } },
+    "s5.fG": { "type": "group", "children": ["s5.frame", "s5.fTag", "s5.fTitle", "s5.fn1", "s5.fn2", "s5.fn3", "s5.fa1", "s5.fa2", "s5.fFoot"] },
+
+    "s5.rCard": { "type": "rect", "w": 760, "h": 500, "radius": "lg", "fill": "paper", "stroke": "line", "strokeWidth": "thin", "shadow": true, "at": { "region": "right-half", "align": "center", "dx": -30, "dy": -60 } },
+    "s5.rTitle": { "type": "text", "text": "rubric", "style": "h3", "anchor": "start", "at": { "in": "s5.rCard", "align": "top-left", "pad": "md" } },
+    "s5.rL1": { "type": "text", "text": "motion", "style": "body", "anchor": "start", "at": { "in": "s5.rCard", "align": "left", "pad": "md", "dy": -80 } },
+    "s5.rB1": { "type": "rect", "w": 360, "h": 44, "radius": "sm", "fill": "none", "stroke": "line", "strokeWidth": "thin", "at": { "in": "s5.rCard", "align": "right", "pad": "md", "dy": -80 } },
+    "s5.rI1": { "type": "rect", "w": 324, "h": 44, "radius": "sm", "fill": "ink", "at": { "in": "s5.rB1", "align": "left", "pad": 0 } },
+    "s5.rL2": { "type": "text", "text": "readability", "style": "body", "anchor": "start", "at": { "in": "s5.rCard", "align": "left", "pad": "md", "dy": 10 } },
+    "s5.rB2": { "type": "rect", "w": 360, "h": 44, "radius": "sm", "fill": "none", "stroke": "line", "strokeWidth": "thin", "at": { "in": "s5.rCard", "align": "right", "pad": "md", "dy": 10 } },
+    "s5.rI2": { "type": "rect", "w": 296, "h": 44, "radius": "sm", "fill": "ink", "at": { "in": "s5.rB2", "align": "left", "pad": 0 } },
+    "s5.rL3": { "type": "text", "text": "composition", "style": "body", "anchor": "start", "at": { "in": "s5.rCard", "align": "left", "pad": "md", "dy": 100 } },
+    "s5.rB3": { "type": "rect", "w": 360, "h": 44, "radius": "sm", "fill": "none", "stroke": "line", "strokeWidth": "thin", "at": { "in": "s5.rCard", "align": "right", "pad": "md", "dy": 100 } },
+    "s5.rI3": { "type": "rect", "w": 244, "h": 44, "radius": "sm", "fill": "ink", "at": { "in": "s5.rB3", "align": "left", "pad": 0 } },
+    "s5.rL4": { "type": "text", "text": "narration sync", "style": "body", "anchor": "start", "at": { "in": "s5.rCard", "align": "left", "pad": "md", "dy": 190 } },
+    "s5.rB4": { "type": "rect", "w": 360, "h": 44, "radius": "sm", "fill": "none", "stroke": "line", "strokeWidth": "thin", "at": { "in": "s5.rCard", "align": "right", "pad": "md", "dy": 190 } },
+    "s5.rI4": { "type": "rect", "w": 108, "h": 44, "radius": "sm", "fill": "ink", "at": { "in": "s5.rB4", "align": "left", "pad": 0 } },
+    "s5.rYes": { "type": "text", "text": "p(yes)", "style": "label", "fill": "muted", "anchor": "start", "at": { "above": "s5.rB1", "gap": "xs", "align": "left" } },
+    "s5.rRow1": { "type": "group", "children": ["s5.rL1", "s5.rB1", "s5.rI1"] },
+    "s5.rRow2": { "type": "group", "children": ["s5.rL2", "s5.rB2", "s5.rI2"] },
+    "s5.rRow3": { "type": "group", "children": ["s5.rL3", "s5.rB3", "s5.rI3"] },
+    "s5.rRow4": { "type": "group", "children": ["s5.rL4", "s5.rB4", "s5.rI4"] },
+    "s5.rG": { "type": "group", "children": ["s5.rCard", "s5.rTitle", "s5.rYes", "s5.rRow1", "s5.rRow2", "s5.rRow3", "s5.rRow4"] },
+
+    "s5.cap": { "type": "text", "text": "one call · every criterion", "style": "caption", "anchor": "middle", "at": { "region": "bottom", "align": "top", "dy": 24 } },
+    "s5.cav1": { "type": "text", "text": "no explanation", "style": "body", "fill": "muted", "anchor": "middle", "at": { "region": "bottom", "align": "top", "dy": 24 } },
+    "s5.cav2": { "type": "text", "text": "hard reasoning → big model", "style": "body", "fill": "muted", "anchor": "middle", "at": { "below": "s5.cav1", "gap": "sm", "align": "center" } },
+
+    "s5.end1": { "type": "text", "text": "decide → decision model", "style": "h1", "fill": "decide", "anchor": "middle", "at": { "region": "center", "align": "center", "dy": -70 } },
+    "s5.end2": { "type": "text", "text": "write → language model", "style": "h1", "fill": "write", "anchor": "middle", "at": { "below": "s5.end1", "gap": "md", "align": "center" } }
+  },
+  "timeline": [
+    { "id": "frameIn", "target": ["s5.frame", "s5.fTag"], "preset": "rise-in", "at": "cue:judge-0.3", "dur": 0.55, "stagger": 0.1 },
+    { "id": "frameBits", "target": ["s5.fTitle", "s5.fn1", "s5.fa1", "s5.fn2", "s5.fa2", "s5.fn3", "s5.fFoot"], "preset": "draw-on", "at": "cue:judge+1.2", "dur": 0.45, "stagger": 0.1 },
+    { "target": "s5.fG", "preset": "breathe", "after": "frameIn", "amount": 0.012, "period": 3.2 },
+
+    { "id": "formIn", "target": ["s5.rCard", "s5.rTitle"], "preset": "rise-in", "at": "cue:judge+2.5", "dur": 0.55, "stagger": 0.12 },
+    { "id": "rowsIn", "target": ["s5.rYes", "s5.rRow1", "s5.rRow2", "s5.rRow3", "s5.rRow4"], "preset": "rise-in", "with": "formIn", "offset": 0.3, "dur": 0.45, "stagger": 0.08, "distance": 16 },
+    { "target": "s5.rG", "preset": "breathe", "after": "rowsIn", "amount": 0.01, "period": 3.4 },
+
+    { "id": "cap", "target": "s5.cap", "preset": "words-in", "at": "cue:judge+3.4" },
+
+    { "id": "fill", "target": ["s5.rI1", "s5.rI2", "s5.rI3", "s5.rI4"], "preset": "wipe-in", "at": "cue:limit-1.1", "dur": 0.8, "ease": "out", "stagger": 0 },
+
+    { "id": "capOut", "target": "s5.cap", "preset": "words-out", "at": "cue:limit-0.1" },
+    { "id": "cav1", "target": "s5.cav1", "preset": "words-in", "at": "cue:limit+0.45" },
+    { "id": "cav2", "target": "s5.cav2", "preset": "words-in", "at": "cue:limit+1.5" },
+
+    { "preset": "clear", "target": ["s5.fG", "s5.rG", "s5.cav1", "s5.cav2"], "at": "cue:end-0.15", "stagger": 0.05 },
+    { "id": "end1", "target": "s5.end1", "preset": "words-in", "at": "cue:end+0.4" },
+    { "id": "end2", "target": "s5.end2", "preset": "words-in", "with": "end1", "offset": 0.4 },
+    { "target": ["s5.end1", "s5.end2"], "preset": "breathe", "after": "end2", "amount": 0.012, "period": 3 }
+  ]
+}

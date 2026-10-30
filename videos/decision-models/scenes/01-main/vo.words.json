@@ -1,0 +1,1013 @@
+{
+ "duration": 55.2,
+ "lead": 0.5,
+ "tail": 1.0,
+ "voice": "af_heart",
+ "speed": 1.0,
+ "text": "What if a model could answer without writing a word? A chat model replies one token at a time, and your code has to parse whatever comes back. A decision model works differently. You give it the state, like a support ticket, and typed questions with the answers you allow. It reads everything once, and returns a probability for every option. There are three kinds of question. Choice picks one label. Noul is a yes or no, given as a probability. Score places the input on a scale. And it can't answer outside the options you gave it. TypeSafe launched Jev, a hosted model, in September. Cloudflare followed with open-weight Clef and Clef Flash, and Ollama now runs them on your own machine. We use Clef Flash as a judge. It looks at frames from our videos, and answers every rubric question in a single call. It won't explain itself, and hard reasoning still needs a big model. So let the decision model decide, and let the language model write.",
+ "words": [
+  {
+   "text": "What",
+   "start": 0.75,
+   "end": 0.863
+  },
+  {
+   "text": "if",
+   "start": 0.863,
+   "end": 0.963
+  },
+  {
+   "text": "a",
+   "start": 0.963,
+   "end": 1.05
+  },
+  {
+   "text": "model",
+   "start": 1.05,
+   "end": 1.425
+  },
+  {
+   "text": "could",
+   "start": 1.425,
+   "end": 1.55
+  },
+  {
+   "text": "answer",
+   "start": 1.55,
+   "end": 1.887
+  },
+  {
+   "text": "without",
+   "start": 1.887,
+   "end": 2.2
+  },
+  {
+   "text": "writing",
+   "start": 2.2,
+   "end": 2.487
+  },
+  {
+   "text": "a",
+   "start": 2.487,
+   "end": 2.55
+  },
+  {
+   "text": "word",
+   "start": 2.55,
+   "end": 3.2
+  },
+  {
+   "text": "?",
+   "start": 3.2,
+   "end": 3.337
+  },
+  {
+   "text": "A",
+   "start": 3.337,
+   "end": 3.462
+  },
+  {
+   "text": "chat",
+   "start": 3.462,
+   "end": 3.712
+  },
+  {
+   "text": "model",
+   "start": 3.712,
+   "end": 4.0
+  },
+  {
+   "text": "replies",
+   "start": 4.0,
+   "end": 4.4
+  },
+  {
+   "text": "one",
+   "start": 4.4,
+   "end": 4.625
+  },
+  {
+   "text": "token",
+   "start": 4.625,
+   "end": 4.912
+  },
+  {
+   "text": "at",
+   "start": 4.912,
+   "end": 4.987
+  },
+  {
+   "text": "a",
+   "start": 4.987,
+   "end": 5.05
+  },
+  {
+   "text": "time",
+   "start": 5.05,
+   "end": 5.575
+  },
+  {
+   "text": ",",
+   "start": 5.575,
+   "end": 5.65
+  },
+  {
+   "text": "and",
+   "start": 5.65,
+   "end": 5.763
+  },
+  {
+   "text": "your",
+   "start": 5.763,
+   "end": 5.912
+  },
+  {
+   "text": "code",
+   "start": 5.912,
+   "end": 6.275
+  },
+  {
+   "text": "has",
+   "start": 6.275,
+   "end": 6.475
+  },
+  {
+   "text": "to",
+   "start": 6.475,
+   "end": 6.575
+  },
+  {
+   "text": "parse",
+   "start": 6.575,
+   "end": 6.9
+  },
+  {
+   "text": "whatever",
+   "start": 6.9,
+   "end": 7.25
+  },
+  {
+   "text": "comes",
+   "start": 7.25,
+   "end": 7.525
+  },
+  {
+   "text": "back",
+   "start": 7.525,
+   "end": 8.175
+  },
+  {
+   "text": ".",
+   "start": 8.175,
+   "end": 8.287
+  },
+  {
+   "text": "A",
+   "start": 8.287,
+   "end": 8.375
+  },
+  {
+   "text": "decision",
+   "start": 8.375,
+   "end": 8.8
+  },
+  {
+   "text": "model",
+   "start": 8.8,
+   "end": 9.125
+  },
+  {
+   "text": "works",
+   "start": 9.125,
+   "end": 9.425
+  },
+  {
+   "text": "differently",
+   "start": 9.425,
+   "end": 10.225
+  },
+  {
+   "text": ".",
+   "start": 10.225,
+   "end": 10.363
+  },
+  {
+   "text": "You",
+   "start": 10.363,
+   "end": 10.5
+  },
+  {
+   "text": "give",
+   "start": 10.5,
+   "end": 10.637
+  },
+  {
+   "text": "it",
+   "start": 10.637,
+   "end": 10.713
+  },
+  {
+   "text": "the",
+   "start": 10.713,
+   "end": 10.812
+  },
+  {
+   "text": "state",
+   "start": 10.812,
+   "end": 11.25
+  },
+  {
+   "text": ",",
+   "start": 11.25,
+   "end": 11.325
+  },
+  {
+   "text": "like",
+   "start": 11.325,
+   "end": 11.488
+  },
+  {
+   "text": "a",
+   "start": 11.488,
+   "end": 11.55
+  },
+  {
+   "text": "support",
+   "start": 11.55,
+   "end": 11.95
+  },
+  {
+   "text": "ticket",
+   "start": 11.95,
+   "end": 12.3
+  },
+  {
+   "text": ",",
+   "start": 12.3,
+   "end": 12.375
+  },
+  {
+   "text": "and",
+   "start": 12.375,
+   "end": 12.5
+  },
+  {
+   "text": "typed",
+   "start": 12.5,
+   "end": 12.8
+  },
+  {
+   "text": "questions",
+   "start": 12.8,
+   "end": 13.287
+  },
+  {
+   "text": "with",
+   "start": 13.287,
+   "end": 13.387
+  },
+  {
+   "text": "the",
+   "start": 13.387,
+   "end": 13.5
+  },
+  {
+   "text": "answers",
+   "start": 13.5,
+   "end": 13.925
+  },
+  {
+   "text": "you",
+   "start": 13.925,
+   "end": 14.075
+  },
+  {
+   "text": "allow",
+   "start": 14.075,
+   "end": 14.775
+  },
+  {
+   "text": ".",
+   "start": 14.775,
+   "end": 14.9
+  },
+  {
+   "text": "It",
+   "start": 14.9,
+   "end": 15.075
+  },
+  {
+   "text": "reads",
+   "start": 15.075,
+   "end": 15.35
+  },
+  {
+   "text": "everything",
+   "start": 15.35,
+   "end": 15.825
+  },
+  {
+   "text": "once",
+   "start": 15.825,
+   "end": 16.15
+  },
+  {
+   "text": ",",
+   "start": 16.15,
+   "end": 16.2
+  },
+  {
+   "text": "and",
+   "start": 16.2,
+   "end": 16.325
+  },
+  {
+   "text": "returns",
+   "start": 16.325,
+   "end": 16.762
+  },
+  {
+   "text": "a",
+   "start": 16.762,
+   "end": 16.825
+  },
+  {
+   "text": "probability",
+   "start": 16.825,
+   "end": 17.5
+  },
+  {
+   "text": "for",
+   "start": 17.5,
+   "end": 17.65
+  },
+  {
+   "text": "every",
+   "start": 17.65,
+   "end": 17.95
+  },
+  {
+   "text": "option",
+   "start": 17.95,
+   "end": 18.725
+  },
+  {
+   "text": ".",
+   "start": 18.725,
+   "end": 18.825
+  },
+  {
+   "text": "There",
+   "start": 18.825,
+   "end": 18.962
+  },
+  {
+   "text": "are",
+   "start": 18.962,
+   "end": 19.087
+  },
+  {
+   "text": "three",
+   "start": 19.087,
+   "end": 19.325
+  },
+  {
+   "text": "kinds",
+   "start": 19.325,
+   "end": 19.613
+  },
+  {
+   "text": "of",
+   "start": 19.613,
+   "end": 19.7
+  },
+  {
+   "text": "question",
+   "start": 19.7,
+   "end": 20.4
+  },
+  {
+   "text": ".",
+   "start": 20.4,
+   "end": 20.525
+  },
+  {
+   "text": "Choice",
+   "start": 20.525,
+   "end": 20.875
+  },
+  {
+   "text": "picks",
+   "start": 20.875,
+   "end": 21.163
+  },
+  {
+   "text": "one",
+   "start": 21.163,
+   "end": 21.4
+  },
+  {
+   "text": "label",
+   "start": 21.4,
+   "end": 22.025
+  },
+  {
+   "text": ".",
+   "start": 22.025,
+   "end": 22.15
+  },
+  {
+   "text": "Noul",
+   "start": 22.15,
+   "end": 22.525
+  },
+  {
+   "text": "is",
+   "start": 22.525,
+   "end": 22.637
+  },
+  {
+   "text": "a",
+   "start": 22.637,
+   "end": 22.738
+  },
+  {
+   "text": "yes",
+   "start": 22.738,
+   "end": 23.1
+  },
+  {
+   "text": "or",
+   "start": 23.1,
+   "end": 23.225
+  },
+  {
+   "text": "no",
+   "start": 23.225,
+   "end": 23.625
+  },
+  {
+   "text": ",",
+   "start": 23.625,
+   "end": 23.738
+  },
+  {
+   "text": "given",
+   "start": 23.738,
+   "end": 24.05
+  },
+  {
+   "text": "as",
+   "start": 24.05,
+   "end": 24.163
+  },
+  {
+   "text": "a",
+   "start": 24.163,
+   "end": 24.225
+  },
+  {
+   "text": "probability",
+   "start": 24.225,
+   "end": 25.25
+  },
+  {
+   "text": ".",
+   "start": 25.25,
+   "end": 25.4
+  },
+  {
+   "text": "Score",
+   "start": 25.4,
+   "end": 25.75
+  },
+  {
+   "text": "places",
+   "start": 25.75,
+   "end": 26.163
+  },
+  {
+   "text": "the",
+   "start": 26.163,
+   "end": 26.275
+  },
+  {
+   "text": "input",
+   "start": 26.275,
+   "end": 26.637
+  },
+  {
+   "text": "on",
+   "start": 26.637,
+   "end": 26.738
+  },
+  {
+   "text": "a",
+   "start": 26.738,
+   "end": 26.812
+  },
+  {
+   "text": "scale",
+   "start": 26.812,
+   "end": 27.55
+  },
+  {
+   "text": ".",
+   "start": 27.55,
+   "end": 27.712
+  },
+  {
+   "text": "And",
+   "start": 28.075,
+   "end": 28.213
+  },
+  {
+   "text": "it",
+   "start": 28.213,
+   "end": 28.3
+  },
+  {
+   "text": "can't",
+   "start": 28.3,
+   "end": 28.55
+  },
+  {
+   "text": "answer",
+   "start": 28.55,
+   "end": 28.9
+  },
+  {
+   "text": "outside",
+   "start": 28.9,
+   "end": 29.288
+  },
+  {
+   "text": "the",
+   "start": 29.288,
+   "end": 29.4
+  },
+  {
+   "text": "options",
+   "start": 29.4,
+   "end": 29.825
+  },
+  {
+   "text": "you",
+   "start": 29.825,
+   "end": 29.925
+  },
+  {
+   "text": "gave",
+   "start": 29.925,
+   "end": 30.15
+  },
+  {
+   "text": "it",
+   "start": 30.15,
+   "end": 30.625
+  },
+  {
+   "text": ".",
+   "start": 30.625,
+   "end": 30.738
+  },
+  {
+   "text": "TypeSafe",
+   "start": 30.738,
+   "end": 31.275
+  },
+  {
+   "text": "launched",
+   "start": 31.275,
+   "end": 31.625
+  },
+  {
+   "text": "Jev",
+   "start": 31.625,
+   "end": 31.975
+  },
+  {
+   "text": ",",
+   "start": 31.975,
+   "end": 32.05
+  },
+  {
+   "text": "a",
+   "start": 32.05,
+   "end": 32.15
+  },
+  {
+   "text": "hosted",
+   "start": 32.15,
+   "end": 32.55
+  },
+  {
+   "text": "model",
+   "start": 32.55,
+   "end": 32.9
+  },
+  {
+   "text": ",",
+   "start": 32.9,
+   "end": 32.95
+  },
+  {
+   "text": "in",
+   "start": 32.95,
+   "end": 33.1
+  },
+  {
+   "text": "September",
+   "start": 33.1,
+   "end": 34.1
+  },
+  {
+   "text": ".",
+   "start": 34.1,
+   "end": 34.288
+  },
+  {
+   "text": "Cloudflare",
+   "start": 34.288,
+   "end": 34.862
+  },
+  {
+   "text": "followed",
+   "start": 34.862,
+   "end": 35.263
+  },
+  {
+   "text": "with",
+   "start": 35.263,
+   "end": 35.438
+  },
+  {
+   "text": "open-weight",
+   "start": 35.438,
+   "end": 35.975
+  },
+  {
+   "text": "Clef",
+   "start": 35.975,
+   "end": 36.3
+  },
+  {
+   "text": "and",
+   "start": 36.3,
+   "end": 36.425
+  },
+  {
+   "text": "Clef",
+   "start": 36.425,
+   "end": 36.7
+  },
+  {
+   "text": "Flash",
+   "start": 36.7,
+   "end": 37.225
+  },
+  {
+   "text": ",",
+   "start": 37.225,
+   "end": 37.3
+  },
+  {
+   "text": "and",
+   "start": 37.3,
+   "end": 37.425
+  },
+  {
+   "text": "Ollama",
+   "start": 37.425,
+   "end": 37.8
+  },
+  {
+   "text": "now",
+   "start": 37.8,
+   "end": 38.038
+  },
+  {
+   "text": "runs",
+   "start": 38.038,
+   "end": 38.337
+  },
+  {
+   "text": "them",
+   "start": 38.337,
+   "end": 38.462
+  },
+  {
+   "text": "on",
+   "start": 38.462,
+   "end": 38.562
+  },
+  {
+   "text": "your",
+   "start": 38.562,
+   "end": 38.675
+  },
+  {
+   "text": "own",
+   "start": 38.675,
+   "end": 38.837
+  },
+  {
+   "text": "machine",
+   "start": 38.837,
+   "end": 39.575
+  },
+  {
+   "text": ".",
+   "start": 39.575,
+   "end": 39.675
+  },
+  {
+   "text": "We",
+   "start": 39.675,
+   "end": 39.8
+  },
+  {
+   "text": "use",
+   "start": 39.8,
+   "end": 40.025
+  },
+  {
+   "text": "Clef",
+   "start": 40.025,
+   "end": 40.3
+  },
+  {
+   "text": "Flash",
+   "start": 40.3,
+   "end": 40.7
+  },
+  {
+   "text": "as",
+   "start": 40.7,
+   "end": 40.812
+  },
+  {
+   "text": "a",
+   "start": 40.812,
+   "end": 40.888
+  },
+  {
+   "text": "judge",
+   "start": 40.888,
+   "end": 41.55
+  },
+  {
+   "text": ".",
+   "start": 41.55,
+   "end": 41.675
+  },
+  {
+   "text": "It",
+   "start": 41.675,
+   "end": 41.812
+  },
+  {
+   "text": "looks",
+   "start": 41.812,
+   "end": 42.013
+  },
+  {
+   "text": "at",
+   "start": 42.013,
+   "end": 42.1
+  },
+  {
+   "text": "frames",
+   "start": 42.1,
+   "end": 42.438
+  },
+  {
+   "text": "from",
+   "start": 42.438,
+   "end": 42.562
+  },
+  {
+   "text": "our",
+   "start": 42.562,
+   "end": 42.688
+  },
+  {
+   "text": "videos",
+   "start": 42.688,
+   "end": 43.2
+  },
+  {
+   "text": ",",
+   "start": 43.2,
+   "end": 43.275
+  },
+  {
+   "text": "and",
+   "start": 43.275,
+   "end": 43.4
+  },
+  {
+   "text": "answers",
+   "start": 43.4,
+   "end": 43.862
+  },
+  {
+   "text": "every",
+   "start": 43.862,
+   "end": 44.237
+  },
+  {
+   "text": "rubric",
+   "start": 44.237,
+   "end": 44.625
+  },
+  {
+   "text": "question",
+   "start": 44.625,
+   "end": 45.1
+  },
+  {
+   "text": "in",
+   "start": 45.1,
+   "end": 45.188
+  },
+  {
+   "text": "a",
+   "start": 45.188,
+   "end": 45.263
+  },
+  {
+   "text": "single",
+   "start": 45.263,
+   "end": 45.6
+  },
+  {
+   "text": "call",
+   "start": 45.6,
+   "end": 46.275
+  },
+  {
+   "text": ".",
+   "start": 46.275,
+   "end": 46.375
+  },
+  {
+   "text": "It",
+   "start": 46.375,
+   "end": 46.525
+  },
+  {
+   "text": "won't",
+   "start": 46.525,
+   "end": 46.713
+  },
+  {
+   "text": "explain",
+   "start": 46.713,
+   "end": 47.15
+  },
+  {
+   "text": "itself",
+   "start": 47.15,
+   "end": 47.675
+  },
+  {
+   "text": ",",
+   "start": 47.675,
+   "end": 47.75
+  },
+  {
+   "text": "and",
+   "start": 47.75,
+   "end": 47.875
+  },
+  {
+   "text": "hard",
+   "start": 47.875,
+   "end": 48.15
+  },
+  {
+   "text": "reasoning",
+   "start": 48.15,
+   "end": 48.688
+  },
+  {
+   "text": "still",
+   "start": 48.688,
+   "end": 48.975
+  },
+  {
+   "text": "needs",
+   "start": 48.975,
+   "end": 49.213
+  },
+  {
+   "text": "a",
+   "start": 49.213,
+   "end": 49.275
+  },
+  {
+   "text": "big",
+   "start": 49.275,
+   "end": 49.5
+  },
+  {
+   "text": "model",
+   "start": 49.5,
+   "end": 50.175
+  },
+  {
+   "text": ".",
+   "start": 50.175,
+   "end": 50.312
+  },
+  {
+   "text": "So",
+   "start": 50.312,
+   "end": 50.5
+  },
+  {
+   "text": "let",
+   "start": 50.5,
+   "end": 50.638
+  },
+  {
+   "text": "the",
+   "start": 50.638,
+   "end": 50.725
+  },
+  {
+   "text": "decision",
+   "start": 50.725,
+   "end": 51.175
+  },
+  {
+   "text": "model",
+   "start": 51.175,
+   "end": 51.5
+  },
+  {
+   "text": "decide",
+   "start": 51.5,
+   "end": 52.175
+  },
+  {
+   "text": ",",
+   "start": 52.175,
+   "end": 52.275
+  },
+  {
+   "text": "and",
+   "start": 52.275,
+   "end": 52.4
+  },
+  {
+   "text": "let",
+   "start": 52.4,
+   "end": 52.55
+  },
+  {
+   "text": "the",
+   "start": 52.55,
+   "end": 52.65
+  },
+  {
+   "text": "language",
+   "start": 52.65,
+   "end": 53.05
+  },
+  {
+   "text": "model",
+   "start": 53.05,
+   "end": 53.375
+  },
+  {
+   "text": "write",
+   "start": 53.375,
+   "end": 53.95
+  },
+  {
+   "text": ".",
+   "start": 53.95,
+   "end": 54.1
+  }
+ ],
+ "cues": {
+  "tokens": 3.337,
+  "parse": 6.575,
+  "state": 10.812,
+  "questions": 12.5,
+  "pass": 14.9,
+  "probs": 16.762,
+  "choice": 20.525,
+  "noul": 22.15,
+  "score": 25.4,
+  "closed": 28.3,
+  "jev": 31.625,
+  "clef": 34.288,
+  "ollama": 37.425,
+  "judge": 40.888,
+  "limit": 46.375,
+  "end": 50.312
+ }
+}

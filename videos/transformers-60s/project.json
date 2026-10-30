@@ -1,0 +1,16 @@
+{
+  "title": "Transformers in 60 seconds",
+  "type": "explainer",
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "voice": {
+    "voice": "af_heart",
+    "speed": 0.88
+  },
+  "scenes": [
+    "01-main"
+  ]
+}

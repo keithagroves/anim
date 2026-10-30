@@ -1,0 +1,26 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.ring": { "type": "rect", "w": 228, "h": 42, "radius": "sm", "fill": "none", "stroke": "pod", "strokeWidth": "md",
+                 "layer": 5, "at": { "in": "specCard", "align": "left", "pad": "sm", "dy": 21 } },
+    "s2.dot1": { "type": "rect", "w": 26, "h": 26, "radius": 6, "fill": "pod" },
+    "s2.dot2": { "type": "rect", "w": 26, "h": 26, "radius": 6, "fill": "pod" },
+    "s2.dot3": { "type": "rect", "w": 26, "h": 26, "radius": 6, "fill": "pod" },
+    "s2.dots": { "type": "group", "children": ["s2.dot1", "s2.dot2", "s2.dot3"], "layout": { "dir": "row", "gap": "xs", "align": "center" },
+                 "layer": 5, "at": { "in": "specCard", "align": "right", "pad": "md", "dy": 19 } }
+  },
+  "timeline": [
+    { "id": "k8sIn", "target": "k8s", "preset": "rise-in", "at": "cue:conductor", "offset": -0.15, "dur": 0.7 },
+    { "id": "specIn", "target": "spec", "preset": "rise-in", "at": "cue:declare", "offset": -0.1, "dur": 0.6 },
+    { "target": "specText", "preset": "to", "to": { "reveal": 0 }, "at": 0.2, "dur": 0.05 },
+    { "id": "typing", "target": "specText", "preset": "to", "to": { "reveal": 1 }, "with": "specIn", "offset": 0.35, "dur": 1.2, "ease": "linear" },
+    { "id": "ringIn", "target": "s2.ring", "preset": "draw-on", "at": "cue:three", "dur": 0.6 },
+    { "id": "dotsIn", "target": "s2.dot*", "preset": "pop", "at": "cue:three", "offset": 0.25, "stagger": 0.1, "dur": 0.45 },
+    { "target": "s2.ring", "preset": "fade-out", "at": "cue:place", "offset": -0.9, "dur": 0.4 },
+    { "target": "s2.dot*", "preset": "fade-out", "at": "cue:place", "offset": -0.8, "stagger": 0.06, "dur": 0.35 },
+    { "target": "k8s", "preset": "pulse", "at": "cue:place", "offset": -0.4, "amount": 0.05, "dur": 0.5 },
+    { "id": "podAIn", "target": "podA", "preset": "fly-from", "from": { "in": "control", "align": "bottom", "dy": 48 }, "at": "cue:place", "offset": -0.1, "dur": 1.0 },
+    { "id": "podBIn", "target": "podB", "preset": "fly-from", "from": { "in": "control", "align": "bottom", "dy": 48 }, "with": "podAIn", "offset": 0.12, "dur": 1.0 },
+    { "id": "podCIn", "target": "podC", "preset": "fly-from", "from": { "in": "control", "align": "bottom", "dy": 48 }, "with": "podAIn", "offset": 0.24, "dur": 1.0 }
+  ]
+}

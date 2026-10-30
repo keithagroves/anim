@@ -1,0 +1,371 @@
+{
+  "id": "01-main",
+  "objects": {
+    "task": {
+      "type": "rect",
+      "text": "task",
+      "w": 300,
+      "h": 96,
+      "radius": "md",
+      "fill": "card",
+      "stroke": "task",
+      "shadow": true,
+      "at": {
+        "region": "left-third",
+        "align": "top",
+        "dy": 40
+      }
+    },
+    "reportBox": {
+      "type": "rect",
+      "w": 300,
+      "h": 470,
+      "radius": "md",
+      "fill": "card",
+      "stroke": "report",
+      "shadow": true,
+      "at": {
+        "below": "task",
+        "gap": 150
+      }
+    },
+    "reportTitle": {
+      "type": "text",
+      "text": "report",
+      "style": "label",
+      "fill": "report",
+      "anchor": "start",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": "md"
+      }
+    },
+    "rl11": {
+      "type": "rect",
+      "w": 236,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 84
+      }
+    },
+    "rl12": {
+      "type": "rect",
+      "w": 210,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 114
+      }
+    },
+    "rl13": {
+      "type": "rect",
+      "w": 180,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 144
+      }
+    },
+    "cite1": {
+      "type": "rect",
+      "text": "[1]",
+      "w": 48,
+      "h": 30,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "report",
+      "strokeWidth": "thin",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dx": 188,
+        "dy": 135
+      },
+      "style": "small",
+      "labelColor": "report"
+    },
+    "rl21": {
+      "type": "rect",
+      "w": 236,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 214
+      }
+    },
+    "rl22": {
+      "type": "rect",
+      "w": 224,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 244
+      }
+    },
+    "rl23": {
+      "type": "rect",
+      "w": 150,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 274
+      }
+    },
+    "rl31": {
+      "type": "rect",
+      "w": 236,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 344
+      }
+    },
+    "rl32": {
+      "type": "rect",
+      "w": 200,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 374
+      }
+    },
+    "rl33": {
+      "type": "rect",
+      "w": 120,
+      "h": 12,
+      "radius": 6,
+      "fill": "ink",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dy": 404
+      }
+    },
+    "cite3": {
+      "type": "rect",
+      "text": "[2]",
+      "w": 48,
+      "h": 30,
+      "radius": "sm",
+      "fill": "surface2",
+      "stroke": "report",
+      "strokeWidth": "thin",
+      "layer": 1,
+      "at": {
+        "in": "reportBox",
+        "align": "top-left",
+        "pad": 32,
+        "dx": 188,
+        "dy": 395
+      },
+      "style": "small",
+      "labelColor": "report"
+    },
+    "report": {
+      "type": "group",
+      "children": [
+        "reportBox",
+        "reportTitle",
+        "rl11",
+        "rl12",
+        "rl13",
+        "cite1",
+        "rl21",
+        "rl22",
+        "rl23",
+        "rl31",
+        "rl32",
+        "rl33",
+        "cite3"
+      ]
+    },
+    "agentArrow": {
+      "type": "arrow",
+      "from": "task.bottom",
+      "to": "reportBox.top",
+      "stroke": "report"
+    },
+    "agentLabel": {
+      "type": "text",
+      "text": "deep research\nagent",
+      "style": "caption",
+      "fill": "report",
+      "anchor": "start",
+      "at": {
+        "rightOf": "agentArrow",
+        "gap": "sm"
+      }
+    }
+  },
+  "through": [
+    {
+      "target": "camera",
+      "preset": "drift",
+      "at": 0,
+      "dur": "all",
+      "amount": 0.02
+    }
+  ],
+  "keys": {
+    "0": {
+      "task": {
+        "opacity": 0
+      },
+      "agentArrow": {
+        "opacity": 0
+      },
+      "agentLabel": {
+        "opacity": 0
+      },
+      "report": {
+        "opacity": 0
+      }
+    },
+    "s1": {
+      "task": {
+        "opacity": 1
+      },
+      "agentArrow": {
+        "opacity": 1
+      },
+      "agentLabel": {
+        "opacity": 1
+      },
+      "report": {
+        "opacity": 1
+      }
+    },
+    "s2": {},
+    "s3": {},
+    "s4": {},
+    "s5": {},
+    "s6": {
+      "task": {
+        "opacity": 0
+      },
+      "agentArrow": {
+        "opacity": 0
+      },
+      "agentLabel": {
+        "opacity": 0
+      },
+      "report": {
+        "opacity": 0
+      }
+    },
+    "s7": {}
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "target": [
+        0,
+        18.3
+      ],
+      "brief": "Hook, then the hero, then the three gaps. 0.3s\u20134s ('Deep research agents search the web for minutes'): `task` rises in, then `agentArrow` draws on with `agentLabel` fading in beside it; while the arrow draws, a few small local cyan-free blue dots or tiny 'page' rects can blink along/near the arrow to suggest browsing (subtle, gone by 4.5s). At cue:report (4.39s) the `report` group rises in. On 'So how do you grade one?' (about 5.7\u20137.6s) type-on a local h2 'how do you grade one?' at the top of the workspace (right-two-thirds region). Then three local problem cards stacked vertically in the workspace (right-two-thirds region) (dark card fill, `muted` edge, each ~560\u00d784), each with a small red (`bad`) cross on its left, popping in on their cues: cue:experts (8.05s) 'experts write every task', cue:rubric (10.98s) 'one fixed rubric for all', cue:cited (13.70s) 'only cited facts get checked'. At cue:name (15.79s) the question fades, a local h1 'DeepResearchEval' type-ons at the top of the workspace, and each red cross crossfades to a green (`good`) tick (stagger 0.12). Clear every local object (fade-out) between ~17.4s and 18.2s. End on exactly key s1: task, agentArrow, agentLabel and report visible and unchanged."
+    },
+    {
+      "id": "s2",
+      "target": [
+        18.3,
+        29.25
+      ],
+      "brief": "Part 1: task construction (personas). At cue:tasks (18.88s) a local h2 title '1 \u00b7 tasks' rises in at the top of the workspace (right-two-thirds region) and the shared `task` card gets a `highlight` (color task). At cue:domains (20.51s) pop a 2\u00d75 grid of ten small domain chips (about 170\u00d752, card fill, `ink` or `muted` edge, label style small) \u2014 exactly these ten: Transportation, Politics, Finance, History, Software, Industrial, Sports, Health, Science, Education \u2014 stagger 0.06. At cue:personas (22.39s) the domain chips dim (to opacity 0.35) and shrink up, and three example persona cards rise in below them (amber `task` edge, a tiny person glyph made of a circle head + rounded-rect body, plus a role label: 'transit planner', 'hospital manager', 'fund analyst'), then a big amber stat '{value} personas' counts up 0\u219250 beside them (5 per domain). At cue:candidates (27.30s) four tiny amber task chips fan out from each persona card (12 chips, stagger 0.04), and the stat switches to '{value} tasks' counting up 50\u2192200 (or a second stat '200 candidate tasks'). Keep it in the workspace (right-two-thirds region); nothing over the hero. Clear every local object by 29.05s. End on exactly key s2 (hero unchanged)."
+    },
+    {
+      "id": "s3",
+      "target": [
+        29.25,
+        43.0
+      ],
+      "brief": "Part 1 continued: two filters. At 29.3s ('Then come two filters') a local h2 'two filters' at the top of the workspace (right-two-thirds region); a stack of amber task chips labelled '200' at the left edge of the workspace, and two tall vertical gate bars to its right (card fill), drawn on. Gate 1 (violet `judge` edge) label 'needs deep research?'; gate 2 (cyan `checker` edge) label 'solvable without web?'. At cue:qualify (32.41s) a row of 5\u20136 small amber chips slides from the stack through gate 1: most pass, two get a red cross and sink-out; a small caption under gate 1 'confidence > 0.7'. At cue:nosearch (36.99s) a small card 'model \u00b7 no web' (with a crossed-out globe made of a circle + line) pops next to gate 2 and one chip slides into it. At cue:cut (39.99s) that chip turns red (fill bad / red cross) and sink-outs \u2014 'did well anyway \u2192 cut'. At cue:kept (40.84s) a big amber stat '{value}' counts up 0\u2192155 to the right of gate 2 with caption 'tasks survive', then a small muted caption '100 used in the benchmark' fades in under it; the shared `task` card pulses once. Clear every local object by 42.9s. End on exactly key s3 (hero unchanged)."
+    },
+    {
+      "id": "s4",
+      "target": [
+        43.0,
+        62.24
+      ],
+      "brief": "Part 2: adaptive quality scoring. At cue:quality (43.53s) a local h2 '2 \u00b7 quality' at the top of the workspace (right-two-thirds region), and a violet `judge` card 'quality judge' (~260\u00d790) rises in at the left of the workspace, with an arrow drawing on from `reportBox.right` to it. At cue:general (46.26s) four dimension rows stack to the right of the judge (each a label + a long empty track, violet edge): 'Coverage', 'Insight', 'Instruction-following', 'Clarity', stagger 0.1, with a small muted caption 'general \u00b7 every task'. Around 49.4s ('Then the judge reads the task') draw a curved (bend) dashed amber arrow from `task.right` to the judge card. At cue:specific (51.65s) two more rows slide in below with amber (`task`) edges: 'Metric utility', 'Comparative synthesis', with a small amber caption 'from this task'. At cue:weight (57.34s) each of the six rows grows a filled weight bar of a different width (wipe-in; widths just visual, NO numbers shown). At cue:criteria (58.15s) one row (Metric utility) sprouts three tiny criterion chips with 1\u201310 score dots or small '1\u201310' label. At cue:score (61.33s, very end) all bars pulse together toward a single small formula text 'S = \u03a3 W \u00b7 \u03a3 w \u00b7 s' that pops right of the rows. Then clear every local object quickly (fade-out 0.25s) starting ~61.75s so it is gone by 62.15s. No invented numbers. End on exactly key s4 (hero unchanged)."
+    },
+    {
+      "id": "s5",
+      "target": [
+        62.24,
+        76.9
+      ],
+      "brief": "Part 3: active fact-checking. At cue:facts (62.64s) a local h2 '3 \u00b7 facts' at the top of the workspace (right-two-thirds region), and a cyan `checker` card 'fact-check agent' rises in at the left of the workspace. At cue:segments (65.03s) three cyan bracket/outline rects appear over the report's three line segments (rl11\u2013rl13, rl21\u2013rl23, rl31\u2013rl33 inside reportBox), stagger 0.1. At cue:statements (66.39s) three statement chips (~520\u00d764, card fill, `ink` edge, small text) rise in stacked in the workspace, each with a thin cyan line from its segment (segment 1 \u2192 chip 1, segment 2 \u2192 chip 2, segment 3 \u2192 chip 3; note shared `cite1` '[1]' sits on segment 1, `cite3` '[2]' on segment 3, and segment 2 has no citation): '2,788M H800 GPU hours' (with a small '[1]' citation tag), 'FECC is a two-year program' (NO citation tag), 'Dutch DUV export controls, Sept 2024' (tag '[2]'). At cue:search (69.45s) a cyan magnifier glyph (circle + handle line) and a 'web search' label pop near the checker card, and cyan arrows draw on from it to each chip (stagger 0.12). At cue:uncited (71.35s) the uncited chip gets a cyan `highlight` and a tiny caption 'no citation \u2014 still checked'. Labels pop at the right end of the chips exactly on their cues: cue:right (72.34s) green 'Right' on the Dutch chip, cue:wrong (72.76s) red 'Wrong' on the GPU-hours chip, cue:unknown (73.33s) grey 'Unknown' on the FECC chip. At cue:ratio (75.48s) a formula 'ratio = right \u00f7 all statements' type-ons below the chips. Clear every local object quickly (fade-out ~0.4s) starting ~76.3s so it is gone by 76.8s. End on exactly key s5 (hero unchanged)."
+    },
+    {
+      "id": "s6",
+      "target": [
+        76.9,
+        92.22
+      ],
+      "brief": "Results: quality. First, fade out the hero (`task`, `agentArrow`, `agentLabel`, `report`) by ~77.6s \u2014 the stage is now full width. At cue:nine (77.89s) a local h2 'report quality' (top), and a horizontal bar chart (centre, full width, ~1300 px wide) of the average quality score out of 10 for nine systems, bars wipe-in top to bottom, stagger 0.08, each with its name on the left (label style) and value on the right: Gemini-2.5-Pro 8.51, Claude-Sonnet-4.5 7.53, OpenAI 7.28, Qwen-3-235B 7.17, Doubao 7.06, Grok4 6.92, Perplexity 6.86, Manus 5.95, DeepSeek 5.25. Bars in `judge` violet at ~0.75 opacity; scale 0\u201310 so bar length = score/10 \u00d7 track width (track faint). At cue:gemini (80.51s) Gemini's bar highlights (full opacity + pulse) and its value '8.51' becomes stat-sized. At cue:every (84.98s) add an amber (`task`) tick mark on each bar at its task-specific score (staggered 0.06): Gemini 8.0, Claude 6.8, OpenAI 6.7, Qwen 6.6, Doubao 6.3, Grok4 6.0, Perplexity 5.9, Manus 5.2, DeepSeek 4.3 \u2014 every tick sits left of its bar end. At cue:taskspec (85.91s) a legend/caption in amber 'task-specific: lowest dimension for all 9'. Hold, then clear every local object by 92.1s. Real numbers only. End on exactly key s6 (hero hidden)."
+    },
+    {
+      "id": "s7",
+      "target": [
+        92.22,
+        102.09
+      ],
+      "brief": "Results: facts. Stage is full width (hero hidden; leave it hidden). At cue:manus (92.90s) a local h2 'factual ratio' (top) and a compact horizontal bar chart (left ~55% of the stage) of the share of statements judged Right, 0\u2013100%, bars in `checker` cyan, wipe-in stagger 0.06, with values: Manus 82.3%, Gemini-2.5-Pro 76.6%, DeepSeek 76.4%, OpenAI 76.2%, Qwen-3-235B 72.4%, Doubao 69.5%, Grok4 61.8%, Claude-Sonnet-4.5 60.7%, Perplexity 58.9%. Manus's bar highlighted. At cue:rare (96.40s) on the right side, one tall stacked bar labelled 'all statements checked' grows bottom-up in three segments: green Right 70%, red Wrong 8%, grey Unknown 21% (heights proportional); pop the label 'wrong: 8%' next to the red slice at cue:rare. At cue:unknowns (98.50s) the grey Unknown slice highlights/pulses and a label 'unknown: 21%' plus small caption 'unconfirmed, not wrong' appears. Clear every local object by 101.95s. Real numbers only. End on exactly key s7 (hero hidden)."
+    },
+    {
+      "id": "s8",
+      "target": [
+        102.09,
+        120.8
+      ],
+      "brief": "Can the judges be trusted? + payoff (last section; final picture holds). At 102.2s a local h2 'can the judges be trusted?' at the top. At cue:gpt5 (103.86s) a slope chart in the centre: two columns of 9 rank labels, left header 'Gemini judge', right header 'GPT-5 judge' (both small, muted); left order top\u2192bottom: Gemini, Claude, OpenAI, Qwen, Doubao, Grok4, Perplexity, Manus, DeepSeek; right order: Gemini, Claude, OpenAI, Doubao, Qwen, Grok4, Perplexity, Manus, DeepSeek. Lines draw on between the same system (stagger 0.05): 7 straight lines in muted grey, and the two crossing lines (Qwen, Doubao) in violet. Then a caption '7 of 9 unchanged'. At cue:humans (108.78s) shift the chart left (or dim it) and show a meter on the right: a track with a cyan fill wiping to 73% and a stat '{value}%' counting up 0\u219273, caption 'agrees with human experts'. Clear chart and meter by ~115.9s. At cue:live (116.63s) bring the hero back with `to` (opacity 1) on `task`, `agentArrow`, `agentLabel`, `report` (NOT an entrance preset), and show 'fresh tasks' flowing in: three small amber task chips slide one after another into the `task` card from the left edge (staggered ~0.4s); a final local h1 'a live benchmark' on the right with a small muted caption below: 'DeepResearchEval \u00b7 Wang et al., 2026 \u00b7 arXiv 2601.09688'. Hold to the end."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+ "seed": 5,
+ "meter": 4,
+ "tempo": {
+  "fit": [
+   "s2",
+   "s3",
+   "s5",
+   "cue:goal"
+  ],
+  "range": [
+   84,
+   104
+  ],
+  "unit": "bar"
+ },
+ "programs": {
+  "pad": {
+   "patch": "pad",
+   "gain": -3,
+   "rev": 0.6
+  },
+  "keys": {
+   "patch": "ep",
+   "gain": -6,
+   "pan": -0.15,
+   "rev": 0.3
+  },
+  "bass": {
+   "patch": "bass",
+   "gain": -3
+  },
+  "pluck": {
+   "patch": "pluck",
+   "gain": -9,
+   "pan": 0.3,
+   "rev": 0.4
+  },
+  "mallet": {
+   "patch": "marimba",
+   "gain": -9,
+   "pan": 0.22,
+   "rev": 0.32
+  },
+  "bell": {
+   "patch": "glock",
+   "gain": -12,
+   "pan": -0.25,
+   "rev": 0.5
+  }
+ },
+ "foley": {
+  "vel": 20,
+  "map": {
+   "pop": "none",
+   "pop-out": "none",
+   "fly-from": "none",
+   "draw-on": "none",
+   "wipe-in": "none",
+   "type-on": "none"
+  }
+ },
+ "events": [
+  {
+   "chord": "Bm9",
+   "track": "pad",
+   "at": 0.2,
+   "dur": 5.2,
+   "vel": 58
+  },
+  {
+   "note": "B1",
+   "track": "bass",
+   "at": 0.2,
+   "dur": 4.8,
+   "vel": 48
+  },
+  {
+   "chord": "Gmaj9",
+   "track": "pad",
+   "at": "cue:top",
+   "dur": 3.8,
+   "vel": 56
+  },
+  {
+   "note": "G1",
+   "track": "bass",
+   "at": "cue:top",
+   "dur": 3.4,
+   "vel": 46
+  },
+  {
+   "chord": "Em9",
+   "track": "pad",
+   "at": "cue:restart",
+   "dur": 1.9,
+   "vel": 56
+  },
+  {
+   "note": "E1",
+   "track": "bass",
+   "at": "cue:restart",
+   "dur": 1.7,
+   "vel": 58
+  },
+  {
+   "fx": "thud",
+   "at": "cue:restart",
+   "vel": 48
+  },
+  {
+   "chord": "A7sus4",
+   "track": "pad",
+   "at": "cue:lost",
+   "dur": 2.3,
+   "vel": 50
+  },
+  {
+   "fx": "revswell",
+   "at": "bar:0",
+   "dur": 1.6,
+   "vel": 34
+  },
+  {
+   "progression": [
+    "Dmaj9",
+    "Bm9",
+    "Gmaj9",
+    "A7sus4"
+   ],
+   "bars": 2,
+   "track": "pad",
+   "from": "bar:0",
+   "to": "bar:24",
+   "vel": 56
+  },
+  {
+   "progression": [
+    "Dmaj9",
+    "Bm9",
+    "Gmaj9",
+    "A7sus4"
+   ],
+   "bars": 2,
+   "track": "keys",
+   "part": "chord",
+   "from": "bar:0",
+   "to": "bar:16",
+   "rhythm": "x.......",
+   "vel": 50
+  },
+  {
+   "progression": [
+    "Dmaj9"
+   ],
+   "bars": 2,
+   "track": "keys",
+   "part": "chord",
+   "from": "bar:16",
+   "to": "bar:18",
+   "rhythm": "x.......",
+   "vel": 46
+  },
+  {
+   "progression": [
+    "Bm9",
+    "Gmaj9",
+    "A7sus4"
+   ],
+   "bars": 2,
+   "track": "keys",
+   "part": "chord",
+   "from": "bar:18",
+   "to": "bar:24",
+   "rhythm": "x..x....",
+   "vel": 50
+  },
+  {
+   "progression": [
+    "Dmaj9",
+    "Bm9",
+    "Gmaj9"
+   ],
+   "bars": 2,
+   "track": "bass",
+   "part": "root",
+   "from": "bar:0",
+   "to": "bar:5",
+   "rhythm": "x.......",
+   "vel": 60
+  },
+  {
+   "progression": [
+    "Gmaj9",
+    "A7sus4",
+    "Dmaj9",
+    "Bm9"
+   ],
+   "bars": 2,
+   "track": "bass",
+   "part": "root",
+   "from": "bar:5",
+   "to": "bar:12",
+   "rhythm": "x...x...",
+   "vel": 64
+  },
+  {
+   "progression": [
+    "Gmaj9",
+    "A7sus4"
+   ],
+   "bars": 2,
+   "track": "bass",
+   "part": "root",
+   "from": "bar:12",
+   "to": "bar:16",
+   "rhythm": "x.x.x.x.",
+   "vel": 52
+  },
+  {
+   "progression": [
+    "Bm9",
+    "Gmaj9",
+    "A7sus4"
+   ],
+   "bars": 2,
+   "track": "bass",
+   "part": "root",
+   "from": "bar:18",
+   "to": "cue:goal~beat-1b",
+   "rhythm": "x...x.x.",
+   "vel": 68
+  },
+  {
+   "pattern": "x.......|....x...",
+   "track": "pluck",
+   "from": "bar:1",
+   "to": "bar:5",
+   "pitch": [
+    "D5",
+    "A4"
+   ],
+   "step": 0.5,
+   "vel": 44
+  },
+  {
+   "drums": {
+    "kick": "x.......",
+    "shaker": "..o...o."
+   },
+   "from": "bar:5",
+   "to": "bar:10",
+   "step": 0.5,
+   "vel": 44
+  },
+  {
+   "pattern": "x..x..x...x.x...",
+   "track": "mallet",
+   "from": "bar:6",
+   "to": "bar:10",
+   "pitch": [
+    "A5",
+    "F#5",
+    "E5",
+    "D5",
+    "E5"
+   ],
+   "step": 0.5,
+   "vel": 46
+  },
+  {
+   "note": "D6",
+   "track": "bell",
+   "at": "cue:cmd",
+   "beats": 1,
+   "vel": 52
+  },
+  {
+   "note": "F#6",
+   "track": "bell",
+   "at": "cue:conn",
+   "beats": 1,
+   "vel": 54
+  },
+  {
+   "run": [
+    "A5",
+    "F#5",
+    "E5",
+    "D5",
+    "B4",
+    "A4"
+   ],
+   "track": "mallet",
+   "at": "cue:unwind",
+   "step": 0.15,
+   "vel": 56,
+   "cresc": -3
+  },
+  {
+   "fx": "chime",
+   "at": "cue:clean",
+   "vel": 42
+  },
+  {
+   "drums": {
+    "shaker": "..o...o."
+   },
+   "from": "bar:12",
+   "to": "bar:16",
+   "step": 0.5,
+   "vel": 34
+  },
+  {
+   "fx": "sparkle",
+   "at": "cue:activates",
+   "vel": 40
+  },
+  {
+   "chord": "A7sus4",
+   "track": "bell",
+   "at": "cue:activates",
+   "dur": 1.4,
+   "vel": 42,
+   "strum": 0.03
+  },
+  {
+   "fx": "thud",
+   "at": "cue:leaves",
+   "vel": 34
+  },
+  {
+   "drums": {
+    "kick": "x...x.x.",
+    "sidestick": "....x...",
+    "shaker": "..o...o."
+   },
+   "from": "bar:18",
+   "to": "cue:goal~beat-1b",
+   "step": 0.5,
+   "vel": 50
+  },
+  {
+   "pattern": "x..x..x...x.x...",
+   "track": "mallet",
+   "from": "bar:18",
+   "to": "cue:goal~beat-1b",
+   "pitch": [
+    "A5",
+    "F#5",
+    "E5",
+    "D5",
+    "E5"
+   ],
+   "step": 0.5,
+   "vel": 50
+  },
+  {
+   "pattern": "x.......|....x...",
+   "track": "pluck",
+   "from": "bar:20",
+   "to": "cue:goal~beat-1b",
+   "pitch": [
+    "F#5",
+    "D5"
+   ],
+   "step": 0.5,
+   "vel": 40
+  },
+  {
+   "fx": "sparkle",
+   "at": "cue:cordis",
+   "vel": 34
+  },
+  {
+   "drum": "crash",
+   "at": "cue:goal",
+   "vel": 72
+  },
+  {
+   "chord": "Dmaj9",
+   "track": "keys",
+   "at": "cue:goal",
+   "beats": 6,
+   "vel": 74,
+   "strum": 0.02,
+   "over": true
+  },
+  {
+   "chord": "Dmaj9",
+   "track": "bell",
+   "at": "cue:goal",
+   "dur": 2.4,
+   "vel": 64,
+   "strum": 0.03,
+   "over": true
+  },
+  {
+   "chord": "Dmaj9",
+   "track": "pad",
+   "at": "cue:goal",
+   "dur": 6.0,
+   "vel": 54
+  },
+  {
+   "note": "D2",
+   "track": "bass",
+   "at": "cue:goal",
+   "beats": 4,
+   "vel": 66
+  },
+  {
+   "note": "D2",
+   "track": "bass",
+   "at": "bar:25",
+   "beats": 4,
+   "vel": 56
+  },
+  {
+   "pattern": "x..x..x...x.x...",
+   "track": "mallet",
+   "from": "bar:25",
+   "to": "end-1.2",
+   "pitch": [
+    "A5",
+    "F#5",
+    "E5",
+    "D5",
+    "E5"
+   ],
+   "step": 0.5,
+   "vel": 40
+  },
+  {
+   "run": [
+    "D5",
+    "F#5",
+    "A5",
+    "D6"
+   ],
+   "track": "bell",
+   "at": "end-1.6",
+   "step": 0.12,
+   "vel": 44,
+   "cresc": 4
+  }
+ ],
+ "master": {
+  "gain": -3,
+  "fadeOut": 2.0,
+  "duck": -21,
+  "reverb": 0.3
+ }
+}

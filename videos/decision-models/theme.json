@@ -1,0 +1,37 @@
+{
+  "palette": {
+    "bg": "#0f1420",
+    "surface": "#171d2b",
+    "surface2": "#202839",
+    "line": "#323b50",
+    "text": "#eef2f7",
+    "muted": "#8f98ab",
+    "decide": "#9b7bff",
+    "write": "#ffb547",
+    "accent": "#9b7bff",
+    "paper": "#1b2131",
+    "ink": "#9b7bff"
+  },
+  "backdrop": {
+    "preset": "lines",
+    "opacity": 0.3,
+    "glows": [
+      {
+        "color": "decide",
+        "x": 0.78,
+        "y": 0.3,
+        "r": 0.45,
+        "opacity": 0.12,
+        "drift": 40,
+        "period": 28
+      }
+    ]
+  },
+  "roles": [
+    "bg",
+    "decide",
+    "write",
+    "text",
+    "surface"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "s2",
+  "objects": {
+    "s2.ask": { "type": "text", "text": "what one thing?", "style": "caption", "fill": "muted", "anchor": "start", "at": { "above": "s2.list", "gap": "md", "align": "left" } },
+
+    "s2.v1": { "type": "path", "d": "M4 6 L22 34 L40 6", "w": 44, "h": 40, "viewBox": "0 0 44 40", "fill": "none", "stroke": "cell", "strokeWidth": "md" },
+    "s2.v2": { "type": "path", "d": "M4 6 L22 34 L40 6", "w": 44, "h": 40, "viewBox": "0 0 44 40", "fill": "none", "stroke": "cell", "strokeWidth": "md" },
+    "s2.v3": { "type": "path", "d": "M4 6 L22 34 L40 6", "w": 44, "h": 40, "viewBox": "0 0 44 40", "fill": "none", "stroke": "cell", "strokeWidth": "md" },
+    "s2.c1": { "type": "rect", "w": 260, "h": 64, "radius": "md", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "cat ears", "style": "label" },
+    "s2.c2": { "type": "rect", "w": 260, "h": 64, "radius": "md", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "car grilles", "style": "label" },
+    "s2.c3": { "type": "rect", "w": 260, "h": 64, "radius": "md", "fill": "card", "stroke": "line", "strokeWidth": "thin", "text": "fox snouts", "style": "label" },
+    "s2.r1": { "type": "group", "children": ["s2.v1", "s2.c1"], "layout": { "dir": "row", "gap": "sm", "align": "center" } },
+    "s2.r2": { "type": "group", "children": ["s2.v2", "s2.c2"], "layout": { "dir": "row", "gap": "sm", "align": "center" } },
+    "s2.r3": { "type": "group", "children": ["s2.v3", "s2.c3"], "layout": { "dir": "row", "gap": "sm", "align": "center" } },
+    "s2.list": { "type": "group", "children": ["s2.r1", "s2.r2", "s2.r3"], "layout": { "dir": "col", "gap": "sm", "align": "start" },
+      "at": { "region": "right-half", "align": "left", "dx": 40, "dy": -110 } },
+
+    "s2.bigV": { "type": "path", "d": "M12 12 L75 166 L138 12", "w": 150, "h": 180, "viewBox": "0 0 150 180", "fill": "none", "stroke": "fix", "strokeWidth": "bold", "layer": 4,
+      "at": { "in": "lensFill", "dx": 130, "dy": -130 } },
+    "s2.vLabel": { "type": "text", "text": "V detector", "style": "h3", "fill": "fix", "anchor": "start", "at": { "below": "s2.list", "gap": "lg", "align": "left" } },
+
+    "s2.ring": { "type": "circle", "r": 55, "fill": "none", "stroke": "muted", "strokeWidth": "md", "layer": 4, "at": { "in": "lensFill", "dy": 190 } },
+    "s2.minus": { "type": "rect", "w": 44, "h": 44, "radius": 22, "fill": "card", "stroke": "muted", "strokeWidth": "thin", "text": "−", "style": "label", "layer": 4,
+      "at": { "rightOf": "s2.ring", "gap": "xs", "dy": -36 } },
+    "s2.roundCap": { "type": "text", "text": "round things push it down", "style": "caption", "fill": "muted", "anchor": "start", "at": { "below": "s2.vLabel", "gap": "lg", "align": "left" } }
+  },
+  "timeline": [
+    { "id": "ask", "target": "s2.ask", "preset": "words-in", "at": 0.15 },
+
+    { "id": "chips", "target": ["s2.c1", "s2.c2", "s2.c3"], "preset": "pop", "at": 3.16, "stagger": 0.64, "overshoot": 1.5, "dur": 0.45 },
+    { "target": ["s2.v1", "s2.v2", "s2.v3"], "preset": "draw-on", "with": "chips", "offset": 0.1, "stagger": 0.64, "dur": 0.4 },
+
+    { "id": "point", "target": ["s2.v1", "s2.v2", "s2.v3"], "preset": "pulse", "at": "cue:point", "amount": 0.25, "dur": 0.5 },
+
+    { "id": "vee", "target": "s2.bigV", "preset": "draw-on", "at": "cue:vee", "dur": 0.6, "ease": "out" },
+    { "target": "s2.vLabel", "preset": "words-in", "with": "vee", "offset": 0.15 },
+    { "target": ["s2.r1", "s2.r2", "s2.r3", "s2.ask"], "preset": "to", "with": "vee", "offset": 0.3, "dur": 0.4, "to": { "opacity": 0.35 } },
+    { "target": "s2.bigV", "preset": "breathe", "after": "vee", "amount": 0.015, "period": 3 },
+
+    { "id": "oh", "target": "s2.ring", "preset": "scale-in", "at": "cue:oh", "dur": 0.5 },
+    { "target": "s2.minus", "preset": "pop", "with": "oh", "offset": 0.3, "overshoot": 1.5, "dur": 0.4 },
+    { "target": "s2.roundCap", "preset": "words-in", "with": "oh", "offset": 0.25 },
+
+    { "preset": "clear", "at": "end-0.6" }
+  ]
+}
